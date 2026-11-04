@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:26:38Z",
+  "finished_at": "2026-11-04T18:28:59Z",
+  "notes": "All brief constraints were satisfied; the circulation polyline passes along the daybed's open side rather than terminating at the bed, since a single polyline cannot branch to both bed and desk."
+}

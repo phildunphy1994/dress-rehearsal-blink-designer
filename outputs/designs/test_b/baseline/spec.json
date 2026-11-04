@@ -1,0 +1,434 @@
+{
+  "brief_id": "test_b",
+  "arm": "baseline",
+  "title": "Window-Wall Study with Corner Daybed",
+  "room": {
+    "type": "Study / bedroom",
+    "length_m": 4.20,
+    "width_m": 3.60,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.15,
+    "floor_finish": "Engineered oak plank, 180 mm boards, matt hardwax-oil finish"
+  },
+  "zones": [
+    {
+      "name": "Work zone",
+      "polygon": [[0.00, 2.30], [4.20, 2.30], [4.20, 3.60], [0.00, 3.60]],
+      "description": "Built-in desk and shelving towers under and beside the window band on the north wall."
+    },
+    {
+      "name": "Sleep / lounge zone",
+      "polygon": [[0.00, 0.00], [2.40, 0.00], [2.40, 1.70], [0.00, 1.70]],
+      "description": "Daybed in the south-west corner with bedside table and wall reading light."
+    },
+    {
+      "name": "Entry and storage zone",
+      "polygon": [[3.00, 0.00], [4.20, 0.00], [4.20, 3.00], [3.00, 3.00]],
+      "description": "Entry door in the south-east corner; full-height built-in wardrobe along the east wall."
+    }
+  ],
+  "openings": [
+    {
+      "id": "op_01",
+      "type": "window",
+      "wall": "north",
+      "offset_m": 0.60,
+      "width_m": 3.00,
+      "height_m": 1.30,
+      "sill_m": 0.90,
+      "swing": "none",
+      "role": "window_band",
+      "label": "Window band",
+      "description": "Three-light timber-framed window band between the two built-in towers; centre light top-hung opening, outer lights fixed. Spans 3.00 m of the 4.20 m north wall (71%). Head at 2.20 m."
+    },
+    {
+      "id": "op_02",
+      "type": "door",
+      "wall": "east",
+      "offset_m": 2.55,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "right",
+      "role": "entry",
+      "label": "Entry door",
+      "description": "Single leaf opening into the room, hinged on the south jamb (y = 0.15) so the open leaf folds back toward the south wall. Leaf occupies y 0.15-1.05 on the east wall; swing quadrant x 3.30-4.20, y 0.15-1.05 is kept free of furniture."
+    }
+  ],
+  "furniture": [
+    {
+      "id": "f_01",
+      "item": "Built-in shelving tower (west)",
+      "x_m": 0.00,
+      "y_m": 3.00,
+      "length_m": 0.60,
+      "depth_m": 0.60,
+      "height_m": 2.40,
+      "material": "MDF carcass with solid oak adjustable shelves",
+      "finish": "Bottle-green matt eggshell paint; shelves matt hardwax oil",
+      "built_in": true,
+      "functions": ["shelving", "storage"],
+      "position_note": "North-west corner, floor to ceiling, against the north wall at x 0.00-0.60. Closed cupboard 0-0.90 m, four open shelves above."
+    },
+    {
+      "id": "f_02",
+      "item": "Built-in shelving tower (east)",
+      "x_m": 3.60,
+      "y_m": 3.00,
+      "length_m": 0.60,
+      "depth_m": 0.60,
+      "height_m": 2.40,
+      "material": "MDF carcass with solid oak adjustable shelves",
+      "finish": "Bottle-green matt eggshell paint; shelves matt hardwax oil",
+      "built_in": true,
+      "functions": ["shelving", "storage"],
+      "position_note": "North-east corner, floor to ceiling, against the north wall at x 3.60-4.20; west face flush with the wardrobe below it. Closed cupboard 0-0.90 m, four open shelves above."
+    },
+    {
+      "id": "f_03",
+      "item": "Built-in desk",
+      "x_m": 0.60,
+      "y_m": 3.00,
+      "length_m": 3.00,
+      "depth_m": 0.60,
+      "height_m": 0.74,
+      "material": "Solid oak worktop 40 mm on MDF drawer band; concealed steel wall rail",
+      "finish": "Worktop matt hardwax oil; drawer band bottle-green matt eggshell",
+      "built_in": true,
+      "functions": ["desk", "storage"],
+      "position_note": "Spans the north wall between the two towers, directly under the window band; worktop at 0.74 m with a 0.12 m drawer band beneath (three drawers)."
+    },
+    {
+      "id": "f_04",
+      "item": "Built-in wardrobe",
+      "x_m": 3.60,
+      "y_m": 1.15,
+      "length_m": 0.60,
+      "depth_m": 1.85,
+      "height_m": 2.40,
+      "material": "MDF carcass and doors, oak internal fittings",
+      "finish": "Bottle-green matt eggshell paint (no gloss)",
+      "built_in": true,
+      "functions": ["wardrobe", "storage"],
+      "position_note": "East wall, floor to ceiling, y 1.15-3.00, abutting the east tower at y 3.00. Two hinged doors; starts 0.10 m north of the entry door swing."
+    },
+    {
+      "id": "f_05",
+      "item": "Daybed with drawers",
+      "x_m": 0.00,
+      "y_m": 0.00,
+      "length_m": 2.00,
+      "depth_m": 1.20,
+      "height_m": 0.45,
+      "material": "Oak-veneered plywood platform with two deep drawers; 1.20 x 2.00 m mattress, linen cover and bolsters",
+      "finish": "Platform matt hardwax oil; flax linen upholstery",
+      "built_in": false,
+      "functions": ["bed", "seating", "storage"],
+      "seats": 3,
+      "position_note": "South-west corner: head to the west wall, long side against the south wall. Reads as a sofa by day with back bolsters against the south wall. Drawers pull out to the north."
+    },
+    {
+      "id": "f_06",
+      "item": "Bedside table",
+      "x_m": 0.00,
+      "y_m": 1.25,
+      "length_m": 0.40,
+      "depth_m": 0.40,
+      "height_m": 0.55,
+      "material": "Solid oak",
+      "finish": "Matt hardwax oil",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "Against the west wall immediately north of the daybed head, with a table lamp."
+    },
+    {
+      "id": "f_07",
+      "item": "Desk chair",
+      "x_m": 1.95,
+      "y_m": 2.45,
+      "length_m": 0.55,
+      "depth_m": 0.55,
+      "height_m": 0.82,
+      "material": "Powder-coated steel frame, moulded plywood seat and back",
+      "finish": "Charcoal matte powder coat; oak-veneer seat",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "Pulled up to the desk front at the centre of the window band."
+    },
+    {
+      "id": "f_08",
+      "item": "Rug",
+      "x_m": 0.70,
+      "y_m": 1.40,
+      "length_m": 2.40,
+      "depth_m": 1.50,
+      "height_m": 0.01,
+      "material": "Undyed wool flatweave",
+      "finish": "Natural, no pile",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Centred on the open floor between daybed and desk; the chair sits on its north edge."
+    }
+  ],
+  "circulation": {
+    "path": [[4.20, 0.60], [3.00, 0.60], [3.00, 1.95], [1.40, 1.95], [1.40, 2.50]],
+    "min_clear_width_m": 0.90,
+    "description": "From the entry door centre westward along the south side of the room (clear between south wall and wardrobe, 1.15 m), north past the wardrobe (clear 1.60 m between daybed foot and wardrobe), west along the daybed's open north side (clear 1.25 m between daybed and chair), then north to the desk front. Every segment keeps at least 0.45 m clear either side of the centreline."
+  },
+  "palette": [
+    {
+      "hex": "#C9A97B",
+      "name": "Pale oak",
+      "material": "Engineered oak plank, 180 mm boards",
+      "finish": "Matt hardwax oil",
+      "where": "Floor throughout",
+      "role": "dominant"
+    },
+    {
+      "hex": "#EFE9DF",
+      "name": "Chalk white",
+      "material": "Mineral paint on plaster",
+      "finish": "Dead-matt",
+      "where": "All walls and ceiling",
+      "role": "dominant"
+    },
+    {
+      "hex": "#3F5A4C",
+      "name": "Bottle green",
+      "material": "Painted MDF joinery",
+      "finish": "Matt eggshell (low sheen, not gloss)",
+      "where": "Shelving towers, wardrobe doors, desk drawer band, blind pelmet",
+      "role": "accent"
+    },
+    {
+      "hex": "#B8925F",
+      "name": "Warm oak",
+      "material": "Solid oak",
+      "finish": "Matt hardwax oil",
+      "where": "Desk worktop, tower shelves, bedside table, daybed platform",
+      "role": "neutral"
+    },
+    {
+      "hex": "#8A7F6B",
+      "name": "Flax",
+      "material": "Washed linen upholstery",
+      "finish": "Woven, stain-treated",
+      "where": "Daybed mattress cover and bolsters",
+      "role": "neutral"
+    },
+    {
+      "hex": "#D8D1C5",
+      "name": "Oatmeal",
+      "material": "Undyed wool flatweave",
+      "finish": "Natural",
+      "where": "Rug; linen pinboard strip above desk",
+      "role": "neutral"
+    },
+    {
+      "hex": "#2B2B2B",
+      "name": "Charcoal",
+      "material": "Powder-coated steel",
+      "finish": "Matte",
+      "where": "Desk chair frame, wall reading light, window hardware, door handle",
+      "role": "accent"
+    }
+  ],
+  "elevation": {
+    "wall": "north",
+    "title": "North wall - built-in desk and shelving (principal elevation)",
+    "elements": [
+      {
+        "id": "el_01",
+        "item": "West tower cupboard",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 0.60,
+        "height_m": 0.90,
+        "material": "Painted MDF, bottle-green matt eggshell",
+        "label": "Tower W: closed cupboard, one door",
+        "hex": "#3F5A4C"
+      },
+      {
+        "id": "el_02",
+        "item": "West tower open shelves",
+        "x_m": 0.00,
+        "z_m": 0.90,
+        "width_m": 0.60,
+        "height_m": 1.50,
+        "material": "Solid oak shelves in painted MDF carcass",
+        "label": "Tower W: four adjustable open shelves",
+        "hex": "#B8925F"
+      },
+      {
+        "id": "el_03",
+        "item": "Desk drawer band",
+        "x_m": 0.60,
+        "z_m": 0.58,
+        "width_m": 3.00,
+        "height_m": 0.12,
+        "material": "Painted MDF, bottle-green matt eggshell",
+        "label": "Drawer band, three drawers, push-to-open",
+        "hex": "#3F5A4C"
+      },
+      {
+        "id": "el_04",
+        "item": "Desk worktop",
+        "x_m": 0.60,
+        "z_m": 0.70,
+        "width_m": 3.00,
+        "height_m": 0.04,
+        "material": "Solid oak, matt hardwax oil",
+        "label": "Worktop, top at 0.74 m",
+        "hex": "#B8925F"
+      },
+      {
+        "id": "el_05",
+        "item": "Pinboard strip",
+        "x_m": 0.60,
+        "z_m": 0.74,
+        "width_m": 3.00,
+        "height_m": 0.16,
+        "material": "Linen-faced cork board",
+        "label": "Pinboard between worktop and sill",
+        "hex": "#D8D1C5"
+      },
+      {
+        "id": "el_06",
+        "item": "Window band",
+        "x_m": 0.60,
+        "z_m": 0.90,
+        "width_m": 3.00,
+        "height_m": 1.30,
+        "material": "Timber-framed double glazing, three lights",
+        "label": "Window band, sill 0.90 m, head 2.20 m",
+        "hex": "#A9C4D8"
+      },
+      {
+        "id": "el_07",
+        "item": "Blind pelmet with task light",
+        "x_m": 0.60,
+        "z_m": 2.20,
+        "width_m": 3.00,
+        "height_m": 0.20,
+        "material": "Painted MDF with concealed linear LED",
+        "label": "Pelmet housing roller blind and linear LED task light",
+        "hex": "#3F5A4C"
+      },
+      {
+        "id": "el_08",
+        "item": "East tower cupboard",
+        "x_m": 3.60,
+        "z_m": 0.00,
+        "width_m": 0.60,
+        "height_m": 0.90,
+        "material": "Painted MDF, bottle-green matt eggshell",
+        "label": "Tower E: closed cupboard, one door",
+        "hex": "#3F5A4C"
+      },
+      {
+        "id": "el_09",
+        "item": "East tower open shelves",
+        "x_m": 3.60,
+        "z_m": 0.90,
+        "width_m": 0.60,
+        "height_m": 1.50,
+        "material": "Solid oak shelves in painted MDF carcass",
+        "label": "Tower E: four adjustable open shelves",
+        "hex": "#B8925F"
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.74, "label": "Desk worktop"},
+      {"z_m": 0.90, "label": "Window sill"},
+      {"z_m": 2.20, "label": "Window head"},
+      {"z_m": 2.40, "label": "Ceiling"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Linear LED task light",
+      "position": "Concealed in the blind pelmet on the north wall, z 2.20 m, running the full 3.00 m over the desk",
+      "type": "Integrated linear LED, 3000 K, dimmable"
+    },
+    {
+      "item": "Tower shelf lighting",
+      "position": "Vertical LED strips inside both shelving towers, rear corners, z 0.90-2.40 m",
+      "type": "Integrated LED strip, 2700 K, dimmable"
+    },
+    {
+      "item": "Daybed reading light",
+      "position": "West wall above the daybed head, x 0.00, y 0.60, z 1.10 m",
+      "type": "Adjustable swing-arm wall light, charcoal steel, 2700 K"
+    },
+    {
+      "item": "Bedside table lamp",
+      "position": "On the bedside table at (0.20, 1.45)",
+      "type": "Table lamp with linen shade, 2700 K"
+    },
+    {
+      "item": "Ceiling lights",
+      "position": "Two low-profile surface-mounted discs on the ceiling at (1.30, 2.00) and (2.90, 2.00)",
+      "type": "Surface-mounted LED disc, 2700 K, dimmable (no pendants under the 2.40 m ceiling)"
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Place the built-in desk and both shelving towers on the north (window) wall.",
+      "rationale": "Puts daylight on the worktop, satisfies the same-wall requirement, and lets the towers frame the window band as one piece of joinery.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Window band 3.00 m wide between the towers (71% of the north wall), sill 0.90 m above the 0.74 m worktop.",
+      "rationale": "Exceeds the 50% minimum while leaving solid wall for the towers; the 0.16 m gap below the sill takes a pinboard strip.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Entry door on the east wall near the south-east corner, hinged on the south jamb.",
+      "rationale": "The leaf folds back toward the south wall, the view on entry is to the window wall, and the swing quadrant sits in a corner no furniture needs.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Storage as a floor-to-ceiling built-in wardrobe on the east wall, flush with the east tower.",
+      "rationale": "Meets the no-freestanding-wardrobe rule and completes an L of joinery with the north wall; its doors stay 0.10 m clear of the entry door swing.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Daybed in the south-west corner with head to the west wall and back to the south wall.",
+      "rationale": "A 1.20 x 2.00 daybed sleeps one and reads as a sofa by day; drawers underneath add storage and leave the room centre open.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Circulation routed as a 0.90 m clear path from the door along the south side, past the wardrobe, along the daybed's open side to the desk.",
+      "rationale": "Keeps a continuous 1.60-1.80 m open floor between daybed and desk; the bed and the desk are both reached directly from the path.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Palette of pale oak floor, chalk-white walls and bottle-green matt joinery with oak worktop.",
+      "rationale": "Dark matt joinery gives the low room depth without reflection; no mirrored panels and no gloss on any wall surface.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Layered lighting with concealed pelmet task light, tower strips, wall reading light and two surface-mounted discs.",
+      "rationale": "A 2.40 m ceiling rules out pendants in the walk zone; task light at the desk and reading light at the bed cover both uses.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Freestanding desk chair and rug rather than built-in seating at the desk.",
+      "rationale": "The chair can be pulled to the daybed when the room is used as a bedroom; the rug anchors the open floor without blocking drawers.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": []
+}
