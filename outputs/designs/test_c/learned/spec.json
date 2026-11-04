@@ -1,0 +1,995 @@
+{
+  "brief_id": "test_c",
+  "arm": "learned",
+  "title": "Brick Core and Glazed Band: Dining-Living Room",
+  "room": {
+    "type": "Dining / living combined",
+    "length_m": 7.20,
+    "width_m": 4.50,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.30,
+    "floor_finish": "Wide-board European oak, 180 mm boards, matt hardwax oil, laid east-west along the long axis"
+  },
+  "zones": [
+    {
+      "name": "living",
+      "polygon": [[0.00, 0.00], [3.75, 0.00], [3.75, 4.50], [0.00, 4.50]],
+      "description": "West end: entry gallery under the 2.10 m soffit along the north wall, sofa and armchair facing the brick hearth core across the promenade, window seat under the west window group."
+    },
+    {
+      "name": "dining",
+      "polygon": [[3.75, 0.00], [7.20, 0.00], [7.20, 4.50], [3.75, 4.50]],
+      "description": "East end: table for eight along the long axis under a linear pendant, built-in sideboard on the north wall beside the kitchen door, east window group with planter trough on the sill."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "main flat ceiling",
+      "height_m": 2.40,
+      "polygon": [[0.00, 0.35], [7.20, 0.35], [7.20, 4.50], [2.10, 4.50], [2.10, 3.30], [0.00, 3.30]],
+      "description": "Flat limewashed plaster ceiling over both zones; the chimney breast rises through it to full height.",
+      "rule_ids": ["R05"]
+    },
+    {
+      "name": "entry gallery soffit",
+      "height_m": 2.10,
+      "polygon": [[0.00, 3.30], [2.10, 3.30], [2.10, 4.50], [0.00, 4.50]],
+      "description": "Dropped plaster soffit 1.20 m deep along the north wall from the west wall to the chimney breast: the compressed, low entry gallery beside the coats cupboard and hearth core, with a cast-stone fascia band at its edge.",
+      "rule_ids": ["R12", "R05", "R02"]
+    },
+    {
+      "name": "south eave soffit",
+      "height_m": 2.10,
+      "polygon": [[0.00, 0.00], [7.20, 0.00], [7.20, 0.35], [0.00, 0.35]],
+      "description": "Dropped soffit 0.35 m deep over the glazed south band, oversailing the leaf heads like an eave; cast-stone fascia band on its room edge.",
+      "rule_ids": ["R05", "R01"]
+    }
+  ],
+  "openings": [
+    {
+      "id": "D01",
+      "type": "door",
+      "wall": "north",
+      "offset_m": 0.15,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "left",
+      "role": "entry",
+      "label": "Entry door",
+      "description": "Plain flush oak door at the west end of the north wall, no surround, head flush with the 2.10 m gallery soffit; opens into the compressed entry gallery beside the coats cupboard and chimney mass. Swing arc x 0.15-1.05, y 3.60-4.50 is kept clear.",
+      "rule_ids": ["R12", "R02", "R06"]
+    },
+    {
+      "id": "D02",
+      "type": "door",
+      "wall": "north",
+      "offset_m": 6.15,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "right",
+      "role": "kitchen",
+      "label": "Kitchen door",
+      "description": "Plain flush oak door at the east end of the north wall beside the sideboard, opening out into the kitchen so no swing enters the room; head under the cast-stone head band.",
+      "rule_ids": ["R02", "R12"]
+    },
+    {
+      "id": "S01",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 0.93,
+      "width_m": 0.84,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "none",
+      "role": "window_band",
+      "label": "South band bay 1 (fixed light)",
+      "description": "Floor-to-head fixed glazed light between 0.38 m brick piers, x 5.43-6.27; east corner pier 0.93 m so the band stops one pier short of the corner.",
+      "pattern": "plain thin oak frame, clear glass",
+      "rule_ids": ["R11", "R07"]
+    },
+    {
+      "id": "S02",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 2.15,
+      "width_m": 0.84,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "none",
+      "role": "window_band",
+      "label": "South band bay 2 (fixed light)",
+      "description": "Floor-to-head fixed glazed light, x 4.21-5.05, behind the dining table.",
+      "pattern": "plain thin oak frame, clear glass",
+      "rule_ids": ["R11", "R07"]
+    },
+    {
+      "id": "S03",
+      "type": "door",
+      "wall": "south",
+      "offset_m": 3.37,
+      "width_m": 0.84,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "South band bay 3 (terrace leaf)",
+      "description": "Outward-swinging glazed door leaf, x 2.99-3.83, facing the 1.00 m gap between sofa and dining chairs; principal terrace access.",
+      "pattern": "plain thin oak frame, clear glass",
+      "rule_ids": ["R11", "R07"]
+    },
+    {
+      "id": "S04",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 4.59,
+      "width_m": 0.84,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "none",
+      "role": "window_band",
+      "label": "South band bay 4 (fixed light)",
+      "description": "Floor-to-head fixed glazed light, x 1.77-2.61, behind the sofa.",
+      "pattern": "plain thin oak frame, clear glass",
+      "rule_ids": ["R11", "R07"]
+    },
+    {
+      "id": "S05",
+      "type": "door",
+      "wall": "south",
+      "offset_m": 5.81,
+      "width_m": 0.84,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "right",
+      "role": "window_band",
+      "label": "South band bay 5 (terrace leaf)",
+      "description": "Outward-swinging glazed door leaf, x 0.55-1.39, reached from the clear 0.90 m strip in front of the band; west corner pier 0.55 m.",
+      "pattern": "plain thin oak frame, clear glass",
+      "rule_ids": ["R11", "R07", "R06"]
+    },
+    {
+      "id": "W01",
+      "type": "window",
+      "wall": "west",
+      "offset_m": 0.46,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "West window group light 1",
+      "description": "Pair of tall narrow oak casements (2 x 0.40 m) on a central mullion, sill on the 0.90 m cast-stone sill course over a brick spandrel; y 0.46-1.30.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09"]
+    },
+    {
+      "id": "W02",
+      "type": "window",
+      "wall": "west",
+      "offset_m": 1.68,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "West window group light 2",
+      "description": "Pair of tall narrow oak casements over the window seat; y 1.68-2.52.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09"]
+    },
+    {
+      "id": "W03",
+      "type": "window",
+      "wall": "west",
+      "offset_m": 2.90,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "West window group light 3",
+      "description": "Pair of tall narrow oak casements facing the promenade, head flush with the 2.10 m gallery soffit; y 2.90-3.74; north corner pier 0.76 m.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09"]
+    },
+    {
+      "id": "E01",
+      "type": "window",
+      "wall": "east",
+      "offset_m": 0.76,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "right",
+      "role": "window_band",
+      "label": "East window group light 1",
+      "description": "Pair of tall narrow oak casements, sill on the 0.90 m cast-stone sill course carrying a built-in zinc-lined oak planter trough within the reveal; y 2.90-3.74.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09", "R10"]
+    },
+    {
+      "id": "E02",
+      "type": "window",
+      "wall": "east",
+      "offset_m": 1.98,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "right",
+      "role": "window_band",
+      "label": "East window group light 2",
+      "description": "Pair of tall narrow oak casements behind the dining table end, planter trough on the sill; y 1.68-2.52.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09", "R10"]
+    },
+    {
+      "id": "E03",
+      "type": "window",
+      "wall": "east",
+      "offset_m": 3.20,
+      "width_m": 0.84,
+      "height_m": 1.20,
+      "sill_m": 0.90,
+      "swing": "out",
+      "hinge": "right",
+      "role": "window_band",
+      "label": "East window group light 3",
+      "description": "Pair of tall narrow oak casements, planter trough on the sill; y 0.46-1.30; south corner pier 0.46 m.",
+      "pattern": "leaded straight-line lattice: ladder bars with a band of shallow lozenges at the head",
+      "rule_ids": ["R04", "R07", "R09", "R10"]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Chimney breast / hearth core",
+      "x_m": 2.10,
+      "y_m": 3.60,
+      "length_m": 1.50,
+      "depth_m": 0.90,
+      "height_m": 2.40,
+      "material": "Tawny clay brick, horizontal coursing only; firebrick back; cast-stone cap band",
+      "finish": "Raked horizontal joints, flush-tooled vertical joints; brick left bare",
+      "built_in": true,
+      "functions": ["fireplace", "hearth"],
+      "rule_ids": ["R03", "R13", "R08"],
+      "position_note": "Thick brick core projecting 0.90 m from the internal north wall at the junction of the two zones, x 2.10-3.60; fire opening 0.90 x 0.55 m on the south face raised 0.40 m, no mantel, three 0.12 m square recesses; rises through the ceiling band, capped by the cast-stone head band at 2.10-2.25."
+    },
+    {
+      "id": "F02",
+      "item": "Hearth plinth block, west",
+      "x_m": 1.80,
+      "y_m": 3.60,
+      "length_m": 0.30,
+      "depth_m": 0.90,
+      "height_m": 0.40,
+      "material": "Cast stone, solid block",
+      "finish": "Honed, plain",
+      "built_in": true,
+      "functions": ["hearth", "storage"],
+      "rule_ids": ["R14", "R08"],
+      "position_note": "Raised plinth stepping out 0.30 m west of the breast, top continuous with the firebox floor at 0.40 m; log store and perch; closes the east end of the entry gallery."
+    },
+    {
+      "id": "F03",
+      "item": "Hearth plinth block, east",
+      "x_m": 3.60,
+      "y_m": 3.60,
+      "length_m": 0.30,
+      "depth_m": 0.90,
+      "height_m": 0.40,
+      "material": "Cast stone, solid block",
+      "finish": "Honed, plain",
+      "built_in": true,
+      "functions": ["hearth", "storage"],
+      "rule_ids": ["R14", "R08"],
+      "position_note": "Raised plinth stepping out 0.30 m east of the breast, abutting the sideboard; log store and perch."
+    },
+    {
+      "id": "F04",
+      "item": "Coats cupboard",
+      "x_m": 1.05,
+      "y_m": 3.90,
+      "length_m": 0.75,
+      "depth_m": 0.60,
+      "height_m": 2.10,
+      "material": "Solid European oak carcass and flush doors",
+      "finish": "Matt hardwax oil; square oak pulls on a grid",
+      "built_in": true,
+      "functions": ["storage", "entry_element"],
+      "rule_ids": ["R12", "R02", "R14"],
+      "position_note": "Full height to the 2.10 m soffit, immediately east of the entry door and clear of its swing; the solid mass the vestibule compresses against before the room opens south."
+    },
+    {
+      "id": "F05",
+      "item": "Sideboard with cast-stone cap",
+      "x_m": 3.90,
+      "y_m": 4.05,
+      "length_m": 2.10,
+      "depth_m": 0.45,
+      "height_m": 0.90,
+      "material": "Solid European oak carcass and flush doors; 0.05 m cast-stone cap slab",
+      "finish": "Matt hardwax oil; honed cast stone; square oak pulls on a grid",
+      "built_in": true,
+      "functions": ["sideboard", "storage"],
+      "rule_ids": ["R02", "R14", "R08", "R01"],
+      "position_note": "Runs from the east hearth block to 0.15 m short of the kitchen door along the north wall; cap at 0.90 m continues the sill-course datum of the end walls."
+    },
+    {
+      "id": "F06",
+      "item": "Window seat",
+      "x_m": 0.00,
+      "y_m": 0.90,
+      "length_m": 0.45,
+      "depth_m": 1.80,
+      "height_m": 0.45,
+      "material": "Cast-stone slab on a brick plinth; oxblood leather squab",
+      "finish": "Honed cast stone; raked horizontal brick coursing; matt aniline leather",
+      "built_in": true,
+      "functions": ["seating"],
+      "seats": 2,
+      "rule_ids": ["R01", "R14", "R08"],
+      "position_note": "Against the west wall under the west window group, y 0.90-2.70, slab top at 0.40 m with a 0.05 m squab; brick spandrel behind as backrest up to the 0.90 m sill course; stops at the promenade edge."
+    },
+    {
+      "id": "F07",
+      "item": "Dining table",
+      "x_m": 3.90,
+      "y_m": 1.20,
+      "length_m": 2.60,
+      "depth_m": 1.00,
+      "height_m": 0.74,
+      "material": "Solid European oak: oversailing top slab on a thinner secondary rail, four square posts with stepped block feet",
+      "finish": "Matt hardwax oil",
+      "built_in": false,
+      "functions": ["dining_table"],
+      "rule_ids": ["R14", "R01"],
+      "position_note": "Along the long axis in the dining zone, 0.70 m from the east wall for passage round the end; seats four a side, no end chairs."
+    },
+    {
+      "id": "F08",
+      "item": "Dining chair 1 (south)",
+      "x_m": 4.01,
+      "y_m": 0.70,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "South side of the table, 0.70 m clear to the glazed band behind; tall narrow back, stepped cap finials."
+    },
+    {
+      "id": "F09",
+      "item": "Dining chair 2 (south)",
+      "x_m": 4.66,
+      "y_m": 0.70,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "South side of the table."
+    },
+    {
+      "id": "F10",
+      "item": "Dining chair 3 (south)",
+      "x_m": 5.31,
+      "y_m": 0.70,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "South side of the table."
+    },
+    {
+      "id": "F11",
+      "item": "Dining chair 4 (south)",
+      "x_m": 5.96,
+      "y_m": 0.70,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "South side of the table."
+    },
+    {
+      "id": "F12",
+      "item": "Dining chair 5 (north)",
+      "x_m": 4.01,
+      "y_m": 2.20,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "North side of the table, backing onto the promenade with 1.35 m clear to the sideboard."
+    },
+    {
+      "id": "F13",
+      "item": "Dining chair 6 (north)",
+      "x_m": 4.66,
+      "y_m": 2.20,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "North side of the table."
+    },
+    {
+      "id": "F14",
+      "item": "Dining chair 7 (north)",
+      "x_m": 5.31,
+      "y_m": 2.20,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "North side of the table."
+    },
+    {
+      "id": "F15",
+      "item": "Dining chair 8 (north)",
+      "x_m": 5.96,
+      "y_m": 2.20,
+      "length_m": 0.42,
+      "depth_m": 0.50,
+      "height_m": 1.15,
+      "material": "Solid oak, dowel construction, leather seat pad",
+      "finish": "Matt hardwax oil; matt aniline leather",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "North side of the table."
+    },
+    {
+      "id": "F16",
+      "item": "Sofa, three-seat",
+      "x_m": 1.00,
+      "y_m": 0.90,
+      "length_m": 2.00,
+      "depth_m": 0.85,
+      "height_m": 0.78,
+      "material": "Oak frame with square block feet; textured wool upholstery over stuffing",
+      "finish": "Matt hardwax oil; oatmeal-brown wool boucle",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 3,
+      "rule_ids": ["R14", "R03"],
+      "position_note": "Facing north toward the fire opening across the promenade, 0.90 m clear of the glazed band behind; set 0.85 m west of the hearth centreline so sofa, hearth and door share no axis."
+    },
+    {
+      "id": "F17",
+      "item": "Armchair",
+      "x_m": 0.50,
+      "y_m": 1.92,
+      "length_m": 0.80,
+      "depth_m": 0.78,
+      "height_m": 0.75,
+      "material": "Oak frame, square posts; textured wool upholstery",
+      "finish": "Matt hardwax oil; oatmeal-brown wool boucle",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "rule_ids": ["R14"],
+      "position_note": "Beside the window seat, facing east over the low table toward the dining zone and hearth; short wide back."
+    },
+    {
+      "id": "F18",
+      "item": "Low table",
+      "x_m": 1.50,
+      "y_m": 2.15,
+      "length_m": 1.20,
+      "depth_m": 0.45,
+      "height_m": 0.40,
+      "material": "Solid oak: oversailing top slab on a thinner secondary slab, square block feet",
+      "finish": "Matt hardwax oil",
+      "built_in": false,
+      "functions": ["table"],
+      "rule_ids": ["R14"],
+      "position_note": "0.40 m north of the sofa, 0.10 m south of the promenade edge; top at the 0.40 m plinth datum."
+    },
+    {
+      "id": "F19",
+      "item": "Living rug",
+      "x_m": 0.60,
+      "y_m": 0.75,
+      "length_m": 2.80,
+      "depth_m": 1.95,
+      "height_m": 0.01,
+      "material": "Wool flatweave",
+      "finish": "Matt, plain weave with a narrow border band",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Under sofa, armchair and low table; stops at the promenade edge (y 2.70) and short of the dining chairs."
+    },
+    {
+      "id": "F20",
+      "item": "Linear pendant over dining table",
+      "x_m": 4.30,
+      "y_m": 1.62,
+      "length_m": 1.80,
+      "depth_m": 0.16,
+      "height_m": 0.12,
+      "material": "Oak slab housing, patinated bronze underside, linear LED",
+      "finish": "Matt hardwax oil; patinated bronze",
+      "built_in": false,
+      "functions": ["lighting"],
+      "allow_overlap": true,
+      "rule_ids": ["R14", "R01"],
+      "position_note": "Suspended on two bronze rods, underside 1.55 m above floor, centred on the table at x 5.20, y 1.70."
+    }
+  ],
+  "circulation": {
+    "path": [[0.00, 3.15], [7.20, 3.15]],
+    "min_clear_width_m": 0.90,
+    "description": "Straight promenade from the west wall to the east wall along y = 3.15: clear from y 2.70 (window seat, armchair, low table, north dining chairs) to y 3.60 (hearth core and plinth blocks) and beyond (coats cupboard 3.90, sideboard 4.05, entry door swing 3.60). Minimum clear width 0.90 m, actual minimum 1.00 m between the low table and the hearth blocks. The entry gallery opens onto it; a secondary route runs along the glazed band (y 0-0.90) west of x 3.90 and through the 1.00 m gap between sofa and dining chairs."
+  },
+  "palette": [
+    {
+      "hex": "#9C6B45",
+      "name": "Tawny brick",
+      "material": "Clay facing brick",
+      "finish": "Bare brick, raked horizontal joints, flush-tooled vertical joints so only the coursing reads",
+      "where": "North wall field, chimney breast, south band piers, end-wall piers and spandrels, window-seat plinth",
+      "role": "dominant",
+      "rule_ids": ["R08", "R13"]
+    },
+    {
+      "hex": "#D9CDB8",
+      "name": "Pale cast stone",
+      "material": "Precast cast stone",
+      "finish": "Honed, plain, no mouldings",
+      "where": "Head band at 2.10-2.25, soffit fascia bands, 0.90 m sill course, sideboard cap, hearth plinth blocks, window-seat slab",
+      "role": "dominant",
+      "rule_ids": ["R08", "R01"]
+    },
+    {
+      "hex": "#C9AA78",
+      "name": "Oiled oak floor",
+      "material": "Wide-board European oak flooring, 180 mm boards",
+      "finish": "Matt hardwax oil, laid east-west",
+      "where": "Entire floor, both zones",
+      "role": "dominant",
+      "rule_ids": ["R01"]
+    },
+    {
+      "hex": "#A77B48",
+      "name": "Oiled oak joinery",
+      "material": "Solid European oak",
+      "finish": "Matt hardwax oil",
+      "where": "Doors, coats cupboard, sideboard, window frames and mullions, dining table and chairs, low table, pendant housing",
+      "role": "dominant",
+      "rule_ids": ["R14"]
+    },
+    {
+      "hex": "#EDE4D3",
+      "name": "Warm white limewash",
+      "material": "Lime plaster",
+      "finish": "Limewash, matt",
+      "where": "Main ceiling, dropped soffits, frieze above the head band",
+      "role": "neutral",
+      "rule_ids": ["R05"]
+    },
+    {
+      "hex": "#6E3B24",
+      "name": "Oxblood leather",
+      "material": "Full-grain aniline leather over stuffing",
+      "finish": "Matt, waxed",
+      "where": "Dining chair seat pads, window-seat squab",
+      "role": "accent"
+    },
+    {
+      "hex": "#8C7B6B",
+      "name": "Oatmeal-brown textured wool",
+      "material": "Wool boucle upholstery weave",
+      "finish": "Matt, stippled texture",
+      "where": "Sofa and armchair upholstery",
+      "role": "accent"
+    },
+    {
+      "hex": "#7D5A3C",
+      "name": "Patinated bronze",
+      "material": "Bronze",
+      "finish": "Dark patina, waxed",
+      "where": "Pendant underside and rods, door and casement hardware, planter trough liner edge",
+      "role": "accent"
+    }
+  ],
+  "elevation": {
+    "wall": "north",
+    "title": "North wall (hearth wall) seen from inside the room, west at left",
+    "elements": [
+      {
+        "id": "N01",
+        "item": "Brick wall field",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 7.20,
+        "height_m": 2.10,
+        "material": "Tawny clay brick, horizontal coursing only",
+        "label": "Bare brick wall, raked horizontal joints, flush verticals",
+        "hex": "#9C6B45",
+        "rule_ids": ["R08"]
+      },
+      {
+        "id": "N02",
+        "item": "Entry gallery soffit fascia",
+        "x_m": 0.00,
+        "z_m": 2.10,
+        "width_m": 2.10,
+        "height_m": 0.30,
+        "material": "Cast-stone fascia band on the dropped soffit edge",
+        "label": "Soffit fascia at 2.10-2.40 (in front of wall at y 3.30)",
+        "hex": "#D9CDB8",
+        "rule_ids": ["R05", "R01", "R12"]
+      },
+      {
+        "id": "N03",
+        "item": "Head band and chimney cap",
+        "x_m": 2.10,
+        "z_m": 2.10,
+        "width_m": 5.10,
+        "height_m": 0.15,
+        "material": "Cast stone",
+        "label": "Continuous head band at door-head height, caps the breast",
+        "hex": "#D9CDB8",
+        "rule_ids": ["R01", "R08", "R13"]
+      },
+      {
+        "id": "N04",
+        "item": "Plaster frieze",
+        "x_m": 2.10,
+        "z_m": 2.25,
+        "width_m": 5.10,
+        "height_m": 0.15,
+        "material": "Lime plaster, limewashed",
+        "label": "Frieze between head band and ceiling",
+        "hex": "#EDE4D3",
+        "rule_ids": ["R05"]
+      },
+      {
+        "id": "N05",
+        "item": "Entry door",
+        "x_m": 0.15,
+        "z_m": 0.00,
+        "width_m": 0.90,
+        "height_m": 2.10,
+        "material": "Solid oak flush door, no surround",
+        "label": "Entry door D01, flush, head at soffit",
+        "hex": "#A77B48",
+        "rule_ids": ["R12"]
+      },
+      {
+        "id": "N06",
+        "item": "Coats cupboard",
+        "x_m": 1.05,
+        "z_m": 0.00,
+        "width_m": 0.75,
+        "height_m": 2.10,
+        "material": "Solid oak flush doors, square pulls",
+        "label": "Coats cupboard F04, full height to soffit",
+        "hex": "#A77B48",
+        "rule_ids": ["R12", "R14"]
+      },
+      {
+        "id": "N07",
+        "item": "Hearth plinth block, west",
+        "x_m": 1.80,
+        "z_m": 0.00,
+        "width_m": 0.30,
+        "height_m": 0.40,
+        "material": "Cast stone",
+        "label": "Plinth stepping out west of breast",
+        "hex": "#D9CDB8",
+        "rule_ids": ["R14", "R08"]
+      },
+      {
+        "id": "N08",
+        "item": "Chimney breast",
+        "x_m": 2.10,
+        "z_m": 0.00,
+        "width_m": 1.50,
+        "height_m": 2.10,
+        "material": "Tawny clay brick, horizontal coursing only",
+        "label": "Plain brick slab projecting 0.90 m, no mantel",
+        "hex": "#9C6B45",
+        "rule_ids": ["R03", "R13", "R08"]
+      },
+      {
+        "id": "N09",
+        "item": "Fire opening",
+        "x_m": 2.40,
+        "z_m": 0.40,
+        "width_m": 0.90,
+        "height_m": 0.55,
+        "material": "Open fire, firebrick back and sides, cast-stone floor at 0.40",
+        "label": "Raised fire opening, wider than high",
+        "hex": "#3A2E28",
+        "rule_ids": ["R13", "R14"]
+      },
+      {
+        "id": "N10",
+        "item": "Square recess 1",
+        "x_m": 3.30,
+        "z_m": 1.25,
+        "width_m": 0.12,
+        "height_m": 0.12,
+        "material": "Recess in brick, 0.10 m deep",
+        "label": "Slot recess",
+        "rule_ids": ["R13"]
+      },
+      {
+        "id": "N11",
+        "item": "Square recess 2",
+        "x_m": 3.30,
+        "z_m": 1.55,
+        "width_m": 0.12,
+        "height_m": 0.12,
+        "material": "Recess in brick, 0.10 m deep",
+        "label": "Slot recess",
+        "rule_ids": ["R13"]
+      },
+      {
+        "id": "N12",
+        "item": "Square recess 3",
+        "x_m": 3.30,
+        "z_m": 1.85,
+        "width_m": 0.12,
+        "height_m": 0.12,
+        "material": "Recess in brick, 0.10 m deep",
+        "label": "Slot recess",
+        "rule_ids": ["R13"]
+      },
+      {
+        "id": "N13",
+        "item": "Hearth plinth block, east",
+        "x_m": 3.60,
+        "z_m": 0.00,
+        "width_m": 0.30,
+        "height_m": 0.40,
+        "material": "Cast stone",
+        "label": "Plinth stepping out east of breast",
+        "hex": "#D9CDB8",
+        "rule_ids": ["R14", "R08"]
+      },
+      {
+        "id": "N14",
+        "item": "Sideboard body",
+        "x_m": 3.90,
+        "z_m": 0.00,
+        "width_m": 2.10,
+        "height_m": 0.85,
+        "material": "Solid oak flush doors, square pulls on a grid",
+        "label": "Built-in sideboard F05",
+        "hex": "#A77B48",
+        "rule_ids": ["R14", "R02"]
+      },
+      {
+        "id": "N15",
+        "item": "Sideboard cap slab",
+        "x_m": 3.90,
+        "z_m": 0.85,
+        "width_m": 2.10,
+        "height_m": 0.05,
+        "material": "Cast stone",
+        "label": "Cap at 0.90 m sill-course datum",
+        "hex": "#D9CDB8",
+        "rule_ids": ["R08", "R01"]
+      },
+      {
+        "id": "N16",
+        "item": "Kitchen door",
+        "x_m": 6.15,
+        "z_m": 0.00,
+        "width_m": 0.90,
+        "height_m": 2.10,
+        "material": "Solid oak flush door, no surround",
+        "label": "Kitchen door D02, opens out",
+        "hex": "#A77B48",
+        "rule_ids": ["R12", "R02"]
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.40, "label": "Plinth datum: hearth blocks, firebox floor, window-seat slab, low table"},
+      {"z_m": 0.90, "label": "Sill course: end-wall sills and sideboard cap"},
+      {"z_m": 2.10, "label": "Head band: door heads, glazing heads, dropped soffits"},
+      {"z_m": 2.40, "label": "Main ceiling"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Linear oak-and-bronze pendant (F20)",
+      "position": "Over the dining table, centred x 5.20 / y 1.70, underside 1.55 m above floor",
+      "type": "Suspended linear LED, warm white 2700 K, dimmable",
+      "rule_ids": ["R14", "R01"]
+    },
+    {
+      "item": "Concealed LED strip on the ceiling steps",
+      "position": "In the 0.30 m step between the 2.10 m soffits and the 2.40 m ceiling along y 3.30 (x 0-2.10) and y 0.35 (full length), and on top of the cast-stone head band x 2.10-7.20",
+      "type": "Continuous indirect cove light washing the ceiling, warm white 2700 K",
+      "rule_ids": ["R01", "R05"]
+    },
+    {
+      "item": "Pair of recessed adjustable downlights",
+      "position": "Main ceiling at (2.50, 3.25) and (3.20, 3.25), aimed at the chimney breast",
+      "type": "Recessed narrow-beam LED grazing the brick coursing"
+    },
+    {
+      "item": "Two table lamps, stacked oak block bases with linen drum shades",
+      "position": "On the sideboard cap at x 4.20 and x 5.70",
+      "type": "Table lamps, warm white, dimmable",
+      "rule_ids": ["R14"]
+    },
+    {
+      "item": "Recessed downlights over the entry gallery",
+      "position": "In the 2.10 m soffit at (0.60, 3.90) and (1.50, 3.90)",
+      "type": "Low-glare recessed LED, warm white",
+      "rule_ids": ["R12"]
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Organise the 7.20 x 4.50 room as two zones side by side on the long axis (living west, dining east) with a thick brick hearth core projecting from the internal north wall at their junction, and gather all service functions (entry door, coats cupboard, hearth, sideboard, kitchen door) in a strip along that north wall.",
+      "rationale": "The core marks the junction and both zones flow past it on the room side; the north strip keeps the principal space along the glazed south wall uninterrupted, reading long and low.",
+      "major": true,
+      "rule_ids": ["R01", "R02", "R03"]
+    },
+    {
+      "decision": "Entry by a plain flush oak door at the west end of the north wall into a 1.20 m deep gallery under a 2.10 m soffit, beside the full-height coats cupboard and the chimney mass, from which the room opens south and east; no surround, not on any axis with the hearth or windows.",
+      "rationale": "A compressed vestibule beside a solid mass is the prescribed entry sequence; placing door, hearth and window groups on different centrelines keeps the composition asymmetric.",
+      "major": true,
+      "rule_ids": ["R12", "R02", "R06"]
+    },
+    {
+      "decision": "Provide the brief's ceiling change as two dropped plaster soffits at 2.10 m within a flat 2.40 m ceiling: the entry gallery soffit (x 0.00-2.10, y 3.30-4.50) and a 0.35 m eave soffit over the south glazed band (x 0.00-7.20, y 0.00-0.35), each with a cast-stone fascia band; no level change.",
+      "rationale": "The ceiling edge becomes a deep horizontal band oversailing the glazing heads, the gallery soffit makes the low entry, and the ceiling stays flat; a floor step would steal height from a 2.40 m room.",
+      "major": true,
+      "rule_ids": ["R05", "R12", "R01"]
+    },
+    {
+      "decision": "Define the two zones without a wall: the hearth core and its plinth blocks (x 1.80-3.90, projecting 0.90 m from the north wall), the gallery soffit, the rug and the furniture groups mark the junction; no partition element spans the room width.",
+      "rationale": "The designer's core sits between the two rooms with passage past it so they read as one space; nothing here closes the width.",
+      "major": true,
+      "rule_ids": ["R03", "R02"]
+    },
+    {
+      "decision": "South wall as a continuous band of five 0.84 m floor-to-head glazed bays between 0.38 m brick piers on a 1.22 m module, stopping one pier short of the corners with unequal corner piers (0.55 m west, 0.93 m east); bays S03 and S05 are outward-swinging terrace leaves, S01, S02 and S04 fixed lights.",
+      "rationale": "The long outer wall is a glazed band of narrow leaves between short piers, head at the ceiling band, opening outward; the unequal corner piers absorb the module remainder and keep the band off the room centreline.",
+      "major": true,
+      "rule_ids": ["R11", "R07", "R06"]
+    },
+    {
+      "decision": "End walls each as a full-width group of three 0.84 m lights between brick piers (corner piers 0.46 m south, 0.76 m north) on a 0.90 m cast-stone sill course over a brick spandrel, each light a pair of 0.40 m tall narrow casements with a leaded straight-line ladder lattice; a built-in zinc-lined oak planter trough sits on the east sill.",
+      "rationale": "A plain rectangular room gets no prow bay; the end wall is expressed as a window group between piers on the same module, with the lattice where glass is detailed and planting built in on the sill rather than in pots.",
+      "major": true,
+      "rule_ids": ["R04", "R07", "R09", "R10"]
+    },
+    {
+      "decision": "Fireplace as a plain brick breast 1.50 m wide projecting 0.90 m, rising to the ceiling and capped by the cast-stone head band, with a 0.90 x 0.55 m fire opening raised 0.40 m, three 0.12 m square recesses, no mantel, and cast-stone plinth blocks stepping out 0.30 m on both sides.",
+      "rationale": "The hearth is a masonry core on the internal wall, not a surround on an exterior wall; the chimney breast is a plain capped brick slab with small recesses; plinths step out at both sides and every masonry edge gets a light cap.",
+      "major": true,
+      "rule_ids": ["R03", "R13", "R14", "R08"]
+    },
+    {
+      "decision": "Seat eight at a 2.60 x 1.00 m oak slab table along the long axis (x 3.90-6.50, y 1.20-2.20), four tall-backed oak chairs a side and no end chairs; 0.70 m from the east wall, 0.70 m behind the south chairs to the glazing, 1.35 m behind the north chairs to the sideboard.",
+      "rationale": "End chairs would need 1.20 m more length than the room allows; a 4+4 table keeps the dining group reading as one long low slab parallel to the datum bands and clears the promenade.",
+      "major": true,
+      "rule_ids": ["R01", "R14"]
+    },
+    {
+      "decision": "Living group: three-seat sofa facing north toward the fire across the promenade (x 1.00-3.00), armchair beside a built-in cast-stone window seat under the west windows, oak slab low table at the 0.40 m plinth datum, flatweave rug stopping at the promenade edge.",
+      "rationale": "The passage past the core is the designer's own move, so the group faces the hearth across it; the window seat is a plinth slab under the sill course with the brick spandrel as its back.",
+      "major": true,
+      "rule_ids": ["R03", "R14", "R01"]
+    },
+    {
+      "decision": "Built-ins and joinery (coats cupboard, sideboard, table, chairs, low table, pendant housing) built from stacked oak slabs and square posts with square pulls on a grid; sideboard capped by a cast-stone slab at 0.90 m continuous with the sill-course datum; no curved profile anywhere.",
+      "rationale": "Profiles are stacked rectangular layers, never carved or turned; the cap on a built-in is a plain light band; the shared 0.90 m datum runs the room long and low.",
+      "major": true,
+      "rule_ids": ["R14", "R08", "R01"]
+    },
+    {
+      "decision": "Materials and palette: tawny brick in horizontal coursing against pale cast-stone bands, oiled oak joinery, warm white limewashed plaster, oxblood leather and oatmeal textured wool as accents, patinated bronze hardware; no mirrored panels, no gloss on any wall.",
+      "rationale": "Dark brick bands between light horizontal strips, with oak, leather and stippled upholstery as the warm accents, is the designer's stated material language and meets the brief's material bans.",
+      "major": true,
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "decision": "Floor finish: wide-board European oak, 180 mm boards, matt hardwax oil, laid east-west along the long axis in both zones.",
+      "rationale": "A single light warm floor keeps the low room bright and the boards running the long way reinforce the horizontal reading.",
+      "major": true,
+      "rule_ids": ["R01"]
+    },
+    {
+      "decision": "Proportions held to four horizontal datums (0.40 plinth, 0.90 sill course, 2.10 head band, 2.40 ceiling); fire opening and shelf slabs markedly wider than high; dining chair backs tall and narrow (1.15 m high on a 0.42 m width); living seating low and wide.",
+      "rationale": "Continuous sill and head bands make the room read long and low, and the designer's openings are wider than high while the dining chairs are tall-backed and the living chairs shorter and wider.",
+      "major": true,
+      "rule_ids": ["R01", "R14"]
+    },
+    {
+      "decision": "Lighting: linear oak-and-bronze pendant slab over the table, concealed strips in the ceiling steps and on top of the head band, two downlights grazing the breast, table lamps on the sideboard, low-glare downlights in the gallery soffit.",
+      "rationale": "Light is laid in continuous horizontal lines along the bands and soffit steps, and the fittings are stacked slabs and blocks.",
+      "major": true,
+      "rule_ids": ["R01", "R05", "R14"]
+    },
+    {
+      "decision": "Circulation: a straight promenade along y 3.15 from the west wall to the east wall, clear between y 2.70 and y 3.60 (0.90 m minimum, 1.00 m actual), passing the hearth core and the north side of the table; a secondary route along the glazed band and through the 1.00 m gap between sofa and dining chairs.",
+      "rationale": "The two zones flow past the core along one line; the route also links entry, terrace leaves and kitchen door.",
+      "major": true,
+      "rule_ids": ["R03"]
+    },
+    {
+      "decision": "Hinge and swing choices: entry door hinged west, swinging in across x 0.15-1.05 / y 3.60-4.50 with nothing inside the arc; kitchen door and terrace leaves swing out.",
+      "rationale": "Keeps every swing clear of furniture and the promenade.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": [
+    {
+      "rule_id": "R03",
+      "constraint": "Brief names the fireplace / hearth WALL as the principal elevation and requires a 0.90 m clear path end to end in a 7.20 x 4.50 m room.",
+      "resolution": "A freestanding core on the long axis with passage on both sides would leave no hearth wall to draw and would block the dining group, so the hearth is built as a thick brick core projecting 0.90 m from the internal north wall at the zone junction, with the fire opening facing the room and passage past it on the room side only. Brief favoured on buildability; the rule is kept in its internal-wall, masonry-mass form."
+    },
+    {
+      "rule_id": "R07",
+      "constraint": "Stated room dimensions 7.20 x 4.50 m are not multiples of the 1.22 m pier module.",
+      "resolution": "Module kept at 0.84 m light + 0.38 m pier; the remainder is taken up in unequal corner piers (0.55 / 0.93 m on the south wall, 0.46 / 0.76 m on the end walls). Brief dimensions untouched."
+    },
+    {
+      "rule_id": "R04",
+      "constraint": "Brief room is a plain rectangle; no bay is allowed.",
+      "resolution": "No prow bay faked; both end walls expressed as full-width window groups between piers, as the rule's own fallback."
+    },
+    {
+      "rule_id": "R11",
+      "constraint": "Brief requires an 8-seat dining group inside the room with no furniture in door swings; chairs sit 0.70 m from the south band.",
+      "resolution": "The three bays behind sofa and dining table (S01, S02, S04) are fixed lights rather than opening leaves; the two leaves that open (S03, S05) face clear floor. The band stays continuous floor to head."
+    }
+  ]
+}
