@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:09:52Z",
+  "finished_at": "2026-11-04T18:14:32Z",
+  "notes": "If the circulation convention is read literally as 0.90 m clear on EACH side of the centreline (1.80 m total) it cannot be met while seating 8 across a 3.60 m room; the aisle gives 1.65 m total (0.83/0.82 m either side), which meets 0.90 m read as total path width, and exterior massing rules R04, R05 and R13 have no counterpart inside a single room so were not applied."
+}

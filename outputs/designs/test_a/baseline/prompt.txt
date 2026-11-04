@@ -1,0 +1,642 @@
+You are an interior architect designing ONE room for the brief below. Produce a complete, buildable design as structured data plus a written specification. Work only from the brief and your own professional judgement.
+
+GEOMETRY CONVENTION (mandatory)
+- The room is a rectangle: length_m along x (east), width_m along y (north). Origin (0,0) is the interior south-west corner.
+- South wall is y=0, north wall is y=width, west wall is x=0, east wall is x=length. Long walls = north/south. Short walls = west/east.
+- Furniture footprints are axis-aligned rectangles: (x_m, y_m) is the SW corner; length_m runs along x; depth_m along y. To rotate an item, swap length and depth.
+- Opening offset_m runs along the wall from its LEFT end as seen from inside the room: north wall from the west end; south wall from the east end; west wall from the south end; east wall from the north end.
+- Elevation element x_m uses the same left-end convention on the elevation wall; z_m is height above finished floor.
+- All dimensions in metres with 2 decimal places. Everything must fit inside the room; footprints must not overlap (rugs and pendant lights may overlap: set allow_overlap true); nothing may sit inside a door swing; the circulation path is a polyline inside the room whose clear width (wall to furniture, or furniture to furniture, measured across the path) is at least min_clear_width_m in total, i.e. 0.45 m either side of the centreline for a 0.90 m path.
+
+DELIVERABLES — write exactly these two files to the output directory given to you:
+1. spec.json — must validate against the JSON schema below (every required field, no extra fields). Use `functions` tags honestly (seating items carry `seats`; fireplace/hearth, desk, shelving, bed, sideboard, storage, entry_element, screen, partition, rug, lighting).
+2. spec.md — the written spec with these sections in this order: Layout (in words); Dimensions; Palette (hex values); Materials and finishes; Furniture list (item, material, L × D × H, position, built-in or freestanding); Lighting and openings; Decision log (every major decision with a one-line rationale).
+
+QUALITY BAR
+- Respect every stated brief constraint and dimension. If something cannot be met, say so explicitly in spec.md rather than silently dropping it.
+- Dimensions in spec.md must match spec.json exactly (the SVG drawings are generated from spec.json and checked against the brief).
+- Palette: 5–8 swatches, each with a hex value, a plain-language name, a material, a finish and where it is used; include the floor finish.
+- Elevation: the principal wall named in the brief, with every element given x, z, width, height and a material label.
+- Do not include any designer names, project names or references to real buildings anywhere in the output.
+
+BRIEF
+# Test Brief A — Living room, low and long (TEST set — held out)
+
+**Room:** Living room, 5.50 m × 4.20 m (interior clear), ceiling 2.30 m. Low and long.
+
+**Must:**
+1. Fireplace wall required (a fireplace/hearth element on one wall).
+2. Ribbon windows on one long wall (north or south), spanning at least 60% of that wall's length.
+3. Seating for 5 (seating count, counted on the furniture schedule).
+4. No direct entry onto the seating area: the entry door's centre must be at least 1.50 m from the nearest seating footprint, and the design must include a named entry element (vestibule, screen, built-in, step or ceiling change) between door and seating.
+5. At least one entry door (0.80–1.00 m wide) on a wall of the designer's choice.
+
+**Materials — must:** the floor finish is named with material and finish.
+**Materials — must not:** mirrored wall panels; high-gloss lacquer on any wall surface.
+
+**Always:** clear circulation path ≥ 0.90 m from the entry door to the principal seating and to the fireplace; no furniture within any door swing; all furniture inside the room with no overlapping footprints.
+
+**Principal wall for the elevation:** the fireplace wall.
+
+
+JSON SCHEMA FOR spec.json
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Room design spec (both arms, every brief) \u2014 PRD \u00a75.1",
+ "description": "Geometry: rectangle length_m (x, east) \u00d7 width_m (y, north). Origin = interior SW corner. South wall y=0, north wall y=width, west wall x=0, east wall x=length. Furniture footprints are axis-aligned rectangles: (x_m, y_m) is the SW corner, length_m runs along x, depth_m along y (rotate an item by swapping length/depth). Opening offset_m is measured along the wall from its left end as seen from INSIDE the room: north wall from west; south wall from east; west wall from south; east wall from north. Elevation element x_m uses the same left-end convention for the elevation wall; z_m is height above finished floor. All metres, 2 dp.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "brief_id",
+  "arm",
+  "title",
+  "room",
+  "openings",
+  "furniture",
+  "circulation",
+  "palette",
+  "elevation",
+  "lighting",
+  "decision_log",
+  "conflicts"
+ ],
+ "properties": {
+  "brief_id": {
+   "enum": [
+    "iteration_i1",
+    "iteration_i2",
+    "test_a",
+    "test_b",
+    "test_c"
+   ]
+  },
+  "arm": {
+   "enum": [
+    "baseline",
+    "learned"
+   ]
+  },
+  "title": {
+   "type": "string"
+  },
+  "room": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "type",
+    "length_m",
+    "width_m",
+    "ceiling_height_m",
+    "wall_thickness_m"
+   ],
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "length_m": {
+     "type": "number"
+    },
+    "width_m": {
+     "type": "number"
+    },
+    "ceiling_height_m": {
+     "type": "number"
+    },
+    "wall_thickness_m": {
+     "type": "number",
+     "minimum": 0.1,
+     "maximum": 0.6
+    },
+    "floor_finish": {
+     "type": "string"
+    }
+   }
+  },
+  "zones": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "ceiling_zones": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "height_m",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "height_m": {
+      "type": "number"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "level_changes": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "delta_m",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "delta_m": {
+      "type": "number"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "openings": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "type",
+     "wall",
+     "offset_m",
+     "width_m",
+     "height_m",
+     "sill_m",
+     "role",
+     "label"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "door",
+       "window",
+       "opening"
+      ]
+     },
+     "wall": {
+      "enum": [
+       "north",
+       "south",
+       "east",
+       "west"
+      ]
+     },
+     "offset_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "width_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "height_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "sill_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "swing": {
+      "enum": [
+       "in",
+       "out",
+       "none",
+       "sliding"
+      ]
+     },
+     "hinge": {
+      "enum": [
+       "left",
+       "right"
+      ]
+     },
+     "role": {
+      "enum": [
+       "entry",
+       "kitchen",
+       "window_band",
+       "secondary",
+       "other"
+      ]
+     },
+     "label": {
+      "type": "string"
+     },
+     "description": {
+      "type": "string"
+     },
+     "pattern": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "furniture": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "item",
+     "x_m",
+     "y_m",
+     "length_m",
+     "depth_m",
+     "height_m",
+     "material",
+     "finish",
+     "built_in",
+     "functions",
+     "position_note"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "item": {
+      "type": "string"
+     },
+     "x_m": {
+      "type": "number"
+     },
+     "y_m": {
+      "type": "number"
+     },
+     "length_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "depth_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "height_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "material": {
+      "type": "string"
+     },
+     "finish": {
+      "type": "string"
+     },
+     "built_in": {
+      "type": "boolean"
+     },
+     "functions": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "seating",
+        "dining_seating",
+        "dining_table",
+        "fireplace",
+        "hearth",
+        "storage",
+        "wardrobe",
+        "desk",
+        "shelving",
+        "bed",
+        "sideboard",
+        "table",
+        "entry_element",
+        "screen",
+        "partition",
+        "rug",
+        "lighting",
+        "planter",
+        "other"
+       ]
+      }
+     },
+     "seats": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "allow_overlap": {
+      "type": "boolean",
+      "description": "true only for rugs, pendant lights and other items that legitimately overlap footprints"
+     },
+     "position_note": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "circulation": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "min_clear_width_m"
+   ],
+   "properties": {
+    "path": {
+     "$ref": "#/$defs/polygon",
+     "minItems": 2
+    },
+    "min_clear_width_m": {
+     "type": "number"
+    },
+    "description": {
+     "type": "string"
+    }
+   }
+  },
+  "palette": {
+   "type": "array",
+   "minItems": 4,
+   "maxItems": 10,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "hex",
+     "name",
+     "material",
+     "finish",
+     "where",
+     "role"
+    ],
+    "properties": {
+     "hex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "material": {
+      "type": "string"
+     },
+     "finish": {
+      "type": "string"
+     },
+     "where": {
+      "type": "string"
+     },
+     "role": {
+      "enum": [
+       "dominant",
+       "accent",
+       "neutral"
+      ]
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "elevation": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "wall",
+    "title",
+    "elements"
+   ],
+   "properties": {
+    "wall": {
+     "enum": [
+      "north",
+      "south",
+      "east",
+      "west"
+     ]
+    },
+    "title": {
+     "type": "string"
+    },
+    "elements": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "id",
+       "item",
+       "x_m",
+       "z_m",
+       "width_m",
+       "height_m",
+       "material",
+       "label"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "item": {
+        "type": "string"
+       },
+       "x_m": {
+        "type": "number",
+        "minimum": 0
+       },
+       "z_m": {
+        "type": "number",
+        "minimum": 0
+       },
+       "width_m": {
+        "type": "number",
+        "exclusiveMinimum": 0
+       },
+       "height_m": {
+        "type": "number",
+        "exclusiveMinimum": 0
+       },
+       "material": {
+        "type": "string"
+       },
+       "label": {
+        "type": "string"
+       },
+       "hex": {
+        "type": "string",
+        "pattern": "^#[0-9A-Fa-f]{6}$"
+       },
+       "rule_ids": {
+        "$ref": "#/$defs/rule_ids"
+       }
+      }
+     }
+    },
+    "datum_lines": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "z_m",
+       "label"
+      ],
+      "properties": {
+       "z_m": {
+        "type": "number"
+       },
+       "label": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "lighting": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item",
+     "position",
+     "type"
+    ],
+    "properties": {
+     "item": {
+      "type": "string"
+     },
+     "position": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "decision_log": {
+   "type": "array",
+   "minItems": 5,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "decision",
+     "rationale",
+     "major",
+     "rule_ids"
+    ],
+    "properties": {
+     "decision": {
+      "type": "string"
+     },
+     "rationale": {
+      "type": "string"
+     },
+     "major": {
+      "type": "boolean"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "conflicts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "rule_id",
+     "constraint",
+     "resolution"
+    ],
+    "properties": {
+     "rule_id": {
+      "type": "string"
+     },
+     "constraint": {
+      "type": "string"
+     },
+     "resolution": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ },
+ "$defs": {
+  "polygon": {
+   "type": "array",
+   "minItems": 2,
+   "items": {
+    "type": "array",
+    "minItems": 2,
+    "maxItems": 2,
+    "items": {
+     "type": "number"
+    }
+   }
+  },
+  "rule_ids": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^R[0-9]{2}$"
+   }
+  }
+ }
+}

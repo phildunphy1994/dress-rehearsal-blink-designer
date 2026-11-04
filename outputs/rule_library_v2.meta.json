@@ -1,0 +1,23 @@
+{
+ "model": "claude-fable-5-1 (session orchestrator), no API call",
+ "derived_from": "rule_library_v1.json",
+ "frozen_at": "2026-11-04T18:19:31+00:00",
+ "change_type": "statement clauses only; evidence_sheet_ids, counter_example_sheet_ids, ids and count unchanged",
+ "motivations": {
+  "R01": "22 (continuous head line, slabs and copings read as uninterrupted horizontals), 24 (continuous sill course and head line)",
+  "R02": "02 and 16 (service wing on its own wall line; vestibule at the junction of bar and wing)",
+  "R03": "02 and 16 (core internal, with openings past it on both sides); the I1 and I2 learned designs both recorded a conflict between R03 and a single-room brief, which this clause resolves",
+  "R04": "24 (V-plan bay, chamfered piers, continuous glazing on the angled faces); the I1 learned design recorded a conflict between R04 and a rectangular room",
+  "R05": "22 (deep overhang with tapered soffit and thin fascia; flat ceilings at every level)",
+  "R06": "24 (a bilaterally symmetrical bay as one element within an asymmetrical whole); 02 and 16 (asymmetric plans)",
+  "R07": "16 (identical window group in every 4'-0\" bay) and 02 (regular alternation of short piers and sashes)",
+  "R08": "24 (continuous projecting sill course of plain blocks over coursed masonry), 22 (copings on every parapet)",
+  "R09": "25 (both lights are straight-line leaded patterns with ladder bars and chevron heads)",
+  "R10": "22 (planters implied on terrace parapets; stacked cantilevered terraces bounded by brick parapets with copings)",
+  "R11": "22 (very narrow full-height glazed openings between each terrace and its interior, floor to underside of slab)",
+  "R12": "02 (recessed doorway into a small hall, stair rising against the core) and 16 (vestibule at the junction of bar and wing)",
+  "R13": "22 (capped masonry chimney mass punctuating the horizontals)",
+  "R14": "11 (paired slender posts ending in stacked square block feet; slab-like oversailing top rails with a thinner secondary rail; square pulls on a grid)",
+  "R15": "24 (stippled fill within framed masonry between lights)"
+ }
+}

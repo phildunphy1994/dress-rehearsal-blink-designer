@@ -21,6 +21,7 @@ import jsonschema
 ROOT = Path(__file__).resolve().parents[1]
 BRIEFS = json.load(open(ROOT / "briefs" / "briefs.json"))["briefs"]
 SCHEMA = json.load(open(ROOT / "schema" / "spec_schema.json"))
+PROMPT_VERSION = "v2"   # v1 was used for the iteration briefs; v2 fixes the circulation wording (see outputs/iteration_log.md)
 
 
 def prepare(phase, library):
@@ -33,7 +34,7 @@ def prepare(phase, library):
         if b["phase"] != phase: continue
         brief_txt = (ROOT / "briefs" / f"{bid}.md").read_text()
         for arm in ("baseline", "learned"):
-            tmpl = (ROOT / "prompts" / f"generate_{arm}_v1.txt").read_text()
+            tmpl = (ROOT / "prompts" / f"generate_{arm}_{PROMPT_VERSION}.txt").read_text()
             txt = tmpl.replace("{brief}", brief_txt).replace("{schema}", schema_txt)
             txt = txt.replace("{rules_block}\n", "") if arm == "baseline" else txt.replace("{rule_library}", gen_md.read_text())
             d = ROOT / "outputs" / "designs" / bid / arm

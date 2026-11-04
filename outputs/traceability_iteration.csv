@@ -1,0 +1,5 @@
+brief,arm,status,major_decisions,major_citing_rule,share_major_cited,rule_citations,citations_to_real_rules,share_citations_real,spec_md,conflicts
+iteration_i1,baseline,valid,7,0,0.0,0,0,,True,0
+iteration_i1,learned,valid,10,10,1.0,61,61,1.0,True,4
+iteration_i2,baseline,valid,8,0,0.0,0,0,,True,0
+iteration_i2,learned,valid,12,12,1.0,70,70,1.0,True,3

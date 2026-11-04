@@ -1,0 +1,32 @@
+You are an interior architect designing ONE room for the brief below. Produce a complete, buildable design as structured data plus a written specification. Work only from the brief and your own professional judgement.
+
+GEOMETRY CONVENTION (mandatory)
+- The room is a rectangle: length_m along x (east), width_m along y (north). Origin (0,0) is the interior south-west corner.
+- South wall is y=0, north wall is y=width, west wall is x=0, east wall is x=length. Long walls = north/south. Short walls = west/east.
+- Furniture footprints are axis-aligned rectangles: (x_m, y_m) is the SW corner; length_m runs along x; depth_m along y. To rotate an item, swap length and depth.
+- Opening offset_m runs along the wall from its LEFT end as seen from inside the room: north wall from the west end; south wall from the east end; west wall from the south end; east wall from the north end.
+- Elevation element x_m uses the same left-end convention on the elevation wall; z_m is height above finished floor.
+- All dimensions in metres with 2 decimal places. Everything must fit inside the room; footprints must not overlap (rugs and pendant lights may overlap: set allow_overlap true); nothing may sit inside a door swing; the circulation path is a polyline inside the room whose clear width (wall to furniture, or furniture to furniture, measured across the path) is at least min_clear_width_m in total, i.e. 0.45 m either side of the centreline for a 0.90 m path.
+
+DELIVERABLES — write exactly these two files to the output directory given to you:
+1. spec.json — must validate against the JSON schema below (every required field, no extra fields). Use `functions` tags honestly (seating items carry `seats`; fireplace/hearth, desk, shelving, bed, sideboard, storage, entry_element, screen, partition, rug, lighting).
+2. spec.md — the written spec with these sections in this order: Layout (in words); Dimensions; Palette (hex values); Materials and finishes; Furniture list (item, material, L × D × H, position, built-in or freestanding); Lighting and openings; Decision log (every major decision with a one-line rationale).
+
+QUALITY BAR
+- Respect every stated brief constraint and dimension. If something cannot be met, say so explicitly in spec.md rather than silently dropping it.
+- Dimensions in spec.md must match spec.json exactly (the SVG drawings are generated from spec.json and checked against the brief).
+- Palette: 5–8 swatches, each with a hex value, a plain-language name, a material, a finish and where it is used; include the floor finish.
+- Elevation: the principal wall named in the brief, with every element given x, z, width, height and a material label.
+- Do not include any designer names, project names or references to real buildings anywhere in the output.
+
+DESIGN RULES (mandatory in this arm)
+The rules below were extracted from a coherent body of work by one designer. Follow them. Every MAJOR decision — layout organisation, entry sequence, openings and window pattern, fireplace and built-ins, materials, palette, proportions, lighting — must cite at least one rule id (R01, R02, …) in its decision_log entry (`rule_ids`) and in the Decision log section of spec.md. Cite a rule only where it genuinely supports the decision; never cite a rule that does not apply. Also respect the DO-NOT list: a design that does what the do-not list forbids is a violation.
+If a rule conflicts with a brief constraint, record it in `conflicts` (rule id, constraint, resolution): favour the BRIEF on buildability and stated dimensions, and favour the RULE on taste.
+
+{rule_library}
+
+BRIEF
+{brief}
+
+JSON SCHEMA FOR spec.json
+{schema}

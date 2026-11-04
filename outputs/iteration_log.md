@@ -41,9 +41,66 @@ the generated iteration designs showed.
 After these fixes the I2 baseline design scores 0 violations; the scratch fixture still scores its 1 deliberate
 violation (path through a sofa), so the checker still catches real faults.
 
-### B.2 Design-level findings
-(filled after all four iteration designs are rendered and checked)
+### B.2 Design-level findings (all four iteration designs rendered and checked with the fixed checker)
 
-## C. Changes v1 → v2
+| design | violations | rule traceability | notes |
+|---|---|---|---|
+| I1 baseline | 0 | n/a | limestone fireplace on the west short wall, slatted oak screen + 2.20 m soffit vestibule, 3.90 m window band, engineered oak |
+| I1 learned | 0 | 10/10 major decisions cite a rule; 61/61 citations are real rules | brick chimney mass with raised hearth plinth and plain cap bands, 4.50 m casement band with 0.45 m sill course and leaded lattice, oak entry screen under a 2.10 m gallery soffit, built-in window seat, planter trough; 4 rule/brief conflicts recorded |
+| I2 baseline | 0 | n/a | one joinery wall (sideboard · banquette · sideboard), slim table, chairs on one side, straight 1.80 m corridor |
+| I2 learned | 0 | 12/12; 70/70 | brick-plinth banquette, oak head band, three outward-swinging leaded glazed leaves on the south wall, tall narrow-backed chairs, leafless passage "past the chimney core"; 3 conflicts recorded |
 
-(filled; every change names the iteration drawing or iteration design that motivated it)
+Findings:
+1. **Floor effect on the constraint metric.** Both baselines already score 0 violations: a frontier model given a precise,
+   checkable brief satisfies every §5.4 check without rules. The pre-registered pass criterion "learned ≥ 2 fewer
+   violations than baseline" therefore cannot be met on these briefs; the test phase will report it as measured and
+   state the floor effect explicitly rather than move the bar.
+2. **The learned arm is recognisably different.** Both learned designs carry the corpus's moves (brick mass, plain cap
+   bands, low sill course, casement ribbon, stepped-layer joinery, flush entry into a compressed vestibule) while the
+   baselines are competent contemporary rooms. Traceability is 100% in both learned designs.
+3. **v1 rules are stated at building scale.** Every learned design had to translate whole-building rules (prow bays,
+   balcony doors, no main-floor entrance, central chimney-and-stair core) into a single room and recorded the
+   translation as a conflict. The translations the two designs chose agree with what the iteration drawings show
+   (§A), so the fix for v2 is to write the room-scale application into each rule rather than to change any rule.
+4. **Generation prompt ambiguity.** "at least min_clear_width_m of clear floor either side of its centreline" was read
+   as 0.90 m per side by one agent (I2 learned) and as 0.45 m per side by another. Fixed in prompt v2 (both arms,
+   identical wording): clear width is measured across the path, 0.45 m either side for a 0.90 m path.
+5. **Renderer legibility.** Dense learned designs (11 elevation elements, 7 datums, 3 adjacent door leaves) produced
+   colliding labels. Plans and elevations now use id tags with a key table; datum labels are stacked; openings are
+   tagged. Cosmetic only, identical for both arms, and required for a fair blind test.
+
+## C. Changes v1 → v2 (frozen)
+
+**Rule library.** No rule added, dropped, re-ordered or re-evidenced; all 81 evidence quotes unchanged and re-audited.
+Each rule statement gains one "At room scale: …" clause, and two do-not entries gain a room-scale clause. Motivating
+iteration drawings (and, where relevant, the iteration design that exposed the need):
+
+| rule | motivating iteration sheet(s) / design |
+|---|---|
+| R01 horizontals | 22, 24 |
+| R02 service strip | 02, 16 |
+| R03 hearth as internal core | 02, 16; I1 and I2 learned conflicts |
+| R04 prow bay or honest end wall | 24; I1 learned conflict |
+| R05 ceiling edge as deep band | 22 |
+| R06 asymmetric whole, symmetric element | 24, 02, 16 |
+| R07 casement band on a 4'-0" module | 16, 02 |
+| R08 light cap on every masonry edge | 24, 22 |
+| R09 leaded lattice where detailed | 25 |
+| R10 built-in planting | 22 |
+| R11 full-height narrow glazed leaves | 22 |
+| R12 flush door into compressed vestibule | 02, 16 |
+| R13 chimney breast as plain capped slab | 22 |
+| R14 stacked slabs and square posts | 11 |
+| R15 framed infill panels | 24 |
+| do-not: hearth not on an outside wall | 02, 16 |
+| do-not: no expressed entrance | 02, 16 |
+
+**Generation prompt.** `prompts/generate_{baseline,learned}_v2.txt`: circulation wording fixed (finding B.2-4). The
+two v2 files differ from each other only by the rules block, as in v1.
+
+**Checker.** `scripts/05_svg.py` fixes B.1 (door-span clearance, dining-table reach, negated must-not terms, arrival
+zones at path ends) and the renderer key/tag changes (B.2-5). Verified: the scratch fixture still scores its one
+deliberate violation; the iteration designs score 0.
+
+**Frozen.** `outputs/rule_library_v2.json` (+ `.md`, `.generation.md`, `_evidence.md`, `.meta.json`) is the library
+evaluated in the test phase. After this point no rule, prompt, split or checker threshold changes.

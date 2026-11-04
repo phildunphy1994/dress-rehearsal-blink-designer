@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:10:11Z",
+  "finished_at": "2026-11-04T18:14:05Z",
+  "notes": "All brief constraints met; R04 prow bays and R11 floor-to-head glazed doors could not be realised in a rectangular single room with a window band and are recorded as conflicts resolved in favour of the brief."
+}

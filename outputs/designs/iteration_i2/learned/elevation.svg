@@ -1,0 +1,54 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='910' height='756' viewBox='0 0 910 756' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='290.0' y='140.0' width='480.0' height='240.0' fill='#fbfaf7' stroke='#000' stroke-width='2'/>
+<line x1='270.0' y1='380.0' x2='790.0' y2='380.0' stroke='#000' stroke-width='3'/>
+<text x='796.0' y='384.0' font-size='12'>FFL 0.00 m</text>
+<text x='796.0' y='144.0' font-size='12'>ceiling 2.40 m</text>
+<rect x='290.0' y='190.0' width='480.0' height='190.0' fill='#9C6442' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='294.0' y='203.0' font-size='10' fill='#111'>E01 Coursed brick wall — Tawny facing brick</text>
+<rect x='410.0' y='290.0' width='360.0' height='41.0' fill='#7A6A4F' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='414.0' y='303.0' font-size='10' fill='#111'>E11 Wool back pad 0.49-0.9 — Stippled wool upho</text>
+<rect x='290.0' y='160.00000000000003' width='480.0' height='30.0' fill='#CFC4AE' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='294.0' y='173.00000000000003' font-size='10' fill='#111'>E02 Stippled frieze 1.90-2 — Stippled lime plas</text>
+<rect x='410.0' y='342.0' width='360.0' height='38.0' fill='#9C6442' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='414.0' y='355.0' font-size='10' fill='#111'>E08 Brick plinth — Tawny facing brick</text>
+<rect x='290.0' y='139.99999999999994' width='480.0' height='20.0' fill='#B5834A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='530.0' y='150.99999999999994' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E03</text>
+<rect x='290.0' y='290.0' width='120.0' height='52.0' fill='#B5834A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='350.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E05</text>
+<rect x='290.0' y='342.0' width='120.0' height='38.0' fill='#9C6442' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='350.0' y='353.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E04</text>
+<rect x='410.0' y='331.0' width='360.0' height='6.0' fill='#5B3A22' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='590.0' y='329.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E10</text>
+<rect x='410.0' y='284.0' width='360.0' height='6.0' fill='#B5834A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='590.0' y='282.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E12</text>
+<rect x='410.0' y='337.0' width='360.0' height='5.0' fill='#D9CFBF' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='590.0' y='335.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E09</text>
+<rect x='290.0' y='284.0' width='120.0' height='6.0' fill='#D9CFBF' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='350.0' y='282.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E06</text>
+<rect x='290.0' y='228.0' width='120.0' height='6.0' fill='#D9CFBF' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='350.0' y='226.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E07</text>
+<line x1='290.0' y1='342.0' x2='770.0' y2='342.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='342.0' x2='246.0' y2='344.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='348.0' text-anchor='end' font-size='10' fill='#b58'>Plinth cap 0.38 m</text>
+<line x1='290.0' y1='331.0' x2='770.0' y2='331.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='331.0' x2='246.0' y2='331.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='335.0' text-anchor='end' font-size='10' fill='#b58'>Seat 0.49 m</text>
+<line x1='290.0' y1='284.0' x2='770.0' y2='284.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='284.0' x2='246.0' y2='284.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='288.0' text-anchor='end' font-size='10' fill='#b58'>String course / counter 0.96 m</text>
+<line x1='290.0' y1='234.0' x2='770.0' y2='234.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='234.0' x2='246.0' y2='234.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='238.0' text-anchor='end' font-size='10' fill='#b58'>Shelf slab underside 1.46 m</text>
+<line x1='290.0' y1='190.0' x2='770.0' y2='190.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='190.0' x2='246.0' y2='190.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='194.0' text-anchor='end' font-size='10' fill='#b58'>Frieze sill 1.90 m</text>
+<line x1='290.0' y1='159.99999999999997' x2='770.0' y2='159.99999999999997' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='159.99999999999997' x2='246.0' y2='159.99999999999997' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='163.99999999999997' text-anchor='end' font-size='10' fill='#b58'>Head of all openings 2.20 m</text>
+<line x1='290.0' y1='140.0' x2='770.0' y2='140.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='140.0' x2='246.0' y2='140.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='144.0' text-anchor='end' font-size='10' fill='#b58'>Ceiling 2.40 m</text>
+<line x1='170.0' y1='380.0' x2='170.0' y2='140.0' stroke='#000'/><line x1='164.0' y1='380.0' x2='176.0' y2='380.0' stroke='#000'/><line x1='164.0' y1='140.0' x2='176.0' y2='140.0' stroke='#000'/><text transform='translate(160.0,260.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>2.40 m</text>
+<line x1='290.0' y1='416.0' x2='770.0' y2='416.0' stroke='#000'/><line x1='290.0' y1='410.0' x2='290.0' y2='422.0' stroke='#000'/><line x1='770.0' y1='410.0' x2='770.0' y2='422.0' stroke='#000'/><text x='530.0' y='434.0' text-anchor='middle' font-size='13' font-weight='bold'>4.80 m</text>
+<rect x='10' y='539.9999999999999' width='890.0' height='206' fill='none' stroke='#000'/><text x='20' y='561.9999999999999' font-size='15' font-weight='bold'>ELEVATION — North wall elevation (built-in wall): sideboard and banquette, seen from inside, west end at left (north wall)</text><text x='20' y='581.9999999999999' font-size='12'>Wall length 4.80 m · ceiling 2.40 m · heights in metres above FFL · materials labelled on the drawing</text><line x1='20' y1='601.9999999999999' x2='120.0' y2='601.9999999999999' stroke='#000' stroke-width='4'/><text x='128.0' y='605.9999999999999' font-size='12'>1 m scale bar · 1 m = 100 px</text>
+<text x='20' y='627.9999999999999' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>
+<text x='20.0' y='645.9999999999999' font-size='10.5'>E01 4.80 w × 1.90 h, 0.00–1.90 m — Coursed brick wall; Tawny facing bric</text>
+<text x='20.0' y='661.9999999999999' font-size='10.5'>E02 4.80 w × 0.30 h, 1.90–2.20 m — Stippled frieze 1.90-2.20; Stippled l</text>
+<text x='20.0' y='677.9999999999999' font-size='10.5'>E03 4.80 w × 0.20 h, 2.20–2.40 m — Oak head band 2.20-2.40; Solid oak, h</text>
+<text x='20.0' y='693.9999999999999' font-size='10.5'>E04 1.20 w × 0.38 h, 0.00–0.38 m — Brick plinth; Tawny facing brick, hor</text>
+<text x='20.0' y='709.9999999999999' font-size='10.5'>E05 1.20 w × 0.52 h, 0.38–0.90 m — Oak doors; Solid oak, flush, no mould</text>
+<text x='20.0' y='725.9999999999999' font-size='10.5'>E06 1.20 w × 0.06 h, 0.90–0.96 m — Cast-stone top 0.90-0.96; Honed cast </text>
+<text x='455.0' y='645.9999999999999' font-size='10.5'>E07 1.20 w × 0.06 h, 1.46–1.52 m — Shelf slab 1.46-1.52; Honed cast ston</text>
+<text x='455.0' y='661.9999999999999' font-size='10.5'>E08 3.60 w × 0.38 h, 0.00–0.38 m — Brick plinth; Tawny facing brick, hor</text>
+<text x='455.0' y='677.9999999999999' font-size='10.5'>E09 3.60 w × 0.05 h, 0.38–0.43 m — Cast-stone seat slab 0.38-0.43; Honed</text>
+<text x='455.0' y='693.9999999999999' font-size='10.5'>E10 3.60 w × 0.06 h, 0.43–0.49 m — Leather cushion 0.43-0.49; Saddle lea</text>
+<text x='455.0' y='709.9999999999999' font-size='10.5'>E11 3.60 w × 0.41 h, 0.49–0.90 m — Wool back pad 0.49-0.90; Stippled woo</text>
+<text x='455.0' y='725.9999999999999' font-size='10.5'>E12 3.60 w × 0.06 h, 0.90–0.96 m — Oak top rail 0.90-0.96; Solid oak, th</text>
+</svg>

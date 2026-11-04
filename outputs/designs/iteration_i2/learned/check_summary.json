@@ -1,0 +1,57 @@
+{
+ "brief": "iteration_i2",
+ "arm": "learned",
+ "schema_valid": true,
+ "schema_error": "",
+ "violations": 0,
+ "checks": [
+  {
+   "check_id": 1,
+   "check": "room dimensions match brief (\u00b10.05 m)",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 2,
+   "check": "ceiling height matches brief",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 3,
+   "check": "required openings present, positioned, plausible",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 4,
+   "check": "required functions served",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 5,
+   "check": "circulation \u2265 0.90 m clear; nothing in door swings",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 6,
+   "check": "furniture fits, no overlaps",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 7,
+   "check": "palette/materials respect must and must-not lists (and the do-not list in the learned arm)",
+   "violated": 0,
+   "notes": "ok"
+  },
+  {
+   "check_id": 8,
+   "check": "SVG and spec.md dimensions match spec.json",
+   "violated": 0,
+   "notes": "ok"
+  }
+ ]
+}

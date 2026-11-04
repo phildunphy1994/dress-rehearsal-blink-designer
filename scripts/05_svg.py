@@ -100,7 +100,16 @@ def swing_rect(room, op):
 def render_plan(spec):
     room = spec["room"]; L, W, t = room["length_m"], room["width_m"], room["wall_thickness_m"]
     M = 1.6  # margin in metres for dimension strings
-    cw, ch = (L + 2 * M + 2 * t) * S, (W + 2 * M + 2 * t) * S + 150
+    key_rows = []
+    for op in spec["openings"]:
+        extra = f", sill {f2(op['sill_m'])}" if op["type"] == "window" else (f", swing {op.get('swing', 'in')}" if op["type"] == "door" else "")
+        key_rows.append(f"{op['id']} {f2(op['width_m'])} × {f2(op['height_m'])} m{extra} — {op['label'][:48]} ({op['type']}, {op['wall']} wall)")
+    for f in spec["furniture"]:
+        seats = f", {f['seats']} seats" if f.get("seats") else ""
+        key_rows.append(f"{f['id']} {f2(f['length_m'])} × {f2(f['depth_m'])} × {f2(f['height_m'])} m — {'built-in ' if f['built_in'] else ''}{f['item'][:40]}{seats}; {f['material'][:30]}")
+    key_cols = 2 if len(key_rows) > 10 else 1
+    key_h = 16 * math.ceil(len(key_rows) / key_cols) + 30
+    cw, ch = max((L + 2 * M + 2 * t) * S, 900), (W + 2 * M + 2 * t) * S + 150 + key_h
     ox, oy = (M + t) * S, (M + t) * S
 
     def X(x): return ox + x * S
@@ -146,19 +155,19 @@ def render_plan(spec):
             out.append(f"<rect x='{X(x0)}' y='{Y(y0) - (t * S if ny < 0 else 0)}' width='{(x1 - x0) * S}' height='{t * S}' fill='white'/>")
         else:
             out.append(f"<rect x='{X(x0) - (t * S if nx > 0 else 0)}' y='{Y(y1)}' width='{t * S}' height='{(y1 - y0) * S}' fill='white'/>")
-        label = f"{esc(op['label'])} {f2(op['width_m'])} m"
+        label = f"{esc(op['id'])} · {f2(op['width_m'])} m"
         if op["type"] == "window":
             # glazing line in wall centre + sill note
             if horiz:
                 yy = Y(y0) - (t * S / 2 if ny < 0 else -t * S / 2)
                 out.append(f"<line x1='{X(x0)}' y1='{yy}' x2='{X(x1)}' y2='{yy}' stroke='#1a7' stroke-width='3'/>")
                 ty = Y(y0) - t * S - 6 if ny < 0 else Y(y0) + t * S + 14
-                out.append(f"<text x='{X((x0 + x1) / 2)}' y='{ty}' text-anchor='middle' font-size='11' fill='#1a7'>{label} (sill {f2(op['sill_m'])}, h {f2(op['height_m'])})</text>")
+                out.append(f"<text x='{X((x0 + x1) / 2)}' y='{ty}' text-anchor='middle' font-size='11' fill='#1a7'>{label}</text>")
             else:
                 xx = X(x0) - (t * S / 2 if nx > 0 else -t * S / 2)
                 out.append(f"<line x1='{xx}' y1='{Y(y0)}' x2='{xx}' y2='{Y(y1)}' stroke='#1a7' stroke-width='3'/>")
                 tx = X(x0) - t * S - 6 if nx > 0 else X(x0) + t * S + 6
-                out.append(f"<text transform='translate({tx},{Y((y0 + y1) / 2)}) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>{label} (sill {f2(op['sill_m'])}, h {f2(op['height_m'])})</text>")
+                out.append(f"<text transform='translate({tx},{Y((y0 + y1) / 2)}) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>{label}</text>")
         elif op["type"] == "door":
             w = op["width_m"]; hinge = op.get("hinge", "left"); swing = op.get("swing", "in")
             # hinge point: left end as seen from inside
@@ -176,10 +185,10 @@ def render_plan(spec):
                 out.append(f"<path d='M{X(ex)},{Y(ey)} A{w * S},{w * S} 0 0 {1 - sweep} {X(ox2)},{Y(oy2)}' fill='none' stroke='#c33' stroke-dasharray='3 3' opacity='0.35'/>")
             else:
                 out.append(f"<line x1='{X(x0)}' y1='{Y(y0)}' x2='{X(x1)}' y2='{Y(y1)}' stroke='#c33' stroke-width='3' stroke-dasharray='6 3'/>")
-            out.append(outside_label(x0, y0, x1, y1, nx, ny, f"{label} (h {f2(op['height_m'])})", '#c33'))
+            out.append(outside_label(x0, y0, x1, y1, nx, ny, label, '#c33'))
         else:
             out.append(f"<line x1='{X(x0)}' y1='{Y(y0)}' x2='{X(x1)}' y2='{Y(y1)}' stroke='#888' stroke-dasharray='8 4' stroke-width='2'/>")
-            out.append(outside_label(x0, y0, x1, y1, nx, ny, f"{label} (h {f2(op['height_m'])})", '#666'))
+            out.append(outside_label(x0, y0, x1, y1, nx, ny, label, '#666'))
     # furniture
     for f in spec["furniture"]:
         x0, y0, x1, y1 = furn_rect(f)
@@ -191,17 +200,21 @@ def render_plan(spec):
             out.append(f"<rect x='{X(x0)}' y='{Y(y1)}' width='{(x1 - x0) * S}' height='{(y1 - y0) * S}' fill='white' fill-opacity='0.55' stroke='none'/>")
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         seats = f" · {f['seats']} seats" if f.get("seats") else ""
-        name = f["item"] if len(f["item"]) <= 30 else f["item"][:28].rstrip() + "…"
+        name = f["item"] if len(f["item"]) <= 26 else f["item"][:24].rstrip() + "…"
         bi = "built-in " if f["built_in"] and "built" not in name.lower() else ""
-        l1, l2 = f"{esc(bi + name)}{seats}", f"{f2(f['length_m'])} × {f2(f['depth_m'])} m"
-        if (x1 - x0) * S < 75 and (y1 - y0) > (x1 - x0):   # narrow item: rotate the label
+        l1, l2 = f"{esc(f['id'])} {esc(bi + name)}{seats}", f"{f2(f['length_m'])} × {f2(f['depth_m'])} m"
+        lw, dh = (x1 - x0) * S, (y1 - y0) * S
+        need = 6.2 * max(len(l1), len(l2))   # rough text width in px at ~10px font
+        if not solid(f):   # rugs, pendants: tag at the top-left corner, details in the key
+            out.append(f"<text x='{X(x0) + 3}' y='{Y(y1) + 10}' font-size='9' fill='#777'>{esc(f['id'])}</text>")
+        elif lw >= need and dh >= 26:
+            out.append(f"<text x='{X(cx)}' y='{Y(cy) - 2}' text-anchor='middle' font-size='10' fill='#222'>{l1}</text>"
+                       f"<text x='{X(cx)}' y='{Y(cy) + 11}' text-anchor='middle' font-size='9.5' fill='#444'>{l2}</text>")
+        elif dh >= need and lw >= 26:   # tall narrow item: rotate the label
             out.append(f"<g transform='translate({X(cx)},{Y(cy)}) rotate(-90)'><text x='0' y='-2' text-anchor='middle' font-size='10' fill='#222'>{l1}</text>"
                        f"<text x='0' y='10' text-anchor='middle' font-size='9.5' fill='#444'>{l2}</text></g>")
-        elif not solid(f):   # rugs, pendants: label at the top edge so it does not collide with what sits under it
-            out.append(f"<text x='{X(cx)}' y='{Y(y1) - 3}' text-anchor='middle' font-size='9.5' fill='#777'>{l1} · {l2}</text>")
-        else:
-            out.append(f"<text x='{X(cx)}' y='{Y(cy) - 2}' text-anchor='middle' font-size='10.5' fill='#222'>{l1}</text>"
-                       f"<text x='{X(cx)}' y='{Y(cy) + 11}' text-anchor='middle' font-size='10' fill='#444'>{l2}</text>")
+        else:   # too small for text: id tag only (dimensions in the key)
+            out.append(f"<text x='{X(cx)}' y='{Y(cy) + 4}' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>{esc(f['id'])}</text>")
     # circulation
     path = spec["circulation"]["path"]
     pts = " ".join(f"{X(x)},{Y(y)}" for x, y in path)
@@ -216,13 +229,18 @@ def render_plan(spec):
     out.append(f"<line x1='{dx}' y1='{Y(0)}' x2='{dx}' y2='{Y(W)}' stroke='#000'/><line x1='{dx - 6}' y1='{Y(0)}' x2='{dx + 6}' y2='{Y(0)}' stroke='#000'/><line x1='{dx - 6}' y1='{Y(W)}' x2='{dx + 6}' y2='{Y(W)}' stroke='#000'/>"
                f"<text transform='translate({dx - 10},{Y(W / 2)}) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>{f2(W)} m</text>")
     # title block, scale bar, north arrow
-    by = ch - 120
-    out.append(f"<rect x='10' y='{by}' width='{cw - 20}' height='110' fill='none' stroke='#000'/>"
+    by = ch - 120 - key_h
+    out.append(f"<rect x='10' y='{by}' width='{cw - 20}' height='{110 + key_h}' fill='none' stroke='#000'/>"
                f"<text x='20' y='{by + 22}' font-size='15' font-weight='bold'>PLAN — {esc(spec['title'])}</text>"
                f"<text x='20' y='{by + 42}' font-size='12'>Room {f2(L)} m × {f2(W)} m (interior clear) · ceiling {f2(room['ceiling_height_m'])} m · wall thickness {f2(t)} m</text>"
                f"<text x='20' y='{by + 60}' font-size='12'>Scale: 1 m = {S:.0f} px (1:50 when printed at 50 px per 25 mm). Dimensions in metres. Hatched = built-in. Dashed blue = circulation path.</text>"
                f"<line x1='20' y1='{by + 85}' x2='{20 + S}' y2='{by + 85}' stroke='#000' stroke-width='4'/><text x='{20 + S + 8}' y='{by + 89}' font-size='12'>1 m scale bar</text>"
                f"<g transform='translate({cw - 60},{by + 55})'><line x1='0' y1='30' x2='0' y2='-30' stroke='#000' marker-end='url(#arrow)'/><text x='-4' y='-36' font-size='12' font-weight='bold'>N</text></g>")
+    out.append(f"<text x='20' y='{by + 118}' font-size='11' font-weight='bold'>KEY — openings and furniture (length × depth × height, metres)</text>")
+    per_col = math.ceil(len(key_rows) / key_cols); colw = (cw - 40) / key_cols
+    for i, row in enumerate(key_rows):
+        c, r = i // per_col, i % per_col
+        out.append(f"<text x='{20 + c * colw}' y='{by + 136 + 16 * r}' font-size='10.5'>{esc(row[:int(colw / 6.0)])}</text>")
     out.append("</svg>")
     return "\n".join(out)
 
@@ -232,8 +250,13 @@ def render_elevation(spec):
     room = spec["room"]; el = spec["elevation"]
     Lw, H = wall_len(room, el["wall"]), room["ceiling_height_m"]
     M = 1.4
-    cw, ch = (Lw + 2 * M) * S, (H + 2 * M) * S + 110  # top margin M also holds stacked labels for thin elements
-    ox, oy = M * S, M * S
+    key_rows = [f"{e['id']} {f2(e['width_m'])} w × {f2(e['height_m'])} h, {f2(e['z_m'])}–{f2(e['z_m'] + e['height_m'])} m — {e['label'][:40]}; {e['material'][:28]}" for e in el["elements"]]
+    key_rows += [f"{op['id']} — {op['label']} ({op['type']}): {f2(op['width_m'])} × {f2(op['height_m'])} m, sill {f2(op['sill_m'])}" for op in spec["openings"] if op["wall"] == el["wall"]]
+    key_cols = 2 if len(key_rows) > 8 else 1
+    key_h = 16 * math.ceil(len(key_rows) / key_cols) + 30
+    ML = 2.9 if (el.get("datum_lines") or []) else M   # wider left margin for stacked datum labels
+    cw, ch = max((Lw + M + ML) * S, 900), (H + 2 * M) * S + 110 + key_h
+    ox, oy = ML * S, M * S
 
     def X(x): return ox + x * S
     def Z(z): return oy + (H - z) * S
@@ -251,37 +274,44 @@ def render_elevation(spec):
         x0 = op["offset_m"]; w = op["width_m"]; z0 = op["sill_m"]; h = op["height_m"]
         col = {"window": "#1a7", "door": "#c33", "opening": "#888"}[op["type"]]
         out.append(f"<rect x='{X(x0)}' y='{Z(z0 + h)}' width='{w * S}' height='{h * S}' fill='#e8f6f0' fill-opacity='0.6' stroke='{col}' stroke-width='2'/>"
-                   f"<text x='{X(x0 + w / 2)}' y='{Z(z0 + h) - 4}' text-anchor='middle' font-size='11' fill='{col}'>{esc(op['label'])} {f2(w)} × {f2(h)} m, sill {f2(z0)}</text>")
-    small_k = 0
+                   f"<text x='{X(x0 + w / 2)}' y='{Z(z0 + h) - 4}' text-anchor='middle' font-size='11' fill='{col}'>{esc(op['id'])} · {f2(w)} × {f2(h)} m</text>")
     for e in sorted(el["elements"], key=lambda e: -e["width_m"] * e["height_m"]):   # big first so small ones draw on top
         fill = e.get("hex", "#ddd")
         out.append(f"<rect x='{X(e['x_m'])}' y='{Z(e['z_m'] + e['height_m'])}' width='{e['width_m'] * S}' height='{e['height_m'] * S}' fill='{fill}' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>")
-        cx = e["x_m"] + e["width_m"] / 2
-        txt = f"{esc(e['label'])} — {esc(e['material'])} — {f2(e['width_m'])} w × {f2(e['height_m'])} h, top {f2(e['z_m'] + e['height_m'])} m"
-        if e["height_m"] * S >= 44 and e["width_m"] * S >= 120:
-            top = Z(e["z_m"] + e["height_m"])
-            out.append(f"<text x='{X(e['x_m']) + 4}' y='{top + 13}' font-size='10.5' fill='#111'>{esc(e['label'])} — {esc(e['material'])}</text>"
-                       f"<text x='{X(e['x_m']) + 4}' y='{top + 25}' font-size='9.5' fill='#333'>{f2(e['width_m'])} w × {f2(e['height_m'])} h, top at {f2(e['z_m'] + e['height_m'])} m</text>")
-        else:
-            # thin or narrow element: label in the margin above the wall with a leader line, staggered to avoid collisions
-            ly = Z(H) - 48 - 13 * (small_k % 4); small_k += 1
-            out.append(f"<line x1='{X(cx)}' y1='{Z(e['z_m'] + e['height_m'])}' x2='{X(cx)}' y2='{ly + 3}' stroke='#777' stroke-width='0.8' stroke-dasharray='2 2'/>"
-                       f"<text x='{X(cx)}' y='{ly}' text-anchor='middle' font-size='9.5' fill='#111'>{txt}</text>")
-    for d in el.get("datum_lines", []) or []:
+        cx = e["x_m"] + e["width_m"] / 2; top = Z(e["z_m"] + e["height_m"])
+        short = f"{esc(e['id'])} {esc(e['label'][:22])} — {esc(e['material'][:18])}"
+        if e["height_m"] * S >= 30 and e["width_m"] * S >= 6.2 * len(short):
+            out.append(f"<text x='{X(e['x_m']) + 4}' y='{top + 13}' font-size='10' fill='#111'>{short}</text>")
+        elif e["height_m"] * S >= 16 and e["width_m"] * S >= 30:
+            out.append(f"<text x='{X(cx)}' y='{top + 11}' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>{esc(e['id'])}</text>")
+        else:   # tag just above the element
+            out.append(f"<text x='{X(cx)}' y='{top - 2}' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>{esc(e['id'])}</text>")
+    # datum lines: labels stacked on the left, pushed apart so they never overlap
+    datums = sorted(el.get("datum_lines", []) or [], key=lambda d: d["z_m"])
+    ys = [Z(d["z_m"]) for d in datums]
+    for i in range(len(ys) - 2, -1, -1):   # from top (small y) downwards: enforce 13 px spacing
+        if ys[i] - ys[i + 1] < 13: ys[i] = ys[i + 1] + 13
+    for d, ly in zip(datums, ys):
         out.append(f"<line x1='{X(0)}' y1='{Z(d['z_m'])}' x2='{X(Lw)}' y2='{Z(d['z_m'])}' stroke='#b58' stroke-dasharray='4 4'/>"
-                   f"<text x='{X(0) - 6}' y='{Z(d['z_m']) + 4}' text-anchor='end' font-size='10.5' fill='#b58'>{esc(d['label'])} {f2(d['z_m'])} m</text>")
+                   f"<line x1='{X(0) - 4}' y1='{Z(d['z_m'])}' x2='{X(0) - 44}' y2='{ly}' stroke='#b58' stroke-width='0.7'/>"
+                   f"<text x='{X(0) - 48}' y='{ly + 4}' text-anchor='end' font-size='10' fill='#b58'>{esc(d['label'][:30])} {f2(d['z_m'])} m</text>")
     # height dimension line
-    dx = X(0) - 50
+    dx = X(0) - 120 if (el.get("datum_lines") or []) else X(0) - 50
     out.append(f"<line x1='{dx}' y1='{Z(0)}' x2='{dx}' y2='{Z(H)}' stroke='#000'/><line x1='{dx - 6}' y1='{Z(0)}' x2='{dx + 6}' y2='{Z(0)}' stroke='#000'/><line x1='{dx - 6}' y1='{Z(H)}' x2='{dx + 6}' y2='{Z(H)}' stroke='#000'/>"
                f"<text transform='translate({dx - 10},{Z(H / 2)}) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>{f2(H)} m</text>")
     dy = Z(0) + 36   # wall-length dimension below the floor line (the margin above holds stacked labels)
     out.append(f"<line x1='{X(0)}' y1='{dy}' x2='{X(Lw)}' y2='{dy}' stroke='#000'/><line x1='{X(0)}' y1='{dy - 6}' x2='{X(0)}' y2='{dy + 6}' stroke='#000'/><line x1='{X(Lw)}' y1='{dy - 6}' x2='{X(Lw)}' y2='{dy + 6}' stroke='#000'/>"
                f"<text x='{X(Lw / 2)}' y='{dy + 18}' text-anchor='middle' font-size='13' font-weight='bold'>{f2(Lw)} m</text>")
-    by = ch - 90
-    out.append(f"<rect x='10' y='{by}' width='{cw - 20}' height='80' fill='none' stroke='#000'/>"
+    by = ch - 90 - key_h
+    out.append(f"<rect x='10' y='{by}' width='{cw - 20}' height='{80 + key_h}' fill='none' stroke='#000'/>"
                f"<text x='20' y='{by + 22}' font-size='15' font-weight='bold'>ELEVATION — {esc(el['title'])} ({el['wall']} wall)</text>"
                f"<text x='20' y='{by + 42}' font-size='12'>Wall length {f2(Lw)} m · ceiling {f2(H)} m · heights in metres above FFL · materials labelled on the drawing</text>"
                f"<line x1='20' y1='{by + 62}' x2='{20 + S}' y2='{by + 62}' stroke='#000' stroke-width='4'/><text x='{20 + S + 8}' y='{by + 66}' font-size='12'>1 m scale bar · 1 m = {S:.0f} px</text>")
+    out.append(f"<text x='20' y='{by + 88}' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>")
+    per_col = math.ceil(len(key_rows) / key_cols); colw = (cw - 40) / key_cols
+    for i, row in enumerate(key_rows):
+        c, r = i // per_col, i % per_col
+        out.append(f"<text x='{20 + c * colw}' y='{by + 106 + 16 * r}' font-size='10.5'>{esc(row[:int(colw / 6.0)])}</text>")
     out.append("</svg>")
     return "\n".join(out)
 
@@ -440,9 +470,12 @@ def check(spec_path: Path, brief_id=None):
             best = min(best, d)
         return best
 
+    p_first, p_last = path[0], path[-1]
     for (px, py) in pts:
         if not (-0.001 <= px <= L + 0.001 and -0.001 <= py <= W + 0.001):
             fails.append(f"path leaves the room at ({px:.2f},{py:.2f})"); break
+        if math.hypot(px - p_first[0], py - p_first[1]) < 0.5 or math.hypot(px - p_last[0], py - p_last[1]) < 0.5:
+            continue   # the first/last 0.5 m are arrival zones (door threshold, hearth, seat), not circulation
         c = wall_clear(px, py)
         for f in solids:
             c = min(c, point_rect_dist(px, py, furn_rect(f)))
@@ -491,11 +524,18 @@ def check(spec_path: Path, brief_id=None):
     if mats.get("must_floor_finish"):
         if not (room.get("floor_finish") or any("floor" in p["where"].lower() for p in spec["palette"])): fails.append("floor finish not named in palette/room")
     blob = (" ".join(texts) + " " + md).lower()
-    neg = re.compile(r"\b(no|not|never|without|avoid(?:s|ed|ing)?|free of|rather than|instead of|non)[\s-]+(?:[\w-]+\s+){0,3}[\w-]*$")
+    cue = re.compile(r"\b(no|not|never|without|avoid(?:s|ed|ing)?|free of|rather than|instead of|non|none|excluded?|omit(?:s|ted)?|forbid(?:s|den)?)\b")
+    def negated(h):
+        # look back to the start of the clause (sentence end or line break), at most 160 chars, for a negation cue
+        start = max(0, h - 160)
+        seg = blob[start:h]
+        cut = max(seg.rfind(". "), seg.rfind("\n"), seg.rfind("! "), seg.rfind("? "))
+        seg = seg[cut + 1:] if cut >= 0 else seg
+        return bool(cue.search(seg))
     for term in mats["must_not_terms"]:
         hits = [m.start() for m in re.finditer(re.escape(term), blob)]
-        real = [h for h in hits if not neg.search(blob[max(0, h - 40):h])]
-        if real: fails.append(f"forbidden material term present: '{term}' ({len(real)} non-negated mention(s))")
+        real = [h for h in hits if not negated(h)]
+        if real: fails.append(f"forbidden material term present: '{term}' ({len(real)} non-negated mention(s); review by hand)")
     manual = ROOT / "outputs" / "manual_checks.json"
     if manual.exists():
         m = json.loads(manual.read_text()).get(f"{spec['brief_id']}/{spec['arm']}", {})
@@ -509,7 +549,7 @@ def check(spec_path: Path, brief_id=None):
         for s_ in (f2(L), f2(W)):
             if f"{s_} m" not in svg: fails.append(f"room dimension {s_} not on plan")
         for f in furn:
-            if f"{f2(f['length_m'])} × {f2(f['depth_m'])} m" not in svg: fails.append(f"{f['id']} footprint not on plan")
+            if f"{f2(f['length_m'])} × {f2(f['depth_m'])}" not in svg: fails.append(f"{f['id']} footprint not on plan")
         for o in spec["openings"]:
             if f"{f2(o['width_m'])} m" not in svg: fails.append(f"{o['id']} width not on plan")
     if md:

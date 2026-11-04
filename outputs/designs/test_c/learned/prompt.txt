@@ -1,0 +1,708 @@
+You are an interior architect designing ONE room for the brief below. Produce a complete, buildable design as structured data plus a written specification. Work only from the brief and your own professional judgement.
+
+GEOMETRY CONVENTION (mandatory)
+- The room is a rectangle: length_m along x (east), width_m along y (north). Origin (0,0) is the interior south-west corner.
+- South wall is y=0, north wall is y=width, west wall is x=0, east wall is x=length. Long walls = north/south. Short walls = west/east.
+- Furniture footprints are axis-aligned rectangles: (x_m, y_m) is the SW corner; length_m runs along x; depth_m along y. To rotate an item, swap length and depth.
+- Opening offset_m runs along the wall from its LEFT end as seen from inside the room: north wall from the west end; south wall from the east end; west wall from the south end; east wall from the north end.
+- Elevation element x_m uses the same left-end convention on the elevation wall; z_m is height above finished floor.
+- All dimensions in metres with 2 decimal places. Everything must fit inside the room; footprints must not overlap (rugs and pendant lights may overlap: set allow_overlap true); nothing may sit inside a door swing; the circulation path is a polyline inside the room whose clear width (wall to furniture, or furniture to furniture, measured across the path) is at least min_clear_width_m in total, i.e. 0.45 m either side of the centreline for a 0.90 m path.
+
+DELIVERABLES — write exactly these two files to the output directory given to you:
+1. spec.json — must validate against the JSON schema below (every required field, no extra fields). Use `functions` tags honestly (seating items carry `seats`; fireplace/hearth, desk, shelving, bed, sideboard, storage, entry_element, screen, partition, rug, lighting).
+2. spec.md — the written spec with these sections in this order: Layout (in words); Dimensions; Palette (hex values); Materials and finishes; Furniture list (item, material, L × D × H, position, built-in or freestanding); Lighting and openings; Decision log (every major decision with a one-line rationale).
+
+QUALITY BAR
+- Respect every stated brief constraint and dimension. If something cannot be met, say so explicitly in spec.md rather than silently dropping it.
+- Dimensions in spec.md must match spec.json exactly (the SVG drawings are generated from spec.json and checked against the brief).
+- Palette: 5–8 swatches, each with a hex value, a plain-language name, a material, a finish and where it is used; include the floor finish.
+- Elevation: the principal wall named in the brief, with every element given x, z, width, height and a material label.
+- Do not include any designer names, project names or references to real buildings anywhere in the output.
+
+DESIGN RULES (mandatory in this arm)
+The rules below were extracted from a coherent body of work by one designer. Follow them. Every MAJOR decision — layout organisation, entry sequence, openings and window pattern, fireplace and built-ins, materials, palette, proportions, lighting — must cite at least one rule id (R01, R02, …) in its decision_log entry (`rule_ids`) and in the Decision log section of spec.md. Cite a rule only where it genuinely supports the decision; never cite a rule that does not apply. Also respect the DO-NOT list: a design that does what the do-not list forbids is a violation.
+If a rule conflicts with a brief constraint, record it in `conflicts` (rule id, constraint, resolution): favour the BRIEF on buildability and stated dimensions, and favour the RULE on taste.
+
+# Rule library v2 — Corpus A (one designer, one building; name withheld)
+
+Learning set: 12 measured drawings. Each rule cites ≥3 learning-set sheets (ids are [withheld] sheet numbers).
+
+| id | rule | freq | evidence (n) |
+|---|---|---|---|
+| R01 | **Long, low, horizontal massing** — The whole building is drawn as one very long, low bar — the plan about 4.5:1 (92'-0" long by 20'-6" clear on 00017), the footprint several times longer than it is deep (00001), the south elevation six to seven times longer than the main block is tall (00019) and even the end elevations about twice as wide as high (00021) — so that every exterior view reads as stacked horizontal bands many times wider than they are high. At room scale: keep the room reading long and low — a continuous sill course, a head band at door-head height and shelf/plinth slabs run uninterrupted around the room, and no vertical element is emphasised. | always | 8: sheets 1, 3, 5, 6, 17, 19, 20, 21 |
+| R02 | **Two parallel bars, with a lower service wing offset to one end** — The plan is two parallel east-west bars — a principal living-dining bar and a shorter, lower service bar set back to the north and offset toward the east, overlapping only at the stair core — so the footprint is a stepped elongated shape (00001, 00003, 00017) and the long elevations are asymmetrical, longer and lower toward the wing end (00005, 00019). At room scale: service functions (kitchen door, storage, coats, the entry itself) are gathered in a lower, narrower strip along one side, offset from the principal space, rather than distributed around it. | always | 5: sheets 1, 3, 5, 17, 19 |
+| R03 | **Central chimney-and-stair core on the long axis** — The fireplace and the main stair are combined in one hatched masonry core set on the longitudinal axis between living room and dining room, with the hearth opening toward the living room and open passages past the core on both sides so the two rooms read as one space (00003, 00017); in section the same core carries the belvedere and the stair runs beside the chimney mass (00005, 00007), and the printed description on the title sheet calls the house organised around a central hearth (00001). At room scale: the hearth is a thick masonry mass that reads as an internal core — set on the wall shared with the adjoining room or stair, never as a surround centred on an exterior wall — with passage past it on at least one side, and where two zones exist it sits between them so both flow past it. | always | 5: sheets 1, 3, 5, 7, 17 |
+| R04 | **Pointed prow bays at both ends of the main bar, opening onto walled terraces** — Both ends of the living-dining bar terminate in a glazed bay that is pointed in plan (prow-plan) with angled glazed faces between small hatched corner piers (00003, 00017), and that reads in the end elevations as a projecting main-level bay under its own lower hipped roof with tall glazed doors either side opening onto a terrace bounded by low stepped garden walls (00006, 00021). At room scale: where the brief allows a bay it is pointed or chamfered in plan with continuous glazing on the angled faces; in a plain rectangular room do not fake a prow — express the end wall instead as a full-width window group between piers. | always | 4: sheets 3, 6, 17, 21 |
+| R05 | **Low-pitched hipped roofs with deep cantilevered eaves and thin fascias on every mass** — Every mass — main block, set-back upper storey and lower wing — is covered by a very low-pitched hipped roof drawn as a thin slab with a thin layered fascia that cantilevers far beyond the walls (about a window bay at each end on 00019, roughly a storey deep at the left end on 00005), with the roof surface left plain (00005, 00006, 00019, 00020, 00021; described as wide sweeping roofs in the printed text on 00001). At room scale: the ceiling edge is a deep horizontal band (a dropped soffit or a wide head band) that oversails the window heads the way the eave oversails the wall; ceilings are flat, never vaulted or coffered. | always | 6: sheets 1, 5, 6, 19, 20, 21 |
+| R06 | **Stepped, asymmetric massing with a set-back upper block near the centre** — The massing steps: a smaller third-storey block (belvedere) under its own hipped roof sits set back on the main block near its centre over the chimney core, and the masses step down toward the ends and toward the lower wing, so that no whole-building elevation is bilaterally symmetrical even though each roof is symmetrical about its own centre (00005, 00006, 00019, 00020, 00021). At room scale: the composition is asymmetric overall — entry, hearth and window groups never share one centreline — while symmetry is allowed within a single element such as the fireplace face, one window light or a chair. | always | 5: sheets 5, 6, 19, 20, 21 |
+| R07 | **Windows gathered into continuous ribbons under the eaves; ground storey as a low band of small windows** — On the main and upper storeys windows are gathered into continuous ribbons of tall narrow casements set directly under the eaves between narrow brick piers, with a continuous head at the fascia and a continuous sill course (00005, 00006, 00019, 00020, 00021; in plan, casements alternating with short hatched piers on every exterior wall, on a 4'-0" pier-to-pier module where dimensioned, 00003, 00017), while the ground storey carries a separate band of short near-square windows between brick piers on projecting sills, partly screened by the low garden walls (00005, 00006, 00019, 00020); isolated single lights occur only in the blank brick of the chimney/stair block and at roof junctions (00006, 00020, 00021). At room scale: windows are a continuous band of tall narrow casements on a regular pier module of about 4'-0" (1.22 m), head at the ceiling band and a continuous sill course; never a single picture window. | always | 7: sheets 3, 5, 6, 17, 19, 20, 21 |
+| R08 | **Brick drawn as horizontal courses only, every edge capped by a plain light band** — All walls, piers, parapets, garden walls and chimneys are brick drawn with closely spaced continuous horizontal coursing and no vertical joints (00005, 00006, 00007, 00008, 00019, 00020, 00021), and every wall top, parapet, pier, window sill, string course, water table and chimney cap is finished with a plain unhatched stone-like band that runs uninterrupted along the wall, so the elevations read as dark brick bands between light horizontal strips (00005, 00006, 00019, 00020, 00021). At room scale: every masonry edge inside the room — hearth plinth, sill course, top of a built-in, cap of the chimney breast — gets a plain light-toned cap or band, and brick is exposed only as horizontal coursing. | always | 7: sheets 5, 6, 7, 8, 19, 20, 21 |
+| R09 | **Geometric straight-line leaded glass in the casements (mixed evidence)** — Where glazing is detailed, every casement light and glazed door is filled with a straight-line leaded pattern — vertical bars with a chevron/diamond lattice (00005, 00006), or a diaper of very shallow horizontally elongated lozenges between tall narrow border lights and stacks of small square lights, with low-pitched diagonals converging on the centreline (00008) — but the evidence is mixed: 00019 draws the lattice in only one ground-floor window and plain mullions elsewhere, and 00020 and 00021 draw frames and mullions only. At room scale: where glass is detailed it is a straight-line leaded lattice (ladder bars, chevron heads, a band of small lozenges); elsewhere plain thin-framed glazing. | usually | 4: sheets 5, 6, 8, 19 |
+| R10 | **Low brick garden and terrace walls with copings, carrying planter urns on piers** — Terraces and balconies are bounded by low brick walls with projecting plain copings that step with the ground and extend the base of the building outward, and their square piers — at wall junctions, changes of height and wall ends — carry wide shallow planter bowls or urns on short pedestals, with rectangular planter boxes on the parapets in plan (00003, 00005, 00006, 00019, 00020, 00021). At room scale: planting is built in — low troughs on sills or on low walls, on square-section piers — rather than freestanding pots. | always | 6: sheets 3, 5, 6, 19, 20, 21 |
+| R11 | **South wall of living and dining rooms as a continuous band of glazed doors onto a full-length balcony** — The entire south wall of the living room and dining room is a continuous band of outward-swinging glazed door leaves between short hatched piers, running uninterrupted across both rooms and past the central core, opening onto a south balcony that runs their full length behind a low parapet with 6'-0" bays left OPEN at each end (00003, 00017); in section and elevation this wall reads as the main-storey window band above the low terrace wall, the south wall of each room being almost entirely glazed (00005, 00019). At room scale: the long outer wall is a continuous band of tall narrow glazed leaves or full-height narrow lights between short piers, floor to head band, opening outward; the band stops one pier short of the corners. | always | 4: sheets 3, 5, 17, 19 |
+| R12 | **No expressed principal entrance; doors are few, flush and at ground level** — No principal entrance is expressed: the main floor has no exterior door at all and is reached only by stairs from below (00003, 00017), the main block shows no door on either long elevation (00019, 00020), and the only doors drawn are ground-level doors of a wing or end wall, set flush in the brick behind a terrace wall with at most one low step and no porch, canopy, path or surround (00005, 00006, 00021). At room scale: the entry is a plain flush door at the end of a long wall or in a short wall, arriving into a compressed, low-ceilinged vestibule or gallery beside a solid mass or screen from which the room opens; never a centred door facing the hearth and never a door with a surround. | always | 7: sheets 3, 5, 6, 17, 19, 20, 21 |
+| R13 | **Chimneys as tall plain-capped brick slabs pierced by small slots** — Chimneys rise above the roofs as tall plain-capped rectangular brick slabs — a broad mass over the central core and a tall narrow stack at one end (00005, 00006, 00020, 00021) — and their shafts are pierced by small rectangular slot openings: narrow slot windows at two levels (00020), a louvered vent slot in the chimney head (00019) and a vertical column of six small recesses or vents (00007). At room scale: the chimney breast is a plain rectangular brick slab with a plain cap and small square or slot recesses, and no mantel. | always | 6: sheets 5, 6, 7, 19, 20, 21 |
+| R14 | **Trim, caps and feet built up from stepped rectangular layers; no carving or turning** — At interior and furniture scale, profiles are built up from stacked rectangular layers rather than carved or turned: nested stepped trim bands frame the window head and sill and the head has a stepped member with a coved soffit (00008); chair posts end in stepped cap finials and a three-layer crest cap, every leg ends in a stepped moulded foot, and the foot stool and andirons are made of stacked thin bands and stepped blocks (00012, 00013); fireplaces are plain brick openings with raised hearth plinths stepping out at both sides and no mantel ornament (00007). At room scale: joinery and furniture are built from stacked slabs and square posts — an oversailing top slab with a thinner secondary rail beneath, square block feet, square pulls on a grid — and no moulding has a curved profile. | always | 4: sheets 7, 8, 12, 13 |
+| R15 | **Solid stippled panels interrupting the top-storey window band (sometimes)** — In the top storey the window band under the roof is sometimes interrupted by solid stippled (textured) infill panels set in frames in place of lights — one in the belvedere band (00005), three between the top-storey casements on the east end (00021), and a full band of framed stippled panels with a small square motif at the top tier of the chimney elevations (00007) — whereas 00006, 00019 and 00020 draw the upper band as casements only. At room scale: a window band may be interrupted by framed solid infill panels (sometimes); where used, they are framed like the lights they replace. | sometimes | 3: sheets 5, 7, 21 |
+
+## Do-not list
+- Does not express a principal entrance: no exterior door on the main floor (00003, 00017), no door on the main block in the long elevations (00019, 00020), and no steps, path, porch roof or canopy at any door drawn (00005, 00006). At room scale: no door surround, no centred door opposite the hearth; the door is flush and arrives in a compressed vestibule (02, 16).
+- Does not compose a bilaterally symmetrical elevation: every whole-building elevation is asymmetrical and stepped (00006, 00019, 00020, 00021); symmetry is used only within a single element — the west fireplace face (00007), one window light (00008) and chair fronts (00012, 00013).
+- Does not use carving, turning, applied ornament or a decorative mantel: fireplaces are plain brick openings with no overmantel or surround (00007), the chair has no carving or turning beyond its layered cap and moulded foot (00013), and frames, posts and spindles are drawn in plain outline (00012).
+- Does not draw vertical joints in brickwork: every brick surface is rendered as continuous horizontal coursing only (00005, 00006, 00019, 00020, 00021).
+- Does not use gabled or steep roofs: every roof drawn is a very low-pitched hipped roof with a deep overhang and a thin fascia (00005, 00006, 00019, 00020, 00021).
+- Does not place the hearth on an outside wall: the fireplace is always in the central masonry core on the long axis between the two main rooms (00003, 00005, 00017; 'central hearth' in the printed description on 00001). At room scale: where a brief demands a 'fireplace wall', choose the wall that reads as internal (shared with the adjoining room or stair) and build the hearth as a masonry mass with passage past it, not as a surround on the exterior wall (02, 16).
+
+## Palette
+- Dominant: Tawny brick and stone, stated only in the printed description on the title sheet (00001) and drawn on every elevation as horizontally coursed brick (00005, 00006, 00019, 00020, 00021), Plain light-toned coping, sill and cap bands reading as light horizontal strips against the dark hatched brick bands (00019, 00021)
+- Accent: Red tile roof, copper eaves and oak woodwork, stated in the printed description on 00001 only (not drawn; roof surfaces are left plain on 00005, 00006, 00019, 00020, 00021), Leather cover over stuffing on the seat cushion (00013) and stipple-hatched upholstery on chair seats and back (00012), Stippled textured infill panels in framed bands (00005, 00007, 00021)
+- Temperature: warm, per the title-sheet description (00001: tawny brick, red tile, copper, oak); every other sheet is a monochrome measured drawing recorded as neutral
+
+## Materials
+- Brick for all walls, piers, parapets, garden walls and chimneys, drawn with horizontal coursing only (00005, 00006, 00007, 00019, 00020, 00021); named as tawny brick and stone in the printed description on 00001
+- Plain unhatched stone or cast-stone copings, sills, string courses, water table and chimney caps on every wall top and sill line (00005, 00006, 00019, 00020, 00021); unhatched solid slabs and blocks for hearth plinths and shelf slabs (00007)
+- Leaded glass with a straight-line geometric lattice in casements and glazed doors (00005, 00006, 00008), elsewhere thin-framed timber glazing with plain mullions (00019, 00020, 00021)
+- Wood: oak woodwork stated on 00001; wood head, sill, jamb, stool and sash at the window (00008); a wooden pier and screen beside the living-room fireplace (00003); solid wood chair with dowel construction and face-nailed trim (00013)
+- Leather over stuffing for the seat cushion (00013) and stipple-hatched upholstery on seat and back cushions (00012)
+- Roof: red tile stated on 00001 only; on every elevation the roof planes are drawn plain and unlabelled (00005, 00006, 00019, 00020, 00021)
+- In plan, hatched masonry for all exterior walls, piers and the central core, with thin unhatched partitions only for servants' rooms, pantry, stair halls and closets (00003)
+
+## Proportions
+- Plan about 4.5:1 — 92'-0" overall length to 20'-6" clear living-room width (00017); footprint several times longer than deep (00001); living and dining rooms of identical width end to end, combined length many times their width (00003)
+- South elevation six to seven times as long as the main block is tall, each hipped roof overhanging by about a window bay at each end (00019); north elevation many times longer than tall (00020); end elevations about twice as wide as high (00021); eaves overhang about a storey deep at the terrace end (00005)
+- A 4'-0" pier-to-pier module on every exterior wall, subdivided along the glazed south wall into a 2'-9" leaf and a 1'-3" pier, the living room's 20'-6" clear width being about five modules (00003, 00017)
+- Low stacked storeys of near-equal height at the chimney: 7'-6", 7'-3" and 7'-2" floor-to-ceiling on 00007; two principal storeys of similar height with the belvedere lower (00005)
+- Main-storey lights tall and narrow, much taller than wide (00005, 00019, 00021); ground-storey lights near-square (00005, 00019, 00020); leaded lozenges about three times as wide as high (00008); fireplace openings and shelf slabs markedly wider than high (00007)
+- Chairs with tall narrow backs: overall height 50 3/4" is about 3.1 times the 16 3/8" width (00013); dining chair back much taller than seat-to-floor height, while the living room chair back is shorter and wider (00012)
+
+## Signature moves
+1. A continuous ribbon of tall narrow casements between narrow brick piers set directly under a deeply cantilevered, very low-pitched hipped roof with a thin fascia, running the full length of the main storey (00005, 00006, 00019, 00020, 00021).
+2. A long thin living-dining bar with a central brick chimney-and-stair core on its long axis, the rooms flowing past the core on both sides, a continuous glazed-door wall onto a full-length balcony, and pointed glazed prow bays at both ends (00003, 00017, 00005).
+3. Brick drawn as horizontal courses only, every wall top, sill, pier and chimney capped by a plain light band, with low stepped garden walls carrying planter urns on piers extending the base outward (00005, 00006, 00019, 00020, 00021).
+
+## Generic rules removed (contrast pass)
+- (contrast pass not run: Corpus B skipped; library untested against a generic control)
+
+
+BRIEF
+# Test Brief C — Dining / living combined (TEST set — held out)
+
+**Room:** Dining / living combined, 7.20 m × 4.50 m (interior clear), ceiling 2.40 m, with a level change or a ceiling change.
+
+**Must:**
+1. Define two zones (dining, living) without a full wall: the spec names two zones and no partition element spans the full room width.
+2. A level change or a ceiling change is present and located on the plan (a step/platform or a dropped/raised ceiling area).
+3. Seat 8 for dining (dining seats counted on the furniture schedule).
+4. Include a fireplace or hearth element.
+5. Keep a clear circulation path of at least 0.90 m through the room, from one end wall to the other.
+6. At least one entry door (0.80–1.00 m wide) on a wall of the designer's choice, plus at least one window.
+
+**Materials — must:** the floor finish is named with material and finish.
+**Materials — must not:** mirrored wall panels; high-gloss lacquer on any wall surface.
+
+**Always:** no furniture within any door swing; all furniture inside the room with no overlapping footprints.
+
+**Principal wall for the elevation:** the fireplace / hearth wall.
+
+
+JSON SCHEMA FOR spec.json
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Room design spec (both arms, every brief) \u2014 PRD \u00a75.1",
+ "description": "Geometry: rectangle length_m (x, east) \u00d7 width_m (y, north). Origin = interior SW corner. South wall y=0, north wall y=width, west wall x=0, east wall x=length. Furniture footprints are axis-aligned rectangles: (x_m, y_m) is the SW corner, length_m runs along x, depth_m along y (rotate an item by swapping length/depth). Opening offset_m is measured along the wall from its left end as seen from INSIDE the room: north wall from west; south wall from east; west wall from south; east wall from north. Elevation element x_m uses the same left-end convention for the elevation wall; z_m is height above finished floor. All metres, 2 dp.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "brief_id",
+  "arm",
+  "title",
+  "room",
+  "openings",
+  "furniture",
+  "circulation",
+  "palette",
+  "elevation",
+  "lighting",
+  "decision_log",
+  "conflicts"
+ ],
+ "properties": {
+  "brief_id": {
+   "enum": [
+    "iteration_i1",
+    "iteration_i2",
+    "test_a",
+    "test_b",
+    "test_c"
+   ]
+  },
+  "arm": {
+   "enum": [
+    "baseline",
+    "learned"
+   ]
+  },
+  "title": {
+   "type": "string"
+  },
+  "room": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "type",
+    "length_m",
+    "width_m",
+    "ceiling_height_m",
+    "wall_thickness_m"
+   ],
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "length_m": {
+     "type": "number"
+    },
+    "width_m": {
+     "type": "number"
+    },
+    "ceiling_height_m": {
+     "type": "number"
+    },
+    "wall_thickness_m": {
+     "type": "number",
+     "minimum": 0.1,
+     "maximum": 0.6
+    },
+    "floor_finish": {
+     "type": "string"
+    }
+   }
+  },
+  "zones": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "ceiling_zones": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "height_m",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "height_m": {
+      "type": "number"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "level_changes": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "delta_m",
+     "polygon"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "delta_m": {
+      "type": "number"
+     },
+     "polygon": {
+      "$ref": "#/$defs/polygon"
+     },
+     "description": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "openings": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "type",
+     "wall",
+     "offset_m",
+     "width_m",
+     "height_m",
+     "sill_m",
+     "role",
+     "label"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "door",
+       "window",
+       "opening"
+      ]
+     },
+     "wall": {
+      "enum": [
+       "north",
+       "south",
+       "east",
+       "west"
+      ]
+     },
+     "offset_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "width_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "height_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "sill_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "swing": {
+      "enum": [
+       "in",
+       "out",
+       "none",
+       "sliding"
+      ]
+     },
+     "hinge": {
+      "enum": [
+       "left",
+       "right"
+      ]
+     },
+     "role": {
+      "enum": [
+       "entry",
+       "kitchen",
+       "window_band",
+       "secondary",
+       "other"
+      ]
+     },
+     "label": {
+      "type": "string"
+     },
+     "description": {
+      "type": "string"
+     },
+     "pattern": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "furniture": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "item",
+     "x_m",
+     "y_m",
+     "length_m",
+     "depth_m",
+     "height_m",
+     "material",
+     "finish",
+     "built_in",
+     "functions",
+     "position_note"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "item": {
+      "type": "string"
+     },
+     "x_m": {
+      "type": "number"
+     },
+     "y_m": {
+      "type": "number"
+     },
+     "length_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "depth_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "height_m": {
+      "type": "number",
+      "minimum": 0
+     },
+     "material": {
+      "type": "string"
+     },
+     "finish": {
+      "type": "string"
+     },
+     "built_in": {
+      "type": "boolean"
+     },
+     "functions": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "seating",
+        "dining_seating",
+        "dining_table",
+        "fireplace",
+        "hearth",
+        "storage",
+        "wardrobe",
+        "desk",
+        "shelving",
+        "bed",
+        "sideboard",
+        "table",
+        "entry_element",
+        "screen",
+        "partition",
+        "rug",
+        "lighting",
+        "planter",
+        "other"
+       ]
+      }
+     },
+     "seats": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "allow_overlap": {
+      "type": "boolean",
+      "description": "true only for rugs, pendant lights and other items that legitimately overlap footprints"
+     },
+     "position_note": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "circulation": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "min_clear_width_m"
+   ],
+   "properties": {
+    "path": {
+     "$ref": "#/$defs/polygon",
+     "minItems": 2
+    },
+    "min_clear_width_m": {
+     "type": "number"
+    },
+    "description": {
+     "type": "string"
+    }
+   }
+  },
+  "palette": {
+   "type": "array",
+   "minItems": 4,
+   "maxItems": 10,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "hex",
+     "name",
+     "material",
+     "finish",
+     "where",
+     "role"
+    ],
+    "properties": {
+     "hex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "material": {
+      "type": "string"
+     },
+     "finish": {
+      "type": "string"
+     },
+     "where": {
+      "type": "string"
+     },
+     "role": {
+      "enum": [
+       "dominant",
+       "accent",
+       "neutral"
+      ]
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "elevation": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "wall",
+    "title",
+    "elements"
+   ],
+   "properties": {
+    "wall": {
+     "enum": [
+      "north",
+      "south",
+      "east",
+      "west"
+     ]
+    },
+    "title": {
+     "type": "string"
+    },
+    "elements": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "id",
+       "item",
+       "x_m",
+       "z_m",
+       "width_m",
+       "height_m",
+       "material",
+       "label"
+      ],
+      "properties": {
+       "id": {
+        "type": "string"
+       },
+       "item": {
+        "type": "string"
+       },
+       "x_m": {
+        "type": "number",
+        "minimum": 0
+       },
+       "z_m": {
+        "type": "number",
+        "minimum": 0
+       },
+       "width_m": {
+        "type": "number",
+        "exclusiveMinimum": 0
+       },
+       "height_m": {
+        "type": "number",
+        "exclusiveMinimum": 0
+       },
+       "material": {
+        "type": "string"
+       },
+       "label": {
+        "type": "string"
+       },
+       "hex": {
+        "type": "string",
+        "pattern": "^#[0-9A-Fa-f]{6}$"
+       },
+       "rule_ids": {
+        "$ref": "#/$defs/rule_ids"
+       }
+      }
+     }
+    },
+    "datum_lines": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "z_m",
+       "label"
+      ],
+      "properties": {
+       "z_m": {
+        "type": "number"
+       },
+       "label": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "lighting": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item",
+     "position",
+     "type"
+    ],
+    "properties": {
+     "item": {
+      "type": "string"
+     },
+     "position": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "decision_log": {
+   "type": "array",
+   "minItems": 5,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "decision",
+     "rationale",
+     "major",
+     "rule_ids"
+    ],
+    "properties": {
+     "decision": {
+      "type": "string"
+     },
+     "rationale": {
+      "type": "string"
+     },
+     "major": {
+      "type": "boolean"
+     },
+     "rule_ids": {
+      "$ref": "#/$defs/rule_ids"
+     }
+    }
+   }
+  },
+  "conflicts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "rule_id",
+     "constraint",
+     "resolution"
+    ],
+    "properties": {
+     "rule_id": {
+      "type": "string"
+     },
+     "constraint": {
+      "type": "string"
+     },
+     "resolution": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ },
+ "$defs": {
+  "polygon": {
+   "type": "array",
+   "minItems": 2,
+   "items": {
+    "type": "array",
+    "minItems": 2,
+    "maxItems": 2,
+    "items": {
+     "type": "number"
+    }
+   }
+  },
+  "rule_ids": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^R[0-9]{2}$"
+   }
+  }
+ }
+}

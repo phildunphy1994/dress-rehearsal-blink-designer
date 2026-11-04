@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='756' viewBox='0 0 900 756' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='290.0' y='140.0' width='450.0' height='240.0' fill='#fbfaf7' stroke='#000' stroke-width='2'/>
+<line x1='270.0' y1='380.0' x2='760.0' y2='380.0' stroke='#000' stroke-width='3'/>
+<text x='766.0' y='384.0' font-size='12'>FFL 0.00 m</text>
+<text x='766.0' y='144.0' font-size='12'>ceiling 2.40 m</text>
+<rect x='640.0' y='169.99999999999997' width='85.0' height='210.0' fill='#e8f6f0' fill-opacity='0.6' stroke='#c33' stroke-width='2'/><text x='682.5' y='165.99999999999997' text-anchor='middle' font-size='11' fill='#c33'>O1 · 0.85 × 2.10 m</text>
+<rect x='290.0' y='140.0' width='450.0' height='240.0' fill='#9C6B45' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='294.0' y='153.0' font-size='10' fill='#111'>E01 West core wall, horizo — Tawny brick</text>
+<rect x='425.0' y='140.0' width='180.0' height='240.0' fill='#9C6B45' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E04</text>
+<rect x='640.0' y='169.99999999999997' width='85.0' height='210.0' fill='#B48A5A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='682.5' y='180.99999999999997' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E11</text>
+<rect x='460.0' y='290.0' width='110.00000000000001' height='55.00000000000001' fill='#8E3B2F' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E07</text>
+<rect x='290.0' y='140.0' width='347.0' height='15.0' fill='#D9CFBE' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='463.5' y='138.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E02</text>
+<rect x='405.0' y='360.0' width='220.00000000000003' height='20.0' fill='#D9CFBE' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='371.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E05</text>
+<rect x='637.0' y='140.0' width='103.0' height='30.0' fill='#EDE6D8' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='688.5' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E03</text>
+<rect x='425.0' y='345.0' width='180.0' height='15.0' fill='#D9CFBE' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='343.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E06</text>
+<rect x='425.0' y='254.0' width='180.0' height='6.0' fill='#D9CFBE' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='252.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E08</text>
+<rect x='440.0' y='200.0' width='20.0' height='20.0' fill='#6B4A32' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='450.0' y='198.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E09</text>
+<rect x='570.0' y='200.0' width='20.0' height='20.0' fill='#6B4A32' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='580.0' y='198.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E10</text>
+<line x1='290.0' y1='380.0' x2='740.0' y2='380.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='380.0' x2='246.0' y2='380.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='384.0' text-anchor='end' font-size='10' fill='#b58'>Finished floor 0.00 m</text>
+<line x1='290.0' y1='345.0' x2='740.0' y2='345.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='345.0' x2='246.0' y2='348.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='352.0' text-anchor='end' font-size='10' fill='#b58'>Hearth plinth top 0.35 m</text>
+<line x1='290.0' y1='335.0' x2='740.0' y2='335.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='335.0' x2='246.0' y2='335.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='339.0' text-anchor='end' font-size='10' fill='#b58'>Sill course (south and east wa 0.45 m</text>
+<line x1='290.0' y1='260.0' x2='740.0' y2='260.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='260.0' x2='246.0' y2='260.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='264.0' text-anchor='end' font-size='10' fill='#b58'>Shelf slab 1.20 m</text>
+<line x1='290.0' y1='169.99999999999997' x2='740.0' y2='169.99999999999997' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='169.99999999999997' x2='246.0' y2='169.99999999999997' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='173.99999999999997' text-anchor='end' font-size='10' fill='#b58'>Door head and gallery soffit 2.10 m</text>
+<line x1='290.0' y1='155.0' x2='740.0' y2='155.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='155.0' x2='246.0' y2='155.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='159.0' text-anchor='end' font-size='10' fill='#b58'>Window head and cap band 2.25 m</text>
+<line x1='290.0' y1='140.0' x2='740.0' y2='140.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='140.0' x2='246.0' y2='140.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='144.0' text-anchor='end' font-size='10' fill='#b58'>Ceiling 2.40 m</text>
+<line x1='170.0' y1='380.0' x2='170.0' y2='140.0' stroke='#000'/><line x1='164.0' y1='380.0' x2='176.0' y2='380.0' stroke='#000'/><line x1='164.0' y1='140.0' x2='176.0' y2='140.0' stroke='#000'/><text transform='translate(160.0,260.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>2.40 m</text>
+<line x1='290.0' y1='416.0' x2='740.0' y2='416.0' stroke='#000'/><line x1='290.0' y1='410.0' x2='290.0' y2='422.0' stroke='#000'/><line x1='740.0' y1='410.0' x2='740.0' y2='422.0' stroke='#000'/><text x='515.0' y='434.0' text-anchor='middle' font-size='13' font-weight='bold'>4.50 m</text>
+<rect x='10' y='539.9999999999999' width='880' height='206' fill='none' stroke='#000'/><text x='20' y='561.9999999999999' font-size='15' font-weight='bold'>ELEVATION — West wall - fireplace wall (looking west; x from the south end) (west wall)</text><text x='20' y='581.9999999999999' font-size='12'>Wall length 4.50 m · ceiling 2.40 m · heights in metres above FFL · materials labelled on the drawing</text><line x1='20' y1='601.9999999999999' x2='120.0' y2='601.9999999999999' stroke='#000' stroke-width='4'/><text x='128.0' y='605.9999999999999' font-size='12'>1 m scale bar · 1 m = 100 px</text>
+<text x='20' y='627.9999999999999' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>
+<text x='20.0' y='645.9999999999999' font-size='10.5'>E01 4.50 w × 2.40 h, 0.00–2.40 m — West core wall, horizontal coursing </text>
+<text x='20.0' y='661.9999999999999' font-size='10.5'>E02 3.47 w × 0.15 h, 2.25–2.40 m — Plain light cap band, continuous wit</text>
+<text x='20.0' y='677.9999999999999' font-size='10.5'>E03 1.03 w × 0.30 h, 2.10–2.40 m — Soffit dropped to 2.10 over the entr</text>
+<text x='20.0' y='693.9999999999999' font-size='10.5'>E04 1.80 w × 2.40 h, 0.00–2.40 m — Breast projecting 0.45 m, centred on</text>
+<text x='20.0' y='709.9999999999999' font-size='10.5'>E05 2.20 w × 0.20 h, 0.00–0.20 m — Lower slab stepping out 0.20 m beyon</text>
+<text x='20.0' y='725.9999999999999' font-size='10.5'>E06 1.80 w × 0.15 h, 0.20–0.35 m — Upper slab, breast width; Cast stone</text>
+<text x='450.0' y='645.9999999999999' font-size='10.5'>E07 1.10 w × 0.55 h, 0.35–0.90 m — Opening twice as wide as high, no su</text>
+<text x='450.0' y='661.9999999999999' font-size='10.5'>E08 1.80 w × 0.06 h, 1.20–1.26 m — Thin shelf slab let into the brick, </text>
+<text x='450.0' y='677.9999999999999' font-size='10.5'>E09 0.20 w × 0.20 h, 1.60–1.80 m — Small square slot recess in the chim</text>
+<text x='450.0' y='693.9999999999999' font-size='10.5'>E10 0.20 w × 0.20 h, 1.60–1.80 m — Small square slot recess in the chim</text>
+<text x='450.0' y='709.9999999999999' font-size='10.5'>E11 0.85 w × 2.10 h, 0.00–2.10 m — Flush door, no architrave, head at t</text>
+<text x='450.0' y='725.9999999999999' font-size='10.5'>O1 — Entry door from stair hall (door): 0.85 × 2.10 m, sill 0.00</text>
+</svg>
