@@ -1,0 +1,114 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00009",
+  "drawing_type_seen": "detail",
+  "rules": [
+    {
+      "id": "R01",
+      "verdict": "not_assessable",
+      "what_is_seen": "Only two isolated leaded-glass window lights are drawn at 3\"=1'-0\" with no building mass, wall, room or ceiling line, so massing and the long-low reading cannot be judged."
+    },
+    {
+      "id": "R02",
+      "verdict": "not_assessable",
+      "what_is_seen": "No plan or room arrangement is drawn; the sheet shows only two window lights."
+    },
+    {
+      "id": "R03",
+      "verdict": "not_assessable",
+      "what_is_seen": "No plan, section, fireplace or stair is drawn."
+    },
+    {
+      "id": "R04",
+      "verdict": "not_assessable",
+      "what_is_seen": "No plan or end elevation is drawn; the two lights are shown flat with no bay geometry or corner piers."
+    },
+    {
+      "id": "R05",
+      "verdict": "not_assessable",
+      "what_is_seen": "No roof, eave, fascia or ceiling edge is drawn."
+    },
+    {
+      "id": "R06",
+      "verdict": "not_assessable",
+      "what_is_seen": "No whole-building elevation or room composition is drawn; of the two lights shown the wider one is bilaterally symmetrical about its own centreline and the narrower one is asymmetrical, which sits within the rule's single-element allowance but shows nothing of the massing it describes."
+    },
+    {
+      "id": "R07",
+      "verdict": "not_assessable",
+      "what_is_seen": "Two individual lights are drawn, both taller than wide (about 2'-7\" by 3'-7\" and 1'-7\" by 3'-7\" against the sheet's scale bar) and subdivided by leading rather than left as one pane, but no wall, pier module, sill course, head band or ribbon of adjacent lights is shown."
+    },
+    {
+      "id": "R08",
+      "verdict": "not_assessable",
+      "what_is_seen": "No brickwork, coping, sill or cap band is drawn."
+    },
+    {
+      "id": "R09",
+      "verdict": "supported",
+      "what_is_seen": "Both lights are filled entirely with straight-line leaded patterns: nested stepped rectangular border bands, tall columns of small stacked hatched rectangles, chevron stacks under a hatched lozenge, horizontally elongated lozenges crossing at a central came, small hatched triangles and a shallow V converging on the centreline at the base of the wider light, with no curved line anywhere."
+    },
+    {
+      "id": "R10",
+      "verdict": "not_assessable",
+      "what_is_seen": "No garden wall, terrace, parapet, pier or planter is drawn."
+    },
+    {
+      "id": "R11",
+      "verdict": "not_assessable",
+      "what_is_seen": "No plan, south wall, balcony or door leaf is drawn; the sheet labels the two units as windows and shows them in isolation."
+    },
+    {
+      "id": "R12",
+      "verdict": "not_assessable",
+      "what_is_seen": "No door, entrance, stair, vestibule or elevation is drawn."
+    },
+    {
+      "id": "R13",
+      "verdict": "not_assessable",
+      "what_is_seen": "No chimney or chimney breast is drawn."
+    },
+    {
+      "id": "R14",
+      "verdict": "not_assessable",
+      "what_is_seen": "No trim profile, cap, foot, joinery section or furniture is drawn; the only elements are flat leaded-glass patterns, which are wholly rectilinear with nested stepped border bands and no curved line, but no moulding profile is shown to judge."
+    },
+    {
+      "id": "R15",
+      "verdict": "not_assessable",
+      "what_is_seen": "No window band or top storey is drawn; the hatched shapes inside the lights are parts of the leaded pattern within each light, not framed solid panels replacing lights in a band."
+    }
+  ],
+  "do_not_list": [
+    {
+      "index": 0,
+      "verdict": "not_assessable",
+      "what_is_seen": "No door, entrance, steps, porch, plan or elevation is drawn."
+    },
+    {
+      "index": 1,
+      "verdict": "not_assessable",
+      "what_is_seen": "No elevation is drawn; the wider light is symmetrical about its own vertical centreline and the narrower light is asymmetrical, which falls within the stated single-element allowance but shows nothing about an elevation's symmetry."
+    },
+    {
+      "index": 2,
+      "verdict": "not_assessable",
+      "what_is_seen": "No fireplace, mantel, chair, frame, post or spindle is drawn; the only decoration shown is the straight-line leaded pattern of the glass itself, with no carved, turned or curved element."
+    },
+    {
+      "index": 3,
+      "verdict": "not_assessable",
+      "what_is_seen": "No brickwork is drawn."
+    },
+    {
+      "index": 4,
+      "verdict": "not_assessable",
+      "what_is_seen": "No roof is drawn; the chevron and lozenge shapes on the sheet are leaded-glass pattern within the lights, not roof forms."
+    },
+    {
+      "index": 5,
+      "verdict": "not_assessable",
+      "what_is_seen": "No hearth, fireplace, plan or wall is drawn."
+    }
+  ],
+  "notes": "Sheet 9 of 14, titled SECOND (MAIN) FLOOR WINDOWS at 3\"=1'-0\", draws two leaded-glass lights in flat elevation only (one wider and bilaterally symmetrical, one narrower and asymmetrical) with no frame section, wall, pier, sill, head, roof, plan or furniture, so only the leaded-glass rule R09 can be assessed from this sheet. Against the sheet's own scale bar the lights scale to roughly 2'-7\" x 3'-7\" and 1'-7\" x 3'-7\", i.e. taller than wide, which is consistent with but does not by itself demonstrate R07's ribbon of tall narrow casements."
+}

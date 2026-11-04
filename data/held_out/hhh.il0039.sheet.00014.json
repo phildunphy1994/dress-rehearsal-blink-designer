@@ -1,0 +1,30 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00014",
+  "drawing_type_seen": "detail",
+  "rules": [
+    {"id": "R01", "verdict": "not_assessable", "what_is_seen": "The sheet draws only one side chair at 4 in = 1 ft (front and side elevations, two sections and a plan) with no building mass, room, wall, sill course or head band, so long-low massing cannot be judged; the chair itself is a tall narrow object about three times as high (42 7/8 in) as it is wide (14 5/16 in)."},
+    {"id": "R02", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R03", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R04", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R05", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R06", "verdict": "not_assessable", "what_is_seen": "No building elevation or multi-element room composition is drawn; the only object is one chair, which is symmetrical about its own centreline in front elevation and plan, i.e. symmetry held within a single element as the rule allows, so the asymmetric-massing claim itself cannot be tested."},
+    {"id": "R07", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R08", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R09", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R10", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R11", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R12", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R13", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R14", "verdict": "supported", "what_is_seen": "The side chair is built entirely of rectangular-section posts and legs (hatched rectangles of roughly 2 in in the plan and horizontal section) with plain rectangular stretchers, a thick seat rail with thinner stretchers beneath, a flat 1/2 in raked back board, each rear post ending in a rectangular cap block that oversails the post and every leg ending in a wider rectangular block foot about 7/8 in high, with no carved, turned or curved-profile member anywhere."},
+    {"id": "R15", "verdict": "not_assessable", "what_is_seen": null}
+  ],
+  "do_not_list": [
+    {"index": 0, "verdict": "not_assessable", "what_is_seen": null},
+    {"index": 1, "verdict": "supported", "what_is_seen": "The only elevations drawn are of a single chair, whose front elevation and plan are bilaterally symmetrical about the chair's own centreline, i.e. symmetry confined to one element exactly as the entry describes for chair fronts; no whole-building elevation appears on the sheet."},
+    {"index": 2, "verdict": "supported", "what_is_seen": "Every member of the chair (rectangular posts and legs, flat back board, rectangular stretchers, cap blocks and block feet) is drawn in plain straight-line outline with no carving, turning or applied ornament; the only non-rectilinear lines are the wood-grain cutaway rendering and the slight crown of the stuffed, wool-covered seat cushion."},
+    {"index": 3, "verdict": "not_assessable", "what_is_seen": null},
+    {"index": 4, "verdict": "not_assessable", "what_is_seen": null},
+    {"index": 5, "verdict": "not_assessable", "what_is_seen": null}
+  ],
+  "notes": "HABS ILL-1005 sheet 14 of 14, SIDE CHAIR, Frederick C. Robie House, drawn May 1, 1966 by R. E. Maynard, scale 4 in = 1 ft: front elevation, side elevation, vertical section (seat labelled wool cover over stuffing), plan (outline of cushion) and a horizontal section through the legs. No building, room, wall, roof, window, masonry, planter, door or hearth appears, so R01-R13, R15 and do-not entries 0, 3, 4 and 5 are not assessable from this sheet. Observations for the record: the chair is tall and narrow (about 42 7/8 in overall height on a 14 5/16 in width, roughly 3:1, 19 3/8 in deep) with a solid flat raked back board rather than slats or spindles; the rear posts carry a single rectangular cap block (one layer, not the three-layer crest cap R14 cites from 00013) and the legs end in single block feet, which still reads as stacked rectangular layers. R06 is left not_assessable because its claim concerns whole-building massing and multi-element composition, neither drawn here; do-not entry 1 is marked supported because that entry explicitly counts chair fronts as its single-element evidence and this chair front is symmetrical about its own centreline."
+}
