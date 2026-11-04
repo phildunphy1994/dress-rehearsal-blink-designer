@@ -1,0 +1,141 @@
+{
+ "sheet_id": "hhh.il0039.sheet.00017",
+ "drawing_type": "plan",
+ "room_or_space": "SECOND FLOOR PLAN: porch, living room, central stair/chimney block, dining room, south balcony, study with north balcony, three halls, kitchen, pantry, closet, servant room, bath and quarters",
+ "overall_dimensions": {
+  "length": "92'-0\" (overall length of the main block as dimensioned along the north side; the porch extends a further 13'-0\" + 8'-0\" to the west on the bottom chain)",
+  "width": "20'-6\" clear width of the living room between the prow flank walls, with 4'-0\" flanks and 2'-4\" piers dimensioned beyond on each side",
+  "ceiling_height": null
+ },
+ "proportions": {
+  "length_to_width_ratio": "about 4.5 : 1 (92'-0\" overall length to 20'-6\" clear living-room width)",
+  "notable_proportion": "A 4'-0\" column-grid module is repeated along both long sides and is sub-divided into 2'-9\" leaf + 1'-3\" pier along the glazed south wall; the living room's 20'-6\" clear width is about five modules, and the prow bays at each end of the main block are set out on the same grid lines"
+ },
+ "layout": {
+  "organisation": "Very long, narrow linear plan made of two parallel bars offset from one another: the main bar runs porch - living room - central stair/chimney mass - dining room with a continuous south balcony, and a second service bar (study, halls, kitchen, pantry, closet, servant, bath, quarters) sits to the north-east, overlapping the main bar only at the halls behind the stair mass. Both ends of the main bar terminate in pointed prow bays.",
+  "axes": "One dominant east-west long axis through porch, living room, stair/chimney mass and dining room, with the two prows on that axis; the service wing is a parallel axis shifted north by 3'-6\" and 1'-8\" jogs in the north wall; the central stair/chimney mass sits on the long axis and divides it into two halves (living and dining).",
+  "entry_sequence": "No external door at this level. Stairs marked UP arrive from below at the west end (two flights flanking the porch/living-room junction), at the central stair/chimney block between living and dining room (one flight marked UP, one DOWN), and in the rear hall between kitchen and pantry (marked UP); a stair marked DOWN leads off the hall beside the study.",
+  "circulation": "Linear: porch -> living room -> past either side of the central stair/chimney mass -> dining room -> east prow. A hall behind the stair mass connects to the study and to the north balcony door, and continues east as a corridor/hall past kitchen and pantry to closet, servant room, bath and quarters. The south balcony runs the full length of living and dining rooms with 6'-0\" bays marked OPEN at both ends; a small north balcony opens off the hall beside the study."
+ },
+ "openings": [
+  {
+   "type": "door",
+   "position": "south wall of living room and dining room onto the south balcony, full length",
+   "dimensions": "2'-9\" leaf bays with 1'-3\" piers",
+   "pattern": "continuous band of glazed door leaves, each drawn with a swing arc, between small hatched piers, repeating on the 4'-0\" module"
+  },
+  {
+   "type": "window",
+   "position": "angled walls of the pointed prow bays at the west end of the living room and the east end of the dining room",
+   "dimensions": "4'-0\" diagonal wall at the dining-room prow",
+   "pattern": "thin double lines (glazed) between small hatched corner piers forming a pointed bay"
+  },
+  {
+   "type": "window",
+   "position": "east wall of the north balcony (west wall of the study)",
+   "dimensions": "2'-9\" bays with 1'-3\" piers",
+   "pattern": "windows between hatched piers, same bay module as the south wall"
+  },
+  {
+   "type": "door",
+   "position": "from the hall into the north balcony, beside the study",
+   "dimensions": null,
+   "pattern": "single leaf with swing arc"
+  },
+  {
+   "type": "window",
+   "position": "north wall of the service wing (kitchen, pantry, servant, quarters)",
+   "dimensions": null,
+   "pattern": "strips of thin double lines between hatched wall sections, i.e. window bands between solid piers"
+  },
+  {
+   "type": "window",
+   "position": "south wall of the servants' wing (closet / servant room / bath / quarters) onto a narrow south strip",
+   "dimensions": "2'-7\" bay with 1'-3\" pier (first digit pair possibly 2'-9\")",
+   "pattern": "windows between hatched piers on the 4'-0\" grid"
+  },
+  {
+   "type": "opening",
+   "position": "south-west and south-east ends of the south balcony, labelled OPEN",
+   "dimensions": "6'-0\" each, with 2'-0\" piers",
+   "pattern": "unglazed gaps in the balcony enclosure at each end"
+  },
+  {
+   "type": "opening",
+   "position": "both sides of the central stair/chimney mass between living room and dining room",
+   "dimensions": "4'-0\" from the south face of the mass to the south wall",
+   "pattern": "open passages flanking the solid core"
+  }
+ ],
+ "built_in_furniture": [
+  {
+   "item": "fireplace hearth / opening in the west face of the central chimney mass, facing the living room",
+   "material": "masonry (hatched)",
+   "dimensions": null,
+   "position": "centre of the plan, west side of the stair/chimney block"
+  },
+  {
+   "item": "bathtub (rectangular outline)",
+   "material": "not indicated on the drawing",
+   "dimensions": null,
+   "position": "small unlabelled room north of the hall next to the DOWN stair, between study and kitchen"
+  },
+  {
+   "item": "water closet and lavatory fixtures",
+   "material": "not indicated on the drawing",
+   "dimensions": null,
+   "position": "same small unlabelled room north of the hall, and in the room labelled BATH in the servants' wing"
+  },
+  {
+   "item": "closet (labelled CLOS.)",
+   "material": "not indicated on the drawing",
+   "dimensions": null,
+   "position": "servants' wing, between pantry and servant room"
+  },
+  {
+   "item": "stairs (five flights: two at the porch/living room junction, two in the central stair block, one in the rear hall)",
+   "material": "not indicated on the drawing",
+   "dimensions": "porch stair 4'-0\" wide",
+   "position": "west end, centre and rear hall of the plan"
+  }
+ ],
+ "materials": [
+  {
+   "material": "solid masonry walls and piers (diagonal hatch in section; material not labelled)",
+   "where": "all bearing walls, piers, the central chimney/stair mass and the prow corner piers",
+   "finish": null
+  },
+  {
+   "material": "glazing / thin screen walls (thin double lines between piers; not labelled)",
+   "where": "south wall onto the balcony, prow bays, north balcony wall, north and south walls of the service wing",
+   "finish": null
+  },
+  {
+   "material": "low parapet walls (thin double lines with dash-dot centre line; not labelled)",
+   "where": "porch, south balcony, north balcony and the strip south of the servants' wing",
+   "finish": null
+  }
+ ],
+ "palette": {
+  "dominant": [
+   "monochrome black pencil/ink line on white paper"
+  ],
+  "accent": [],
+  "warm_or_cool": "neutral"
+ },
+ "details": [
+  "Pointed prow bays at both ends of the main block, formed by thin glazed angled walls between small hatched piers set on the long axis",
+  "A 4'-0\" column-grid module drawn as faint construction lines across the whole sheet and expressed in the dimension chains on every side",
+  "Continuous band of glazed door leaves with swing arcs along the south wall, 2'-9\" leaf plus 1'-3\" pier per bay, opening onto the balcony",
+  "Central hatched stair/chimney mass with a pilastered east face (1'-2\" / 3'-0\" / 4'-0\" / 3'-0\" / 1'-2\") dividing living and dining rooms, with open passages on both sides",
+  "Balconies and porch bounded by low parapet walls drawn as double lines with dash-dot centre lines, with OPEN bays at the balcony ends"
+ ],
+ "what_is_absent": [
+  "No ceiling heights, sections or levels (plan only)",
+  "No furniture or fittings drawn in the living room, dining room, study, kitchen, pantry, servant room or quarters (only bath fixtures and the hearth are drawn)",
+  "Most interior doors and their swings are not drawn; swings are shown only on the south balcony run and the north balcony door",
+  "No written or graphic scale, north arrow or key",
+  "No material or finish annotations on the drawing"
+ ],
+ "confidence": "medium"
+}
