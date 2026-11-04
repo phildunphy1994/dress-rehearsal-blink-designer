@@ -1,0 +1,2 @@
+timestamp,stage,model,input_tokens,output_tokens,notes
+2026-11-04T17:19:51+00:00,01_collect,none (no model call),0,0,34 items collected; 25 usable drawings
