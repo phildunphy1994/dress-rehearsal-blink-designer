@@ -1,0 +1,62 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00021",
+  "drawing_type": "elevation",
+  "room_or_space": "Exterior: EAST ELEVATION and WEST ELEVATION (the two end facades of the house, as captioned on the sheet)",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions or scale are written. As drawn, both elevations read as markedly horizontal, roughly twice as wide as they are high (excluding chimneys), built of three stacked tiers that step back and diminish upward; the roof eaves project far beyond the wall faces and the low garden walls extend the base line outward."
+  },
+  "layout": {
+    "organisation": "Two exterior end elevations drawn side by side on a common ground line: EAST ELEVATION at left, WEST ELEVATION at right. Each shows a three-tiered massing: a long low ground storey with low terrace/garden walls running out from it, a main storey under low-pitched hipped roofs with deep overhanging eaves, and a smaller top storey under its own hipped roof, with a broad chimney mass rising through the upper roof and a tall narrow chimney at one end.",
+    "axes": "Horizontal lines dominate: continuous sill and string courses, wall copings, eaves lines and the emphasised brick coursing run the full width; vertical accents are limited to the two chimneys and the narrow brick piers between windows. Neither elevation is symmetrical about a vertical axis; both are asymmetric and stepped.",
+    "entry_sequence": "EAST ELEVATION shows a ground-level door with a glazed upper panel and a low step, set beside two pairs of ground-storey windows and approached past the terrace wall with a planter bowl at its end. WEST ELEVATION shows glazed doors opening from the main-storey bay (under the projecting hipped roof) onto a terrace bounded by stepped garden walls.",
+    "circulation": "Not shown beyond the exterior doors; no stairs, paths or interior circulation are drawn on this sheet."
+  },
+  "openings": [
+    {"type": "window", "position": "EAST ELEVATION, top storey, continuous band directly under the upper roof eaves", "dimensions": null, "pattern": "About nine tall, narrow single-light casement units in a continuous strip between the eaves and a string course, interrupted by three stippled (textured) infill panels; frames drawn as thin double lines"},
+    {"type": "window", "position": "EAST ELEVATION, main storey, left of centre under the left hipped roof", "dimensions": null, "pattern": "Tall vertical casements on a shared sill course: one single window, then a mullioned pair, then a single window, separated by narrow brick piers"},
+    {"type": "window", "position": "EAST ELEVATION, main storey, right of centre at the junction of the two hipped roofs", "dimensions": null, "pattern": "One tall narrow single-light window"},
+    {"type": "window", "position": "EAST ELEVATION, main storey, far right next to the tall chimney", "dimensions": null, "pattern": "Small square window with a projecting sill/box below it"},
+    {"type": "window", "position": "EAST ELEVATION, ground storey, centre", "dimensions": null, "pattern": "Two mullioned pairs of casement windows with a horizontal division, on a common sill course"},
+    {"type": "door", "position": "EAST ELEVATION, ground storey, immediately right of the paired windows", "dimensions": null, "pattern": "Single door with glazed upper panel and solid lower panel, one low step in front"},
+    {"type": "window", "position": "WEST ELEVATION, top storey, left part under the hipped roof", "dimensions": null, "pattern": "Band of four tall narrow single-light casements on a shared sill course with brick piers between"},
+    {"type": "window", "position": "WEST ELEVATION, top storey, right part under the cantilevered flat roof slab", "dimensions": null, "pattern": "One tall narrow single-light window"},
+    {"type": "window", "position": "WEST ELEVATION, main storey, left part", "dimensions": null, "pattern": "Row of four tall casements (two mullioned pairs) on a continuous sill course"},
+    {"type": "door", "position": "WEST ELEVATION, main storey, projecting bay under the lower hipped roof, left side of bay", "dimensions": null, "pattern": "Tall narrow glazed door reaching the floor line"},
+    {"type": "window", "position": "WEST ELEVATION, main storey, centre of the projecting bay", "dimensions": null, "pattern": "Group of three tall mullioned casement lights"},
+    {"type": "door", "position": "WEST ELEVATION, main storey, right side of the projecting bay", "dimensions": null, "pattern": "Tall narrow glazed door reaching the floor line"},
+    {"type": "window", "position": "WEST ELEVATION, ground storey, left, beside the tall chimney", "dimensions": null, "pattern": "Mullioned pair of casement windows with a horizontal division"}
+  ],
+  "built_in_furniture": [
+    {"item": "Planter bowl (shallow urn) on a short pedestal", "material": "plain (unhatched) masonry, read as stone or cast stone", "dimensions": null, "position": "EAST ELEVATION, on the pier at the far left end of the low terrace wall"},
+    {"item": "Low terrace/garden walls with flat copings, stepping down in height", "material": "brick walls (horizontal coursing hatch) with plain stone copings", "dimensions": null, "position": "EAST ELEVATION at the left running out from the ground storey; WEST ELEVATION at the right stepping down away from the house"}
+  ],
+  "materials": [
+    {"material": "Brick, drawn with closely spaced horizontal coursing lines", "where": "All wall surfaces of all three storeys, both chimneys, and the garden/terrace walls", "finish": null},
+    {"material": "Stone or cast stone (plain, unhatched)", "where": "Copings of walls and parapets, window sills and continuous sill courses, chimney caps, the base course/plinth at the ground line, the planter bowl", "finish": null},
+    {"material": "Glass in thin-framed casements and glazed doors", "where": "All windows and the glazed doors on both elevations", "finish": null},
+    {"material": "Stippled (textured) infill panels", "where": "EAST ELEVATION, three panels between the top-storey windows", "finish": "rough-textured as drawn; material not annotated"},
+    {"material": "Roofing (not annotated; roofs drawn only as thin plane lines)", "where": "Low-pitched hipped roofs with wide eaves over the main and top storeys, and a flat cantilevered roof slab at the west top storey", "finish": null}
+  ],
+  "palette": {
+    "dominant": ["black ink linework on white sheet (monochrome drawing)", "dense horizontal hatching of the brick walls reading as dark bands"],
+    "accent": ["plain white copings, sills, caps and glazing reading as light horizontal strips"],
+    "warm_or_cool": "neutral"
+  },
+  "details": [
+    "Low-pitched hipped roofs with very deep overhanging eaves and thin fascias, stacked in two tiers",
+    "Brick walls drawn with emphasised continuous horizontal joints, reinforcing the horizontal layering",
+    "Plain stone copings, sills, string courses and chimney caps capping every wall top and sill line",
+    "Windows grouped in continuous horizontal bands of tall narrow casements between slender brick piers, set directly under the eaves",
+    "Low stepped garden/terrace walls with copings extending the composition outward at the base, terminated on the east by a planter bowl"
+  ],
+  "what_is_absent": [
+    "No dimension strings, dimension figures, scale note or graphic scale",
+    "No material or finish annotations; roof covering, wall and trim materials are indicated only by hatching conventions",
+    "No floor, eaves or ridge level datums or height marks",
+    "No site context: no ground slope, landscaping, trees, steps or neighbouring structures beyond the garden walls",
+    "No shading, shadows or rendering of surfaces; no section or detail reference marks"
+  ],
+  "confidence": "medium"
+}

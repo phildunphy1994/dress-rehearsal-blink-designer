@@ -1,0 +1,143 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00007",
+  "drawing_type": "elevation",
+  "room_or_space": "Fireplace elevations (East and West faces) of one chimney mass serving three vertically stacked levels; the rooms are not named on the sheet",
+  "overall_dimensions": {
+    "length": null,
+    "width": null,
+    "ceiling_height": "7'-6\" (top tier), 7'-3\" (middle tier), 7'-2\" (lowest tier), all on the East elevation; a 1'-5\" floor zone separates the top and middle tiers"
+  },
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "Three stacked tiers of near-equal, low floor-to-ceiling height (7'-2\" to 7'-6\"); fireplace openings, hearth shelves and lintel bands are drawn as wide, low horizontals, markedly wider than they are high; brick coursing is drawn as continuous horizontal lines reinforcing the horizontal emphasis"
+  },
+  "layout": {
+    "organisation": "Two elevations side by side (labelled EAST, left, and WEST, right) of the same chimney mass, each in three vertically stacked tiers separated by floor/ceiling lines. Top tier: on the East a hipped-roof outline and chimney cap above a continuous band of framed stippled panels; on the West the plain brick chimney shaft with a sloping roof edge and a column of small rectangular recesses. Middle tier: brick fireplace with a wide low opening, raised hearth plinth and a rectangular void through the brick above the shelf. Lowest tier: brick fireplace with a wide opening, raised hearth blocks and a long projecting shelf slab, flanked on the West by tall framed stippled piers.",
+    "axes": "A single vertical stacking axis through the chimney. The West elevation fireplaces are roughly symmetrical about a vertical centreline; the East elevation is asymmetric, with stepped stair profiles and a sectioned post to the left and right of the fireplaces.",
+    "entry_sequence": "Not shown; the sheet contains elevations only, with no doors into the spaces indicated.",
+    "circulation": "Heavy sectioned stepped profiles (with dashed hidden steps) beside the East-elevation fireplaces show a stair descending next to the chimney mass between the middle and lowest tiers; no other circulation is shown."
+  },
+  "openings": [
+    {
+      "type": "opening",
+      "position": "Middle tier, West elevation, centred in the brick chimney breast above the hearth plinth",
+      "dimensions": null,
+      "pattern": "Wide low rectangular fireplace opening, framed by brick, with a projecting lintel/shelf band above and raised hearth plinth stepping out at both sides"
+    },
+    {
+      "type": "opening",
+      "position": "Lowest tier, West elevation, centred between two tall framed stippled piers",
+      "dimensions": null,
+      "pattern": "Wide rectangular fireplace opening with a long horizontal shelf slab spanning above it and raised hearth blocks at either side"
+    },
+    {
+      "type": "opening",
+      "position": "Middle tier, above the fireplace shelf, visible on both East and West elevations",
+      "dimensions": null,
+      "pattern": "Rectangular void or recess cut through the brick chimney breast, wider than high, set within the coursed brick field"
+    },
+    {
+      "type": "window",
+      "position": "Top tier, East elevation, continuous band beneath the hipped-roof outline",
+      "dimensions": null,
+      "pattern": "Band of tall rectangular stippled panels in double-line frames, divided by mullions, each with a small square motif near the head; a brick-hatched infill panel sits below the central bay"
+    },
+    {
+      "type": "window",
+      "position": "Middle and lowest tiers, East elevation, beside the fireplace and adjacent to the stepped stair profiles",
+      "dimensions": null,
+      "pattern": "Framed stippled panels with stepped lower edges following the stair, drawn with double-line frames; some edges shown dashed where hidden"
+    },
+    {
+      "type": "opening",
+      "position": "Top tier, West elevation, near the top of the brick chimney shaft",
+      "dimensions": null,
+      "pattern": "Vertical column of six small rectangular recesses or vents in the brick shaft"
+    }
+  ],
+  "built_in_furniture": [
+    {
+      "item": "Raised hearth plinth",
+      "material": "Unhatched solid blocks (material not labelled)",
+      "dimensions": null,
+      "position": "Below the middle-tier fireplace opening, West elevation, stepping out at both sides"
+    },
+    {
+      "item": "Raised hearth blocks",
+      "material": "Unhatched solid blocks (material not labelled)",
+      "dimensions": null,
+      "position": "Either side of the lowest-tier fireplace opening at floor level, West elevation"
+    },
+    {
+      "item": "Projecting horizontal shelf slab",
+      "material": "Unhatched solid slab (material not labelled)",
+      "dimensions": null,
+      "position": "Spanning across the lowest-tier fireplace between the flanking piers, West elevation; a similar lintel/shelf band above the middle-tier opening"
+    },
+    {
+      "item": "Flanking framed stippled piers on plinth mouldings",
+      "material": "Framed trim with stippled infill (not labelled)",
+      "dimensions": null,
+      "position": "Both ends of the lowest-tier fireplace wall, West elevation, full height of the tier"
+    },
+    {
+      "item": "Panelled screen band with square motifs",
+      "material": "Framed trim with stippled infill (not labelled)",
+      "dimensions": null,
+      "position": "Top tier, East elevation, running the full width beneath the roof outline"
+    },
+    {
+      "item": "Stepped stair with sectioned newel post",
+      "material": "Drawn as heavy sectioned profile (material not labelled)",
+      "dimensions": null,
+      "position": "Left and right of the East-elevation fireplaces, descending from the middle tier to the lowest tier"
+    }
+  ],
+  "materials": [
+    {
+      "material": "Brick",
+      "where": "Chimney mass, fireplace surrounds and chimney shaft on both elevations; infill below the central top-tier bay (East)",
+      "finish": "Drawn as continuous horizontal coursing lines"
+    },
+    {
+      "material": "Stippled panel infill (glass or plaster, not labelled)",
+      "where": "Top-tier panel band (East), flanking piers of the lowest tier (West), panels beside the East fireplaces",
+      "finish": "Dotted field within double-line frames"
+    },
+    {
+      "material": "Unhatched solid slabs and blocks (stone or concrete, not labelled)",
+      "where": "Hearth plinths, hearth blocks, shelf slabs and lintel bands at every fireplace",
+      "finish": null
+    },
+    {
+      "material": "Moulded trim (wood implied by profiles, not labelled)",
+      "where": "Cornice/cap profile at the top-tier floor line with a circular pipe or rail section, pier plinth mouldings, panel frames and mullions",
+      "finish": "Drawn as moulded profiles"
+    },
+    {
+      "material": "Roof covering (not labelled)",
+      "where": "Sloping roof edge against the chimney shaft, top tier West elevation",
+      "finish": "Drawn as a stepped shingle or tile edge"
+    }
+  ],
+  "palette": {
+    "dominant": ["brick, drawn as horizontal coursing", "plain unhatched slab and plinth surfaces"],
+    "accent": ["stippled panels in double-line frames"],
+    "warm_or_cool": "neutral"
+  },
+  "details": [
+    "Strong horizontal emphasis: wide low fireplace openings, long shelf slabs and lintel bands, and brick drawn as continuous horizontal courses",
+    "Rectangular void or recess through the chimney breast above the middle-tier fireplace, shown on both East and West elevations",
+    "Stippled rectangular panels in double-line frames, with a small square motif in each top-tier panel on the East elevation",
+    "Raised hearth plinths stepping out at both sides of each fireplace, with a projecting shelf slab above the opening",
+    "Identical moulded cornice/cap profile with a circular section at the junction of the top-tier floor and middle-tier ceiling on both elevations; sectioned stepped stair profiles with dashed hidden steps beside the East fireplaces"
+  ],
+  "what_is_absent": [
+    "No horizontal (width) dimensions; the only dimensions are four vertical heights on the East elevation",
+    "No material labels, finish notes or annotations of any kind on the drawings",
+    "No room names and no plan or section key showing where the elevations are taken from",
+    "No mantel ornament, overmantel panelling or decorative surround; the fireplaces are plain brick openings",
+    "No fireplace fittings (grate, firebox lining, damper, andirons) and no floor or ceiling finishes beyond single lines"
+  ],
+  "confidence": "medium"
+}

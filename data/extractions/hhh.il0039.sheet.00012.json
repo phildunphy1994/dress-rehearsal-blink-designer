@@ -1,0 +1,43 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00012",
+  "drawing_type": "elevation",
+  "room_or_space": "Furniture pieces labelled for the living room, dining room and billiard room (sheet of furniture elevations: living room chair, foot stool, dining room chair, billiard room andirons; no room enclosure is drawn)",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "Dining room chair is drawn with a very tall, narrow back rising far above the seat (back much taller than the seat-to-floor height), whereas the living room chair back is shorter and wider with a solid panel; the foot stool is a low, squat block roughly as wide as it is tall; the andirons are drawn as a long low horizontal bar with a tall vertical end upright"
+  },
+  "layout": {
+    "organisation": "Six scaled elevations arranged on one sheet: living room chair front and side elevations (lower left), foot stool front elevation (lower centre), dining room chair side and front elevations (lower right), billiard room andirons side and end elevations (upper right); explanatory note and sheet title at upper left; graphic scale bar at lower right",
+    "axes": "Each front elevation is bilaterally symmetrical about a vertical centre line (chairs, foot stool, andiron end view); side elevations of the chairs show a vertical rear post with the seat projecting forward",
+    "entry_sequence": "Not applicable; furniture elevations only, no room, doors or thresholds shown",
+    "circulation": "Not applicable; furniture elevations only, no room plan shown"
+  },
+  "openings": [],
+  "built_in_furniture": [
+    {"item": "Freestanding living room chair (front and side elevations): square rear posts with stepped cap finials rising above the back, back with a central upholstered panel flanked by narrow open side slots between the posts, upholstered seat cushion on a plain rectangular seat rail, square legs joined by a lower side stretcher, front feet flare outward at the base", "material": "not labelled on sheet; seat cushion and back panel shown with stipple hatch indicating upholstery", "dimensions": null, "position": "lower left of sheet, labelled LIVING ROOM CHAIR"},
+    {"item": "Freestanding foot stool (front elevation): a low square-section piece with a thick flat top over three thin stacked horizontal bands, two square legs with a solid lower rail, and feet that curve outward at the base", "material": "not labelled on sheet", "dimensions": null, "position": "centre of sheet, labelled FOOT STOOL"},
+    {"item": "Freestanding dining room chair (side and front elevations): very tall narrow back of closely spaced vertical spindles between two square posts under a flat top rail, upholstered seat cushion on a plain seat rail, a second band of vertical spindles filling the space below the seat between the legs, rear leg flares outward at the floor in the side view", "material": "not labelled on sheet; seat cushion shown with stipple hatch indicating upholstery", "dimensions": null, "position": "lower right of sheet, labelled DINING ROOM CHAIR"},
+    {"item": "Billiard room andirons (side and end elevations): a long low rectangular bar carried on six small trapezoidal feet, terminating in a tall rectangular upright with a square cap; the end view shows a T-shaped head with two square recessed panels on a slender shaft standing on a stepped rectangular base", "material": "not labelled on sheet", "dimensions": null, "position": "upper right of sheet, labelled BILLIARD ROOM ANDIRONS"}
+  ],
+  "materials": [
+    {"material": "Upholstery (shown by stipple hatch; fabric not named)", "where": "Seat cushions of the living room chair and dining room chair; back panel of the living room chair", "finish": null},
+    {"material": "Framing material not labelled on sheet (posts, rails, spindles and legs drawn in plain outline)", "where": "All chair, stool and andiron frames", "finish": null}
+  ],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Square posts terminating in stepped cap finials that rise above the back rail (living room chair back posts)",
+    "Closely spaced vertical spindles filling the full height of the dining room chair back and repeated as a second band below the seat between the legs",
+    "Feet that flare or curve outward at the floor on the living room chair, foot stool and dining room chair rear leg",
+    "Upholstered cushions with rounded corners, rendered in stipple hatch, resting on a plain flat rectangular seat rail",
+    "Stacked thin horizontal bands and stepped rectangular blocks: three bands under the foot stool top, stepped base and T-shaped capped head of the andirons"
+  ],
+  "what_is_absent": [
+    "No written dimension strings; sizes are conveyed only by the graphic scale bar at 1 1/2\" = 1'-0\"",
+    "No plan views or sections of any piece; elevations only",
+    "No material, wood species, finish or upholstery notes on the drawings",
+    "No room context: no walls, floor line, fireplace or hearth drawn around the pieces (andirons drawn without a fireplace)",
+    "No joinery or construction details"
+  ],
+  "confidence": "high"
+}

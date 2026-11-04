@@ -1,0 +1,53 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00020",
+  "drawing_type": "elevation",
+  "room_or_space": "NORTH ELEVATION - exterior north face of the whole building; no room is named on the sheet",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "Strongly horizontal composition: the drawn elevation is many times longer than it is tall, with low-pitched hipped roofs whose eaves project far beyond the walls and with wall bands much longer than they are high. No dimensions are written, so no ratio can be stated."
+  },
+  "layout": {
+    "organisation": "Three stepped masses read left to right: a long two-storey wing at the left with a low plinth, a band of small ground-level windows and a ribbon of tall upper windows under a deep hipped roof; a taller central block carrying a third storey under its own hipped roof, flanked by two tall rectangular chimney/stack masses; and a two-storey right-hand section whose upper storey is a continuous window band under a very long cantilevered roof, ending in a low walled terrace at the far right. A separate low wall with a post stands at the far left.",
+    "axes": "No axis of symmetry. Dominant axes are horizontal: ground line, plinth/water-table line, sill courses, roof fascias and ridge lines all run as continuous horizontals; the only verticals of weight are the two chimney/stack masses and the piers between windows.",
+    "entry_sequence": "No entrance door is legible on this face. The only ground-level features are the low walled terrace at the right and the low wall and post at the left.",
+    "circulation": "Not shown; the sheet is an exterior elevation with no internal circulation indicated."
+  },
+  "openings": [
+    {"type": "window", "position": "Left wing, ground storey, just above the plinth/water-table line", "dimensions": null, "pattern": "Small near-square windows set singly, in pairs and in a group of three, each on a projecting sill; spaced irregularly and not aligned with the windows above"},
+    {"type": "window", "position": "Left wing, upper storey, directly under the roof fascia", "dimensions": null, "pattern": "Two small single windows at the left end, then a continuous ribbon of six tall rectangular windows separated by narrow piers, each with inner glazing frames"},
+    {"type": "window", "position": "Central block, third storey, under the uppermost hipped roof", "dimensions": null, "pattern": "Groups of two to three tall windows either side of the chimney masses, plus narrow single slot windows set into the chimney/stack masses at two levels"},
+    {"type": "window", "position": "Central block, second storey", "dimensions": null, "pattern": "Isolated small single windows (one near-square, one narrow slot) in otherwise blank brick wall"},
+    {"type": "window", "position": "Central block, ground storey, above the plinth", "dimensions": null, "pattern": "Small near-square windows in pairs and a group of three, on projecting sills"},
+    {"type": "window", "position": "Right section, upper storey, under the long cantilevered roof", "dimensions": null, "pattern": "Continuous ribbon of about twelve tall lights of alternating wide and narrow widths separated by pier-like mullions, with a bowl-shaped planter urn on a projecting ledge in front of the band"},
+    {"type": "window", "position": "Right section, ground storey, at mid-height of the wall", "dimensions": null, "pattern": "Row of about five tall rectangular lights between short piers, running up to the walled terrace"},
+    {"type": "opening", "position": "Far right, at the base of the walled terrace", "dimensions": null, "pattern": "A single small rectangular notch/opening at ground level in the terrace base; no door leaf drawn"}
+  ],
+  "built_in_furniture": [
+    {"item": "Bowl-shaped planter urn on a projecting ledge", "material": "not indicated", "dimensions": null, "position": "In front of the upper-storey window band of the right section, above the ground-storey windows"},
+    {"item": "Walled terrace with flat capped coping and plinth", "material": "brick walls with plain coping (coping material not indicated)", "dimensions": null, "position": "Far right of the elevation, in front of the two-storey right section"},
+    {"item": "Low garden/boundary wall with a square post and capped coping", "material": "brick with plain coping (coping material not indicated)", "dimensions": null, "position": "Far left of the elevation, in front of the left wing"}
+  ],
+  "materials": [
+    {"material": "Brick, drawn as continuous horizontal coursing hatching", "where": "All wall surfaces of the three masses, the chimney/stack masses, the terrace walls and the garden wall", "finish": null},
+    {"material": "Plain (unhatched) coping, sill and cap material, not labelled", "where": "Plinth/water-table course, window sills, string courses at floor level, chimney caps, terrace and garden wall copings", "finish": null},
+    {"material": "Roofing not indicated; roof planes drawn plain", "where": "Low-pitched hipped roofs with thin projecting fascias over every mass", "finish": null},
+    {"material": "Window frames and glazing bars, material not indicated", "where": "All windows, drawn with outer frame and inner glazing frames", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink linework on white paper"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Very deep cantilevered hipped roofs with thin fascias projecting far beyond the walls on every mass",
+    "Continuous horizontal brick coursing emphasised by plain sill and string courses running the full length of each wall",
+    "Windows gathered into continuous ribbons immediately under the eaves, separated by narrow piers",
+    "Tall plain-capped rectangular chimney/stack masses rising above the roofs",
+    "Plain projecting copings on the plinth, terrace walls and garden wall"
+  ],
+  "what_is_absent": [
+    "Written dimensions, a scale note or a graphic scale bar",
+    "A principal entrance door on this face",
+    "Material labels or annotation notes",
+    "Level datums, section markers or floor-line callouts",
+    "Site context beyond a single ground line (no planting, paving, gutters or downspouts drawn)"
+  ],
+  "confidence": "high"
+}

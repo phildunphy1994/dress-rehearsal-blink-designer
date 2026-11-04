@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00011",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/11_furniture_dresser_headboard_and_footboard.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r0c0.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r0c1.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r0c2.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r0c3.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r1c0.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r1c1.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r1c2.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r1c3.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r2c0.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r2c1.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r2c2.png",
+    "corpus_a/tiles/11_furniture_dresser_headboard_and_footboard/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:33Z",
+  "finished_at": "2026-11-04T17:38:32Z",
+  "flagged_for_manual_review": false,
+  "notes": "Sheet is crisp and fully legible at the 4x3 tile resolution, but it carries no dimension strings at all: the four furniture elevations are drawn to the graphic scale (1 1/2 in = 1 ft 0 in) only, so the dimensions list is empty and all overall-dimension fields are null. No finer crops were needed."
+}

@@ -1,0 +1,51 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00025",
+  "drawing_type": "detail",
+  "room_or_space": "Not identified on the sheet; the sheet is titled WINDOW DETAIL and shows two leaded-glass window lights in elevation without naming a room",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions are written. As drawn (pencil scale note 3\"=1'-0\"), the left light is a tall rectangle roughly 5:7 wide-to-high and the right light is a narrower rectangle roughly 1:2 wide-to-high; both lights are drawn to the same height with their heads and sills aligned"
+  },
+  "layout": {
+    "organisation": "Two rectangular leaded-glass window lights drawn side by side, each bounded by a frame of two to four parallel came lines with short perpendicular ties. Left light: a bilaterally symmetrical composition of two vertical ladder-like bars with chevron-pointed heads flanking a central field of large hexagonal/lozenge panes, a horizontal band of small diamond panes at mid-height, and large plain panes below meeting in a single V-shaped came at the bottom centre. Right light: an asymmetrical composition with one chevron-headed ladder bar set left of centre running the full height, diagonal cames sweeping to the right to form lozenge and parallelogram panes, large plain rectangular panes to the lower left, and a small caret/triangle motif at the bottom centre just above the sill",
+    "axes": "Left light is symmetrical about its vertical centreline; the right light has no axis of symmetry and reads as a vertical shaft with diagonals radiating to one side",
+    "entry_sequence": "Not shown (window detail only)",
+    "circulation": "Not shown (window detail only)"
+  },
+  "openings": [
+    {
+      "type": "window",
+      "position": "Left half of the sheet",
+      "dimensions": null,
+      "pattern": "Symmetrical leaded-glass pattern: multiple-line border; two vertical ladder-like bars (narrow strips divided by closely spaced horizontal cames) with chevron-pointed heads and a nested smaller chevron/hexagon cell beneath each point; a central field of large hexagonal and lozenge panes formed by crossing diagonal cames; a horizontal band of small diamond panes across mid-height; large plain undivided panes in the lower half with one V-shaped came meeting at the bottom centre; plain rectangular panes in the upper and lower corners"
+    },
+    {
+      "type": "window",
+      "position": "Right half of the sheet",
+      "dimensions": null,
+      "pattern": "Asymmetrical leaded-glass pattern: multiple-line border; one vertical ladder-like bar with a chevron-pointed head and nested chevron cell, set left of centre and running almost full height; diagonal cames descending to the right forming lozenge, parallelogram and triangular panes; small rectangular panes clustered at the upper left; large plain rectangular panes at the lower left; a small caret/triangle motif centred just above the sill"
+    }
+  ],
+  "built_in_furniture": [],
+  "materials": [
+    {"material": "Lead cames (drawn as paired parallel lines between panes; material not annotated)", "where": "All subdivisions and borders of both lights", "finish": null},
+    {"material": "Glass panes (drawn as unhatched white areas; colour, texture and material not annotated)", "where": "All fields between cames in both lights", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink line on white sheet (no colour information drawn)"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Vertical ladder-like bars: narrow strips subdivided by closely spaced horizontal cames, each terminating at the top in a chevron point",
+    "Nested chevron/hexagon cell beneath each chevron head, with a smaller hexagonal cell below it",
+    "Horizontal band of small diamond/lozenge panes formed by crossing diagonal cames at mid-height",
+    "Multiple-line border of two to four parallel cames around each light with short perpendicular tie cames",
+    "Large plain undivided panes in the lower half, closed by a single V-shaped came meeting at the bottom centre (left light) or by diagonal cames sweeping to one side (right light)"
+  ],
+  "what_is_absent": [
+    "Any dimension strings or written sizes for the lights, panes or cames",
+    "A section or profile through the sash, frame, mullion or sill",
+    "Notes on glass colour, texture or material, and on came metal or width",
+    "Indication of sash operation (casement, hinge side, fixed) or hardware",
+    "Location key or room name showing where in the building the lights occur"
+  ],
+  "confidence": "high"
+}

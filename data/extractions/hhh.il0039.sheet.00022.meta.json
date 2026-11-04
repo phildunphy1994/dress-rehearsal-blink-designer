@@ -1,0 +1,29 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00022",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/22_section.png",
+    "corpus_a/tiles/22_section/r0c0.png",
+    "corpus_a/tiles/22_section/r0c1.png",
+    "corpus_a/tiles/22_section/r0c2.png",
+    "corpus_a/tiles/22_section/r0c3.png",
+    "corpus_a/tiles/22_section/r1c0.png",
+    "corpus_a/tiles/22_section/r1c1.png",
+    "corpus_a/tiles/22_section/r1c2.png",
+    "corpus_a/tiles/22_section/r1c3.png",
+    "corpus_a/tiles/22_section/r2c0.png",
+    "corpus_a/tiles/22_section/r2c1.png",
+    "corpus_a/tiles/22_section/r2c2.png",
+    "corpus_a/tiles/22_section/r2c3.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet22/tiles6x4/r2c1.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet22/tiles6x4/r2c2.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet22/tiles6x4/r2c3.png"
+  ],
+  "extra_crops_made": true,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:39:45Z",
+  "flagged_for_manual_review": false,
+  "notes": "All lettering (drawing label and title block) was crisp; the section drawing itself carries no dimension strings, no scale and no annotations, confirmed with finer 6x4 crops of the section area from the master TIFF, so the dimension list is legitimately empty. Element identifications (door vs window, counter vs bench) rest on graphic convention only, hence medium extraction confidence."
+}

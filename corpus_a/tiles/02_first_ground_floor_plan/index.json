@@ -1,0 +1,131 @@
+{
+ "source": "/home/user/dress-rehearsal-blink-designer/corpus_a/02_first_ground_floor_plan.tif",
+ "size": [
+  9654,
+  7616
+ ],
+ "cols": 4,
+ "rows": 3,
+ "tiles": [
+  {
+   "file": "r0c0.png",
+   "box_px": [
+    0,
+    0,
+    2606,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r0c1.png",
+   "box_px": [
+    2220,
+    0,
+    5020,
+    2741
+   ],
+   "scale": 0.56
+  },
+  {
+   "file": "r0c2.png",
+   "box_px": [
+    4633,
+    0,
+    7433,
+    2741
+   ],
+   "scale": 0.56
+  },
+  {
+   "file": "r0c3.png",
+   "box_px": [
+    7047,
+    0,
+    9654,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r1c0.png",
+   "box_px": [
+    0,
+    2335,
+    2606,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c1.png",
+   "box_px": [
+    2220,
+    2335,
+    5020,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c2.png",
+   "box_px": [
+    4633,
+    2335,
+    7433,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c3.png",
+   "box_px": [
+    7047,
+    2335,
+    9654,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r2c0.png",
+   "box_px": [
+    0,
+    4874,
+    2606,
+    7616
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r2c1.png",
+   "box_px": [
+    2220,
+    4874,
+    5020,
+    7616
+   ],
+   "scale": 0.56
+  },
+  {
+   "file": "r2c2.png",
+   "box_px": [
+    4633,
+    4874,
+    7433,
+    7616
+   ],
+   "scale": 0.56
+  },
+  {
+   "file": "r2c3.png",
+   "box_px": [
+    7047,
+    4874,
+    9654,
+    7616
+   ],
+   "scale": 0.572
+  }
+ ]
+}

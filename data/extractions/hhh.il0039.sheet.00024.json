@@ -1,0 +1,45 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00024",
+  "drawing_type": "detail",
+  "room_or_space": "Front detail (caption FRONT DETAIL): a pointed, V-plan window bay at the front of the building, shown as a horizontal section/plan detail and a matching exterior elevation; no room name is given on the sheet",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No figured dimensions or scale; as drawn, the two angled faces of the bay meet at approximately a right angle and the bay projects (corner-wall line to apex) roughly 0.7 of its width across the side returns; in elevation the eave band is roughly twice as wide as the wall height beneath it, and each window is a tall narrow vertical of roughly 1:5 to 1:6 (width:height)"
+  },
+  "layout": {
+    "organisation": "Bilaterally symmetrical pointed bay. In plan, two parallel side-return walls (each with a window between an end pier and a corner pier) turn inward through short solid masonry walls to chamfered piers; from each chamfered pier a short glazed re-entrant segment leads to a second chamfered pier, and from there a long glazed angled face runs to a narrow pointed apex pier where the two faces meet. Thin lines inside the V trace the eave/soffit outline above. The elevation shows the same bay as a low hipped-roofed volume: wide masonry end piers, four tall windows in two pairs about a central pier, a projecting sill course and a coursed masonry base.",
+    "axes": "One axis of bilateral symmetry through the apex of the V in plan and through the ridge point of the hipped roof in elevation; no other axes or grid lines are drawn",
+    "entry_sequence": "Not shown; no door or entry appears on the sheet",
+    "circulation": "Not shown; the sheet is a wall-and-window detail with no floor, furniture or circulation information"
+  },
+  "openings": [
+    {"type": "window", "position": "Plan: one long window in each of the two angled faces of the V, running from the chamfered pier to the apex pier, with an intermediate mullion block near mid-length", "dimensions": null, "pattern": "Continuous glazed band on both angled faces, meeting at the pointed apex; glass drawn as a thin double line with small frame blocks at each end and at the mullion"},
+    {"type": "window", "position": "Plan: one window in each parallel side-return wall, between the hatched end pier at the top of the drawing and the hatched corner pier", "dimensions": null, "pattern": "Single sash in a stippled wall thickness, frame blocks at head and foot of the opening in plan"},
+    {"type": "window", "position": "Plan: one short window on each side in the re-entrant segment between the corner chamfered pier and the second chamfered pier at the start of the angled face", "dimensions": null, "pattern": "Short single sash set behind a stepped stippled pier mass; mirrors on both sides of the axis"},
+    {"type": "window", "position": "Elevation: four tall narrow windows between the two wide hatched end piers, arranged as two pairs separated by a central plain pier, each pair flanked by narrow plain jambs", "dimensions": null, "pattern": "Tall narrow vertical lights with a double frame line and a single vertical sash/muntin line near one edge of each light; all four share a common head under the eave band and a common sill course"}
+  ],
+  "built_in_furniture": [],
+  "materials": [
+    {"material": "Masonry drawn with fine horizontal course hatching (brick convention)", "where": "Plan: end piers of the side returns, corner piers and the short inward-turning walls; elevation: the wide end piers and the base course below the sill band", "finish": null},
+    {"material": "Stippled fill (concrete or rubble convention)", "where": "Plan: backing behind the hatched faces, the wall thickness around every window, the stepped pier masses flanking the angled faces and the apex pier", "finish": null},
+    {"material": "Plain unhatched blocks (cut stone or cast block convention)", "where": "Plan: the chamfered pentagonal piers at the junctions of wall planes; elevation: the continuous projecting sill course of large rectangular blocks, the narrow jambs and central pier between the windows", "finish": null},
+    {"material": "Glazing with small rectangular frame members (material not indicated)", "where": "All windows in plan and elevation", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink line and hatching on white sheet"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "V-shaped (pointed) bay in plan with continuous glazing on both angled faces converging on a narrow apex pier whose outer face is itself pointed",
+    "Chamfered pentagonal piers with pointed outer faces at every change of wall direction in plan",
+    "Tall narrow vertical windows grouped in pairs between masonry piers under a continuous head line",
+    "Deep horizontal eave band of three parallel lines projecting well beyond the wall faces, beneath a low hipped roof",
+    "Continuous projecting sill course of large plain blocks over a horizontally coursed masonry base divided by vertical joints"
+  ],
+  "what_is_absent": [
+    "No dimensions, dimension lines, scale or graphic scale",
+    "No door or entry",
+    "No floor, ground line or floor level",
+    "No furniture, fittings, fixtures or interior finishes",
+    "No room name, material labels, notes or north arrow"
+  ],
+  "confidence": "medium"
+}

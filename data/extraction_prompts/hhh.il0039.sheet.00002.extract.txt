@@ -1,0 +1,118 @@
+You are analysing ONE measured architectural drawing for a design-pattern study. Describe only what is shown in this drawing and its dimensions. Do not guess about anything not shown. Do not write prose outside the JSON.
+
+Return exactly this JSON object:
+
+```json
+{
+  "sheet_id": "string",
+  "drawing_type": "plan|section|elevation|detail|environmental|photograph",
+  "room_or_space": "string",
+  "overall_dimensions": {"length": "string with units, or null", "width": "string with units, or null", "ceiling_height": "string with units, or null"},
+  "proportions": {"length_to_width_ratio": "string, or null", "notable_proportion": "string, or null"},
+  "layout": {"organisation": "string", "axes": "string", "entry_sequence": "string", "circulation": "string"},
+  "openings": [{"type": "window|door|opening", "position": "string", "dimensions": "string, or null", "pattern": "string"}],
+  "built_in_furniture": [{"item": "string", "material": "string", "dimensions": "string, or null", "position": "string"}],
+  "materials": [{"material": "string", "where": "string", "finish": "string, or null"}],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "warm|cool|neutral"},
+  "details": ["string, max 5 — recurring details visible in this drawing"],
+  "what_is_absent": ["string, max 5 — things a typical room of this type would have, that this drawing does NOT show"],
+  "confidence": "high|medium|low"
+}
+```
+
+sheet_id: hhh.il0039.sheet.00002
+transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
+{
+  "sheet_id": "hhh.il0039.sheet.00002",
+  "sheet_title_as_drawn": "FIRST (GROUND) FLOOR PLAN; title block: NAME OF STRUCTURE FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; HABS CHICAGO PROJECT 1963, UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 2 OF 14 SHEETS; LIBRARY OF CONGRESS INDEX NUMBER (blank); ROBERT C. GIEBNER, DEL.",
+  "scale_as_drawn": "SCALE 1/8\" = 1'-0\" (with graphic bar scale marked 1 2 3 4 5, 10, 15)",
+  "dimensions": [
+    {
+      "value": "161'-6\"",
+      "measures": "overall east-west length of the building including the garage/service-yard wing, from the west end wall to the east wall of the service yard",
+      "location_on_sheet": "uppermost horizontal dimension line above the plan (north side), spanning the whole plan"
+    },
+    {
+      "value": "12'-0\"",
+      "measures": "first (westernmost) bay of the north dimension string, west end of plan to first vertical reference line",
+      "location_on_sheet": "north dimension string above the plan, first segment from the left"
+    },
+    {
+      "value": "11'-4\"",
+      "measures": "second bay of the north dimension string",
+      "location_on_sheet": "north dimension string above the plan, second segment from the left"
+    },
+    {
+      "value": "20'-2\"",
+      "measures": "third bay of the north dimension string",
+      "location_on_sheet": "north dimension string above the plan, third segment from the left"
+    },
+    {
+      "value": "21'-0\"",
+      "measures": "fourth bay of the north dimension string (over the north hall/terrace area)",
+      "location_on_sheet": "north dimension string above the plan, fourth segment from the left"
+    },
+    {
+      "value": "24'-11\"",
+      "measures": "fifth bay of the north dimension string (over the entry hall and stair block)",
+      "location_on_sheet": "north dimension string above the plan, fifth segment from the left"
+    },
+    {
+      "value": "54'-7\"",
+      "measures": "sixth bay of the north dimension string, spanning the garage wing",
+      "location_on_sheet": "north dimension string above the plan, sixth segment, over the garage"
+    },
+    {
+      "value": "17'-6\"",
+      "measures": "seventh (easternmost) bay of the north dimension string, spanning the dotted-line garage addition and east wall of the service yard",
+      "location_on_sheet": "north dimension string above the plan, last segment at the right"
+    },
+    {
+      "value": "20'-11\"",
+      "measures": "north-south interior depth of the west end room (the room with the pointed bay/prow at the west end of the plan)",
+      "location_on_sheet": "vertical dimension line inside the west end room, left side of plan"
+    },
+    {
+      "value": "46'-6\"",
+      "measures": "north-south extent of the service yard enclosure measured along its east wall",
+      "location_on_sheet": "vertical dimension line at the east edge of the plan, inside the east wall of the service yard"
+    },
+    {
+      "value": "6'-0\"",
+      "measures": "east-west width of the passage between the west end room and the billiard room",
+      "location_on_sheet": "interior horizontal dimension string on the south side of the billiard room, westernmost segment"
+    },
+    {
+      "value": "31'-9\"",
+      "measures": "east-west length of the billiard room",
+      "location_on_sheet": "interior horizontal dimension string along the south side of the billiard room"
+    },
+    {
+      "value": "8'-6\"",
+      "measures": "east-west width of the central masonry core (fireplace/stair block) between the billiard room and the playroom",
+      "location_on_sheet": "interior horizontal dimension string, middle segment between BILLIARD ROOM and PLAYROOM"
+    },
+    {
+      "value": "22'-9\"",
+      "measures": "east-west length of the playroom",
+      "location_on_sheet": "interior horizontal dimension string along the south side of the playroom"
+    },
+    {
+      "value": "6'-4\"",
+      "measures": "east-west width of the passage at the east end of the playroom beside the east stair",
+      "location_on_sheet": "interior horizontal dimension string, easternmost segment, east of PLAYROOM"
+    },
+    {
+      "value": "8 FEET",
+      "measures": "original height of the wall around the service yard (written in the note, not a dimension line)",
+      "location_on_sheet": "note text block, upper right of sheet: 'THE WALL AROUND THE SERVICE YARD, ORIGINALLY 8 FEET HIGH'"
+    },
+    {
+      "value": "3 FEET",
+      "measures": "height to which the service yard wall has been cut down (written in the note, not a dimension line)",
+      "location_on_sheet": "note text block, upper right of sheet: 'HAS BEEN CUT DOWN TO 3 FEET'"
+    }
+  ],
+  "legibility": "high",
+  "notes": "All dimension strings are hand-lettered and fully legible on the 4x3 full-resolution tiles; no finer crops were needed. The seven segments of the north string sum to the 161'-6\" overall. Faint construction/reference lines (grid wires, dotted conjectural lines) are visible but carry no additional numerals. No dimensions are given for wall thicknesses, door or window widths, or the garage/service yard interior."
+}

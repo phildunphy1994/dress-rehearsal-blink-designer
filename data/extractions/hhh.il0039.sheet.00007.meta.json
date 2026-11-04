@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00007",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/07_fireplace_elevations.png",
+    "corpus_a/tiles/07_fireplace_elevations/r0c0.png",
+    "corpus_a/tiles/07_fireplace_elevations/r0c1.png",
+    "corpus_a/tiles/07_fireplace_elevations/r0c2.png",
+    "corpus_a/tiles/07_fireplace_elevations/r0c3.png",
+    "corpus_a/tiles/07_fireplace_elevations/r1c0.png",
+    "corpus_a/tiles/07_fireplace_elevations/r1c1.png",
+    "corpus_a/tiles/07_fireplace_elevations/r1c2.png",
+    "corpus_a/tiles/07_fireplace_elevations/r1c3.png",
+    "corpus_a/tiles/07_fireplace_elevations/r2c0.png",
+    "corpus_a/tiles/07_fireplace_elevations/r2c1.png",
+    "corpus_a/tiles/07_fireplace_elevations/r2c2.png",
+    "corpus_a/tiles/07_fireplace_elevations/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:27:04Z",
+  "finished_at": "2026-11-04T17:30:33Z",
+  "flagged_for_manual_review": false,
+  "notes": "All four written dimensions and the scale note were crisp at tile resolution, so no extra crops from the master TIFF were needed. The sheet carries no material labels or horizontal dimensions, so material and panel-infill identifications in the extraction are inferred from drafting conventions (hatching, stipple) rather than text."
+}

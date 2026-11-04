@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00006",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/06_north_west_and_east_elevations.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r0c0.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r0c1.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r0c2.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r0c3.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r1c0.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r1c1.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r1c2.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r1c3.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r2c0.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r2c1.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r2c2.png",
+    "corpus_a/tiles/06_north_west_and_east_elevations/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:38:37Z",
+  "flagged_for_manual_review": false,
+  "notes": "Clean reproduction, all lettering legible at tile scale; the sheet carries no written dimensions at all (three unannotated elevations with only a scale note and bar scale), so overall_dimensions are null and materials are inferred from hatching conventions rather than labels."
+}

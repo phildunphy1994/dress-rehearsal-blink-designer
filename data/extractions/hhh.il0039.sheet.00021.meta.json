@@ -1,0 +1,28 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00021",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/21_east_and_west_elevations.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r0c0.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r0c1.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r0c2.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r0c3.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r1c0.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r1c1.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r1c2.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r1c3.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r2c0.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r2c1.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r2c2.png",
+    "corpus_a/tiles/21_east_and_west_elevations/r2c3.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet21/crop_east_left_margin.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet21/crop_east_chimney_right.png"
+  ],
+  "extra_crops_made": true,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:38:52Z",
+  "flagged_for_manual_review": false,
+  "notes": "Sheet is crisp and fully legible but carries no dimensions, no scale note and no graphic scale, so the transcription dimension list is empty and all overall_dimensions are null. Two full-resolution crops (cut directly from the TIFF) confirmed that faint horizontal lines beside the East Elevation are drafting guide lines without figures."
+}

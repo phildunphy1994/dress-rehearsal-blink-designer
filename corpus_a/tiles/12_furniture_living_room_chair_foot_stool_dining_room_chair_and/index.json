@@ -1,0 +1,131 @@
+{
+ "source": "/home/user/dress-rehearsal-blink-designer/corpus_a/12_furniture_living_room_chair_foot_stool_dining_room_chair_and.tif",
+ "size": [
+  9624,
+  7616
+ ],
+ "cols": 4,
+ "rows": 3,
+ "tiles": [
+  {
+   "file": "r0c0.png",
+   "box_px": [
+    0,
+    0,
+    2598,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r0c1.png",
+   "box_px": [
+    2213,
+    0,
+    5004,
+    2741
+   ],
+   "scale": 0.562
+  },
+  {
+   "file": "r0c2.png",
+   "box_px": [
+    4619,
+    0,
+    7410,
+    2741
+   ],
+   "scale": 0.562
+  },
+  {
+   "file": "r0c3.png",
+   "box_px": [
+    7025,
+    0,
+    9624,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r1c0.png",
+   "box_px": [
+    0,
+    2335,
+    2598,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c1.png",
+   "box_px": [
+    2213,
+    2335,
+    5004,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c2.png",
+   "box_px": [
+    4619,
+    2335,
+    7410,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c3.png",
+   "box_px": [
+    7025,
+    2335,
+    9624,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r2c0.png",
+   "box_px": [
+    0,
+    4874,
+    2598,
+    7616
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r2c1.png",
+   "box_px": [
+    2213,
+    4874,
+    5004,
+    7616
+   ],
+   "scale": 0.562
+  },
+  {
+   "file": "r2c2.png",
+   "box_px": [
+    4619,
+    4874,
+    7410,
+    7616
+   ],
+   "scale": 0.562
+  },
+  {
+   "file": "r2c3.png",
+   "box_px": [
+    7025,
+    4874,
+    9624,
+    7616
+   ],
+   "scale": 0.572
+  }
+ ]
+}

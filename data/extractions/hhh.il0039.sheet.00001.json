@@ -1,0 +1,44 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00001",
+  "drawing_type": "environmental",
+  "room_or_space": "Location plan (site context at urban-block scale): partial city blocks bounded by 57TH STREET, 58TH STREET, WOODLAWN AVENUE and KIMBARK AVENUE, with the subject building footprint hatched; this is the title sheet of the set and no room or interior space is shown",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "The hatched subject footprint is markedly elongated east-west along its southern street frontage, several times longer than it is deep, and it is the largest single footprint on its block. Stated from the plan graphic only; no dimensions are written on the sheet and none were estimated."
+  },
+  "layout": {
+    "organisation": "Title sheet. Large thin-stroke title lettering runs across the top; a boxed lettering panel sits at upper right; the location plan occupies the lower left quarter; blocks of descriptive printed text fill the centre right; the standard survey title block runs along the bottom edge. The location plan is a redrawn fire-insurance-map excerpt showing building footprints as outlines on four partial blocks: a full block west of the first avenue, a block east of it split by a mid-block alley into two halves, and two partial blocks south of the southern street. The subject footprint is the only hatched shape, at the south end of the western half of the alley-split block, fronting the southern street and the western avenue. In plan the footprint is a stepped, elongated rectilinear shape: a long bar runs the full depth of the half-block east-west, and at its western end it steps out twice toward the southern street, so the plan steps back from that street as it runs east toward the alley.",
+    "axes": "North is up, indicated by a circled north arrow beside the plan caption. The grid is orthogonal: two north-south avenues (labelled WOODLAWN AVENUE between the first and second blocks, KIMBARK AVENUE east of the third) and two east-west streets (57TH STREET along the top, 58TH STREET between the upper and lower rows of blocks). The subject footprint's long axis runs east-west, parallel to 58TH STREET.",
+    "entry_sequence": "Not shown. At 1\" = 100' the plan shows no doors, paths, steps or entries; only street, sidewalk/lot boundary lines and footprint outlines.",
+    "circulation": "Only street-level context is drawn: the two avenues, the two cross streets and the unlabelled mid-block alley. No internal circulation of any building is shown."
+  },
+  "openings": [],
+  "built_in_furniture": [],
+  "materials": [
+    {"material": "tawny brick and stone (masonry)", "where": "stated in a quoted description printed on the sheet as the structure of the building; not drawn", "finish": null},
+    {"material": "red tile", "where": "roof, as stated in the printed description on the sheet; not drawn", "finish": null},
+    {"material": "copper", "where": "eaves, as stated in the printed description on the sheet; not drawn", "finish": null},
+    {"material": "oak", "where": "woodwork throughout, as stated in the printed description on the sheet; not drawn", "finish": null}
+  ],
+  "palette": {
+    "dominant": ["tawny brick", "stone"],
+    "accent": ["red tile roof", "copper eaves", "oak woodwork"],
+    "warm_or_cool": "warm"
+  },
+  "details": [
+    "Subject footprint distinguished from all neighbours by close horizontal hatching; every other footprint is an unfilled outline.",
+    "Neighbouring footprints are small irregular rectilinear outlines, many with semicircular bay projections, typical of a redrawn fire-insurance map; several small detached outbuildings sit along the alley side of the lots.",
+    "Block perimeters are drawn as double and triple parallel lines (curb and lot lines) with rounded corners at intersections; street names are lettered in the same thin single-stroke capitals used for the whole sheet.",
+    "North arrow drawn as a circle enclosing a triangle and the letter N; plan caption reads LOCATION PLAN, SANBORN MAP - 1895 CORRECTED TO 1926, SCALE 1\" = 100'.",
+    "The printed text on the sheet (not the drawing) describes the house as organised around a central hearth, with interior space under wide sweeping roofs opening to the outdoors, horizontal planes about a chimney mass, and structurally expressive piers and windows."
+  ],
+  "what_is_absent": [
+    "No dimension lines or dimension strings anywhere on the sheet; the only measurement notation is the plan scale.",
+    "No interior layout: no walls, rooms, partitions or room names.",
+    "No openings: no doors or windows are drawn at this scale.",
+    "No floor levels, sections, elevations or ceiling heights.",
+    "No furniture, fixtures, finishes or material hatching other than the solid hatch marking the subject footprint."
+  ],
+  "confidence": "high"
+}

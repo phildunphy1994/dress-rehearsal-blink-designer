@@ -1,0 +1,33 @@
+You are analysing ONE measured architectural drawing for a design-pattern study. Describe only what is shown in this drawing and its dimensions. Do not guess about anything not shown. Do not write prose outside the JSON.
+
+Return exactly this JSON object:
+
+```json
+{
+  "sheet_id": "string",
+  "drawing_type": "plan|section|elevation|detail|environmental|photograph",
+  "room_or_space": "string",
+  "overall_dimensions": {"length": "string with units, or null", "width": "string with units, or null", "ceiling_height": "string with units, or null"},
+  "proportions": {"length_to_width_ratio": "string, or null", "notable_proportion": "string, or null"},
+  "layout": {"organisation": "string", "axes": "string", "entry_sequence": "string", "circulation": "string"},
+  "openings": [{"type": "window|door|opening", "position": "string", "dimensions": "string, or null", "pattern": "string"}],
+  "built_in_furniture": [{"item": "string", "material": "string", "dimensions": "string, or null", "position": "string"}],
+  "materials": [{"material": "string", "where": "string", "finish": "string, or null"}],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "warm|cool|neutral"},
+  "details": ["string, max 5 — recurring details visible in this drawing"],
+  "what_is_absent": ["string, max 5 — things a typical room of this type would have, that this drawing does NOT show"],
+  "confidence": "high|medium|low"
+}
+```
+
+sheet_id: hhh.il0039.sheet.00011
+transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
+{
+  "sheet_id": "hhh.il0039.sheet.00011",
+  "sheet_title_as_drawn": "ROBIE HOUSE FURNITURE (sheet heading); drawing labels DRESSER, FOOTBOARD, HEADBOARD; title block: NAME OF STRUCTURE FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; HABS CHICAGO PROJECT 1963, UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 11 OF 14 SHEETS; DAVID T. VAN ZANTEN, DEL.",
+  "scale_as_drawn": "SCALE 1½\" = 1'-0\" (graphic bar scale below it graduated 0 1 2 3 4 5 in inches, then 1 and 2 in feet)",
+  "dimensions": [],
+  "legibility": "high",
+  "notes": "No dimension strings, dimension lines, extension lines or arrowheads appear anywhere on the sheet; the four elevations (dresser front, dresser side, footboard, headboard) are drawn to the graphic scale only. The only numerals on the sheet are the scale statement, the bar-scale graduations (0-5 inches, 1 and 2 feet) and title-block numbers (sheet 11 of 14, survey no. ILL 1005, 1963, street address 5757, printing-office code 16-5559), none of which is a measured dimension. Overview and all 12 full-resolution tiles were viewed; line work and lettering are crisp, so no finer crops were needed."
+}
+

@@ -1,0 +1,53 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00022",
+  "drawing_type": "section",
+  "room_or_space": "Whole-building transverse section (sheet label reads SECTION); no room or level names are given on the sheet",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions or scale are written, so only relative proportions as drawn can be read: three stacked levels of which the partly sunken lower level is drawn roughly 1.4x taller (floor to floor) than either the main or the upper level, which are about equal; the three terraces step out progressively to the left (upper balcony shortest, main-level balcony about twice as long, grade-level terrace longest), so that the composition with terraces is roughly 1.5x the width of the main building body; the main body (excluding terraces) is wider than it is tall, about 1.3:1 from lower floor to roof, and the roof overhang on the left projects well beyond the upper-level wall line"
+  },
+  "layout": {
+    "organisation": "Three stacked levels: a partly sunken lower level, a main level and an upper level under a low-pitched roof with a deep overhang. Each level is bounded on the left by a cantilevered terrace or balcony enclosed by a brick parapet, the terraces lengthening from top to bottom. The main body is closed on the right by a tall, solid masonry wall that rises above the roof and is capped; a second brick masonry mass (chimney) rises through the roof left of centre. The upper level is subdivided into three rooms (two small on the left, one larger on the right); the main level and lower level each show a smaller left-hand space and a larger right-hand space divided by a full-height partition.",
+    "axes": "Strongly horizontal: floor and roof slabs, terrace slabs and the copings of the brick parapets read as continuous horizontal bands stepping outward to the left; the low roof and its tapered soffit reinforce this. Vertical counterpoint comes only from the two masonry masses (the chimney through the roof and the capped right-hand end wall) and from the slender full-height glazed openings between terraces and interiors.",
+    "entry_sequence": "No front door, porch or stair is drawn. The only exterior-to-interior transitions shown are on the left, one per level: grade terrace to lower level, main-level balcony to main level, upper balcony to upper level, each through a narrow full-height glazed opening behind a brick parapet.",
+    "circulation": "No stairs or vertical circulation between the three levels are shown. Internal movement is indicated only by doorways with dropped heads (lintel notches) in partitions: one between the two small upper-level rooms, two in the large upper-level room (one at its left partition, one near the right exterior wall), and one in a partition at the lower level. Door leaves are drawn in elevation on the far walls of the two small upper-level rooms."
+  },
+  "openings": [
+    {"type": "door", "position": "upper level, left exterior wall, between the upper balcony and the left upper room, directly under the roof overhang", "dimensions": null, "pattern": "very narrow full-height glazed opening drawn as thin double lines in a thin frame, running from floor to underside of the eave soffit"},
+    {"type": "door", "position": "main level, left exterior wall, between the main-level balcony and the left main-level space", "dimensions": null, "pattern": "narrow full-height glazed opening, floor to underside of the slab above, thin frame with double glazing lines"},
+    {"type": "door", "position": "lower level, left exterior wall, between the grade-level terrace and the left lower-level space", "dimensions": null, "pattern": "narrow full-height glazed opening, floor to underside of the slab above, thin frame with double glazing lines"},
+    {"type": "door", "position": "upper level, far wall of the left (smallest) room", "dimensions": null, "pattern": "door leaf drawn in elevation as a tall plain rectangle reaching almost to the ceiling"},
+    {"type": "door", "position": "upper level, far wall of the middle room", "dimensions": null, "pattern": "door leaf drawn in elevation as a tall plain rectangle reaching almost to the ceiling"},
+    {"type": "opening", "position": "upper level, partition between the left and middle rooms", "dimensions": null, "pattern": "doorway cut through the partition with a dropped head (lintel notch) and thin jamb lines to the floor"},
+    {"type": "door", "position": "upper level, large right room, at its left partition", "dimensions": null, "pattern": "doorway with dropped head and thin frame lines to the floor"},
+    {"type": "door", "position": "upper level, large right room, adjacent to the right exterior wall", "dimensions": null, "pattern": "doorway with dropped head and thin frame lines to the floor"},
+    {"type": "opening", "position": "lower level, partition near the middle of the right-hand space", "dimensions": null, "pattern": "doorway with dropped head (lintel notch) and thin jamb lines to the floor; two further thin vertical lines to its right on the far wall"}
+  ],
+  "built_in_furniture": [
+    {"item": "long counter or bench-like element with vertical supports or divisions below, drawn in elevation against the far wall; a taller vertical element rises at its right end", "material": "not indicated (plain line drawing)", "dimensions": null, "position": "main level, left-hand space, at roughly one-third of the storey height above the floor, spanning most of the space"},
+    {"item": "long counter or bench-like element with vertical supports or divisions below, drawn in elevation against the far wall", "material": "not indicated (plain line drawing)", "dimensions": null, "position": "lower level, left-hand space, at roughly one-third of the storey height above the floor"}
+  ],
+  "materials": [
+    {"material": "brick (shown by close horizontal coursing hatch)", "where": "terrace and balcony parapet walls on all three levels, the pier at the end of the grade terrace, and the chimney mass rising through the roof", "finish": null},
+    {"material": "coping / cap (material not labelled; drawn as a plain projecting profile)", "where": "tops of all brick parapets, the terrace end piers, the chimney top and the top of the tall right-hand masonry wall", "finish": null},
+    {"material": "glass (thin double lines)", "where": "the three narrow full-height openings between each terrace and its interior", "finish": null},
+    {"material": "unspecified solid construction (thick unhatched lines)", "where": "floor slabs, roof slab, interior partitions and the tall right-hand exterior wall", "finish": null}
+  ],
+  "palette": {"dominant": ["monochrome black ink linework on white sheet; no colour or tone shown"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Stacked, progressively longer cantilevered terraces on the left, each enclosed by a brick parapet with a projecting coping",
+    "Low-pitched roof with a deep overhang and tapered, sloping soffit ending in a thin fascia",
+    "Very narrow full-height glazed openings between each terrace and its interior, floor to underside of slab or soffit",
+    "Capped masonry masses punctuating the horizontals: a brick chimney through the roof and a tall solid end wall on the right rising above the roof",
+    "Interior doorways shown as dropped heads (lintel notches) in partitions, with door leaves drawn as tall plain rectangles on far walls"
+  ],
+  "what_is_absent": [
+    "No dimensions, dimension strings, graphic scale or written scale anywhere on the sheet",
+    "No stair or other vertical circulation between the three levels",
+    "No room names, level names, material labels or annotations of any kind on the drawing",
+    "No fireplace opening in either masonry mass, no kitchen or bathroom fixtures, and no loose furniture",
+    "No openings of any kind in the right-hand exterior wall, no foundation or footing detail, and no site context beyond a single grade line"
+  ],
+  "confidence": "medium"
+}

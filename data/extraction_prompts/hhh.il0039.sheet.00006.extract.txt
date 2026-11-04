@@ -1,0 +1,33 @@
+You are analysing ONE measured architectural drawing for a design-pattern study. Describe only what is shown in this drawing and its dimensions. Do not guess about anything not shown. Do not write prose outside the JSON.
+
+Return exactly this JSON object:
+
+```json
+{
+  "sheet_id": "string",
+  "drawing_type": "plan|section|elevation|detail|environmental|photograph",
+  "room_or_space": "string",
+  "overall_dimensions": {"length": "string with units, or null", "width": "string with units, or null", "ceiling_height": "string with units, or null"},
+  "proportions": {"length_to_width_ratio": "string, or null", "notable_proportion": "string, or null"},
+  "layout": {"organisation": "string", "axes": "string", "entry_sequence": "string", "circulation": "string"},
+  "openings": [{"type": "window|door|opening", "position": "string", "dimensions": "string, or null", "pattern": "string"}],
+  "built_in_furniture": [{"item": "string", "material": "string", "dimensions": "string, or null", "position": "string"}],
+  "materials": [{"material": "string", "where": "string", "finish": "string, or null"}],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "warm|cool|neutral"},
+  "details": ["string, max 5 — recurring details visible in this drawing"],
+  "what_is_absent": ["string, max 5 — things a typical room of this type would have, that this drawing does NOT show"],
+  "confidence": "high|medium|low"
+}
+```
+
+sheet_id: hhh.il0039.sheet.00006
+transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
+{
+  "sheet_id": "hhh.il0039.sheet.00006",
+  "sheet_title_as_drawn": "Drawing titles: WEST ELEVATION; EAST ELEVATION; NORTH ELEVATION. Title block: NAME OF STRUCTURE FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; H.A.B.S. CHICAGO PROJECT, 1963, UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 6 OF 14 SHEETS; LIBRARY OF CONGRESS INDEX NUMBER (blank); JANIS J. ERINS, DEL. (with diacritics on the A and N/S); margin imprint U.S. GOVERNMENT PRINTING OFFICE 16-5559; TRIM LINE top and bottom.",
+  "scale_as_drawn": "SCALE 1/8\" = 1'-0\" (lower right, above the title block, with a graphic bar scale graduated 1 2 3 4 5 10 15 FEET)",
+  "dimensions": [],
+  "legibility": "high",
+  "notes": "No written dimensions appear anywhere on this sheet: the three elevations carry no dimension lines, extension lines, ticks or feet-inch figures, and the only numerals are the scale note, the graphic bar scale (1 2 3 4 5 10 15 FEET, which is a scale and not a measured dimension), the title block date/survey/sheet numbers and the printing-office code. The 1568 px overview plus the twelve ~0.55x tiles of the 9650x7616 master were sufficient to confirm this; no additional crops were made. Reproduction is clean with light speckle only."
+}
+

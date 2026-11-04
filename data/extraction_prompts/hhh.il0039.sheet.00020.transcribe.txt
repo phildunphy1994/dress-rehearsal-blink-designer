@@ -1,0 +1,15 @@
+You are transcribing dimensions from ONE measured architectural drawing (sheet id: hhh.il0039.sheet.00020).
+List every dimension that is legible on the sheet, verbatim, with its units exactly as written (feet-inches such as 12'-6", or metres), and where on the sheet it appears (which plan/elevation/detail and what it measures). Do not estimate, convert, or infer any dimension that is not written on the sheet. If a number is partly illegible, write it with [?] for the illegible part. If no dimensions are legible, return an empty list.
+
+Return exactly this JSON object and nothing else:
+
+```json
+{
+  "sheet_id": "string",
+  "sheet_title_as_drawn": "string — the title block text as legible on the sheet, or null",
+  "scale_as_drawn": "string — the drawing scale(s) as written on the sheet, or null",
+  "dimensions": [{"value": "string verbatim with units", "measures": "string — what it measures", "location_on_sheet": "string"}],
+  "legibility": "high|medium|low",
+  "notes": "string — anything that limits the transcription (resolution, cropping), or null"
+}
+```

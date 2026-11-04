@@ -1,0 +1,33 @@
+You are analysing ONE measured architectural drawing for a design-pattern study. Describe only what is shown in this drawing and its dimensions. Do not guess about anything not shown. Do not write prose outside the JSON.
+
+Return exactly this JSON object:
+
+```json
+{
+  "sheet_id": "string",
+  "drawing_type": "plan|section|elevation|detail|environmental|photograph",
+  "room_or_space": "string",
+  "overall_dimensions": {"length": "string with units, or null", "width": "string with units, or null", "ceiling_height": "string with units, or null"},
+  "proportions": {"length_to_width_ratio": "string, or null", "notable_proportion": "string, or null"},
+  "layout": {"organisation": "string", "axes": "string", "entry_sequence": "string", "circulation": "string"},
+  "openings": [{"type": "window|door|opening", "position": "string", "dimensions": "string, or null", "pattern": "string"}],
+  "built_in_furniture": [{"item": "string", "material": "string", "dimensions": "string, or null", "position": "string"}],
+  "materials": [{"material": "string", "where": "string", "finish": "string, or null"}],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "warm|cool|neutral"},
+  "details": ["string, max 5 — recurring details visible in this drawing"],
+  "what_is_absent": ["string, max 5 — things a typical room of this type would have, that this drawing does NOT show"],
+  "confidence": "high|medium|low"
+}
+```
+
+sheet_id: hhh.il0039.sheet.00005
+transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
+{
+  "sheet_id": "hhh.il0039.sheet.00005",
+  "sheet_title_as_drawn": "Drawing titles: \"LONGITUDINAL SECTION\" (upper drawing) and \"SOUTH ELEVATION\" (lower drawing). Title block: \"HABS CHICAGO PROJECT 1963 / UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR, NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN / NAME OF STRUCTURE: FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS / SURVEY NO. ILL 1005 / HISTORIC AMERICAN BUILDINGS SURVEY, SHEET 5 OF 14 SHEETS / LIBRARY OF CONGRESS INDEX NUMBER (blank)\". Delineator credit above the title block: \"JANIS J. ERINS, DEL.\" (with diacritics). Margin imprint: \"U.S. GOVERNMENT PRINTING OFFICE 16-5559\"; \"TRIM LINE\" at top and bottom margins.",
+  "scale_as_drawn": "SCALE 1/8\" = 1'-0\" (written as a stacked fraction 1/8 with inch mark), with a graphic bar scale below it graduated 1 2 3 4 5 10 15 (units not written; the bar ticks correspond to feet at the stated scale). Located lower right, above the title block; applies to both drawings.",
+  "dimensions": [],
+  "legibility": "high",
+  "notes": "No dimension strings, dimension lines, leaders, elevation datums, or numeric annotations are drawn on either the longitudinal section or the south elevation; the only numeric content on the sheet is the scale note and the graphic bar scale (recorded in scale_as_drawn). Linework and all lettering (drawing titles, scale, title block) are sharply legible in the 4x3 full-resolution tiles. One small mark near the stair in the section was checked in a full-resolution crop of the master TIFF and is an ink blot, not text. Overview image is 1568 px wide; tiles are at about 0.53-0.57 of the 9640x7616 master."
+}
+

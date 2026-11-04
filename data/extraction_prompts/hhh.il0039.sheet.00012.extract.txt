@@ -1,0 +1,33 @@
+You are analysing ONE measured architectural drawing for a design-pattern study. Describe only what is shown in this drawing and its dimensions. Do not guess about anything not shown. Do not write prose outside the JSON.
+
+Return exactly this JSON object:
+
+```json
+{
+  "sheet_id": "string",
+  "drawing_type": "plan|section|elevation|detail|environmental|photograph",
+  "room_or_space": "string",
+  "overall_dimensions": {"length": "string with units, or null", "width": "string with units, or null", "ceiling_height": "string with units, or null"},
+  "proportions": {"length_to_width_ratio": "string, or null", "notable_proportion": "string, or null"},
+  "layout": {"organisation": "string", "axes": "string", "entry_sequence": "string", "circulation": "string"},
+  "openings": [{"type": "window|door|opening", "position": "string", "dimensions": "string, or null", "pattern": "string"}],
+  "built_in_furniture": [{"item": "string", "material": "string", "dimensions": "string, or null", "position": "string"}],
+  "materials": [{"material": "string", "where": "string", "finish": "string, or null"}],
+  "palette": {"dominant": [], "accent": [], "warm_or_cool": "warm|cool|neutral"},
+  "details": ["string, max 5 — recurring details visible in this drawing"],
+  "what_is_absent": ["string, max 5 — things a typical room of this type would have, that this drawing does NOT show"],
+  "confidence": "high|medium|low"
+}
+```
+
+sheet_id: hhh.il0039.sheet.00012
+transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
+{
+  "sheet_id": "hhh.il0039.sheet.00012",
+  "sheet_title_as_drawn": "ROBIE HOUSE FURNITURE (drawing title); title block: NAME OF STRUCTURE FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; HABS CHICAGO PROJECT 1963; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 12 OF 14 SHEETS; DAVID T. VAN ZANTEN, DEL.",
+  "scale_as_drawn": "SCALE 1 1/2\" = 1'-0\" (with graphic scale bar graduated 0 1 2 3 4 5 6 [inches], 1, 2 [feet])",
+  "dimensions": [],
+  "legibility": "high",
+  "notes": "No written dimension strings appear anywhere on this sheet. All six views (living room chair front and side elevations, foot stool elevation, dining room chair side and front elevations, billiard room andirons side and end elevations) are drawn to scale without dimension annotations; the only numerals on the sheet are the graphic scale bar graduations and the title block numbers. Overview image and all 12 full-resolution tiles were reviewed; lettering is crisp and fully legible."
+}
+

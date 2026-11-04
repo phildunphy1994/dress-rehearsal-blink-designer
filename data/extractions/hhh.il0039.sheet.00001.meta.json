@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00001",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/01_title_sheet_with_location_plan.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r0c0.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r0c1.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r0c2.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r0c3.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r1c0.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r1c1.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r1c2.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r1c3.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r2c0.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r2c1.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r2c2.png",
+    "corpus_a/tiles/01_title_sheet_with_location_plan/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:31Z",
+  "finished_at": "2026-11-04T17:38:29Z",
+  "flagged_for_manual_review": false,
+  "notes": "Title sheet with a location plan at 1\" = 100'; all lettering is crisp at tile resolution and nothing on the sheet was illegible, but the sheet carries no dimension strings, so the transcription has zero dimensions and all overall_dimensions are null. Materials and palette in the extraction come from the descriptive text printed on the sheet, not from drawn graphics; drawing_type was recorded as environmental because the only drawing is a site-context location plan (plan would be the alternative)."
+}

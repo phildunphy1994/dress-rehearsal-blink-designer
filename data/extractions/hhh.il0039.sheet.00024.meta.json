@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00024",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/24_front_detail.png",
+    "corpus_a/tiles/24_front_detail/r0c0.png",
+    "corpus_a/tiles/24_front_detail/r0c1.png",
+    "corpus_a/tiles/24_front_detail/r0c2.png",
+    "corpus_a/tiles/24_front_detail/r0c3.png",
+    "corpus_a/tiles/24_front_detail/r1c0.png",
+    "corpus_a/tiles/24_front_detail/r1c1.png",
+    "corpus_a/tiles/24_front_detail/r1c2.png",
+    "corpus_a/tiles/24_front_detail/r1c3.png",
+    "corpus_a/tiles/24_front_detail/r2c0.png",
+    "corpus_a/tiles/24_front_detail/r2c1.png",
+    "corpus_a/tiles/24_front_detail/r2c2.png",
+    "corpus_a/tiles/24_front_detail/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:38:15Z",
+  "flagged_for_manual_review": false,
+  "notes": "All lettering (caption, drawn-by line, title block, margin stamp) is fully legible in the 4x3 tiles; the sheet carries no dimensions, dimension lines or scale at all, so the empty dimension list reflects the drawing, not resolution. Material identification in the extraction rests on hatching conventions (horizontal course hatching, stipple, plain blocks) since nothing is labelled."
+}

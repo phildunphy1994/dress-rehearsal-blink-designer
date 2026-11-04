@@ -1,0 +1,29 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00007",
+  "sheet_title_as_drawn": "FIREPLACE ELEVATIONS (sub-titles: EAST, WEST). Title block: NAME OF STRUCTURE FREDERICK C. ROBIE HOUSE, 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; HABS CHICAGO PROJECT 1963, UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR, NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY, SHEET 7 OF 14 SHEETS; LIBRARY OF CONGRESS INDEX NUMBER (blank); ROBERT C. GIEBNER, DEL.",
+  "scale_as_drawn": "SCALE 3/8\" = 1'-0\" (with graphic bar scale graduated 0, 1, 5 feet)",
+  "dimensions": [
+    {
+      "value": "7'-6\"",
+      "measures": "Floor-to-ceiling height of the uppermost (top) tier of the East elevation, from the ceiling/cornice line above the band of glazed and panelled units down to the floor line at the base of that band",
+      "location_on_sheet": "East elevation (left half of sheet), vertical dimension string drawn to the right of the elevation, top segment"
+    },
+    {
+      "value": "1'-5\"",
+      "measures": "Vertical distance between the floor line of the top tier and the ceiling line of the middle tier, i.e. the height of the brick cap/floor zone above the middle-tier ceiling (the band containing the moulded cornice profile and the circular pipe/bracket section)",
+      "location_on_sheet": "East elevation, right-hand vertical dimension string, second segment from top"
+    },
+    {
+      "value": "7'-3\"",
+      "measures": "Floor-to-ceiling height of the middle tier of the East elevation, from the middle-tier ceiling/cornice line down to the floor line at the hearth of the middle fireplace",
+      "location_on_sheet": "East elevation, right-hand vertical dimension string, third segment from top"
+    },
+    {
+      "value": "7'-2\"",
+      "measures": "Floor-to-ceiling height of the lowest tier of the East elevation, from the ceiling/soffit line beneath the middle-tier floor down to the floor line at the base of the lower fireplace",
+      "location_on_sheet": "East elevation, right-hand vertical dimension string, bottom segment"
+    }
+  ],
+  "legibility": "high",
+  "notes": "Only one dimension string exists on the sheet (four vertical heights on the East elevation); the West elevation carries no written dimensions. All four values and the scale note read clearly at tile resolution; the graphic bar scale graduations (0, 1, 5) are scale marks, not building dimensions, and are not listed. Faint pencil construction lines on the right of the top tier of the West elevation carry no text."
+}

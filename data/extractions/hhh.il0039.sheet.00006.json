@@ -1,0 +1,51 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00006",
+  "drawing_type": "elevation",
+  "room_or_space": "Exterior of the whole house: WEST ELEVATION, EAST ELEVATION and NORTH ELEVATION on one sheet (no interior room shown)",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions are written, but the drawing is strongly horizontal: the north elevation is several times wider than it is tall, roofs are low-pitched hipped slabs whose eaves overhang far beyond the wall faces, and the wall planes read as long stacked horizontal bands. The west and east end elevations are comparatively compact, roughly as wide as they are tall."
+  },
+  "layout": {
+    "organisation": "Three exterior elevations: west and east side by side in the upper half, the long north elevation across the lower half, scale note and bar scale lower right. The building is drawn as stepped horizontal tiers: a long main block under a broad hipped roof slab, a smaller set-back upper storey block under its own hipped roof, a tall rectangular chimney rising above it, and low garden/terrace walls with copings extending the base outward on the west and north sides.",
+    "axes": "A dominant horizontal axis runs the length of the north elevation; the upper storey block and chimney make an off-centre vertical accent rather than a centred one. No elevation is bilaterally symmetrical; masses step down from the upper block toward the ends. The west and east elevations show the short end of the same stepped composition, with a secondary hipped roof over a projecting main-level bay in front of the taller block.",
+    "entry_sequence": "No principal entrance is marked. The north elevation shows a single ground-level door with a small light above it at the base of the central block, beside runs of low windows; the west elevation shows full-height glazed openings between piers under the small hipped roof, opening onto a walled terrace. No entrance steps, path, porch roof or canopy is drawn.",
+    "circulation": "Not shown (elevations only). Low walls, piers and a raised terrace parapet with planter bowls indicate walled terraces at the west end and along the north base; the ground line, drawn with grass hatching, falls away toward the west end of the north elevation and steps down at the right of the west elevation. No stairs are drawn."
+  },
+  "openings": [
+    {"type": "window", "position": "Upper storey band, all three elevations, directly beneath the upper hipped roof eaves", "dimensions": null, "pattern": "Groups of tall narrow casements separated by slender piers/mullions, each light drawn with a geometric leaded pattern of paired diagonals forming chevron and diamond motifs; groups of three to four lights on the end elevations, two flanking groups either side of the chimney block on the north"},
+    {"type": "window", "position": "Main level, north elevation, a long continuous run left of the central block under the main roof slab, and a second run to the right of it", "dimensions": null, "pattern": "Repeated tall narrow casements with the same geometric leaded pattern, set between brick piers over a continuous sill band; roughly nine lights in the left run and six in the right run, one bay of which has a planter bowl drawn in front"},
+    {"type": "window", "position": "Main level, west and east elevations, under the secondary hipped roof of the projecting bay and in the flanking walls", "dimensions": null, "pattern": "Tall narrow leaded casements between piers; on the west elevation the lights between the piers read as full-height glazed openings onto the terrace, on the east elevation as a group of four lights plus single lights in the side walls"},
+    {"type": "window", "position": "Ground level, north elevation (many, in pairs and singles along the base) and west and east elevations (a pair behind the low wall)", "dimensions": null, "pattern": "Small squarish windows with diagonal lattice (crossed) glazing, set low between brick piers on plain sills and partly screened by the low garden walls; some sit directly beneath the main-level sill band"},
+    {"type": "window", "position": "Central chimney/stair block, north elevation, one small square light at upper level and one small narrow light at main level; a similar small single light in the east elevation side wall", "dimensions": null, "pattern": "Single small lights with leaded pattern, isolated in otherwise blank brick wall planes"},
+    {"type": "door", "position": "Ground level, north elevation, at the base of the central block (left of centre of the elevation)", "dimensions": null, "pattern": "Single plain rectangular door with a small light or panel above, flush in the brick wall, no steps or surround drawn"},
+    {"type": "opening", "position": "West elevation, main level, between the piers under the small hipped roof", "dimensions": null, "pattern": "Recessed porch/loggia: full-height glazed openings between brick piers, opening onto the walled terrace with planter bowls on its parapet"}
+  ],
+  "built_in_furniture": [
+    {"item": "Shallow wide planter bowl on a short pedestal, set on top of the low terrace wall/parapet", "material": "not labelled on the sheet (drawn in plain outline, unhatched)", "dimensions": null, "position": "West elevation: one on the terrace wall at the right end and one at the main-level parapet left of the bay; north elevation: one in a bay of the right-hand main-level window run"},
+    {"item": "Low garden/terrace walls with projecting plain copings and brick piers", "material": "wall drawn with brick hatching, coping plain (not labelled)", "dimensions": null, "position": "Along the base of the west elevation and the full length of the north elevation base, stepping with the ground"}
+  ],
+  "materials": [
+    {"material": "Brick (drawn with closely spaced fine horizontal lines throughout; not labelled)", "where": "All wall planes, piers, parapets, garden walls and the chimney on all three elevations", "finish": null},
+    {"material": "Plain unhatched bands reading as stone or cast coping, sill and cap courses (not labelled)", "where": "Tops of all parapets and garden walls, continuous sill bands under each window run, chimney cap, and the thin fascia edges of the roof slabs", "finish": null},
+    {"material": "Leaded glass with geometric pattern (drawn as thin lines within each light; not labelled)", "where": "All casement windows: chevron/diamond pattern in the main and upper bands, diagonal lattice in the ground-level windows", "finish": null},
+    {"material": "Roofing not labelled; low-pitched hipped roofs drawn as plain unhatched planes with thin layered fascia lines", "where": "Main roof slab, upper storey roof, and secondary hipped roof over the west/east bay", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink line on white paper (monochrome measured drawing; no colours shown)"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Deeply overhanging low-pitched hipped roofs drawn as thin slabs projecting well beyond the wall faces, with a thin layered fascia, on every mass",
+    "Continuous horizontal banding: brick wall planes with fine horizontal hatching capped by plain coping/sill courses that run uninterrupted along walls, parapets and garden walls",
+    "Repeated tall narrow casement windows with geometric leaded glazing (paired diagonals forming chevrons/diamonds), grouped in bands between slender piers under the eaves",
+    "Small low ground-level windows with diagonal lattice glazing, set between brick piers and partly screened by low walls",
+    "Stepped massing with an upper storey block and tall rectangular chimney rising above the main roof, and shallow planter bowls set on the terrace parapets"
+  ],
+  "what_is_absent": [
+    "No written dimensions, dimension lines or level/datum marks on any of the three elevations (only a scale note and bar scale)",
+    "No material, finish or construction notes or labels",
+    "No south elevation on this sheet (only west, east and north are drawn)",
+    "No site context: no adjacent buildings, trees, street, people or landscape beyond a short grass-hatched ground line",
+    "No indication of a principal entrance, steps, path or porch roof, and no section or plan references/keys"
+  ],
+  "confidence": "medium"
+}

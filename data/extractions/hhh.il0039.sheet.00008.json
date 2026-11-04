@@ -1,0 +1,84 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00008",
+  "drawing_type": "detail",
+  "room_or_space": "No room named on the sheet. The sheet shows a first-floor window glazing pattern (elevation of one leaded-glass light) and second-floor window details (interior elevation, vertical section, exterior elevation of the head and sill, with a horizontal section through the jambs); no room, wall or plan context is drawn.",
+  "overall_dimensions": {
+    "length": null,
+    "width": null,
+    "ceiling_height": null
+  },
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "As drawn, the first-floor window pattern panel is slightly wider than tall (roughly 11:10). Its central field is a staggered lattice of very shallow lozenges, each roughly three times as wide as it is high, about two lozenges wide and six to seven tiers tall; the top tier is closed by two low-pitched diagonals springing from the upper corners of the field and meeting on the vertical centreline. Side border lights are tall and narrow. No written dimensions; a 0-12 inch graphic bar scale is the only size reference."
+  },
+  "layout": {
+    "organisation": "Two groups on one sheet: left, three vertically aligned details of the second-floor window captioned INTERIOR, SECTION and EXTERIOR, each showing the head at the top and the sill at the bottom, interrupted mid-height by a horizontal (plan) section through the jambs drawn across all three; right, the first-floor window glazing pattern drawn as a single rectangular light in elevation, with the captions and title lettering below it.",
+    "axes": "The window pattern is bilaterally symmetrical about a vertical centreline (a single vertical came divides the top band and the bottom band at centre; the lozenge lattice is centred on it). The three second-floor details share common horizontal datum lines for head, jamb section and sill.",
+    "entry_sequence": "Not applicable; no plan, door or entry is shown.",
+    "circulation": "Not applicable; no plan or circulation is shown."
+  },
+  "openings": [
+    {
+      "type": "window",
+      "position": "Top right of sheet, captioned FIRST FLOOR WINDOW PATTERN; one complete light drawn in elevation",
+      "dimensions": null,
+      "pattern": "Leaded (came) glazing pattern of straight lines only, drawn as double lines: a rectangular border; a deep plain band across the top divided once at centre by a vertical came; a shallower plain band across the bottom, also divided at centre; tall narrow border lights down each side, each subdivided into a tall upper light, a long middle light and a pair of small side-by-side lights at the bottom; inside these, columns of small square and rectangular lights stacked either side of the central field; the central field is a diaper lattice of shallow, horizontally elongated lozenges formed by two families of low-pitched diagonals, with half-lozenges meeting the side grids; the two uppermost diagonals spring from the upper corners of the field and meet at the vertical centreline. Some lozenge edges are drawn with a heavier line weight than the rest of the lattice."
+    },
+    {
+      "type": "window",
+      "position": "Left half of sheet, captioned SECOND FLOOR WINDOW DETAILS, shown as INTERIOR elevation (left), SECTION (centre) and EXTERIOR elevation (right), head above and sill below, with a plan section through the jambs across the middle",
+      "dimensions": null,
+      "pattern": "Interior elevation: the head and sill are framed by nested, stepped rectangular trim bands (four to five concentric lines) forming a picture-frame surround, with a plain vertical jamb strip. Section: a stepped wood head member with a coved underside and a stop, a thin sash with the glazing drawn as a dotted line, an interior stool and a sloping exterior sill that projects beyond the wall face; stippled fill beyond the wood indicates the wall/plaster. Exterior elevation: the opening is flanked by walls drawn with closely spaced horizontal coursing lines, with a plain head band above and a projecting sill band below. Plan section: hatched jamb members at each side with the sash/stop lines and dotted glass line running between them."
+    }
+  ],
+  "built_in_furniture": [],
+  "materials": [
+    {
+      "material": "wood (shown by grain-style section hatching; not labelled)",
+      "where": "head, sill, jamb, stool and sash members of the second-floor window in the section and plan section",
+      "finish": null
+    },
+    {
+      "material": "glass (shown as a dotted line in section; not labelled)",
+      "where": "glazing of the second-floor window, set in a thin sash toward the exterior face",
+      "finish": null
+    },
+    {
+      "material": "leaded glazing cames (drawn as double lines; material not labelled)",
+      "where": "all divisions of the first-floor window pattern",
+      "finish": null
+    },
+    {
+      "material": "plaster or masonry wall fill (stippled; not labelled)",
+      "where": "wall beyond the wood members at head, sill and jambs in the section and plan section",
+      "finish": null
+    },
+    {
+      "material": "coursed masonry (horizontal coursing lines; not labelled)",
+      "where": "exterior wall surfaces flanking the second-floor window in the EXTERIOR elevation",
+      "finish": null
+    }
+  ],
+  "palette": {
+    "dominant": [
+      "black ink line on white paper (monochrome measured drawing; no colour or tone shown)"
+    ],
+    "accent": [],
+    "warm_or_cool": "neutral"
+  },
+  "details": [
+    "Leaded-glass lattice of very shallow, horizontally elongated lozenges set between tall narrow border lights and stacks of small square/rectangular lights",
+    "Low-pitched diagonals springing from the upper corners of the glazing field and converging on the vertical centreline",
+    "Nested, stepped rectangular trim bands framing the head and sill of the second-floor window on the interior",
+    "Stepped wood head with coved soffit and a sloping, projecting exterior sill in section",
+    "Closely spaced horizontal coursing lines banding the exterior wall either side of the window opening"
+  ],
+  "what_is_absent": [
+    "No written dimensions, scale ratio, leaders or notes; the only size reference is a 0-12 inch graphic bar scale",
+    "No material labels; materials are implied only by hatching and stipple conventions",
+    "No plan, wall elevation or room context locating either window in a space",
+    "No indication of glass colour, texture or came widths for the leaded pattern",
+    "No hardware, sash operation, mullion arrangement between adjacent lights, or door openings"
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,54 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00019",
+  "drawing_type": "elevation",
+  "room_or_space": "Exterior: south elevation of the whole building (drawing titled SOUTH ELEVATION); no interior room is shown",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions or scale are written. Visually the elevation is extremely horizontal: the full facade is roughly six to seven times as long as the main block is tall from ground line to main eave, and each hipped roof overhangs its walls by roughly a window-bay at each end. The window bands are much taller than they are wide per light, and the upper storey block is roughly a third of the length of the main block and sits near the centre."
+  },
+  "layout": {
+    "organisation": "Stacked horizontal layers: a continuous low base and terrace/garden walls with light copings; above it a two-level main block (a lower band of short windows, a brick spandrel, then a tall band of casement windows directly under a very wide low-pitched hipped roof); a smaller third-storey block set back and centred on the main block with its own hipped roof and a chimney mass; and at the right a lower two-level wing with its own hipped roof, a porch-like ground level, paired doors and a low walled enclosure at the far right.",
+    "axes": "A single dominant horizontal axis running the full length of the facade, reinforced by the roof fascias, the window-band heads and sills, the copings and the horizontal brick coursing. A secondary near-central vertical emphasis is given by the set-back upper storey and its chimney; the roofs are symmetrical about their own centres but the whole facade is asymmetrical, longer and lower to the right.",
+    "entry_sequence": "The main block shows no door on this face. The only doors are a pair of doors at ground level of the right-hand wing, set behind a low terrace/garden wall with a light coping; they are reached across the enclosed terrace. Two low walls with copings and urns on piers front the main block at ground level.",
+    "circulation": "Exterior only; no interior circulation is drawn. The ground level reads as a series of enclosed terraces behind low walls, with the paired doors at the right wing as the only opening through the wall plane shown."
+  },
+  "openings": [
+    {"type": "window", "position": "Main block, upper (principal) floor: a continuous run of roughly twenty tall narrow casement windows directly under the main eave, from the left end of the block to the start of the right wing", "dimensions": null, "pattern": "Each window has a thin frame and one to three thin vertical mullions; windows are separated by narrow brick piers; the band has a continuous head at the eave and a continuous sill line"},
+    {"type": "window", "position": "Main block, lower (ground) level: a band of about fourteen shorter, nearly square windows between brick piers, below a brick spandrel and above the base coping", "dimensions": null, "pattern": "Regular repeat matching the window rhythm above; each window a simple framed light with one mullion; the band stops at the pier carrying the right-hand urn"},
+    {"type": "window", "position": "Upper storey (third level) set-back block: a band of about nine or ten casement windows under its own eave, with a single wider window to the left of the chimney", "dimensions": null, "pattern": "Same tall narrow casement module as the main floor, continuous head and sill; brick piers between windows"},
+    {"type": "window", "position": "Right wing, upper level: a band of about eight casement windows under the wing's hipped roof", "dimensions": null, "pattern": "Same tall narrow casement module as the main block, separated by narrow piers"},
+    {"type": "window", "position": "Right wing, ground level: a group of wider windows either side of the paired doors, including one window with a geometric leaded-glass lattice pattern at the left end of the porch bay", "dimensions": null, "pattern": "Wider, squarer lights than the upper bands; sills sit on a low brick wall with coping; one window shows a diamond/geometric lattice in its glazing"},
+    {"type": "door", "position": "Right wing, ground level, roughly a third of the way in from the right end of the facade, behind the terrace wall", "dimensions": null, "pattern": "A pair of door leaves separated by a post, each with a glazed upper panel and a lower panel drawn with vertical boarding"},
+    {"type": "window", "position": "Far right, low walled enclosure: a single small window set in the low wall at the right end of the facade", "dimensions": null, "pattern": "Single framed light with one mullion, under a short cap"},
+    {"type": "opening", "position": "Top of chimney mass above the upper storey roof", "dimensions": null, "pattern": "A rectangular louvered or slatted vent slot in the left half of the chimney head"}
+  ],
+  "built_in_furniture": [
+    {"item": "Wide shallow urn (bowl-shaped planter) on a brick pier", "material": "Drawn as a plain light-toned (unhatched) bowl on a brick pier with a light cap", "dimensions": null, "position": "Left of centre at ground level, where the low terrace wall steps up to the main block"},
+    {"item": "Wide shallow urn (bowl-shaped planter) on a brick pier", "material": "Drawn as a plain light-toned (unhatched) bowl on a brick pier with a light cap", "dimensions": null, "position": "Right of centre at ground level, at the junction of the main block and the right wing"},
+    {"item": "Low terrace/garden walls with continuous light copings", "material": "Brick with light stone-like coping bands", "dimensions": null, "position": "Along the whole ground level: a stepped low wall in front of the left end of the main block, and a low wall fronting the right wing and the far-right enclosure"}
+  ],
+  "materials": [
+    {"material": "Brick, drawn as long thin courses with emphasised continuous horizontal joints", "where": "All wall surfaces: main block piers and spandrels, upper storey block, chimney, right wing walls, terrace and garden walls, urn piers", "finish": "Hatched with fine horizontal lines; vertical joints not drawn"},
+    {"material": "Light-toned stone-like coping, sill and cap bands (drawn unhatched)", "where": "Tops of all low walls and piers, window sill lines, the base course along the ground line, and the water-table band between the ground and principal floors", "finish": "Plain, smooth, drawn with crisp horizontal edges"},
+    {"material": "Timber-framed glazing (frames and thin mullions)", "where": "All window bands and the paired doors", "finish": "Thin double lines for frames; one window with a geometric leaded lattice"},
+    {"material": "Low-pitched hipped roofs with thin flat fascias and deep overhangs", "where": "Main block roof, upper storey roof, right wing roof", "finish": "Roof surfaces drawn plain (no tile or shingle hatching); fascia drawn as a thin band with a slight drip edge"},
+    {"material": "Vertical boarding", "where": "Lower panels of the paired doors at the right wing", "finish": "Drawn as closely spaced vertical lines"}
+  ],
+  "palette": {"dominant": ["monochrome line drawing: black ink and pencil on white paper"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Deeply cantilevered low hipped roofs with thin fascias, overhanging the walls by roughly a bay at each end; the main roof extends over the start of the right wing",
+    "Continuous bands of tall narrow casement windows set directly under the eaves, with repeated thin vertical mullions and narrow brick piers between",
+    "Brickwork drawn as long thin courses with only horizontal joints shown, and every wall, pier and sill capped by a light smooth coping band",
+    "Low stepped terrace and garden walls with copings, carrying two wide shallow urns on piers at the junctions between wall heights",
+    "A geometric leaded-glass lattice in one ground-floor window of the right wing, and a louvered vent slot in the chimney head"
+  ],
+  "what_is_absent": [
+    "No dimension strings, level marks, written scale or graphic scale bar anywhere on the sheet",
+    "No material or finish annotations, notes, section cuts or reference symbols on the drawing",
+    "No entrance door on the main block on this face; the only doors are at the right wing ground level",
+    "No landscape, planting, paving, people or context beyond a single straight ground line",
+    "No gutters, downspouts, railings or roof surface hatching are drawn on the roofs"
+  ],
+  "confidence": "high"
+}

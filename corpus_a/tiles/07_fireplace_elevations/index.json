@@ -1,0 +1,131 @@
+{
+ "source": "/home/user/dress-rehearsal-blink-designer/corpus_a/07_fireplace_elevations.tif",
+ "size": [
+  9672,
+  7616
+ ],
+ "cols": 4,
+ "rows": 3,
+ "tiles": [
+  {
+   "file": "r0c0.png",
+   "box_px": [
+    0,
+    0,
+    2611,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r0c1.png",
+   "box_px": [
+    2224,
+    0,
+    5029,
+    2741
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r0c2.png",
+   "box_px": [
+    4642,
+    0,
+    7447,
+    2741
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r0c3.png",
+   "box_px": [
+    7060,
+    0,
+    9672,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r1c0.png",
+   "box_px": [
+    0,
+    2335,
+    2611,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c1.png",
+   "box_px": [
+    2224,
+    2335,
+    5029,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c2.png",
+   "box_px": [
+    4642,
+    2335,
+    7447,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c3.png",
+   "box_px": [
+    7060,
+    2335,
+    9672,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r2c0.png",
+   "box_px": [
+    0,
+    4874,
+    2611,
+    7616
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r2c1.png",
+   "box_px": [
+    2224,
+    4874,
+    5029,
+    7616
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r2c2.png",
+   "box_px": [
+    4642,
+    4874,
+    7447,
+    7616
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r2c3.png",
+   "box_px": [
+    7060,
+    4874,
+    9672,
+    7616
+   ],
+   "scale": 0.572
+  }
+ ]
+}

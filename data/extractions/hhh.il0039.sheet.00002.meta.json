@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00002",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/resized/02_first_ground_floor_plan.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r0c0.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r0c1.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r0c2.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r0c3.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r1c0.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r1c1.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r1c2.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r1c3.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r2c0.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r2c1.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r2c2.png",
+    "/home/user/dress-rehearsal-blink-designer/corpus_a/tiles/02_first_ground_floor_plan/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:40:04Z",
+  "flagged_for_manual_review": false,
+  "notes": "All 17 dimension values (15 dimension-line strings plus two heights written in the note) were fully legible on the 4x3 full-resolution tiles, so no finer tiles were cut from the TIFF. Legibility limits are not resolution but content: only three rooms are labelled, door/window widths and wall thicknesses are undimensioned, and the east garage addition and service yard are drawn dotted as conjectural."
+}

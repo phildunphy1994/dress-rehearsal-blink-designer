@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00012",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/12_furniture_living_room_chair_foot_stool_dining_room_chair_and.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r0c0.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r0c1.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r0c2.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r0c3.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r1c0.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r1c1.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r1c2.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r1c3.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r2c0.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r2c1.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r2c2.png",
+    "corpus_a/tiles/12_furniture_living_room_chair_foot_stool_dining_room_chair_and/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:31Z",
+  "finished_at": "2026-11-04T17:37:21Z",
+  "flagged_for_manual_review": false,
+  "notes": "Sheet is fully legible at tile resolution; no finer crops were needed because the sheet carries no written dimension strings at all, only a graphic scale bar at 1 1/2\" = 1'-0\". All six furniture views are undimensioned elevations, so overall_dimensions are null and the dimensions list is empty by observation, not by legibility limits."
+}

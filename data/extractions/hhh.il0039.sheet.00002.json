@@ -1,0 +1,141 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00002",
+  "drawing_type": "plan",
+  "room_or_space": "FIRST (GROUND) FLOOR PLAN - whole ground floor: an unlabelled west end room, BILLIARD ROOM, central masonry core with stair, PLAYROOM, entry hall with stairs, small service rooms, GARAGE, and a walled service yard (east part dotted / labelled CONJECTURAL RESTORATION)",
+  "overall_dimensions": {
+    "length": "161'-6\" overall east-west (west end wall to east wall of the service yard), made up of bays 12'-0\" + 11'-4\" + 20'-2\" + 21'-0\" + 24'-11\" + 54'-7\" + 17'-6\"",
+    "width": "no overall north-south dimension is given for the main block; the only transverse dimensions are 20'-11\" (west end room, north-south) and 46'-6\" (service yard along its east wall, north-south)",
+    "ceiling_height": null
+  },
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "Extremely elongated bar plan: 161'-6\" overall length against a 20'-11\" room depth at the west end. Along the south range the BILLIARD ROOM (31'-9\") and PLAYROOM (22'-9\") flank a central 8'-6\" masonry core, with near-equal end passages of 6'-0\" (west) and 6'-4\" (east); the garage wing alone (54'-7\" + 17'-6\") is longer than the two main rooms together."
+  },
+  "layout": {
+    "organisation": "Linear east-west plan in two parallel strips. The south strip is an enfilade: west end room with a chevron-shaped (pointed) wall projection and a freestanding square pier, then a 6'-0\" passage, the BILLIARD ROOM, the thick hatched central core (chimney/stair mass, 8'-6\" wide), the PLAYROOM, and a 6'-4\" passage to an east stair. The north strip holds a row of windows and a long hall/terrace edge with an unlabelled fine-gridded rectangle, the entry hall with stairs, and two small service rooms with closet-like partitions. East of the main block the GARAGE (three bays) and a walled service yard run on, the eastern addition drawn in dotted lines and the yard wall marked CONJECTURAL RESTORATION.",
+    "axes": "One dominant long east-west axis through the billiard room, core and playroom; a secondary north-south cross-axis through the central core and entry hall where the UP stairs are placed. The west end room is set on the long axis and terminated by the pointed projection.",
+    "entry_sequence": "A recessed doorway in the north wall at the entry hall (within the 24'-11\" bay) leads into a small hall; from the hall a stair rises UP against the central core and doorways open west to the billiard room and east to the playroom and service rooms. Secondary stairs marked DOWN leave from the hall, from the south-west corner of the west end room and from the south-east end of the playroom; a stair marked UP enters the west end room at its north-west.",
+    "circulation": "Movement is along the long axis, passing the central core on both its north and south sides through swing-door openings. The south walls of billiard room and playroom are lined with french doors to the south yard (which the note says are now closed off). The garage opens south through three double-door bays into the service yard; the dotted addition and the service rooms connect to the yard by single doors. Dashed lines inside the billiard room and playroom show temporary partitions subdividing them."
+  },
+  "openings": [
+    {
+      "type": "window",
+      "position": "north wall of the billiard-room range (under the 20'-2\" and 21'-0\" bays)",
+      "dimensions": null,
+      "pattern": "five swinging casement sashes between six short hatched piers, evenly spaced, swing arcs drawn to the north"
+    },
+    {
+      "type": "window",
+      "position": "south wall of the BILLIARD ROOM, west part, and south wall of the PLAYROOM",
+      "dimensions": null,
+      "pattern": "regular rhythm of single casement sashes between short hatched piers, swing arcs drawn to the south (about five bays each side)"
+    },
+    {
+      "type": "door",
+      "position": "south wall centred below the central core, between billiard room and playroom",
+      "dimensions": null,
+      "pattern": "group of wider openings (three to four) with full-leaf door swings between stepped jambs, reading as the french doors to the south yard named in the note"
+    },
+    {
+      "type": "door",
+      "position": "south front of the GARAGE opening into the service yard",
+      "dimensions": null,
+      "pattern": "three equal bays, each with a pair of large quarter-circle swing arcs between hatched piers"
+    },
+    {
+      "type": "window",
+      "position": "north wall of the entry hall and service rooms east to the garage",
+      "dimensions": null,
+      "pattern": "swinging sashes between short hatched piers continuing the north-wall rhythm, with one long unbroken hatched wall segment over the garage"
+    },
+    {
+      "type": "door",
+      "position": "north wall at the entry hall, within the 24'-11\" bay",
+      "dimensions": null,
+      "pattern": "single-leaf door set in a recess behind an L-shaped hatched jamb, swing into the hall"
+    },
+    {
+      "type": "opening",
+      "position": "either side of the central core, north and south, between hall / billiard room / playroom",
+      "dimensions": null,
+      "pattern": "doorways with swing arcs on both sides of the core so the two long rooms connect around it"
+    },
+    {
+      "type": "door",
+      "position": "dotted-line garage addition at the east end and the service rooms",
+      "dimensions": null,
+      "pattern": "single swing doors drawn partly in dotted line; closet doors with short swings in the two small service rooms"
+    }
+  ],
+  "built_in_furniture": [
+    {
+      "item": "central masonry core with stair (chimney/stair mass, labelled UP)",
+      "material": "masonry (hatched section)",
+      "dimensions": "8'-6\" east-west",
+      "position": "centre of the south range between BILLIARD ROOM and PLAYROOM"
+    },
+    {
+      "item": "closet-like partitions in the two small service rooms",
+      "material": "not indicated (thin double-line walls)",
+      "dimensions": null,
+      "position": "north strip, east of the entry hall, west of the GARAGE"
+    },
+    {
+      "item": "ladder-like row of short ticks along a wall (reads as a fixed ladder or shelving, unlabelled)",
+      "material": "not indicated",
+      "dimensions": null,
+      "position": "west end of the GARAGE, along its west wall"
+    },
+    {
+      "item": "rounded-end rectangular fixture, unlabelled, under the CONJECTURAL RESTORATION leader",
+      "material": "not indicated",
+      "dimensions": null,
+      "position": "service yard south of the GARAGE"
+    },
+    {
+      "item": "unlabelled rectangle drawn with a fine grid (reads as paving or a grille)",
+      "material": "not indicated",
+      "dimensions": null,
+      "position": "north strip, north of the billiard room under the 20'-2\" bay"
+    }
+  ],
+  "materials": [
+    {
+      "material": "masonry (diagonal section hatching of thick walls)",
+      "where": "all exterior walls, the piers between windows, the central core and the garage walls",
+      "finish": null
+    },
+    {
+      "material": "thin double-line walls, unhatched (temporary partitions, closet partitions and the low service-yard wall; note says the yard wall was 8 FEET high and cut down to 3 FEET)",
+      "where": "service rooms, dashed partitions in billiard room and playroom, service yard enclosure",
+      "finish": null
+    },
+    {
+      "material": "solid black fill (freestanding pier / post sections)",
+      "where": "square pier in the west end room and small mullion sections in the window rows",
+      "finish": null
+    }
+  ],
+  "palette": {
+    "dominant": [
+      "black ink line on white sheet"
+    ],
+    "accent": [],
+    "warm_or_cool": "neutral"
+  },
+  "details": [
+    "Regular alternation of short hatched piers and swinging sashes along both long walls, drawn with swing arcs, giving a continuous window band",
+    "Thick hatched central core holding the stair, with the two long rooms arranged either side and openings past it on both north and south",
+    "Chevron (pointed) wall projection at the east side of the west end room, paired with a freestanding solid square pier in the room",
+    "Dotted and dashed line conventions distinguishing the garage addition, temporary partitions and the conjectural service-yard restoration, each explained by the note",
+    "Several short stair runs marked UP or DOWN at the room ends and in the entry hall, drawn with break lines across the treads"
+  ],
+  "what_is_absent": [
+    "No door or window widths and no wall thicknesses are dimensioned",
+    "No overall north-south dimension for the main block and no ceiling heights or floor levels",
+    "Most spaces are unnamed: only BILLIARD ROOM, PLAYROOM and GARAGE are labelled; the west end room, hall, service rooms and yard are not",
+    "No furniture, fixtures or plumbing (no billiard table, no kitchen or bathroom fittings) and no material or finish notes",
+    "No section marks, detail references or cross-references to the other 13 sheets"
+  ],
+  "confidence": "medium"
+}

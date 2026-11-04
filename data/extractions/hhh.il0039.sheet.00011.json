@@ -1,0 +1,54 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00011",
+  "drawing_type": "elevation",
+  "room_or_space": "No room shown or named; the sheet heading reads FURNITURE and the four drawings are labelled DRESSER, FOOTBOARD and HEADBOARD only (freestanding furniture pieces drawn in isolation)",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions are written; pieces are drawn to the stated scale 1½\" = 1'-0\" only. As drawn, the dresser mirror panel is roughly square and about the width of the chest below it; the chest is wider than it is tall; the headboard is markedly taller than the footboard, its outer posts running well below the lower rail to the floor while the footboard posts stop just below its lower rail"
+  },
+  "layout": {
+    "organisation": "Four orthographic elevations of freestanding furniture on one sheet: dresser front elevation (left), dresser side elevation (centre), footboard elevation (upper right), headboard elevation (lower right); no plan view and no room enclosure",
+    "axes": "Each piece is bilaterally symmetrical about a vertical centre line; the composition of every piece is dominated by long horizontal rails or top slabs bracketed by paired slender vertical posts at each end",
+    "entry_sequence": "Not applicable; no room, doorway or threshold is shown",
+    "circulation": "Not applicable; no room or circulation space is shown"
+  },
+  "openings": [],
+  "built_in_furniture": [
+    {
+      "item": "Dresser with mirror (shown as freestanding furniture, not built-in): chest with a top row of three small drawers over three full-width long drawers, square pulls (one per small drawer, two per long drawer), a thick oversailing top slab, and a large square framed mirror above flanked by paired slender posts that carry small square block capitals at about mirror mid-height and run down to stacked block feet at the floor; side elevation shows the chest depth, the thin mirror slab and four drawer pulls projecting from the front face",
+      "material": "Not stated on sheet (line drawing only)",
+      "dimensions": null,
+      "position": "Front elevation left half of sheet; side elevation to its right, centre of sheet"
+    },
+    {
+      "item": "Bed footboard (shown as freestanding furniture): a long thick top rail oversailing paired end posts, a thin secondary rail just beneath it, an open panel, a thin lower rail, and block feet a short distance below the lower rail",
+      "material": "Not stated on sheet (line drawing only)",
+      "dimensions": null,
+      "position": "Upper right of sheet, labelled FOOTBOARD"
+    },
+    {
+      "item": "Bed headboard (shown as freestanding furniture): same vocabulary as the footboard but taller; thick top rail with thin rail beneath, a panel to a mid-height rail, below which thin inner stiles drop part-way while the outer paired posts continue to the floor ending in stacked block feet with two thin horizontal cross-bars; a small hatched section through a horizontal member with a chamfered end is drawn at the right-hand post below the mid rail",
+      "material": "Not stated on sheet (line drawing only)",
+      "dimensions": null,
+      "position": "Lower right of sheet, labelled HEADBOARD"
+    }
+  ],
+  "materials": [],
+  "palette": {"dominant": ["none shown; monochrome black ink line drawing on white sheet"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Paired slender vertical posts at each end of every piece, terminating at the floor in stacked square block feet with thin horizontal cross-bars",
+    "Thick slab-like top rails and dresser top that oversail the posts, each with a thinner secondary rail immediately below",
+    "Small square block capitals on the dresser mirror posts at about mirror mid-height, matching the square geometry of the feet",
+    "Square drawer pulls arranged on a regular grid: one centred on each of three small top drawers, two on each of three long drawers",
+    "Small hatched section cuts through a horizontal member with a chamfered end, drawn at the right-hand post of the dresser mirror frame and again at the headboard"
+  ],
+  "what_is_absent": [
+    "No room, walls, floor line or ceiling; the furniture is drawn in isolation with no architectural context",
+    "No written dimensions on any piece; only the scale statement and graphic bar scale are given",
+    "No material, finish, colour or hardware notes",
+    "No plan views of the pieces and no bed side rails or mattress connecting the headboard to the footboard",
+    "No doors, windows or other openings (furniture elevations only)"
+  ],
+  "confidence": "high"
+}

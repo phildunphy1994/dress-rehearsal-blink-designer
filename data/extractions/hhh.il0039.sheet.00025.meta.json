@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00025",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/25_window_detail.png",
+    "corpus_a/tiles/25_window_detail/r0c0.png",
+    "corpus_a/tiles/25_window_detail/r0c1.png",
+    "corpus_a/tiles/25_window_detail/r0c2.png",
+    "corpus_a/tiles/25_window_detail/r0c3.png",
+    "corpus_a/tiles/25_window_detail/r1c0.png",
+    "corpus_a/tiles/25_window_detail/r1c1.png",
+    "corpus_a/tiles/25_window_detail/r1c2.png",
+    "corpus_a/tiles/25_window_detail/r1c3.png",
+    "corpus_a/tiles/25_window_detail/r2c0.png",
+    "corpus_a/tiles/25_window_detail/r2c1.png",
+    "corpus_a/tiles/25_window_detail/r2c2.png",
+    "corpus_a/tiles/25_window_detail/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:37:41Z",
+  "flagged_for_manual_review": false,
+  "notes": "All lettering is crisp at the 4x3 tile resolution and no extra crops were needed. The sheet carries no dimension strings at all; the only numeric notation is a small pencil scale note (3\"=1'-0\") beside SHEET NO. 10, so overall_dimensions are null and proportions are described only as drawn."
+}

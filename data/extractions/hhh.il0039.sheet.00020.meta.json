@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00020",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/20_north_elevation.png",
+    "corpus_a/tiles/20_north_elevation/r0c0.png",
+    "corpus_a/tiles/20_north_elevation/r0c1.png",
+    "corpus_a/tiles/20_north_elevation/r0c2.png",
+    "corpus_a/tiles/20_north_elevation/r0c3.png",
+    "corpus_a/tiles/20_north_elevation/r1c0.png",
+    "corpus_a/tiles/20_north_elevation/r1c1.png",
+    "corpus_a/tiles/20_north_elevation/r1c2.png",
+    "corpus_a/tiles/20_north_elevation/r1c3.png",
+    "corpus_a/tiles/20_north_elevation/r2c0.png",
+    "corpus_a/tiles/20_north_elevation/r2c1.png",
+    "corpus_a/tiles/20_north_elevation/r2c2.png",
+    "corpus_a/tiles/20_north_elevation/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:38:04Z",
+  "flagged_for_manual_review": false,
+  "notes": "Lettering is crisp at full resolution and nothing on the sheet needed finer crops. The sheet carries no written dimensions and no scale, so every dimension field is null and overall size and proportions could not be quantified."
+}
