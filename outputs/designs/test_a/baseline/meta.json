@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:27:28Z",
+  "finished_at": "2026-11-04T18:30:24Z",
+  "notes": "All brief constraints were satisfied as far as self-checked by hand; the fireplace wall is modelled as three abutting footprints (breast plus two plinths) whose edges touch without overlapping."
+}

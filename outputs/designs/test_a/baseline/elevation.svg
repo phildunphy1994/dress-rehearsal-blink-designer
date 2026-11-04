@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='730' viewBox='0 0 900 730' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='290.0' y='140.0' width='420.0' height='229.99999999999997' fill='#fbfaf7' stroke='#000' stroke-width='2'/>
+<line x1='270.0' y1='370.0' x2='730.0' y2='370.0' stroke='#000' stroke-width='3'/>
+<text x='736.0' y='374.0' font-size='12'>FFL 0.00 m</text>
+<text x='736.0' y='144.0' font-size='12'>ceiling 2.30 m</text>
+<rect x='420.0' y='140.0' width='160.0' height='229.99999999999997' fill='#5E5B55' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E03</text>
+<rect x='290.0' y='139.99999999999994' width='130.0' height='185.0' fill='#E7E0D2' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='355.0' y='150.99999999999994' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E08</text>
+<rect x='580.0' y='139.99999999999994' width='130.0' height='185.0' fill='#E7E0D2' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='645.0' y='150.99999999999994' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E09</text>
+<rect x='290.0' y='328.0' width='130.0' height='42.0' fill='#5E5B55' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='355.0' y='339.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E01</text>
+<rect x='580.0' y='328.0' width='130.0' height='42.0' fill='#5E5B55' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='645.0' y='339.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E05</text>
+<rect x='455.0' y='278.0' width='90.0' height='50.0' fill='#2B2B2B' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='289.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E04</text>
+<rect x='325.0' y='334.0' width='60.0' height='30.0' fill='#C9A97E' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='355.0' y='345.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>E02</text>
+<rect x='290.0' y='325.0' width='130.0' height='3.0' fill='#2B2B2B' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='355.0' y='323.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E06</text>
+<rect x='580.0' y='325.0' width='130.0' height='3.0' fill='#2B2B2B' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='645.0' y='323.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>E07</text>
+<line x1='290.0' y1='328.0' x2='710.0' y2='328.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='328.0' x2='246.0' y2='328.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='332.0' text-anchor='end' font-size='10' fill='#b58'>Plinth and ledge datum 0.42 m 0.42 m</text>
+<line x1='290.0' y1='270.0' x2='710.0' y2='270.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='270.0' x2='246.0' y2='270.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='274.0' text-anchor='end' font-size='10' fill='#b58'>Ribbon window sill 1.00 m (nor 1.00 m</text>
+<line x1='290.0' y1='169.99999999999997' x2='710.0' y2='169.99999999999997' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='169.99999999999997' x2='246.0' y2='169.99999999999997' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='173.99999999999997' text-anchor='end' font-size='10' fill='#b58'>Ribbon window head 2.00 m (nor 2.00 m</text>
+<line x1='290.0' y1='140.0' x2='710.0' y2='140.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='140.0' x2='246.0' y2='140.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='144.0' text-anchor='end' font-size='10' fill='#b58'>Ceiling 2.30 m 2.30 m</text>
+<line x1='170.0' y1='370.0' x2='170.0' y2='140.0' stroke='#000'/><line x1='164.0' y1='370.0' x2='176.0' y2='370.0' stroke='#000'/><line x1='164.0' y1='140.0' x2='176.0' y2='140.0' stroke='#000'/><text transform='translate(160.0,255.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>2.30 m</text>
+<line x1='290.0' y1='406.0' x2='710.0' y2='406.0' stroke='#000'/><line x1='290.0' y1='400.0' x2='290.0' y2='412.0' stroke='#000'/><line x1='710.0' y1='400.0' x2='710.0' y2='412.0' stroke='#000'/><text x='500.0' y='424.0' text-anchor='middle' font-size='13' font-weight='bold'>4.20 m</text>
+<rect x='10' y='530.0' width='880' height='190' fill='none' stroke='#000'/><text x='20' y='552.0' font-size='15' font-weight='bold'>ELEVATION — East wall: fireplace wall (4.20 m wide, 2.30 m high; x measured from the north end) (east wall)</text><text x='20' y='572.0' font-size='12'>Wall length 4.20 m · ceiling 2.30 m · heights in metres above FFL · materials labelled on the drawing</text><line x1='20' y1='592.0' x2='120.0' y2='592.0' stroke='#000' stroke-width='4'/><text x='128.0' y='596.0' font-size='12'>1 m scale bar · 1 m = 100 px</text>
+<text x='20' y='618.0' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>
+<text x='20.0' y='636.0' font-size='10.5'>E01 1.30 w × 0.42 h, 0.00–0.42 m — Basalt plinth 0.42 m high, 0.45 m de</text>
+<text x='20.0' y='652.0' font-size='10.5'>E02 0.60 w × 0.30 h, 0.06–0.36 m — Oak-lined log niche 0.60 x 0.30 m; o</text>
+<text x='20.0' y='668.0' font-size='10.5'>E03 1.60 w × 2.30 h, 0.00–2.30 m — Full-height basalt chimney breast, 1</text>
+<text x='20.0' y='684.0' font-size='10.5'>E04 0.90 w × 0.50 h, 0.42–0.92 m — Fire opening 0.90 x 0.50 m, cill at </text>
+<text x='20.0' y='700.0' font-size='10.5'>E05 1.30 w × 0.42 h, 0.00–0.42 m — Basalt plinth 0.42 m high, 0.45 m de</text>
+<text x='450.0' y='636.0' font-size='10.5'>E06 1.30 w × 0.03 h, 0.42–0.45 m — Linear LED shadow gap 2700 K; recess</text>
+<text x='450.0' y='652.0' font-size='10.5'>E07 1.30 w × 0.03 h, 0.42–0.45 m — Linear LED shadow gap 2700 K; recess</text>
+<text x='450.0' y='668.0' font-size='10.5'>E08 1.30 w × 1.85 h, 0.45–2.30 m — Matt lime plaster, Chalk; lime plast</text>
+<text x='450.0' y='684.0' font-size='10.5'>E09 1.30 w × 1.85 h, 0.45–2.30 m — Matt lime plaster, Chalk; lime plast</text>
+</svg>

@@ -1,0 +1,527 @@
+{
+  "brief_id": "test_a",
+  "arm": "baseline",
+  "title": "Living room: hearth wall, ribbon window and oak entry screen",
+  "room": {
+    "type": "Living room",
+    "length_m": 5.50,
+    "width_m": 4.20,
+    "ceiling_height_m": 2.30,
+    "wall_thickness_m": 0.30,
+    "floor_finish": "Smoked European oak engineered wide boards (220 mm), matt hardwax oil, laid east-west along the room length"
+  },
+  "zones": [
+    {
+      "name": "Vestibule",
+      "polygon": [[0.00, 0.00], [1.00, 0.00], [1.00, 4.20], [0.00, 4.20]],
+      "description": "1.00 m wide entry slot between the west wall and the oak entry screen; door swing, coat hooks and shoe drawers live here."
+    },
+    {
+      "name": "Living",
+      "polygon": [[1.45, 0.00], [5.05, 0.00], [5.05, 4.20], [1.45, 4.20]],
+      "description": "Seating group between the back of the entry screen and the hearth plinth; circulation runs along the south edge."
+    },
+    {
+      "name": "Hearth",
+      "polygon": [[5.05, 0.00], [5.50, 0.00], [5.50, 4.20], [5.05, 4.20]],
+      "description": "0.45 m deep continuous basalt plinth and chimney breast across the full east wall."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "Vestibule soffit",
+      "height_m": 2.15,
+      "polygon": [[0.00, 0.00], [1.45, 0.00], [1.45, 4.20], [0.00, 4.20]],
+      "description": "Dropped limewashed soffit over the vestibule and the entry screen; the ceiling lifts to 2.30 m as you pass into the living zone.",
+      "rule_ids": []
+    }
+  ],
+  "level_changes": [],
+  "openings": [
+    {
+      "id": "O01",
+      "type": "door",
+      "wall": "west",
+      "offset_m": 0.30,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "left",
+      "role": "entry",
+      "label": "Entry door",
+      "description": "Single flush oak-veneered door hinged on the south jamb, swinging into the vestibule; leaf centre at y = 0.75 m, 1.62 m from the nearest seating footprint (sofa corner at 1.60, 1.00).",
+      "rule_ids": []
+    },
+    {
+      "id": "O02",
+      "type": "window",
+      "wall": "north",
+      "offset_m": 1.55,
+      "width_m": 3.75,
+      "height_m": 1.00,
+      "sill_m": 1.00,
+      "swing": "none",
+      "role": "window_band",
+      "label": "Ribbon window",
+      "description": "Continuous fixed ribbon glazing in slim thermally broken frames, x 1.55 to 5.30 m (3.75 m = 68% of the 5.50 m north wall), sill 1.00 m, head 2.00 m, with a 0.30 m blind and light pocket above.",
+      "pattern": "five equal fixed lights with 40 mm mullions",
+      "rule_ids": []
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Entry screen with coat store and shoe drawers",
+      "x_m": 1.00,
+      "y_m": 1.50,
+      "length_m": 0.45,
+      "depth_m": 2.70,
+      "height_m": 2.15,
+      "material": "European oak veneer carcass with solid oak slats",
+      "finish": "matt hardwax oil",
+      "built_in": true,
+      "functions": ["entry_element", "screen", "storage"],
+      "position_note": "Runs north-south from y 1.50 to the north wall, 1.00 m off the west wall, built up to the 2.15 m soffit. South 1.20 m (y 1.50-2.70) is a closed coat cupboard with hooks and shoe drawers on the vestibule face; north 1.50 m (y 2.70-4.20) is open vertical slats at 40/40 mm so window light reaches the vestibule. Clear of the door swing (x 0-0.90, y 0.30-1.20).",
+      "rule_ids": []
+    },
+    {
+      "id": "F02",
+      "item": "Three-seat sofa (2.20 m) facing the fireplace",
+      "x_m": 1.60,
+      "y_m": 1.00,
+      "length_m": 0.90,
+      "depth_m": 2.20,
+      "height_m": 0.78,
+      "material": "solid beech frame, feather-wrapped foam, moss green wool boucle upholstery",
+      "finish": "upholstered, low 0.78 m back, oak block feet",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 3,
+      "position_note": "Rotated to run north-south (seat faces east to the fire); back 0.15 m off the entry screen. Footprint x 1.60-2.50, y 1.00-3.20, centred on the room and fire axis at y 2.10. South arm sits on the circulation path edge; nearest corner is 1.62 m from the door centre.",
+      "rule_ids": []
+    },
+    {
+      "id": "F03",
+      "item": "Low coffee table",
+      "x_m": 3.00,
+      "y_m": 1.50,
+      "length_m": 0.70,
+      "depth_m": 1.20,
+      "height_m": 0.35,
+      "material": "solid European oak slab top on blackened steel flat-bar base",
+      "finish": "matt hardwax oil / blackened wax",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "0.50 m in front of the sofa, long side north-south, centred on y 2.10; east edge at x 3.70 keeps 0.35 m clear of the 0.90 m path band (x 4.05-4.95).",
+      "rule_ids": []
+    },
+    {
+      "id": "F04",
+      "item": "Window ledge unit: low bookshelf and lamp ledge",
+      "x_m": 1.60,
+      "y_m": 3.65,
+      "length_m": 1.55,
+      "depth_m": 0.55,
+      "height_m": 0.42,
+      "material": "European oak veneer with solid oak lipping",
+      "finish": "matt hardwax oil",
+      "built_in": true,
+      "functions": ["storage", "shelving"],
+      "position_note": "Against the north wall under the west end of the ribbon window, x 1.60-3.15; open shelving facing the room; top at the 0.42 m datum shared with the window seat and hearth plinths. 0.05 m shadow gap to the window seat.",
+      "rule_ids": []
+    },
+    {
+      "id": "F05",
+      "item": "Built-in window seat (two seats)",
+      "x_m": 3.20,
+      "y_m": 3.65,
+      "length_m": 1.80,
+      "depth_m": 0.55,
+      "height_m": 0.42,
+      "material": "European oak veneer box with drawer, ochre heavy-linen seat and back cushions",
+      "finish": "matt hardwax oil / upholstered cushion",
+      "built_in": true,
+      "functions": ["seating", "storage"],
+      "seats": 2,
+      "position_note": "Against the north wall under the east part of the ribbon window, x 3.20-5.00; seat top 0.42 m, cushion back against the 0.58 m of wall below the 1.00 m sill. Forms the north arm of the L-shaped seating group with the sofa. 0.05 m reveal to the north hearth plinth.",
+      "rule_ids": []
+    },
+    {
+      "id": "F06",
+      "item": "Chimney breast with sealed firebox",
+      "x_m": 5.05,
+      "y_m": 1.30,
+      "length_m": 0.45,
+      "depth_m": 1.60,
+      "height_m": 2.30,
+      "material": "honed grey basalt slabs on blockwork; blackened steel firebox surround; sealed glass-fronted insert flued in the east wall",
+      "finish": "honed (matt) stone, blackened wax steel",
+      "built_in": true,
+      "functions": ["fireplace", "hearth"],
+      "position_note": "Centred on the east wall at y 2.10, 1.60 m wide, 0.45 m deep, floor to ceiling. Fire opening 0.90 x 0.50 m cut into its face at 0.42-0.92 m above floor. Flush with and continuous with the hearth plinths either side (one stone element modelled as three abutting footprints).",
+      "rule_ids": []
+    },
+    {
+      "id": "F07",
+      "item": "Hearth plinth, south",
+      "x_m": 5.05,
+      "y_m": 0.00,
+      "length_m": 0.45,
+      "depth_m": 1.30,
+      "height_m": 0.42,
+      "material": "honed grey basalt",
+      "finish": "honed (matt)",
+      "built_in": true,
+      "functions": ["hearth"],
+      "position_note": "Low stone ledge along the east wall from the south wall to the chimney breast; recessed linear uplight slot along its back edge washes the lime plaster above. Not counted as seating.",
+      "rule_ids": []
+    },
+    {
+      "id": "F08",
+      "item": "Hearth plinth, north, with oak-lined log niche",
+      "x_m": 5.05,
+      "y_m": 2.90,
+      "length_m": 0.45,
+      "depth_m": 1.30,
+      "height_m": 0.42,
+      "material": "honed grey basalt with oak-lined niche",
+      "finish": "honed (matt) / matt hardwax oil",
+      "built_in": true,
+      "functions": ["hearth", "storage"],
+      "position_note": "Low stone ledge from the chimney breast to the north wall; log niche 0.60 x 0.30 m cut into its face at y 3.25-3.85. Recessed linear uplight slot along its back edge. Not counted as seating.",
+      "rule_ids": []
+    },
+    {
+      "id": "F09",
+      "item": "Floor reading lamp",
+      "x_m": 1.55,
+      "y_m": 3.25,
+      "length_m": 0.35,
+      "depth_m": 0.35,
+      "height_m": 1.45,
+      "material": "blackened steel stem, linen shade",
+      "finish": "blackened wax / natural linen",
+      "built_in": false,
+      "functions": ["lighting"],
+      "position_note": "In the pocket between the sofa's north arm (y 3.20), the window ledge unit (y 3.65) and the entry screen (x 1.45); lights the sofa's north seat.",
+      "rule_ids": []
+    },
+    {
+      "id": "F10",
+      "item": "Flatweave wool rug",
+      "x_m": 1.95,
+      "y_m": 1.05,
+      "length_m": 2.05,
+      "depth_m": 2.50,
+      "height_m": 0.01,
+      "material": "undyed wool flatweave",
+      "finish": "natural, no pile",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Under the front half of the sofa and the whole coffee table, x 1.95-4.00, y 1.05-3.55; stops short of the 0.90 m path band at x 4.05 and the south corridor at y 0.95.",
+      "rule_ids": []
+    }
+  ],
+  "circulation": {
+    "path": [[0.00, 0.75], [0.55, 0.75], [0.55, 0.50], [4.50, 0.50], [4.50, 2.10]],
+    "min_clear_width_m": 0.90,
+    "description": "From the door centre into the vestibule, east along the south side of the room (1.00 m clear between the south wall and the sofa/table), then north in front of the hearth (1.35 m clear between the coffee table at x 3.70 and the plinth face at x 5.05), ending 0.55 m from the fire. The sofa's south arm sits directly on the path edge, so the path serves the principal seating and the fireplace."
+  },
+  "palette": [
+    {
+      "hex": "#7B5E45",
+      "name": "Smoked oak",
+      "material": "European oak engineered wide boards",
+      "finish": "matt hardwax oil",
+      "where": "Floor throughout, boards laid east-west",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#E7E0D2",
+      "name": "Chalk",
+      "material": "lime plaster",
+      "finish": "matt, hand-trowelled",
+      "where": "North, south and west walls; east wall panels either side of the chimney breast",
+      "role": "neutral",
+      "rule_ids": []
+    },
+    {
+      "hex": "#F2EEE6",
+      "name": "Limewash white",
+      "material": "limewash on skimmed plasterboard",
+      "finish": "matt",
+      "where": "Ceiling at 2.30 m and vestibule soffit at 2.15 m",
+      "role": "neutral",
+      "rule_ids": []
+    },
+    {
+      "hex": "#C9A97E",
+      "name": "Natural oak",
+      "material": "European oak veneer and solid oak slats",
+      "finish": "matt hardwax oil",
+      "where": "Entry screen, window ledge unit, window seat box, coffee table top, log niche lining, door leaf",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#5E5B55",
+      "name": "Honed basalt",
+      "material": "grey basalt slabs",
+      "finish": "honed (matt)",
+      "where": "Chimney breast and both hearth plinths on the east wall",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#4F5D48",
+      "name": "Moss",
+      "material": "wool boucle",
+      "finish": "upholstery",
+      "where": "Sofa",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#B8783A",
+      "name": "Ochre",
+      "material": "heavy linen",
+      "finish": "upholstery",
+      "where": "Window seat cushions and scatter cushions",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#2B2B2B",
+      "name": "Blackened steel",
+      "material": "mild steel",
+      "finish": "blackened wax",
+      "where": "Firebox surround, coffee table base, floor lamp, door handle, window frames",
+      "role": "accent",
+      "rule_ids": []
+    }
+  ],
+  "elevation": {
+    "wall": "east",
+    "title": "East wall: fireplace wall (4.20 m wide, 2.30 m high; x measured from the north end)",
+    "elements": [
+      {
+        "id": "E01",
+        "item": "Hearth plinth, north",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 1.30,
+        "height_m": 0.42,
+        "material": "honed grey basalt",
+        "label": "Basalt plinth 0.42 m high, 0.45 m deep",
+        "hex": "#5E5B55",
+        "rule_ids": []
+      },
+      {
+        "id": "E02",
+        "item": "Log niche in north plinth",
+        "x_m": 0.35,
+        "z_m": 0.06,
+        "width_m": 0.60,
+        "height_m": 0.30,
+        "material": "oak-lined recess",
+        "label": "Oak-lined log niche 0.60 x 0.30 m",
+        "hex": "#C9A97E",
+        "rule_ids": []
+      },
+      {
+        "id": "E03",
+        "item": "Chimney breast",
+        "x_m": 1.30,
+        "z_m": 0.00,
+        "width_m": 1.60,
+        "height_m": 2.30,
+        "material": "honed grey basalt slabs",
+        "label": "Full-height basalt chimney breast, 1.60 m wide",
+        "hex": "#5E5B55",
+        "rule_ids": []
+      },
+      {
+        "id": "E04",
+        "item": "Fire opening",
+        "x_m": 1.65,
+        "z_m": 0.42,
+        "width_m": 0.90,
+        "height_m": 0.50,
+        "material": "blackened steel surround, sealed glass-fronted firebox",
+        "label": "Fire opening 0.90 x 0.50 m, cill at plinth datum 0.42 m",
+        "hex": "#2B2B2B",
+        "rule_ids": []
+      },
+      {
+        "id": "E05",
+        "item": "Hearth plinth, south",
+        "x_m": 2.90,
+        "z_m": 0.00,
+        "width_m": 1.30,
+        "height_m": 0.42,
+        "material": "honed grey basalt",
+        "label": "Basalt plinth 0.42 m high, 0.45 m deep",
+        "hex": "#5E5B55",
+        "rule_ids": []
+      },
+      {
+        "id": "E06",
+        "item": "Uplight slot, north",
+        "x_m": 0.00,
+        "z_m": 0.42,
+        "width_m": 1.30,
+        "height_m": 0.03,
+        "material": "recessed linear LED in shadow gap",
+        "label": "Linear LED shadow gap 2700 K",
+        "hex": "#2B2B2B",
+        "rule_ids": []
+      },
+      {
+        "id": "E07",
+        "item": "Uplight slot, south",
+        "x_m": 2.90,
+        "z_m": 0.42,
+        "width_m": 1.30,
+        "height_m": 0.03,
+        "material": "recessed linear LED in shadow gap",
+        "label": "Linear LED shadow gap 2700 K",
+        "hex": "#2B2B2B",
+        "rule_ids": []
+      },
+      {
+        "id": "E08",
+        "item": "Wall panel, north",
+        "x_m": 0.00,
+        "z_m": 0.45,
+        "width_m": 1.30,
+        "height_m": 1.85,
+        "material": "lime plaster",
+        "label": "Matt lime plaster, Chalk",
+        "hex": "#E7E0D2",
+        "rule_ids": []
+      },
+      {
+        "id": "E09",
+        "item": "Wall panel, south",
+        "x_m": 2.90,
+        "z_m": 0.45,
+        "width_m": 1.30,
+        "height_m": 1.85,
+        "material": "lime plaster",
+        "label": "Matt lime plaster, Chalk",
+        "hex": "#E7E0D2",
+        "rule_ids": []
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.42, "label": "Plinth and ledge datum 0.42 m"},
+      {"z_m": 1.00, "label": "Ribbon window sill 1.00 m (north wall)"},
+      {"z_m": 2.00, "label": "Ribbon window head 2.00 m (north wall)"},
+      {"z_m": 2.30, "label": "Ceiling 2.30 m"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Concealed linear LED in window-head pocket",
+      "position": "North wall, recessed pocket between window head (2.00 m) and ceiling, x 1.55-5.30",
+      "type": "linear LED 2700 K, dimmable, indirect wash down the glazing and ledge",
+      "rule_ids": []
+    },
+    {
+      "item": "Hearth plinth uplight slots",
+      "position": "East wall, shadow gap at the back of both hearth plinths at z 0.42, either side of the chimney breast",
+      "type": "linear LED 2700 K, dimmable, wall-wash on lime plaster",
+      "rule_ids": []
+    },
+    {
+      "item": "Under-ledge LED",
+      "position": "Toe recess beneath window ledge unit and window seat, x 1.60-5.00 on the north wall",
+      "type": "linear LED 2700 K, dimmable, floating-ledge effect",
+      "rule_ids": []
+    },
+    {
+      "item": "Floor reading lamp (F09)",
+      "position": "x 1.55-1.90, y 3.25-3.60, at the sofa's north arm",
+      "type": "floor-standing lamp, blackened steel, linen shade, 2700 K",
+      "rule_ids": []
+    },
+    {
+      "item": "Table lamp",
+      "position": "On the window ledge unit (F04) at about x 2.40, y 3.90",
+      "type": "ceramic table lamp, linen shade, 2700 K",
+      "rule_ids": []
+    },
+    {
+      "item": "Vestibule soffit downlights",
+      "position": "Two recessed in the 2.15 m soffit at (0.50, 1.90) and (0.50, 3.40)",
+      "type": "low-glare recessed LED 2700 K, dimmable",
+      "rule_ids": []
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Fireplace placed on the east short wall as a full-width basalt plinth with a central full-height chimney breast.",
+      "rationale": "The long axis terminates on the hearth, both long walls stay free for the ribbon window and the sofa back, and the principal elevation reads as one symmetric low composition.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Ribbon window on the north wall, 3.75 m long (68% of 5.50 m), sill 1.00 m, head 2.00 m.",
+      "rationale": "Even north light avoids glare on the fire-facing seating; a 2.00 m head leaves a 0.30 m pocket for blinds and the concealed light under a 2.30 m ceiling.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Entry door on the west wall at the south-west corner, with a 0.45 m deep oak screen and coat store forming a 1.00 m wide vestibule.",
+      "rationale": "The screen is the named entry element between door and seating; the door centre is 1.62 m from the nearest seating footprint and no seating is visible on axis from the door.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Dropped limewashed soffit at 2.15 m over the vestibule and screen.",
+      "rationale": "A compressed threshold makes the 2.30 m living ceiling feel taller on arrival and houses the entry downlights.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Seating for five as a three-seat sofa facing the fire plus a 1.80 m built-in window seat for two, arranged as an L around a low table.",
+      "rationale": "Five seats without a second freestanding sofa keeps the 1.00 m south corridor clear and the room uncluttered; the window seat uses the depth under the ribbon window.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "One continuous 0.42 m datum: hearth plinths, window seat and ledge unit share the same height, and the fire opening sits on it.",
+      "rationale": "A single low horizontal line running round two walls stretches the room and keeps everything below eye level in a low space.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Circulation runs along the south side of the room (1.00 m clear) and turns north in front of the hearth.",
+      "rationale": "The path reaches the sofa and the fire without cutting through the seating group or crossing the rug.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "No pendants; light comes from concealed linear sources at the window head, plinth shadow gaps and under the ledge, plus one floor lamp and one table lamp.",
+      "rationale": "Hanging fittings would read as obstacles under a 2.30 m ceiling; grazing light along the long walls emphasises length.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "All wall and joinery surfaces matt: lime plaster, honed basalt, oiled oak.",
+      "rationale": "Meets the no-mirror, no-gloss constraint and avoids reflections that would make the low ceiling and ribbon glazing busy.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Smoked oak wide boards laid east-west along the room length.",
+      "rationale": "Boards running the long way reinforce the long, low proportion and link vestibule, living zone and hearth as one floor.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": []
+}
