@@ -1,0 +1,294 @@
+{
+ "sheet_id": "hhh.il0039.sheet.00017",
+ "sheet_title_as_drawn": "SECOND FLOOR PLAN (title block: SECOND ADDENDUM; SHEET NO. 2; SURVEY NO. IL-1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 2 OF 10 SHEETS; CARNEGIE INSTITUTE OF TECHNOLOGY - 1962, UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR, NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN; margin note: This documentation was developed as a student project and donated to the Historic American Buildings Survey (HABS). It was not completed under HABS supervision or edited by HABS staff.)",
+ "scale_as_drawn": null,
+ "dimensions": [
+  {
+   "value": "92'-0\"",
+   "measures": "overall length of the main block, from the column line at the west end of the study/balcony wing to the east end of the servants' wing",
+   "location_on_sheet": "dimension line above the plan, top centre of the sheet"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "column-grid bay 1 of 3 (west to east) over the north balcony / study wing",
+   "location_on_sheet": "short dimension chain above the plan, upper left, west of the 92'-0\" line"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "column-grid bay 2 of 3 (west to east) over the north balcony / study wing",
+   "location_on_sheet": "short dimension chain above the plan, upper left, west of the 92'-0\" line"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "column-grid bay 3 of 3 (west to east) over the north balcony / study wing",
+   "location_on_sheet": "short dimension chain above the plan, upper left, west of the 92'-0\" line"
+  },
+  {
+   "value": "3'-6\"",
+   "measures": "vertical offset (jog) between the north wall of the study/balcony wing and the north wall of the hall/kitchen wing",
+   "location_on_sheet": "vertical string on the north side of the plan, above the study, rotated"
+  },
+  {
+   "value": "1'-8\"",
+   "measures": "small jog in the north wall east of the stair hall, between the hall and the kitchen north wall lines",
+   "location_on_sheet": "vertical string at the north wall above the stair hall / kitchen, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "north-south bay 1 of 4 (north to south) along the west edge of the north balcony",
+   "location_on_sheet": "vertical dimension chain west of the north balcony, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "north-south bay 2 of 4 (north to south) along the west edge of the north balcony",
+   "location_on_sheet": "vertical dimension chain west of the north balcony, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "north-south bay 3 of 4 (north to south) along the west edge of the north balcony",
+   "location_on_sheet": "vertical dimension chain west of the north balcony, rotated"
+  },
+  {
+   "value": "3'-4\"",
+   "measures": "north-south bay 4 of 4 (north to south) along the west edge of the north balcony",
+   "location_on_sheet": "vertical dimension chain west of the north balcony, rotated"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "window/mullion bay in the east wall of the north balcony (west wall of the study)",
+   "location_on_sheet": "vertical string inside the north balcony next to the study wall, rotated"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "pier between window bays in the east wall of the north balcony (west wall of the study)",
+   "location_on_sheet": "vertical string inside the north balcony next to the study wall, rotated, below the 2'-9\""
+  },
+  {
+   "value": "2'-4\"",
+   "measures": "depth of the north pier/wall block at the north-west corner of the living room where it meets the porch stairs",
+   "location_on_sheet": "vertical string at the west end of the living room, north side, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "north flank: from the north pier to the north face of the living room prow walls",
+   "location_on_sheet": "vertical string at the west end of the living room, north side, rotated"
+  },
+  {
+   "value": "20'-6\"",
+   "measures": "clear width of the living room between the north and south prow/flank walls",
+   "location_on_sheet": "vertical string along the west end of the living room, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "south flank: from the south face of the living room prow walls to the south pier",
+   "location_on_sheet": "vertical string at the west end of the living room, south side, rotated"
+  },
+  {
+   "value": "2'-4\"",
+   "measures": "depth of the south pier/wall block at the south-west corner of the living room where it meets the porch stairs",
+   "location_on_sheet": "vertical string at the west end of the living room, south side, rotated"
+  },
+  {
+   "value": "1'-2\"",
+   "measures": "east face of the central stair/chimney block facing the dining room: north pilaster projection (chain read north to south)",
+   "location_on_sheet": "vertical dimension chain east of the central stair/chimney block, rotated"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "east face of the central stair/chimney block facing the dining room: recess north of the central pier (chain read north to south)",
+   "location_on_sheet": "vertical dimension chain east of the central stair/chimney block, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "east face of the central stair/chimney block facing the dining room: central pier (chain read north to south)",
+   "location_on_sheet": "vertical dimension chain east of the central stair/chimney block, rotated"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "east face of the central stair/chimney block facing the dining room: recess south of the central pier (chain read north to south)",
+   "location_on_sheet": "vertical dimension chain east of the central stair/chimney block, rotated"
+  },
+  {
+   "value": "1'-2\"",
+   "measures": "east face of the central stair/chimney block facing the dining room: south pilaster projection (chain read north to south)",
+   "location_on_sheet": "vertical dimension chain east of the central stair/chimney block, rotated"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "distance from the south face of the central stair/chimney block to the south (balcony) wall of the living/dining room",
+   "location_on_sheet": "vertical string below the stair/chimney block near the south wall, rotated"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "glazed door/window bay in the south wall of the living room opening onto the south balcony",
+   "location_on_sheet": "horizontal string on the south balcony below the living room south wall"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "pier between door/window bays in the south wall of the living room",
+   "location_on_sheet": "horizontal string on the south balcony, with leader, right of the 2'-9\""
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "width of the south-west (porch) stair between column lines",
+   "location_on_sheet": "horizontal string below the south-west stair"
+  },
+  {
+   "value": "6'-0\"",
+   "measures": "width of the south-west \"OPEN\" bay of the south balcony",
+   "location_on_sheet": "horizontal string below the south-west corner of the south balcony"
+  },
+  {
+   "value": "2'-0\"",
+   "measures": "width of the pier/wall east of the south-west \"OPEN\" bay",
+   "location_on_sheet": "horizontal string below the south-west corner of the south balcony, right of the 6'-0\""
+  },
+  {
+   "value": "13'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): porch, west end to the porch stair column line",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "8'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): porch stair / west end of the living room",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): column-grid bay",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): column-grid bay",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): column-grid bay",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "east-west column-grid chain along the bottom of the plan (west to east): column-grid bay",
+   "location_on_sheet": "bottom dimension chain below the porch and living room, horizontal"
+  },
+  {
+   "value": "2'-0\"",
+   "measures": "pier/wall west of the south-east \"OPEN\" bay of the south balcony at the dining room",
+   "location_on_sheet": "horizontal string below the south balcony under the dining room"
+  },
+  {
+   "value": "6'-0\"",
+   "measures": "width of the south-east \"OPEN\" bay of the south balcony at the dining room",
+   "location_on_sheet": "horizontal string below the south balcony under the dining room, right of the 2'-0\""
+  },
+  {
+   "value": "1'-5\"",
+   "measures": "small offset at the south-east \"OPEN\" bay (leader dimension)",
+   "location_on_sheet": "horizontal string with leader below the 2'-0\" / 6'-0\" under the dining room"
+  },
+  {
+   "value": "1'-2\"",
+   "measures": "offset at the head of the pantry-hall stair (marked UP), leader dimension",
+   "location_on_sheet": "rotated string next to the UP stair between the rear hall and pantry"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "offset between column lines below the pantry-hall stair (leader dimension)",
+   "location_on_sheet": "horizontal string below the pantry-hall stair, west of the main north-south chain"
+  },
+  {
+   "value": "1'-8\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 1 of 11: north end, beside the pantry-hall stair",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "6'-0\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 2 of 11: pantry-hall stair / rear hall depth",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "2'-0\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 3 of 11: wall/pier at the north side of the dining room bay",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 4 of 11: north flank of the dining room prow",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 5 of 11: south flank of the dining room prow",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "1'-10\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 6 of 11: wall/pier south of the prow",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "2'-0\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 7 of 11: pier",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "3'-3\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 8 of 11: bay",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "2'-6\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 9 of 11: bay",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "5'-6\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 10 of 11: south balcony / open bay at the east end",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "10\"",
+   "measures": "north-south chain on the column line east of the dining room bay (read north to south), item 11 of 11: south end, leader dimension",
+   "location_on_sheet": "vertical dimension chain east of the dining room prow, rotated"
+  },
+  {
+   "value": "1'-0\"",
+   "measures": "width between the twin lines at the apex pier of the dining room bay (leader dimension)",
+   "location_on_sheet": "short horizontal string with leader east of the dining room bay apex"
+  },
+  {
+   "value": "1'-4\"",
+   "measures": "offset at the south end of the east chain (leader dimension)",
+   "location_on_sheet": "rotated string with leader at the south end of the east dimension chain"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "length of the angled (diagonal) south-east wall of the dining room bay",
+   "location_on_sheet": "string written along the diagonal bay wall of the dining room"
+  },
+  {
+   "value": "2'-7\"",
+   "measures": "window bay in the south wall of the servants' wing (closet/servant room)",
+   "location_on_sheet": "horizontal string below the servants' wing south wall; second digit could also read 9"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "pier beside the window bay in the south wall of the servants' wing (leader dimension)",
+   "location_on_sheet": "horizontal string with leader below the servants' wing south wall, right of the 2'-7\""
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "column-grid bay below the servants' wing (west)",
+   "location_on_sheet": "horizontal string below the servants' wing"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "column-grid bay below the servants' wing (east)",
+   "location_on_sheet": "horizontal string below the servants' wing, right of the first 4'-0\""
+  }
+ ],
+ "legibility": "medium",
+ "notes": "Pencil drawing scanned at 9662x7616 px; dimension strings are small, hand-lettered and mostly rotated 90 degrees, so every string was checked in full-resolution crops rotated upright from the master TIFF. No written or graphic scale is visible on the sheet. Remaining uncertainty: the servants'-wing bay read as 2'-7\" could be 2'-9\"; the north-wall 3'-6\" and 1'-8\" strings and the chain values 3'-3\", 2'-6\" and 5'-6\" are read from blurred pencil glyphs. The title block's structure-name and drawn-by fields are legible but omitted here under the study's blinding rule. Room labels present: PORCH, LIVING ROOM, BALCONY (x2), STUDY, HALL (x3), KITCHEN, PANTRY, CLOS., SERVANT, BATH, QUARTERS, OPEN (x2); stair notes UP / DOWN."
+}

@@ -1,0 +1,141 @@
+{
+ "sheet_id": "hhh.il0039.sheet.00016",
+ "drawing_type": "plan",
+ "room_or_space": "FIRST FLOOR PLAN (whole floor): Storage (left end), Billiards, Vestibule, Boiler Room, Laundry Rm., Storage, Clos., Stair, Game Room, Court Yard, Garage, Storage (right end)",
+ "overall_dimensions": {
+  "length": "92'-0\" (overall length of the upper long wall, from the vestibule corner to the right end of the garage/storage wing, as written)",
+  "width": null,
+  "ceiling_height": null
+ },
+ "proportions": {
+  "length_to_width_ratio": null,
+  "notable_proportion": "A 4'-0\" pier/mullion module is repeated along the upper and lower walls of the Billiards room (5 bays each) and along the upper wall above the boiler room (4 bays); every window group between piers is 1'-3\" + 2'-9\" + 1'-3\" (vestibule: 11½\" + 2'-9\" + 11½\"). Billiards room inside width 22'-6\" (vertical string); garage 18'-0\" vertical; stair run 3'-0\" between 10\" walls. The plan is very long and narrow in relation to its depth."
+ },
+ "layout": {
+  "organisation": "Long, narrow linear plan drawn horizontally. A main bar runs along the lower part of the sheet: left-end Storage room flanked by two stairs, a pointed bay, the Billiards room, a solid hatched central mass containing a stair, the Game Room with an angled bay, and the open Court Yard at the right end. A service bar is set back along the upper long wall: Vestibule, Boiler Room, Laundry Rm. with a small stair, Storage, Clos., a straight Stair, the Garage and a right-end Storage room. All walls are hatched and heavy; the two bars overlap only at the vestibule/central mass.",
+  "axes": "A single long horizontal centreline is drawn through Storage, Billiards, the central mass, Game Room and Court Yard; both the left-end pointed bay and the angled bay on the right side of the Game Room sit on this axis. The service wing runs parallel to it along the 92'-0\" upper wall. Cross-axes are not drawn; vertical dimension strings are set at the Billiards room walls only.",
+  "entry_sequence": "The Vestibule sits at the junction of the main bar and the service wing, on the upper wall; it opens to the Billiards room below it and to the Boiler Room / Clos. beside it. From the Billiards room the sequence runs through the central stair/fireplace mass into the Game Room and out to the Court Yard. Stairs marked UP (with direction arrows) occur at five points: two flanking the left-end Storage room, one in the central mass, one off the Laundry/Storage (marked DN and UP), and the straight Stair beside the Garage.",
+  "circulation": "Linear circulation along the long axis: Storage - pointed bay - Billiards - central mass - Game Room - Court Yard. The Game Room's lower wall has a row of door swing arcs between piers; the Garage's lower edge is open between stepped piers toward the Court Yard. Service rooms are reached from the Vestibule and from the Laundry stair; the Court Yard is bounded by a thin stepped wall at the lower right with a 1'-4\" step."
+ },
+ "openings": [
+  {
+   "type": "window",
+   "position": "upper wall of the Billiards room, between piers",
+   "dimensions": "1'-3\" + 2'-9\" + 1'-3\" per bay; piers at 4'-0\" centres (5 bays)",
+   "pattern": "repeated identically in every 4'-0\" bay along the wall"
+  },
+  {
+   "type": "window",
+   "position": "lower wall of the Billiards room, between piers",
+   "dimensions": "1'-3\" + 2'-9\" + 1'-3\" per bay; piers at 4'-0\" centres (5 bays)",
+   "pattern": "mirror of the upper wall; same module"
+  },
+  {
+   "type": "window",
+   "position": "upper wall of the Vestibule",
+   "dimensions": "11½\" + 2'-9\" + 11½\" (with 1'-3\" + 1'-3\" sub-divisions)",
+   "pattern": "same 2'-9\" light as the Billiards windows with narrower jambs"
+  },
+  {
+   "type": "window",
+   "position": "upper wall of the Laundry Rm.",
+   "dimensions": "1'-3\" + 2'-9\" + 1'-3\"",
+   "pattern": "same module as the Billiards windows; the upper wall above the boiler room is gridded at 4'-0\" (4 bays)"
+  },
+  {
+   "type": "window",
+   "position": "upper wall of the Boiler Room",
+   "dimensions": "1'-6\"",
+   "pattern": "single small opening"
+  },
+  {
+   "type": "opening",
+   "position": "left wall of the Billiards room, toward the pointed bay",
+   "dimensions": "11'-6\" clear between 1'-6\" pilasters; 9'-0\" and 3'-0\" solid segments either side",
+   "pattern": "wide opening centred on the long axis"
+  },
+  {
+   "type": "opening",
+   "position": "pointed bay (prow) at the left end of the Billiards room",
+   "dimensions": "1'-8\" / 2'-6\" / 8\" vertical string",
+   "pattern": "angled walls meeting on the axis, small central opening"
+  },
+  {
+   "type": "opening",
+   "position": "right wall of the Billiards room into the central hatched mass",
+   "dimensions": "9'-6\" between 1'-6\" piers; 4'-0\" solid either side",
+   "pattern": "wide central opening flanked by piers, symmetrical about the axis"
+  },
+  {
+   "type": "opening",
+   "position": "right wall of the Vestibule",
+   "dimensions": "4'-6\" between 2'-6\" segments",
+   "pattern": "single opening"
+  },
+  {
+   "type": "door",
+   "position": "lower wall of the Game Room, between piers",
+   "dimensions": null,
+   "pattern": "row of four door swing arcs between hatched piers, repeating bay by bay"
+  },
+  {
+   "type": "door",
+   "position": "lower-left, at the left stair block near the 11'-6\" / 3'-3\" / 3'-2\" / 2'-4\" string",
+   "dimensions": null,
+   "pattern": "single swing arc drawn on the 4'-0\" string"
+  },
+  {
+   "type": "opening",
+   "position": "lower wall of the right-end Storage room",
+   "dimensions": "2'-9\" opening between 4'-0\" and 2'-9\" wall segments",
+   "pattern": "single opening"
+  },
+  {
+   "type": "opening",
+   "position": "lower edge of the Garage toward the Court Yard",
+   "dimensions": "8'-3\" from the 10\" garage wall (2'-2\" pier) to the first stepped pier",
+   "pattern": "open bays between stepped piers"
+  },
+  {
+   "type": "opening",
+   "position": "Stair beside the Garage",
+   "dimensions": "3'-0\" run between 10\" walls",
+   "pattern": "straight single run, marked UP"
+  }
+ ],
+ "built_in_furniture": [],
+ "materials": [
+  {
+   "material": "wall material not named on the sheet; all walls and piers drawn with diagonal section hatching",
+   "where": "every wall, pier and the solid central mass",
+   "finish": null
+  },
+  {
+   "material": "stair treads drawn as parallel lines",
+   "where": "five stairs (left-end Storage room both sides, central mass, Laundry, beside Garage)",
+   "finish": null
+  }
+ ],
+ "palette": {
+  "dominant": [
+   "black line on white paper"
+  ],
+  "accent": [],
+  "warm_or_cool": "neutral"
+ },
+ "details": [
+  "Regular 4'-0\" pier module along the long walls with an identical narrow window group (1'-3\" + 2'-9\" + 1'-3\") in each bay",
+  "Pointed (prow-shaped) bay at the left end of the Billiards room and an angled bay on the right side of the Game Room, both on the drawn long axis",
+  "Thick hatched masses with stairs set inside them; the central mass between Billiards and Game Room is a large solid block with an internal stair",
+  "Walls stepped and offset: the service wing sits on a different wall line from the main rooms, with 10\" walls and short 2'-4\" / 2'-6\" jogs",
+  "Row of door swing arcs on the lower wall of the Game Room and stepped piers along the Garage edge toward the Court Yard"
+ ],
+ "what_is_absent": [
+  "No furniture, fixtures or equipment (no boiler, laundry tubs, plumbing or vehicles) in any room",
+  "No door leaves or swings for most openings (only the Game Room and one left-end door are drawn with arcs)",
+  "No north arrow, graphic scale or written scale",
+  "No overall width, ceiling heights, floor levels or material notes",
+  "No room dimensions for the Game Room, Boiler Room, Laundry, Storage rooms or Court Yard"
+ ],
+ "confidence": "medium"
+}

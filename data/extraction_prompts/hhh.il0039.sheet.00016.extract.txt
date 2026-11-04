@@ -22,4 +22,387 @@ Return exactly this JSON object:
 
 sheet_id: hhh.il0039.sheet.00016
 transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
-(transcription not yet available — run the transcription pass first)
+{
+ "sheet_id": "hhh.il0039.sheet.00016",
+ "sheet_title_as_drawn": "FIRST FLOOR PLAN. Title block: NAME OF STRUCTURE THE ROBIE HOUSE, COOK COUNTY CHICAGO, ILL.; SECOND ADDENDUM; SURVEY NO. IL-1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 1 OF 10 SHEETS; SHEET NO. 1; DRAWN BY R. GOLDMAN, H. HENDERSON, R. KONUCH; CARNEGIE INSTITUTE OF TECHNOLOGY - 1962; UNDER DIRECTION OF UNITED STATES DEPARTMENT OF THE INTERIOR NATIONAL PARK SERVICE, BRANCH OF PLANS AND DESIGN",
+ "scale_as_drawn": null,
+ "dimensions": [
+  {
+   "value": "92'-0\"",
+   "measures": "overall length of the upper long wall of the house, from the corner at the vestibule to the far right end of the garage/storage wing",
+   "location_on_sheet": "topmost horizontal dimension line, above the plan, centred over the boiler room/laundry/garage"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall above the vestibule and boiler room (segment 1 of 4)",
+   "location_on_sheet": "horizontal string on the upper dimension line, above the boiler room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall above the vestibule and boiler room (segment 2 of 4)",
+   "location_on_sheet": "horizontal string on the upper dimension line, above the boiler room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall above the vestibule and boiler room (segment 3 of 4)",
+   "location_on_sheet": "horizontal string on the upper dimension line, above the boiler room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall above the vestibule and boiler room (segment 4 of 4)",
+   "location_on_sheet": "horizontal string on the upper dimension line, above the boiler room"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "window opening in the upper wall of the boiler room",
+   "location_on_sheet": "short horizontal dimension just above the boiler room upper wall"
+  },
+  {
+   "value": "11½\"",
+   "measures": "left end segment of the window group in the upper wall of the vestibule",
+   "location_on_sheet": "horizontal string above the vestibule upper wall, left"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "window width in the upper wall of the vestibule",
+   "location_on_sheet": "horizontal string above the vestibule upper wall, centre"
+  },
+  {
+   "value": "11½\"",
+   "measures": "right end segment of the window group in the upper wall of the vestibule",
+   "location_on_sheet": "horizontal string above the vestibule upper wall, right"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "left sub-division under the 2'-9\" vestibule window",
+   "location_on_sheet": "second row of the same string, below 2'-9\", left"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "right sub-division under the 2'-9\" vestibule window",
+   "location_on_sheet": "second row of the same string, below 2'-9\", right"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "left segment of the window group in the upper wall of the laundry room",
+   "location_on_sheet": "horizontal string above the laundry room upper wall, left"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "window width in the upper wall of the laundry room",
+   "location_on_sheet": "horizontal string above the laundry room upper wall, centre"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "right segment of the window group in the upper wall of the laundry room",
+   "location_on_sheet": "horizontal string above the laundry room upper wall, right"
+  },
+  {
+   "value": "10\"",
+   "measures": "thickness of the garage left wall where it meets the upper wall",
+   "location_on_sheet": "rotated label at the inner corner of the garage left wall, below the upper wall"
+  },
+  {
+   "value": "2'-4\"",
+   "measures": "vertical offset of the vestibule's upper wall above the wall line to its left (projection of the jog)",
+   "location_on_sheet": "vertical string at the left end of the vestibule upper wall, upper segment"
+  },
+  {
+   "value": "5'-8\"",
+   "measures": "vertical depth of the recess on the left side of the vestibule, from the vestibule upper wall down to the Billiards wall line",
+   "location_on_sheet": "same vertical string, middle segment"
+  },
+  {
+   "value": "2'-0\"",
+   "measures": "lower segment of the same recess string, down to the Billiards upper wall dimension line",
+   "location_on_sheet": "same vertical string, lowest segment, just above the 4'-0\" string"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "short horizontal wall segment/jog at the lower left corner of the vestibule",
+   "location_on_sheet": "horizontal label with leader at the lower left corner of the vestibule"
+  },
+  {
+   "value": "2'-6\"",
+   "measures": "segment of the vestibule right wall / opening, label written horizontally with a leader arrow pointing at the vestibule wall",
+   "location_on_sheet": "immediately right of the vestibule wall, upper part"
+  },
+  {
+   "value": "2'-6\"",
+   "measures": "upper segment of the vestibule right wall string",
+   "location_on_sheet": "vertical string right of the vestibule, top segment"
+  },
+  {
+   "value": "4'-6\"",
+   "measures": "middle segment (opening) of the vestibule right wall string",
+   "location_on_sheet": "vertical string right of the vestibule, middle segment"
+  },
+  {
+   "value": "2'-6\"",
+   "measures": "lower segment of the vestibule right wall string",
+   "location_on_sheet": "vertical string right of the vestibule, bottom segment"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall of the Billiards room (segment 1 of 5)",
+   "location_on_sheet": "horizontal string above the Billiards upper wall"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall of the Billiards room (segment 2 of 5)",
+   "location_on_sheet": "horizontal string above the Billiards upper wall"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall of the Billiards room (segment 3 of 5)",
+   "location_on_sheet": "horizontal string above the Billiards upper wall"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall of the Billiards room (segment 4 of 5)",
+   "location_on_sheet": "horizontal string above the Billiards upper wall"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the upper wall of the Billiards room (segment 5 of 5)",
+   "location_on_sheet": "horizontal string above the Billiards upper wall"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "left segment of the window group in the upper wall of the Billiards room",
+   "location_on_sheet": "horizontal string just above the Billiards upper wall, left"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "window width in the upper wall of the Billiards room",
+   "location_on_sheet": "horizontal string just above the Billiards upper wall, centre"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "right segment of the window group in the upper wall of the Billiards room",
+   "location_on_sheet": "horizontal string just above the Billiards upper wall, right"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "left segment of the window group in the lower wall of the Billiards room",
+   "location_on_sheet": "horizontal string just below the Billiards lower wall, left"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "window width in the lower wall of the Billiards room",
+   "location_on_sheet": "horizontal string just below the Billiards lower wall, centre"
+  },
+  {
+   "value": "1'-3\"",
+   "measures": "right segment of the window group in the lower wall of the Billiards room",
+   "location_on_sheet": "horizontal string just below the Billiards lower wall, right"
+  },
+  {
+   "value": "9'-0\"",
+   "measures": "upper segment: from the stair block wall down to the upper pilaster on the Billiards left wall",
+   "location_on_sheet": "vertical string along the left (outer) wall of the Billiards room, read top to bottom"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "upper pilaster/pier on the Billiards left wall",
+   "location_on_sheet": "vertical string along the left (outer) wall of the Billiards room, read top to bottom"
+  },
+  {
+   "value": "11'-6\"",
+   "measures": "clear opening between the two pilasters on the Billiards left wall (toward the pointed bay)",
+   "location_on_sheet": "vertical string along the left (outer) wall of the Billiards room, read top to bottom"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "lower pilaster/pier on the Billiards left wall",
+   "location_on_sheet": "vertical string along the left (outer) wall of the Billiards room, read top to bottom"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "lowest segment of the Billiards left wall string",
+   "location_on_sheet": "vertical string along the left (outer) wall of the Billiards room, read top to bottom"
+  },
+  {
+   "value": "1'-0\"",
+   "measures": "upper end segment (wall) of the Billiards interior vertical string",
+   "location_on_sheet": "vertical string inside the Billiards room near its left wall, top"
+  },
+  {
+   "value": "22'-6\"",
+   "measures": "inside width of the Billiards room between upper and lower walls",
+   "location_on_sheet": "vertical string inside the Billiards room near its left wall, middle"
+  },
+  {
+   "value": "1'-0\"",
+   "measures": "lower end segment (wall) of the Billiards interior vertical string",
+   "location_on_sheet": "vertical string inside the Billiards room near its left wall, bottom"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "upper segment at the Billiards right wall, at the fireplace/stair mass",
+   "location_on_sheet": "vertical string along the right wall of the Billiards room (fireplace/stair mass side), read top to bottom"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "upper pier at the fireplace opening",
+   "location_on_sheet": "vertical string along the right wall of the Billiards room (fireplace/stair mass side), read top to bottom"
+  },
+  {
+   "value": "9'-6\"",
+   "measures": "opening between the piers on the Billiards right wall (fireplace/stair mass)",
+   "location_on_sheet": "vertical string along the right wall of the Billiards room (fireplace/stair mass side), read top to bottom"
+  },
+  {
+   "value": "1'-6\"",
+   "measures": "lower pier at the fireplace opening",
+   "location_on_sheet": "vertical string along the right wall of the Billiards room (fireplace/stair mass side), read top to bottom"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "lower segment at the Billiards right wall",
+   "location_on_sheet": "vertical string along the right wall of the Billiards room (fireplace/stair mass side), read top to bottom"
+  },
+  {
+   "value": "1'-8\"",
+   "measures": "upper segment of the pointed bay (prow) between the Billiards room and the left storage room",
+   "location_on_sheet": "vertical string at the pointed bay, top"
+  },
+  {
+   "value": "2'-6\"",
+   "measures": "middle segment (opening) of the pointed bay",
+   "location_on_sheet": "vertical string at the pointed bay, middle"
+  },
+  {
+   "value": "8\"",
+   "measures": "lower segment of the pointed bay string",
+   "location_on_sheet": "vertical string at the pointed bay, bottom"
+  },
+  {
+   "value": "11'-6\"",
+   "measures": "length of the left storage/stair block along the lower wall, from its left face to the stair",
+   "location_on_sheet": "horizontal string below the left stair block, left"
+  },
+  {
+   "value": "3'-3\"",
+   "measures": "stair/pier segment on the lower wall of the left stair block",
+   "location_on_sheet": "same horizontal string, second segment"
+  },
+  {
+   "value": "3'-2\"",
+   "measures": "next segment on the lower wall of the left stair block",
+   "location_on_sheet": "same horizontal string, third segment"
+  },
+  {
+   "value": "2'-4\"",
+   "measures": "last segment of the lower-left string, to the Billiards lower wall pier",
+   "location_on_sheet": "same horizontal string, fourth segment"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the lower wall of the Billiards room (segment 1 of 5)",
+   "location_on_sheet": "lowest horizontal dimension line below the Billiards room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the lower wall of the Billiards room (segment 2 of 5)",
+   "location_on_sheet": "lowest horizontal dimension line below the Billiards room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the lower wall of the Billiards room (segment 3 of 5)",
+   "location_on_sheet": "lowest horizontal dimension line below the Billiards room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the lower wall of the Billiards room (segment 4 of 5)",
+   "location_on_sheet": "lowest horizontal dimension line below the Billiards room"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "pier/mullion spacing along the lower wall of the Billiards room (segment 5 of 5)",
+   "location_on_sheet": "lowest horizontal dimension line below the Billiards room"
+  },
+  {
+   "value": "18'-0\"",
+   "measures": "vertical inside dimension of the garage",
+   "location_on_sheet": "vertical label inside the garage near its left wall"
+  },
+  {
+   "value": "10\"",
+   "measures": "wall thickness at the top of the stair enclosure next to the garage",
+   "location_on_sheet": "vertical string at the stair between the laundry wing and garage, top segment"
+  },
+  {
+   "value": "3'-0\"",
+   "measures": "width of the stair run next to the garage",
+   "location_on_sheet": "vertical string at the stair, middle segment, beside the label STAIR / UP"
+  },
+  {
+   "value": "10\"",
+   "measures": "wall thickness at the bottom of the stair enclosure",
+   "location_on_sheet": "vertical string at the stair, third segment"
+  },
+  {
+   "value": "1'-8\"",
+   "measures": "lowest segment of the stair string below the stair enclosure wall",
+   "location_on_sheet": "vertical string at the stair, bottom segment"
+  },
+  {
+   "value": "10\"",
+   "measures": "thickness of the garage left wall at its lower end",
+   "location_on_sheet": "rotated label beside the lower end of the garage left wall"
+  },
+  {
+   "value": "2'-2\"",
+   "measures": "width of the wall/pier at the lower end of the garage left wall",
+   "location_on_sheet": "horizontal string below the garage, left segment"
+  },
+  {
+   "value": "8'-3\"",
+   "measures": "distance from the garage left wall to the first pier on the lower edge of the garage",
+   "location_on_sheet": "horizontal string below the garage, right segment"
+  },
+  {
+   "value": "4'-0\"",
+   "measures": "left segment of the lower wall of the right-end storage room (solid wall)",
+   "location_on_sheet": "horizontal string below the right-end storage room, left"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "opening in the lower wall of the right-end storage room",
+   "location_on_sheet": "horizontal string below the right-end storage room, centre"
+  },
+  {
+   "value": "2'-9\"",
+   "measures": "right segment of the lower wall of the right-end storage room",
+   "location_on_sheet": "horizontal string below the right-end storage room, right"
+  },
+  {
+   "value": "2'-4\"",
+   "measures": "pier width at the lower right of the Game Room (chimney/stair mass)",
+   "location_on_sheet": "horizontal string below the Game Room lower-right block, first segment"
+  },
+  {
+   "value": "3'-2\"",
+   "measures": "second segment of the lower-right string",
+   "location_on_sheet": "same string, second segment"
+  },
+  {
+   "value": "3'-3\"",
+   "measures": "third segment of the lower-right string (at the drain/circle feature)",
+   "location_on_sheet": "same string, third segment"
+  },
+  {
+   "value": "6'-0\"",
+   "measures": "fourth segment of the lower-right string, to the court yard wall",
+   "location_on_sheet": "same string, fourth segment"
+  },
+  {
+   "value": "1'-4\"",
+   "measures": "step/thickness of the court yard lower wall",
+   "location_on_sheet": "rotated label at the court yard lower wall, lower right of the plan"
+  }
+ ],
+ "legibility": "medium",
+ "notes": "Hand-lettered pencil plan scanned as 1-bit; lettering is small and many labels are rotated. Transcribed from the 1568 px overview, the 12 tiles and full-resolution/upscaled crops of the master TIFF. No scale is written on the sheet. Remaining uncertainty: the inch digit of the 1'-8\" at the bottom of the stair string could be read as 6; the two 1'-0\" labels inside the Billiards room are read as 0 from the slashed-zero style but could be 6; a short unlabeled dimension (two ticks, no figure) occurs on the court yard lower wall right of the 1'-4\" and is not listed. Values 11½\" are written as eleven and one-half inches."
+}

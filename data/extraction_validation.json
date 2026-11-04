@@ -1,8 +1,8 @@
 {
- "validated_at": "2026-11-04T17:41:03+00:00",
- "phase": "iteration",
+ "validated_at": "2026-11-04T17:43:42+00:00",
+ "phase": "learning",
  "sheets": {
-  "hhh.il0039.sheet.00002": {
+  "hhh.il0039.sheet.00001": {
    "transcription": "valid",
    "extraction": "valid",
    "errors": [],
@@ -10,7 +10,7 @@
    "model": "claude-fable-5-1, session subagent, no API call",
    "flagged_for_manual_review": false
   },
-  "hhh.il0039.sheet.00011": {
+  "hhh.il0039.sheet.00003": {
    "transcription": "valid",
    "extraction": "valid",
    "errors": [],
@@ -18,12 +18,57 @@
    "model": "claude-fable-5-1, session subagent, no API call",
    "flagged_for_manual_review": false
   },
-  "hhh.il0039.sheet.00016": {
+  "hhh.il0039.sheet.00005": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00006": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00007": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00008": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00012": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00013": {
    "transcription": "missing",
    "extraction": "missing",
    "errors": []
   },
-  "hhh.il0039.sheet.00022": {
+  "hhh.il0039.sheet.00017": {
+   "transcription": "valid",
+   "extraction": "missing",
+   "errors": []
+  },
+  "hhh.il0039.sheet.00019": {
    "transcription": "valid",
    "extraction": "valid",
    "errors": [],
@@ -31,7 +76,7 @@
    "model": "claude-fable-5-1, session subagent, no API call",
    "flagged_for_manual_review": false
   },
-  "hhh.il0039.sheet.00024": {
+  "hhh.il0039.sheet.00020": {
    "transcription": "valid",
    "extraction": "valid",
    "errors": [],
@@ -39,7 +84,7 @@
    "model": "claude-fable-5-1, session subagent, no API call",
    "flagged_for_manual_review": false
   },
-  "hhh.il0039.sheet.00025": {
+  "hhh.il0039.sheet.00021": {
    "transcription": "valid",
    "extraction": "valid",
    "errors": [],
