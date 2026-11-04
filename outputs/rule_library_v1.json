@@ -1,0 +1,169 @@
+{
+  "corpus": "Frank Lloyd Wright — Robie House, HABS ILL,16-CHIG,33-",
+  "drawing_count": 12,
+  "rules": [
+    {
+      "id": "R01",
+      "title": "Long, low, horizontal massing",
+      "statement": "The whole building is drawn as one very long, low bar — the plan about 4.5:1 (92'-0\" long by 20'-6\" clear on 00017), the footprint several times longer than it is deep (00001), the south elevation six to seven times longer than the main block is tall (00019) and even the end elevations about twice as wide as high (00021) — so that every exterior view reads as stacked horizontal bands many times wider than they are high.",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00001", "hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R02",
+      "title": "Two parallel bars, with a lower service wing offset to one end",
+      "statement": "The plan is two parallel east-west bars — a principal living-dining bar and a shorter, lower service bar set back to the north and offset toward the east, overlapping only at the stair core — so the footprint is a stepped elongated shape (00001, 00003, 00017) and the long elevations are asymmetrical, longer and lower toward the wing end (00005, 00019).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00001", "hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00019"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R03",
+      "title": "Central chimney-and-stair core on the long axis",
+      "statement": "The fireplace and the main stair are combined in one hatched masonry core set on the longitudinal axis between living room and dining room, with the hearth opening toward the living room and open passages past the core on both sides so the two rooms read as one space (00003, 00017); in section the same core carries the belvedere and the stair runs beside the chimney mass (00005, 00007), and the printed description on the title sheet calls the house organised around a central hearth (00001).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00001", "hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00007", "hhh.il0039.sheet.00017"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R04",
+      "title": "Pointed prow bays at both ends of the main bar, opening onto walled terraces",
+      "statement": "Both ends of the living-dining bar terminate in a glazed bay that is pointed in plan (prow-plan) with angled glazed faces between small hatched corner piers (00003, 00017), and that reads in the end elevations as a projecting main-level bay under its own lower hipped roof with tall glazed doors either side opening onto a terrace bounded by low stepped garden walls (00006, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00003", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R05",
+      "title": "Low-pitched hipped roofs with deep cantilevered eaves and thin fascias on every mass",
+      "statement": "Every mass — main block, set-back upper storey and lower wing — is covered by a very low-pitched hipped roof drawn as a thin slab with a thin layered fascia that cantilevers far beyond the walls (about a window bay at each end on 00019, roughly a storey deep at the left end on 00005), with the roof surface left plain (00005, 00006, 00019, 00020, 00021; described as wide sweeping roofs in the printed text on 00001).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00001", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R06",
+      "title": "Stepped, asymmetric massing with a set-back upper block near the centre",
+      "statement": "The massing steps: a smaller third-storey block (belvedere) under its own hipped roof sits set back on the main block near its centre over the chimney core, and the masses step down toward the ends and toward the lower wing, so that no whole-building elevation is bilaterally symmetrical even though each roof is symmetrical about its own centre (00005, 00006, 00019, 00020, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R07",
+      "title": "Windows gathered into continuous ribbons under the eaves; ground storey as a low band of small windows",
+      "statement": "On the main and upper storeys windows are gathered into continuous ribbons of tall narrow casements set directly under the eaves between narrow brick piers, with a continuous head at the fascia and a continuous sill course (00005, 00006, 00019, 00020, 00021; in plan, casements alternating with short hatched piers on every exterior wall, on a 4'-0\" pier-to-pier module where dimensioned, 00003, 00017), while the ground storey carries a separate band of short near-square windows between brick piers on projecting sills, partly screened by the low garden walls (00005, 00006, 00019, 00020); isolated single lights occur only in the blank brick of the chimney/stair block and at roof junctions (00006, 00020, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R08",
+      "title": "Brick drawn as horizontal courses only, every edge capped by a plain light band",
+      "statement": "All walls, piers, parapets, garden walls and chimneys are brick drawn with closely spaced continuous horizontal coursing and no vertical joints (00005, 00006, 00007, 00008, 00019, 00020, 00021), and every wall top, parapet, pier, window sill, string course, water table and chimney cap is finished with a plain unhatched stone-like band that runs uninterrupted along the wall, so the elevations read as dark brick bands between light horizontal strips (00005, 00006, 00019, 00020, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00007", "hhh.il0039.sheet.00008", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R09",
+      "title": "Geometric straight-line leaded glass in the casements (mixed evidence)",
+      "statement": "Where glazing is detailed, every casement light and glazed door is filled with a straight-line leaded pattern — vertical bars with a chevron/diamond lattice (00005, 00006), or a diaper of very shallow horizontally elongated lozenges between tall narrow border lights and stacks of small square lights, with low-pitched diagonals converging on the centreline (00008) — but the evidence is mixed: 00019 draws the lattice in only one ground-floor window and plain mullions elsewhere, and 00020 and 00021 draw frames and mullions only.",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00008", "hhh.il0039.sheet.00019"],
+      "frequency": "usually",
+      "counter_example_sheet_ids": ["hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"]
+    },
+    {
+      "id": "R10",
+      "title": "Low brick garden and terrace walls with copings, carrying planter urns on piers",
+      "statement": "Terraces and balconies are bounded by low brick walls with projecting plain copings that step with the ground and extend the base of the building outward, and their square piers — at wall junctions, changes of height and wall ends — carry wide shallow planter bowls or urns on short pedestals, with rectangular planter boxes on the parapets in plan (00003, 00005, 00006, 00019, 00020, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R11",
+      "title": "South wall of living and dining rooms as a continuous band of glazed doors onto a full-length balcony",
+      "statement": "The entire south wall of the living room and dining room is a continuous band of outward-swinging glazed door leaves between short hatched piers, running uninterrupted across both rooms and past the central core, opening onto a south balcony that runs their full length behind a low parapet with 6'-0\" bays left OPEN at each end (00003, 00017); in section and elevation this wall reads as the main-storey window band above the low terrace wall, the south wall of each room being almost entirely glazed (00005, 00019).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00019"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R12",
+      "title": "No expressed principal entrance; doors are few, flush and at ground level",
+      "statement": "No principal entrance is expressed: the main floor has no exterior door at all and is reached only by stairs from below (00003, 00017), the main block shows no door on either long elevation (00019, 00020), and the only doors drawn are ground-level doors of a wing or end wall, set flush in the brick behind a terrace wall with at most one low step and no porch, canopy, path or surround (00005, 00006, 00021).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00003", "hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00017", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R13",
+      "title": "Chimneys as tall plain-capped brick slabs pierced by small slots",
+      "statement": "Chimneys rise above the roofs as tall plain-capped rectangular brick slabs — a broad mass over the central core and a tall narrow stack at one end (00005, 00006, 00020, 00021) — and their shafts are pierced by small rectangular slot openings: narrow slot windows at two levels (00020), a louvered vent slot in the chimney head (00019) and a vertical column of six small recesses or vents (00007).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00005", "hhh.il0039.sheet.00006", "hhh.il0039.sheet.00007", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020", "hhh.il0039.sheet.00021"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R14",
+      "title": "Trim, caps and feet built up from stepped rectangular layers; no carving or turning",
+      "statement": "At interior and furniture scale, profiles are built up from stacked rectangular layers rather than carved or turned: nested stepped trim bands frame the window head and sill and the head has a stepped member with a coved soffit (00008); chair posts end in stepped cap finials and a three-layer crest cap, every leg ends in a stepped moulded foot, and the foot stool and andirons are made of stacked thin bands and stepped blocks (00012, 00013); fireplaces are plain brick openings with raised hearth plinths stepping out at both sides and no mantel ornament (00007).",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00007", "hhh.il0039.sheet.00008", "hhh.il0039.sheet.00012", "hhh.il0039.sheet.00013"],
+      "frequency": "always",
+      "counter_example_sheet_ids": []
+    },
+    {
+      "id": "R15",
+      "title": "Solid stippled panels interrupting the top-storey window band (sometimes)",
+      "statement": "In the top storey the window band under the roof is sometimes interrupted by solid stippled (textured) infill panels set in frames in place of lights — one in the belvedere band (00005), three between the top-storey casements on the east end (00021), and a full band of framed stippled panels with a small square motif at the top tier of the chimney elevations (00007) — whereas 00006, 00019 and 00020 draw the upper band as casements only.",
+      "evidence_sheet_ids": ["hhh.il0039.sheet.00005", "hhh.il0039.sheet.00007", "hhh.il0039.sheet.00021"],
+      "frequency": "sometimes",
+      "counter_example_sheet_ids": ["hhh.il0039.sheet.00006", "hhh.il0039.sheet.00019", "hhh.il0039.sheet.00020"]
+    }
+  ],
+  "do_not_list": [
+    "Does not express a principal entrance: no exterior door on the main floor (00003, 00017), no door on the main block in the long elevations (00019, 00020), and no steps, path, porch roof or canopy at any door drawn (00005, 00006).",
+    "Does not compose a bilaterally symmetrical elevation: every whole-building elevation is asymmetrical and stepped (00006, 00019, 00020, 00021); symmetry is used only within a single element — the west fireplace face (00007), one window light (00008) and chair fronts (00012, 00013).",
+    "Does not use carving, turning, applied ornament or a decorative mantel: fireplaces are plain brick openings with no overmantel or surround (00007), the chair has no carving or turning beyond its layered cap and moulded foot (00013), and frames, posts and spindles are drawn in plain outline (00012).",
+    "Does not draw vertical joints in brickwork: every brick surface is rendered as continuous horizontal coursing only (00005, 00006, 00019, 00020, 00021).",
+    "Does not use gabled or steep roofs: every roof drawn is a very low-pitched hipped roof with a deep overhang and a thin fascia (00005, 00006, 00019, 00020, 00021).",
+    "Does not place the hearth on an outside wall: the fireplace is always in the central masonry core on the long axis between the two main rooms (00003, 00005, 00017; 'central hearth' in the printed description on 00001)."
+  ],
+  "palette_summary": {
+    "dominant": [
+      "Tawny brick and stone, stated only in the printed description on the title sheet (00001) and drawn on every elevation as horizontally coursed brick (00005, 00006, 00019, 00020, 00021)",
+      "Plain light-toned coping, sill and cap bands reading as light horizontal strips against the dark hatched brick bands (00019, 00021)"
+    ],
+    "accent": [
+      "Red tile roof, copper eaves and oak woodwork, stated in the printed description on 00001 only (not drawn; roof surfaces are left plain on 00005, 00006, 00019, 00020, 00021)",
+      "Leather cover over stuffing on the seat cushion (00013) and stipple-hatched upholstery on chair seats and back (00012)",
+      "Stippled textured infill panels in framed bands (00005, 00007, 00021)"
+    ],
+    "warm_or_cool": "warm, per the title-sheet description (00001: tawny brick, red tile, copper, oak); every other sheet is a monochrome measured drawing recorded as neutral"
+  },
+  "material_summary": [
+    "Brick for all walls, piers, parapets, garden walls and chimneys, drawn with horizontal coursing only (00005, 00006, 00007, 00019, 00020, 00021); named as tawny brick and stone in the printed description on 00001",
+    "Plain unhatched stone or cast-stone copings, sills, string courses, water table and chimney caps on every wall top and sill line (00005, 00006, 00019, 00020, 00021); unhatched solid slabs and blocks for hearth plinths and shelf slabs (00007)",
+    "Leaded glass with a straight-line geometric lattice in casements and glazed doors (00005, 00006, 00008), elsewhere thin-framed timber glazing with plain mullions (00019, 00020, 00021)",
+    "Wood: oak woodwork stated on 00001; wood head, sill, jamb, stool and sash at the window (00008); a wooden pier and screen beside the living-room fireplace (00003); solid wood chair with dowel construction and face-nailed trim (00013)",
+    "Leather over stuffing for the seat cushion (00013) and stipple-hatched upholstery on seat and back cushions (00012)",
+    "Roof: red tile stated on 00001 only; on every elevation the roof planes are drawn plain and unlabelled (00005, 00006, 00019, 00020, 00021)",
+    "In plan, hatched masonry for all exterior walls, piers and the central core, with thin unhatched partitions only for servants' rooms, pantry, stair halls and closets (00003)"
+  ],
+  "proportion_summary": [
+    "Plan about 4.5:1 — 92'-0\" overall length to 20'-6\" clear living-room width (00017); footprint several times longer than deep (00001); living and dining rooms of identical width end to end, combined length many times their width (00003)",
+    "South elevation six to seven times as long as the main block is tall, each hipped roof overhanging by about a window bay at each end (00019); north elevation many times longer than tall (00020); end elevations about twice as wide as high (00021); eaves overhang about a storey deep at the terrace end (00005)",
+    "A 4'-0\" pier-to-pier module on every exterior wall, subdivided along the glazed south wall into a 2'-9\" leaf and a 1'-3\" pier, the living room's 20'-6\" clear width being about five modules (00003, 00017)",
+    "Low stacked storeys of near-equal height at the chimney: 7'-6\", 7'-3\" and 7'-2\" floor-to-ceiling on 00007; two principal storeys of similar height with the belvedere lower (00005)",
+    "Main-storey lights tall and narrow, much taller than wide (00005, 00019, 00021); ground-storey lights near-square (00005, 00019, 00020); leaded lozenges about three times as wide as high (00008); fireplace openings and shelf slabs markedly wider than high (00007)",
+    "Chairs with tall narrow backs: overall height 50 3/4\" is about 3.1 times the 16 3/8\" width (00013); dining chair back much taller than seat-to-floor height, while the living room chair back is shorter and wider (00012)"
+  ],
+  "signature_moves": [
+    "A continuous ribbon of tall narrow casements between narrow brick piers set directly under a deeply cantilevered, very low-pitched hipped roof with a thin fascia, running the full length of the main storey (00005, 00006, 00019, 00020, 00021).",
+    "A long thin living-dining bar with a central brick chimney-and-stair core on its long axis, the rooms flowing past the core on both sides, a continuous glazed-door wall onto a full-length balcony, and pointed glazed prow bays at both ends (00003, 00017, 00005).",
+    "Brick drawn as horizontal courses only, every wall top, sill, pier and chimney capped by a plain light band, with low stepped garden walls carrying planter urns on piers extending the base outward (00005, 00006, 00019, 00020, 00021)."
+  ],
+  "generic_rules_removed": []
+}
