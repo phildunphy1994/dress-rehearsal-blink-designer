@@ -1,0 +1,46 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T17:53:09Z",
+  "finished_at": "2026-11-04T17:55:56Z",
+  "validation": "python3 scripts/03_aggregate.py --validate outputs/rule_library_v1.json -> exit 0 on first run; 15 rules; evidence per rule R01=8, R02=5, R03=5, R04=4, R05=6, R06=5, R07=7, R08=7, R09=4, R10=6, R11=4, R12=7, R13=6, R14=4, R15=3",
+  "rules_dropped_for_insufficient_evidence": [
+    {
+      "title": "4'-0\" pier-to-pier module as a standalone rule",
+      "reason": "dimensioned on only 2 sheets (00003, 00017); folded into R07's statement and the proportion summary instead"
+    },
+    {
+      "title": "Wide, low, plain brick fireplace openings with raised hearth plinth and projecting shelf slab",
+      "reason": "only 00007 describes the fireplace face; the plan sheets show only the hearth position (already in R03); 1 sheet"
+    },
+    {
+      "title": "Tall narrow chair backs",
+      "reason": "only 00012 and 00013, and 00012's living room chair back is shorter and wider; 2 sheets with a counter-example; kept in the proportion summary"
+    },
+    {
+      "title": "Low, near-equal storey heights (7'-2\" to 7'-6\")",
+      "reason": "written heights appear only on 00007; 00005 is qualitative only; 1-2 sheets; kept in the proportion summary"
+    },
+    {
+      "title": "Pair of long dashed overhead lines marking a central strip on the long axis",
+      "reason": "only 00003; 1 sheet"
+    },
+    {
+      "title": "Thin unhatched partitions for service rooms versus hatched masonry elsewhere",
+      "reason": "only 00003; 1 sheet; kept in the material summary"
+    },
+    {
+      "title": "Square-section posts and piers with a repeated small-square motif",
+      "reason": "mentions on 00003, 00007, 00012, 00013 but the observations (square terrace piers, square chair posts, square panel motif, square recessed andiron panels) do not form one testable rule; dropped as too loosely bundled rather than for sheet count"
+    }
+  ],
+  "notes": [
+    "Inputs: outputs/aggregate_prompt_v1.txt (12 embedded learning-set extractions), schema/rule_library_schema.json, and the 12 extraction files data/extractions/hhh.il0039.sheet.{00001,00003,00005,00006,00007,00008,00012,00013,00017,00019,00020,00021}.json; no other data/ or corpus_a/ file was opened.",
+    "Grounding: every rule statement, do-not entry, palette/material/proportion item and signature move is drawn only from the extraction text; nothing was imported from outside knowledge of the architect, building or period.",
+    "Evidence file outputs/rule_library_v1_evidence.md carries one verbatim quoted phrase per cited sheet for every rule and do-not entry; all 117 quotes were machine-checked as exact substrings of the corresponding extraction JSON (after JSON decoding), and the evidence ids in the JSON match the evidence file exactly.",
+    "generic_rules_removed left empty: the control corpus was not available at this step, so no contrast pass was run.",
+    "Palette: colour words exist only in the printed description transcribed on the title sheet (00001); all other sheets are monochrome measured drawings recorded as neutral, and the summary says so.",
+    "Mixed evidence declared in-statement with counter-example ids on R09 (leaded-glass pattern; 00020, 00021 draw frames only) and R15 (stippled top-band panels; 00006, 00019, 00020 draw casements only). R04 and R11 note which sheet types show which aspect of the rule.",
+    "Two merges were made to stay within the 15-rule cap: ground-storey small-window band merged into the window-ribbon rule (R07), and plain light cap/coping bands merged with horizontal brick coursing (R08)."
+  ]
+}
