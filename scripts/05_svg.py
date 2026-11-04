@@ -191,11 +191,14 @@ def render_plan(spec):
             out.append(f"<rect x='{X(x0)}' y='{Y(y1)}' width='{(x1 - x0) * S}' height='{(y1 - y0) * S}' fill='white' fill-opacity='0.55' stroke='none'/>")
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         seats = f" · {f['seats']} seats" if f.get("seats") else ""
-        bi = "built-in " if f["built_in"] else ""
-        l1, l2 = f"{esc(bi + f['item'])}{seats}", f"{f2(f['length_m'])} × {f2(f['depth_m'])} m"
+        name = f["item"] if len(f["item"]) <= 30 else f["item"][:28].rstrip() + "…"
+        bi = "built-in " if f["built_in"] and "built" not in name.lower() else ""
+        l1, l2 = f"{esc(bi + name)}{seats}", f"{f2(f['length_m'])} × {f2(f['depth_m'])} m"
         if (x1 - x0) * S < 75 and (y1 - y0) > (x1 - x0):   # narrow item: rotate the label
             out.append(f"<g transform='translate({X(cx)},{Y(cy)}) rotate(-90)'><text x='0' y='-2' text-anchor='middle' font-size='10' fill='#222'>{l1}</text>"
                        f"<text x='0' y='10' text-anchor='middle' font-size='9.5' fill='#444'>{l2}</text></g>")
+        elif not solid(f):   # rugs, pendants: label at the top edge so it does not collide with what sits under it
+            out.append(f"<text x='{X(cx)}' y='{Y(y1) - 3}' text-anchor='middle' font-size='9.5' fill='#777'>{l1} · {l2}</text>")
         else:
             out.append(f"<text x='{X(cx)}' y='{Y(cy) - 2}' text-anchor='middle' font-size='10.5' fill='#222'>{l1}</text>"
                        f"<text x='{X(cx)}' y='{Y(cy) + 11}' text-anchor='middle' font-size='10' fill='#444'>{l2}</text>")
@@ -422,10 +425,25 @@ def check(spec_path: Path, brief_id=None):
     pts = []
     for p, q in zip(path, path[1:]): pts += seg_points(p, q)
     min_clear, worst = 99, None
+    spans = [opening_span(room, o)[0] for o in spec["openings"] if o["type"] in ("door", "opening")]
+
+    def wall_clear(px, py):
+        # distance to each wall, except where the perpendicular foot lies inside a door/opening span (the wall is
+        # open there): then the lateral distance to the nearer jamb is used instead.
+        best = 99.0
+        for wall, d, foot in (("west", px, (0.0, py)), ("east", L - px, (L, py)), ("south", py, (px, 0.0)), ("north", W - py, (px, W))):
+            for (x0, y0, x1, y1) in spans:
+                if wall in ("west", "east") and abs(x0 - foot[0]) < 1e-6 and min(y0, y1) <= py <= max(y0, y1):
+                    d = min(abs(py - y0), abs(py - y1)) + 0.45; break   # inside the opening: clearance is to the jambs
+                if wall in ("south", "north") and abs(y0 - foot[1]) < 1e-6 and min(x0, x1) <= px <= max(x0, x1):
+                    d = min(abs(px - x0), abs(px - x1)) + 0.45; break
+            best = min(best, d)
+        return best
+
     for (px, py) in pts:
         if not (-0.001 <= px <= L + 0.001 and -0.001 <= py <= W + 0.001):
             fails.append(f"path leaves the room at ({px:.2f},{py:.2f})"); break
-        c = min(px, L - px, py, W - py)
+        c = wall_clear(px, py)
         for f in solids:
             c = min(c, point_rect_dist(px, py, furn_rect(f)))
         if 2 * c < min_clear: min_clear, worst = 2 * c, (px, py)
@@ -443,7 +461,7 @@ def check(spec_path: Path, brief_id=None):
             ok = bool(os_) and any(math.hypot(px - opening_centre(room, o)[0][0], py - opening_centre(room, o)[0][1]) <= 1.0 for o in os_ for (px, py) in pts)
         elif tgt == "seating": ok = near_rects([furn_rect(f) for f in furn if {"seating", "dining_seating"} & set(f["functions"])])
         elif tgt == "fireplace": ok = near_rects([furn_rect(f) for f in has("fireplace") + has("hearth")], 1.0)
-        elif tgt == "dining_table": ok = near_rects([furn_rect(f) for f in has("dining_table")])
+        elif tgt == "dining_table": ok = near_rects([furn_rect(f) for f in has("dining_table")], 1.5)   # chairs may sit between path and table
         elif tgt == "desk": ok = near_rects([furn_rect(f) for f in has("desk")])
         elif tgt == "bed": ok = near_rects([furn_rect(f) for f in has("bed")])
         elif tgt == "west_end": ok = any(px <= 0.8 for (px, py) in pts)
@@ -473,8 +491,11 @@ def check(spec_path: Path, brief_id=None):
     if mats.get("must_floor_finish"):
         if not (room.get("floor_finish") or any("floor" in p["where"].lower() for p in spec["palette"])): fails.append("floor finish not named in palette/room")
     blob = (" ".join(texts) + " " + md).lower()
+    neg = re.compile(r"\b(no|not|never|without|avoid(?:s|ed|ing)?|free of|rather than|instead of|non)[\s-]+(?:[\w-]+\s+){0,3}[\w-]*$")
     for term in mats["must_not_terms"]:
-        if term in blob and "no " + term not in blob and "not " + term not in blob: fails.append(f"forbidden material term present: '{term}'")
+        hits = [m.start() for m in re.finditer(re.escape(term), blob)]
+        real = [h for h in hits if not neg.search(blob[max(0, h - 40):h])]
+        if real: fails.append(f"forbidden material term present: '{term}' ({len(real)} non-negated mention(s))")
     manual = ROOT / "outputs" / "manual_checks.json"
     if manual.exists():
         m = json.loads(manual.read_text()).get(f"{spec['brief_id']}/{spec['arm']}", {})

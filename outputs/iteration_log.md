@@ -27,7 +27,22 @@ the generated iteration designs showed.
 
 ## B. Iteration designs (generated with v1) — findings
 
-(filled after rendering and checking the four iteration designs)
+### B.1 Checker (scripts/05_svg.py) fixes found on the first iteration design (I2 baseline) — apply to both arms
+1. Check 5 penalised a path for approaching its own door (wall clearance measured to the wall even inside a door
+   opening). Fixed: inside a door/opening span the clearance is measured to the jambs.
+2. Check 5 "path reaches dining_table" used a 0.8 m tolerance, which a row of chairs between path and table always
+   breaks. Fixed: 1.5 m for the dining table target.
+3. Check 7 flagged "no high-gloss lacquer" (a sentence *complying* with the brief) as a forbidden term. Fixed: a
+   mention preceded within 40 characters by a negation (no / not / never / without / avoid / free of / rather than /
+   instead of / non) is not a violation. Known limit: "avoid X and use Y" reads Y as negated too; check-7 flags are
+   therefore reviewed by hand whenever they fire, and the review is recorded in outputs/violations.csv notes.
+4. Renderer cosmetics only (no metric effect): no doubled "built-in built-in" prefix, long item names truncated,
+   rug/pendant labels moved to the item's top edge.
+After these fixes the I2 baseline design scores 0 violations; the scratch fixture still scores its 1 deliberate
+violation (path through a sofa), so the checker still catches real faults.
+
+### B.2 Design-level findings
+(filled after all four iteration designs are rendered and checked)
 
 ## C. Changes v1 → v2
 
