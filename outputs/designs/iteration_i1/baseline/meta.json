@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:08:54Z",
+  "finished_at": "2026-11-04T18:11:57Z",
+  "notes": "All brief constraints met; the circulation rule was read as a 0.90 m corridor centred on the path (0.45 m each side), since 0.90 m clear on each side of a centreline is not achievable in a 4.50 m wide room with seating for six."
+}

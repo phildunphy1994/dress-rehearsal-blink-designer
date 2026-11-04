@@ -1,0 +1,662 @@
+{
+  "brief_id": "iteration_i2",
+  "arm": "learned",
+  "title": "Banded dining room: brick plinth bench, oak head band and a glazed south ribbon",
+  "room": {
+    "type": "dining room",
+    "length_m": 4.80,
+    "width_m": 3.60,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.30,
+    "floor_finish": "Fired clay quarry tile 150 x 150 x 20 mm, tawny red, laid in running bond with courses east-west, matt penetrating sealer"
+  },
+  "zones": [
+    {
+      "name": "Service aisle",
+      "polygon": [[0.00, 0.00], [4.80, 0.00], [4.80, 1.65], [0.00, 1.65]],
+      "description": "Clear aisle along the glazed south wall from the kitchen door to the living-room passage; glazed leaves swing outward so the whole strip is clear floor."
+    },
+    {
+      "name": "Dining",
+      "polygon": [[0.00, 1.65], [4.80, 1.65], [4.80, 3.10], [0.00, 3.10]],
+      "description": "Table on the long axis with loose chairs on the aisle side and at both ends; 0.70 m strips at each end."
+    },
+    {
+      "name": "Built-in wall",
+      "polygon": [[0.00, 3.10], [4.80, 3.10], [4.80, 3.60], [0.00, 3.60]],
+      "description": "One continuous 0.50 m deep built-in band along the north wall: sideboard at the kitchen end, banquette running on to the east core wall."
+    }
+  ],
+  "openings": [
+    {
+      "id": "O1",
+      "type": "door",
+      "wall": "west",
+      "offset_m": 0.10,
+      "width_m": 0.90,
+      "height_m": 2.20,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "left",
+      "role": "kitchen",
+      "label": "Kitchen door",
+      "description": "Plain flush oak door leaf in a plain oak frame with a stepped head only; no architrave, surround, threshold step or canopy. Hinged on the south jamb so the open leaf lies back toward the solid south-west return of the south wall. Swing zone x 0.00-0.90, y 0.10-1.00 holds no furniture.",
+      "rule_ids": ["R12", "R14"]
+    },
+    {
+      "id": "O2",
+      "type": "door",
+      "wall": "south",
+      "offset_m": 0.38,
+      "width_m": 0.84,
+      "height_m": 2.20,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "Glazed door leaf 1 (east bay) to south balcony",
+      "description": "Outward-swinging oak-framed glazed door leaf between 0.38 m brick piers; continuous head at 2.20 m under the oak head band.",
+      "pattern": "Straight-line leaded lattice: a tall narrow border light each side, a field of shallow lozenges about three times as wide as high with low-pitched diagonals converging on the centreline, and a stack of small square lights in the top tier above 1.90 m",
+      "rule_ids": ["R11", "R07", "R09"]
+    },
+    {
+      "id": "O3",
+      "type": "door",
+      "wall": "south",
+      "offset_m": 1.60,
+      "width_m": 0.84,
+      "height_m": 2.20,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "Glazed door leaf 2 (middle bay) to south balcony",
+      "description": "As leaf 1; same module, same head and sill.",
+      "pattern": "Straight-line leaded lattice as leaf 1",
+      "rule_ids": ["R11", "R07", "R09"]
+    },
+    {
+      "id": "O4",
+      "type": "door",
+      "wall": "south",
+      "offset_m": 2.82,
+      "width_m": 0.84,
+      "height_m": 2.20,
+      "sill_m": 0.00,
+      "swing": "out",
+      "hinge": "left",
+      "role": "window_band",
+      "label": "Glazed door leaf 3 (west bay) to south balcony",
+      "description": "As leaf 1. West of this leaf the wall is a 0.38 m pier and then a 0.76 m solid brick return to the kitchen corner, against which the open kitchen door lies.",
+      "pattern": "Straight-line leaded lattice as leaf 1",
+      "rule_ids": ["R11", "R07", "R09"]
+    },
+    {
+      "id": "O5",
+      "type": "opening",
+      "wall": "east",
+      "offset_m": 2.00,
+      "width_m": 1.22,
+      "height_m": 2.20,
+      "sill_m": 0.00,
+      "swing": "none",
+      "role": "entry",
+      "label": "Open passage to living room past the chimney core",
+      "description": "Leafless square-headed opening one 1.22 m module wide at the south end of the east wall (y 0.38-1.60); the rest of the east wall is the blank coursed-brick face of the core assumed beyond it. No door, architrave, step or threshold change.",
+      "rule_ids": ["R03", "R12"]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Built-in banquette: brick plinth, cast-stone seat slab, leather cushion, upholstered back pad, oak top rail",
+      "x_m": 1.20,
+      "y_m": 3.10,
+      "length_m": 3.60,
+      "depth_m": 0.50,
+      "height_m": 0.96,
+      "material": "Tawny brick plinth; cast-stone seat slab; leather over stuffing; stippled wool back pad; solid oak rail",
+      "finish": "Brick with raked bed joints and flush perpends; honed cast stone; natural aniline leather; matt bouclé wool; hardwax-oiled oak, stepped cap profile",
+      "built_in": true,
+      "functions": ["seating", "dining_seating"],
+      "seats": 3,
+      "position_note": "Along the north wall from the sideboard (x 1.20) to the east wall (x 4.80). Seat 0.49 m above floor, top rail 0.90-0.96 m. Three dining seats face the table (x 1.20-3.60); the eastern 1.20 m runs on to the core wall as a side seat beside the living-room passage.",
+      "rule_ids": ["R10", "R08", "R14", "R01"]
+    },
+    {
+      "id": "F02",
+      "item": "Built-in sideboard: brick plinth, two plain flush oak doors, cast-stone top slab",
+      "x_m": 0.00,
+      "y_m": 3.10,
+      "length_m": 1.20,
+      "depth_m": 0.50,
+      "height_m": 0.96,
+      "material": "Tawny brick; solid oak; cast stone",
+      "finish": "Brick with raked bed joints and flush perpends; hardwax-oiled oak, flush doors with no mouldings; honed cast stone slab 0.06 m thick",
+      "built_in": true,
+      "functions": ["sideboard", "storage"],
+      "position_note": "Kitchen end of the north wall (x 0.00-1.20), continuous with the bench plinth; top slab 0.90-0.96 m aligned with the bench rail. Served from the 0.70 m strip west of the table.",
+      "rule_ids": ["R02", "R08", "R14"]
+    },
+    {
+      "id": "F03",
+      "item": "Built-in cantilevered cast-stone shelf slab above the sideboard",
+      "x_m": 0.00,
+      "y_m": 3.35,
+      "length_m": 1.20,
+      "depth_m": 0.25,
+      "height_m": 1.52,
+      "material": "Cast stone",
+      "finish": "Honed, plain square edge, let into the brick",
+      "built_in": true,
+      "functions": ["shelving"],
+      "allow_overlap": true,
+      "position_note": "Wall-mounted slab 0.06 m thick: underside 1.46 m, top 1.52 m above floor, over the sideboard. Overlaps the sideboard footprint in plan only.",
+      "rule_ids": ["R14", "R08"]
+    },
+    {
+      "id": "F04",
+      "item": "Dining table, long refectory form",
+      "x_m": 1.20,
+      "y_m": 2.15,
+      "length_m": 2.40,
+      "depth_m": 0.90,
+      "height_m": 0.74,
+      "material": "Solid oak top on two oak end frames with stepped moulded feet",
+      "finish": "Hardwax-oiled oak, plain square edges, no carving or turning",
+      "built_in": false,
+      "functions": ["dining_table"],
+      "position_note": "Centred on the long axis (x 1.20-3.60), 0.05 m off the bench front; table ends 0.70 m from the west and east walls.",
+      "rule_ids": ["R01", "R14"]
+    },
+    {
+      "id": "F05",
+      "item": "Dining chair, tall narrow back",
+      "x_m": 1.39,
+      "y_m": 1.65,
+      "length_m": 0.42,
+      "depth_m": 0.45,
+      "height_m": 1.25,
+      "material": "Solid oak, dowel construction; stippled wool seat pad",
+      "finish": "Hardwax-oiled oak; stepped cap finials and stepped moulded feet; no carving or turning",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "South side of the table, west place; 0.05 m off the table edge.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F06",
+      "item": "Dining chair, tall narrow back",
+      "x_m": 2.19,
+      "y_m": 1.65,
+      "length_m": 0.42,
+      "depth_m": 0.45,
+      "height_m": 1.25,
+      "material": "Solid oak, dowel construction; stippled wool seat pad",
+      "finish": "Hardwax-oiled oak; stepped cap finials and stepped moulded feet; no carving or turning",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "South side of the table, middle place; 0.05 m off the table edge.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F07",
+      "item": "Dining chair, tall narrow back",
+      "x_m": 2.99,
+      "y_m": 1.65,
+      "length_m": 0.42,
+      "depth_m": 0.45,
+      "height_m": 1.25,
+      "material": "Solid oak, dowel construction; stippled wool seat pad",
+      "finish": "Hardwax-oiled oak; stepped cap finials and stepped moulded feet; no carving or turning",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "South side of the table, east place; 0.05 m off the table edge.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F08",
+      "item": "Dining chair, tall narrow back (end seat)",
+      "x_m": 0.70,
+      "y_m": 2.39,
+      "length_m": 0.45,
+      "depth_m": 0.42,
+      "height_m": 1.25,
+      "material": "Solid oak, dowel construction; stippled wool seat pad",
+      "finish": "Hardwax-oiled oak; stepped cap finials and stepped moulded feet; no carving or turning",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "West end of the table, centred on the table depth; chair back 0.70 m from the west wall, clear of the kitchen-door swing and the sideboard.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F09",
+      "item": "Dining chair, tall narrow back (end seat)",
+      "x_m": 3.65,
+      "y_m": 2.39,
+      "length_m": 0.45,
+      "depth_m": 0.42,
+      "height_m": 1.25,
+      "material": "Solid oak, dowel construction; stippled wool seat pad",
+      "finish": "Hardwax-oiled oak; stepped cap finials and stepped moulded feet; no carving or turning",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "East end of the table, centred on the table depth; chair back 0.70 m from the east core wall.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F10",
+      "item": "Box pendant light: stepped oak frame, leaded glass panels, copper liner",
+      "x_m": 1.45,
+      "y_m": 2.45,
+      "length_m": 0.30,
+      "depth_m": 0.30,
+      "height_m": 0.30,
+      "material": "Solid oak, clear leaded glass, copper sheet",
+      "finish": "Hardwax-oiled oak; straight-line leaded lattice; brushed waxed copper",
+      "built_in": false,
+      "functions": ["lighting"],
+      "allow_overlap": true,
+      "position_note": "Over the table centreline (y 2.60) at x 1.60; fixture underside 1.60 m, top 1.90 m above floor, on a copper stem to the ceiling.",
+      "rule_ids": ["R14", "R09"]
+    },
+    {
+      "id": "F11",
+      "item": "Box pendant light: stepped oak frame, leaded glass panels, copper liner",
+      "x_m": 2.25,
+      "y_m": 2.45,
+      "length_m": 0.30,
+      "depth_m": 0.30,
+      "height_m": 0.30,
+      "material": "Solid oak, clear leaded glass, copper sheet",
+      "finish": "Hardwax-oiled oak; straight-line leaded lattice; brushed waxed copper",
+      "built_in": false,
+      "functions": ["lighting"],
+      "allow_overlap": true,
+      "position_note": "Over the table centreline (y 2.60) at x 2.40; fixture underside 1.60 m, top 1.90 m above floor.",
+      "rule_ids": ["R14", "R09"]
+    },
+    {
+      "id": "F12",
+      "item": "Box pendant light: stepped oak frame, leaded glass panels, copper liner",
+      "x_m": 3.05,
+      "y_m": 2.45,
+      "length_m": 0.30,
+      "depth_m": 0.30,
+      "height_m": 0.30,
+      "material": "Solid oak, clear leaded glass, copper sheet",
+      "finish": "Hardwax-oiled oak; straight-line leaded lattice; brushed waxed copper",
+      "built_in": false,
+      "functions": ["lighting"],
+      "allow_overlap": true,
+      "position_note": "Over the table centreline (y 2.60) at x 3.20; fixture underside 1.60 m, top 1.90 m above floor.",
+      "rule_ids": ["R14", "R09"]
+    }
+  ],
+  "circulation": {
+    "path": [[0.10, 0.83], [4.70, 0.83]],
+    "min_clear_width_m": 0.90,
+    "description": "One straight service aisle along the glazed south wall from the kitchen door (west wall, y 0.10-1.00) to the living-room passage (east wall, y 0.38-1.60). Clear floor from the south wall (y 0.00) to the chair fronts (y 1.65) is 1.65 m: 0.83 m south and 0.82 m north of the centreline, so a 0.90 m clear path is met with 0.75 m to spare. The glazed leaves swing outward and the kitchen-door swing zone (x 0.00-0.90, y 0.10-1.00) holds no furniture."
+  },
+  "palette": [
+    {
+      "hex": "#9C6442",
+      "name": "Tawny brick",
+      "material": "Fired clay facing brick",
+      "finish": "Raked bed joints, flush colour-matched perpends, so the wall reads as horizontal courses only",
+      "where": "All four walls below the frieze; bench and sideboard plinths; blank east core face",
+      "role": "dominant",
+      "rule_ids": ["R08"]
+    },
+    {
+      "hex": "#8E3B2A",
+      "name": "Tawny red tile",
+      "material": "Fired clay quarry tile 150 x 150 x 20 mm",
+      "finish": "Matt penetrating sealer; running bond with courses east-west",
+      "where": "Floor throughout (floor finish)",
+      "role": "dominant",
+      "rule_ids": ["R08", "R01"]
+    },
+    {
+      "hex": "#D9CFBF",
+      "name": "Light cap stone",
+      "material": "Cast stone",
+      "finish": "Honed, plain square edge",
+      "where": "Sideboard top slab, bench seat slab, shelf slab, and a flush string course at 0.90-0.96 m on the west and east walls",
+      "role": "neutral",
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "hex": "#B5834A",
+      "name": "Oak",
+      "material": "Solid European oak",
+      "finish": "Hardwax oil, matt",
+      "where": "Head band 2.20-2.40 m, door and passage frames, frieze frames, sideboard doors, bench top rail, table, chairs, pendant frames",
+      "role": "accent",
+      "rule_ids": ["R14"]
+    },
+    {
+      "hex": "#5B3A22",
+      "name": "Saddle leather",
+      "material": "Vegetable-tanned leather over hair-and-wool stuffing",
+      "finish": "Natural aniline, waxed",
+      "where": "Bench seat cushion",
+      "role": "accent"
+    },
+    {
+      "hex": "#7A6A4F",
+      "name": "Umber wool",
+      "material": "Stipple-textured flat-woven wool upholstery cloth",
+      "finish": "Matt bouclé stipple",
+      "where": "Bench back pad; chair seat pads",
+      "role": "accent"
+    },
+    {
+      "hex": "#CFC4AE",
+      "name": "Warm putty plaster",
+      "material": "Lime plaster",
+      "finish": "Stippled float finish in the oak-framed frieze panels; smooth trowelled and limewashed on the ceiling",
+      "where": "Frieze band 1.90-2.20 m on the north, east and west walls (interrupted only by openings); ceiling",
+      "role": "neutral",
+      "rule_ids": ["R15"]
+    },
+    {
+      "hex": "#B87333",
+      "name": "Copper",
+      "material": "Copper sheet",
+      "finish": "Brushed, waxed",
+      "where": "Pendant liners and stems; kitchen door pull",
+      "role": "accent"
+    }
+  ],
+  "elevation": {
+    "wall": "north",
+    "title": "North wall elevation (built-in wall): sideboard and banquette, seen from inside, west end at left",
+    "elements": [
+      {
+        "id": "E01",
+        "item": "Brick wall field",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 4.80,
+        "height_m": 1.90,
+        "material": "Tawny facing brick, raked bed joints, flush perpends",
+        "label": "Coursed brick wall",
+        "hex": "#9C6442",
+        "rule_ids": ["R08"]
+      },
+      {
+        "id": "E02",
+        "item": "Frieze band of framed stippled plaster panels",
+        "x_m": 0.00,
+        "z_m": 1.90,
+        "width_m": 4.80,
+        "height_m": 0.30,
+        "material": "Stippled lime plaster in plain oak frames",
+        "label": "Stippled frieze 1.90-2.20",
+        "hex": "#CFC4AE",
+        "rule_ids": ["R15", "R07"]
+      },
+      {
+        "id": "E03",
+        "item": "Head band, stepped oak trim with coved soffit",
+        "x_m": 0.00,
+        "z_m": 2.20,
+        "width_m": 4.80,
+        "height_m": 0.20,
+        "material": "Solid oak, hardwax oil",
+        "label": "Oak head band 2.20-2.40",
+        "hex": "#B5834A",
+        "rule_ids": ["R14", "R07"]
+      },
+      {
+        "id": "E04",
+        "item": "Sideboard plinth",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 1.20,
+        "height_m": 0.38,
+        "material": "Tawny facing brick, horizontal coursing",
+        "label": "Brick plinth",
+        "hex": "#9C6442",
+        "rule_ids": ["R08", "R10"]
+      },
+      {
+        "id": "E05",
+        "item": "Sideboard cupboard, two flush doors 0.60 m each",
+        "x_m": 0.00,
+        "z_m": 0.38,
+        "width_m": 1.20,
+        "height_m": 0.52,
+        "material": "Solid oak, flush, no mouldings",
+        "label": "Oak doors",
+        "hex": "#B5834A",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E06",
+        "item": "Sideboard top slab",
+        "x_m": 0.00,
+        "z_m": 0.90,
+        "width_m": 1.20,
+        "height_m": 0.06,
+        "material": "Honed cast stone",
+        "label": "Cast-stone top 0.90-0.96",
+        "hex": "#D9CFBF",
+        "rule_ids": ["R08", "R14"]
+      },
+      {
+        "id": "E07",
+        "item": "Cantilevered shelf slab",
+        "x_m": 0.00,
+        "z_m": 1.46,
+        "width_m": 1.20,
+        "height_m": 0.06,
+        "material": "Honed cast stone, let into the brick",
+        "label": "Shelf slab 1.46-1.52",
+        "hex": "#D9CFBF",
+        "rule_ids": ["R14", "R08"]
+      },
+      {
+        "id": "E08",
+        "item": "Banquette plinth",
+        "x_m": 1.20,
+        "z_m": 0.00,
+        "width_m": 3.60,
+        "height_m": 0.38,
+        "material": "Tawny facing brick, horizontal coursing",
+        "label": "Brick plinth",
+        "hex": "#9C6442",
+        "rule_ids": ["R10", "R08"]
+      },
+      {
+        "id": "E09",
+        "item": "Banquette seat slab (coping)",
+        "x_m": 1.20,
+        "z_m": 0.38,
+        "width_m": 3.60,
+        "height_m": 0.05,
+        "material": "Honed cast stone",
+        "label": "Cast-stone seat slab 0.38-0.43",
+        "hex": "#D9CFBF",
+        "rule_ids": ["R10", "R08"]
+      },
+      {
+        "id": "E10",
+        "item": "Banquette seat cushion",
+        "x_m": 1.20,
+        "z_m": 0.43,
+        "width_m": 3.60,
+        "height_m": 0.06,
+        "material": "Saddle leather over stuffing",
+        "label": "Leather cushion 0.43-0.49",
+        "hex": "#5B3A22"
+      },
+      {
+        "id": "E11",
+        "item": "Banquette back pad",
+        "x_m": 1.20,
+        "z_m": 0.49,
+        "width_m": 3.60,
+        "height_m": 0.41,
+        "material": "Stippled wool upholstery on a plywood backing",
+        "label": "Wool back pad 0.49-0.90",
+        "hex": "#7A6A4F"
+      },
+      {
+        "id": "E12",
+        "item": "Banquette top rail, stepped cap",
+        "x_m": 1.20,
+        "z_m": 0.90,
+        "width_m": 3.60,
+        "height_m": 0.06,
+        "material": "Solid oak, three-layer stepped cap",
+        "label": "Oak top rail 0.90-0.96",
+        "hex": "#B5834A",
+        "rule_ids": ["R14"]
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.38, "label": "Plinth cap"},
+      {"z_m": 0.49, "label": "Seat"},
+      {"z_m": 0.96, "label": "String course / counter"},
+      {"z_m": 1.46, "label": "Shelf slab underside"},
+      {"z_m": 1.90, "label": "Frieze sill"},
+      {"z_m": 2.20, "label": "Head of all openings"},
+      {"z_m": 2.40, "label": "Ceiling"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Continuous concealed LED strip, dimmable, 2700 K",
+      "position": "In the coved soffit of the oak head band at 2.20-2.40 m on all four walls, washing the brick below",
+      "type": "Indirect perimeter wash",
+      "rule_ids": ["R14", "R07"]
+    },
+    {
+      "item": "Three box pendants F10-F12: stepped oak frame, leaded glass panels, copper liner, 2700 K",
+      "position": "Over the table centreline y 2.60 at x 1.60, 2.40 and 3.20; underside 1.60 m above floor",
+      "type": "Direct task light over the table",
+      "rule_ids": ["R14", "R09"]
+    },
+    {
+      "item": "Concealed linear LED strip, 2700 K",
+      "position": "Under the cast-stone shelf slab above the sideboard, z 1.46 m",
+      "type": "Shelf under-light onto the sideboard top"
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Organise the room on its long east-west axis: table on the axis, all built-ins consolidated into one low horizontal band along the north long wall, the service aisle along the glazed south wall, kitchen at the west end and living room at the east end.",
+      "rationale": "The dining room is treated as one bay of a long living-dining bar: it flows from the kitchen door past the table to a leafless passage beside the core, and every element is a long horizontal band many times wider than high under the low 2.40 m ceiling.",
+      "major": true,
+      "rule_ids": ["R01", "R03", "R11"]
+    },
+    {
+      "decision": "Kitchen door 0.90 x 2.20 m on the west short wall at its south corner (offset 0.10 m), inward-opening, hinged on the south jamb; plain flush oak leaf, no architrave, surround or step.",
+      "rationale": "Doors are kept few, flush and plain; the leaf swings back toward the solid south-west return so its swing zone (x 0.00-0.90, y 0.10-1.00) sits in the aisle and never strikes a glazed leaf or any furniture.",
+      "major": true,
+      "rule_ids": ["R12", "R14"]
+    },
+    {
+      "decision": "Second connection as a leafless 1.22 x 2.20 m opening at the south end of the east wall, the remainder of that wall read as the blank coursed-brick face of the chimney core beyond.",
+      "rationale": "The dining room opens past the core to the living room in a straight line from the kitchen door, with no expressed doorway, so the two rooms read as one space.",
+      "major": true,
+      "rule_ids": ["R03", "R12"]
+    },
+    {
+      "decision": "South wall as a ribbon of three outward-swinging glazed door leaves 0.84 x 2.20 m between 0.38 m brick piers on a 1.22 m module, with a continuous head at 2.20 m, offset to the east end and leaving a 0.76 m solid return at the kitchen corner.",
+      "rationale": "The south wall of the dining room is almost entirely glazed doors onto a balcony, gathered into one ribbon of tall narrow lights under a continuous head; the band is stopped short of the west corner so the kitchen door can open back against brick, which also makes the wall asymmetrical rather than a centred composition.",
+      "major": true,
+      "rule_ids": ["R11", "R07", "R01"]
+    },
+    {
+      "decision": "Straight-line leaded lattice in every glazed leaf: tall narrow border lights, a field of shallow lozenges about three times as wide as high, small square lights in the top tier.",
+      "rationale": "Where glazing is detailed it carries a straight-line geometric leaded pattern; the lozenge proportion follows the measured pattern. Used in all three leaves, accepting that the evidence is mixed.",
+      "major": true,
+      "rule_ids": ["R09"]
+    },
+    {
+      "decision": "Built-in banquette along the north wall (x 1.20-4.80) made as a low brick wall: coursed brick plinth to 0.38 m, plain cast-stone seat slab, leather cushion to 0.49 m, stippled wool back pad and an oak stepped top rail at 0.90-0.96 m; three dining seats at the table, the eastern 1.20 m running on to the core wall as a side seat.",
+      "rationale": "Low brick walls with plain light copings are the base element; the seat is a coping slab on a plinth, with every profile built from stacked rectangular layers and no carving, turning or mantel-like ornament.",
+      "major": true,
+      "rule_ids": ["R10", "R08", "R14"]
+    },
+    {
+      "decision": "Built-in sideboard at the kitchen end of the north wall (x 0.00-1.20): the same brick plinth, two flush oak doors, a cast-stone top slab at 0.90-0.96 m aligned with the bench rail, and a cantilevered cast-stone shelf slab 1.20 x 0.25 x 0.06 m with its top at 1.52 m.",
+      "rationale": "The service piece is offset to one end so the built-in wall reads as an asymmetrical stepped composition - a taller short block at the kitchen end and a long low bar - rather than a centred symmetrical one; the shelf is a plain slab markedly wider than high.",
+      "major": true,
+      "rule_ids": ["R02", "R06", "R14"]
+    },
+    {
+      "decision": "No fireplace or hearth in the room.",
+      "rationale": "The hearth belongs in the central masonry core on the long axis between living and dining rooms, never on an outside wall; in a single rectangular room every wall is a perimeter wall, so the core is implied beyond the east wall and no hearth is built here.",
+      "major": true,
+      "rule_ids": ["R03"]
+    },
+    {
+      "decision": "Materials: tawny facing brick on all walls with raked bed joints and flush colour-matched perpends; plain honed cast-stone caps, slabs and a 0.90-0.96 m string course; hardwax-oiled oak for all joinery; leather and stippled wool; stippled lime-plaster frieze panels in oak frames at 1.90-2.20 m; tawny-red quarry tile floor in running bond with courses east-west. No mirrored panels; no gloss lacquer on any wall.",
+      "rationale": "Brick reads as horizontal courses only, every edge is capped by a plain light band, textured infill panels sit in a framed band at the top tier, and the floor's coursing continues the horizontal banding.",
+      "major": true,
+      "rule_ids": ["R08", "R14", "R15"]
+    },
+    {
+      "decision": "Palette: tawny brick and red tile as dominants, light cast stone as the neutral strip between them, oak, saddle leather, umber wool and brushed copper as warm accents; warm putty lime plaster for frieze and ceiling.",
+      "rationale": "Dark warm brick bands between plain light horizontal strips, with warm accents of tile, copper and oak.",
+      "major": true,
+      "rule_ids": ["R08"]
+    },
+    {
+      "decision": "Proportions: table 2.40 x 0.90 x 0.74 m (2.67:1, low); chairs 0.42 m wide x 1.25 m high (about 3:1, tall narrow backs); glazed leaves 0.84 x 2.20 m (2.6:1) on a 1.22 m module split 0.84 leaf / 0.38 pier; bench 3.60 m long with a 0.49 m seat; flat 2.40 m ceiling with no beams or drops.",
+      "rationale": "Long low horizontals for the furniture and ceiling, tall narrow lights in the band, and the measured pier-to-pier module with its leaf-and-pier subdivision.",
+      "major": true,
+      "rule_ids": ["R01", "R07"]
+    },
+    {
+      "decision": "Lighting: continuous concealed dimmable LED in the coved soffit of the oak head band on all four walls; three stepped oak box pendants with leaded glass panels and copper liners over the table (underside 1.60 m); concealed strip under the sideboard shelf slab.",
+      "rationale": "The stepped head band with a coved soffit becomes the light source, keeping the low ceiling plain; the pendants are built up from stacked rectangular layers and straight-line leaded glass rather than turned or ornamented fittings.",
+      "major": true,
+      "rule_ids": ["R14", "R07", "R09"]
+    },
+    {
+      "decision": "Seating count: 3 on the banquette, 3 chairs on the south side, 1 chair at each end = 8 dining seats.",
+      "rationale": "Meets the brief's eight seats with the fixed seating on the wall side and loose chairs on the aisle side so the aisle stays clear.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Circulation: one straight aisle 1.65 m clear (y 0.00-1.65) from the kitchen door to the east passage; 0.70 m strips beyond the end chairs; glazed leaves swing out; nothing in the kitchen-door swing.",
+      "rationale": "Exceeds the 0.90 m clear path required; the sideboard is served from the strip west of the table; the 0.70 m end strips are for sitting, not through passage.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Flush floor throughout: no level changes or raised thresholds at any opening.",
+      "rationale": "Doors sit flush at floor level with no step, path or surround; inside, nothing is stepped.",
+      "major": false,
+      "rule_ids": ["R12"]
+    }
+  ],
+  "conflicts": [
+    {
+      "rule_id": "R03",
+      "constraint": "Brief defines a single rectangular 4.80 x 3.60 m dining room; no fireplace is asked for and no central masonry core can sit inside the room, so any hearth here would be on a perimeter wall.",
+      "resolution": "Brief favoured: no hearth is built. The rule is applied only by implication - the east wall is treated as the blank brick face of the core beyond and the leafless passage runs past it - and R03 is cited for the axial organisation and the passage, not for a built hearth."
+    },
+    {
+      "rule_id": "R11",
+      "constraint": "Brief requires a 0.80-1.00 m kitchen door on a short wall with nothing in its swing; an inward-opening door at the south-west corner would strike a glazed leaf if the ribbon ran the entire south wall.",
+      "resolution": "Brief favoured on buildability: the ribbon is three leaves (x 1.14-4.42), stopping 0.76 m short of the west corner so the kitchen door can lie back against solid brick; the rule is kept for the remaining 3.68 m of the wall and for the leaf, pier and head pattern."
+    },
+    {
+      "rule_id": "R12",
+      "constraint": "Brief requires a labelled kitchen door and at least one further opening, while the rule prefers as few doors as possible and no expressed entrance.",
+      "resolution": "Brief favoured: both connections are provided. The rule governs their treatment - a plain flush oak leaf in a plain frame for the kitchen door, a leafless opening to the living room, no architrave, surround, step or threshold change at either."
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "brief_id": "iteration_i1",
+  "arm": "learned",
+  "title": "Hearth-core living room with a south casement band",
+  "room": {
+    "type": "Living room",
+    "length_m": 6.00,
+    "width_m": 4.50,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.35,
+    "floor_finish": "Quarter-sawn oak boards, 140 mm wide, hardwax-oiled matt"
+  },
+  "zones": [
+    {
+      "name": "Entry gallery",
+      "polygon": [[0.00, 3.57], [4.20, 3.57], [4.20, 4.50], [0.00, 4.50]],
+      "description": "0.93 m wide passage along the north wall from the west entry door, behind the oak screen, under a 2.10 m soffit; turns south into the hearth square at x 3.20-4.20."
+    },
+    {
+      "name": "Hearth square",
+      "polygon": [[0.95, 0.50], [5.10, 0.50], [5.10, 3.47], [0.95, 3.47]],
+      "description": "Seating gathered on four sides: hearth (west), two armchairs backing the screen (north), settee (east), window seat under the casement band (south)."
+    },
+    {
+      "name": "East end",
+      "polygon": [[5.10, 0.00], [6.00, 0.00], [6.00, 4.50], [5.10, 4.50]],
+      "description": "End bay with the two-leaf east casement and the low stone-topped cabinet beneath it."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "Main ceiling",
+      "height_m": 2.40,
+      "polygon": [[0.00, 0.00], [6.00, 0.00], [6.00, 4.50], [4.20, 4.50], [4.20, 3.47], [0.00, 3.47]],
+      "description": "Limewashed plaster at the brief ceiling height; a 0.15 m plain light band runs round the room between the 2.25 m window-head line and the ceiling.",
+      "rule_ids": ["R08"]
+    },
+    {
+      "name": "Gallery soffit",
+      "height_m": 2.10,
+      "polygon": [[0.00, 3.47], [4.20, 3.47], [4.20, 4.50], [0.00, 4.50]],
+      "description": "Oak-boarded soffit dropped to 2.10 m over the entry gallery and screen, so the entry reads as a long low band before the room opens to 2.40 m; door head and screen top meet it.",
+      "rule_ids": ["R01"]
+    }
+  ],
+  "level_changes": [],
+  "openings": [
+    {
+      "id": "O1",
+      "type": "door",
+      "wall": "west",
+      "offset_m": 3.50,
+      "width_m": 0.85,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "right",
+      "role": "entry",
+      "label": "Entry door from stair hall",
+      "description": "Flush oiled-oak door set in the brick of the west core wall north of the chimney breast, no architrave, surround or step; hinged on the north (right-hand) jamb seen from inside, opening into the gallery and lying along the north wall when open. Centre at y 3.925; swing zone x 0.00-0.85, y 3.50-4.35 kept clear.",
+      "pattern": "plain flush leaf, oak, concealed hinges",
+      "rule_ids": ["R03", "R12", "R14"]
+    },
+    {
+      "id": "O2",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 0.55,
+      "width_m": 4.50,
+      "height_m": 1.80,
+      "sill_m": 0.45,
+      "swing": "out",
+      "role": "window_band",
+      "label": "South casement band",
+      "description": "Continuous band x 0.95-5.45 (75 percent of the 6.00 m wall): four tall narrow outward-opening leaded casements between three brick piers, continuous cast-stone sill course at 0.45 m and continuous stepped oak head band at 2.25 m. Blank brick 0.95 m at the chimney end, 0.55 m at the east end.",
+      "pattern": "from east: leaf 0.84 - pier 0.38 - leaf 0.84 - pier 0.38 - leaf 0.84 - pier 0.38 - leaf 0.84 (pier-to-pier module 1.22 m); each leaf 0.84 x 1.80 glazed with a straight-line leaded lattice of tall narrow border lights and a diaper of shallow lozenges three times wider than high",
+      "rule_ids": ["R07", "R09", "R11", "R08"]
+    },
+    {
+      "id": "O3",
+      "type": "window",
+      "wall": "east",
+      "offset_m": 1.00,
+      "width_m": 2.06,
+      "height_m": 1.80,
+      "sill_m": 0.45,
+      "swing": "out",
+      "role": "secondary",
+      "label": "East end casement pair",
+      "description": "Two-leaf pair on the same module, y 1.44-3.50, set off the room axis toward the north; same sill course and head band as the south wall. Stands in for the pointed end bay the rules call for, which the rectangular brief does not allow.",
+      "pattern": "leaf 0.84 - pier 0.38 - leaf 0.84; leaded lattice as O2",
+      "rule_ids": ["R07", "R09"]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Chimney breast with fireplace opening",
+      "x_m": 0.00,
+      "y_m": 1.35,
+      "length_m": 0.45,
+      "depth_m": 1.80,
+      "height_m": 2.40,
+      "material": "Tawny brick, horizontal coursing only; red clay firebrick lining to the opening",
+      "finish": "Flush-pointed brick with raked bed joints; plain opening 1.10 x 0.55 m centred on y 2.25, no surround or mantel",
+      "built_in": true,
+      "functions": ["fireplace"],
+      "position_note": "Projects 0.45 m from the west wall, centred on the room's long axis (y 2.25); the west wall is treated as the central masonry chimney-and-stair core, not an outside wall",
+      "rule_ids": ["R03", "R08", "R13", "R14"]
+    },
+    {
+      "id": "F02",
+      "item": "Raised hearth plinth",
+      "x_m": 0.45,
+      "y_m": 1.15,
+      "length_m": 0.50,
+      "depth_m": 2.20,
+      "height_m": 0.35,
+      "material": "Cast stone",
+      "finish": "Honed; two stacked slabs, lower 0.20 m x 2.20 m stepping out 0.20 m beyond the breast at both sides, upper 0.15 m x 1.80 m set back 0.10 m",
+      "built_in": true,
+      "functions": ["hearth"],
+      "position_note": "In front of the breast, y 1.15-3.35, clear of the door swing zone (y 3.50+)",
+      "rule_ids": ["R14", "R08"]
+    },
+    {
+      "id": "F03",
+      "item": "Oak entry screen",
+      "x_m": 0.95,
+      "y_m": 3.47,
+      "length_m": 2.25,
+      "depth_m": 0.10,
+      "height_m": 2.10,
+      "material": "Solid oak posts and slats",
+      "finish": "Oiled; 0.10 m square posts with stepped cap finials, plain rectangular slats, dowelled; top meets the 2.10 m gallery soffit",
+      "built_in": true,
+      "functions": ["entry_element", "screen", "partition"],
+      "position_note": "Runs east from beside the hearth (x 0.95) to x 3.20, separating the north entry gallery (y 3.57-4.50) from the seating; door centre is 1.58 m from the nearest seat",
+      "rule_ids": ["R03", "R14"]
+    },
+    {
+      "id": "F04",
+      "item": "Window seat",
+      "x_m": 1.50,
+      "y_m": 0.00,
+      "length_m": 2.40,
+      "depth_m": 0.50,
+      "height_m": 0.45,
+      "material": "Oak box seat with lift-up lids; oxblood leather cushion over stuffing",
+      "finish": "Oiled oak, stepped plinth; seat top flush with the 0.45 m sill course",
+      "built_in": true,
+      "functions": ["seating", "storage"],
+      "seats": 2,
+      "position_note": "Under the south casement band, x 1.50-3.90, forming the south side of the hearth square",
+      "rule_ids": ["R11", "R14"]
+    },
+    {
+      "id": "F05",
+      "item": "Settee, two-seat",
+      "x_m": 4.20,
+      "y_m": 1.40,
+      "length_m": 0.90,
+      "depth_m": 1.70,
+      "height_m": 1.05,
+      "material": "Oak frame, oxblood leather seat and back cushions",
+      "finish": "Oiled oak; posts with stepped cap finials, stepped moulded feet, no carving or turning",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 2,
+      "position_note": "Faces west to the fire, centred on the hearth axis y 2.25; 0.95 m channel between it and the screen end at x 3.20-4.20",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F06",
+      "item": "Armchair A",
+      "x_m": 1.50,
+      "y_m": 2.68,
+      "length_m": 0.75,
+      "depth_m": 0.75,
+      "height_m": 0.95,
+      "material": "Oak frame, leather seat, oatmeal textured wool back",
+      "finish": "Oiled oak, stepped cap finials and moulded feet; back shorter and wider than a dining chair",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "Backs onto the screen, faces south across the table; nearest seat to the entry door (1.58 m from door centre)",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F07",
+      "item": "Armchair B",
+      "x_m": 2.45,
+      "y_m": 2.68,
+      "length_m": 0.75,
+      "depth_m": 0.75,
+      "height_m": 0.95,
+      "material": "Oak frame, leather seat, oatmeal textured wool back",
+      "finish": "Oiled oak, stepped cap finials and moulded feet",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "Backs onto the screen, east of Armchair A, flush with the screen's east end at x 3.20",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F08",
+      "item": "Rug",
+      "x_m": 1.30,
+      "y_m": 0.70,
+      "length_m": 2.65,
+      "depth_m": 2.65,
+      "height_m": 0.01,
+      "material": "Wool flatweave",
+      "finish": "Oatmeal with a straight-line border in tawny and oxblood",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Under the armchairs and table, from the hearth to the settee front",
+      "rule_ids": []
+    },
+    {
+      "id": "F09",
+      "item": "Low table",
+      "x_m": 2.60,
+      "y_m": 1.13,
+      "length_m": 1.00,
+      "depth_m": 0.60,
+      "height_m": 0.40,
+      "material": "Oak frame with cast-stone slab top",
+      "finish": "Oiled oak stacked rectangular bands; honed stone slab 40 mm, no edge moulding",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "Centre of the hearth square, 0.47 m south of the circulation line, 0.60 m from the settee",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F10",
+      "item": "Low cabinet under east window",
+      "x_m": 5.60,
+      "y_m": 1.44,
+      "length_m": 0.40,
+      "depth_m": 2.06,
+      "height_m": 0.42,
+      "material": "Oak carcass and flush doors, cast-stone slab top",
+      "finish": "Oiled oak; honed stone top reading as the light cap band below the sill course",
+      "built_in": true,
+      "functions": ["sideboard", "storage"],
+      "position_note": "Exactly beneath the east casement pair, y 1.44-3.50",
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "id": "F11",
+      "item": "Planter trough",
+      "x_m": 4.20,
+      "y_m": 0.00,
+      "length_m": 1.10,
+      "depth_m": 0.30,
+      "height_m": 0.45,
+      "material": "Cast stone",
+      "finish": "Honed rectangular trough with projecting plain coping, top flush with the sill course",
+      "built_in": true,
+      "functions": ["planter"],
+      "position_note": "Under the east part of the south band, x 4.20-5.30, continuing the sill-wall base past the window seat",
+      "rule_ids": ["R10"]
+    }
+  ],
+  "circulation": {
+    "path": [[0.05, 3.93], [0.60, 4.04], [3.70, 4.04], [3.70, 2.20], [1.30, 2.20]],
+    "min_clear_width_m": 0.90,
+    "description": "From the entry door east along the gallery (screen 0.47 m south, north wall 0.46 m north), south through the 0.95 m channel between the screen end/Armchair B (x 3.20) and the settee front (x 4.20), reaching the settee at (3.70, 2.20), then west between the armchairs (y 2.68) and the table (y 1.73) to the hearth."
+  },
+  "palette": [
+    {
+      "hex": "#9C6B45",
+      "name": "Tawny brick",
+      "material": "Clay facing brick",
+      "finish": "Flush-pointed, raked horizontal bed joints, flush perpends so only the coursing reads",
+      "where": "West fireplace wall and chimney breast; piers of the south and east casement bands",
+      "role": "dominant",
+      "rule_ids": ["R08"]
+    },
+    {
+      "hex": "#D9CFBE",
+      "name": "Pale cast stone",
+      "material": "Cast stone",
+      "finish": "Honed",
+      "where": "Hearth plinth slabs, shelf slab, sill course, cap band under the ceiling, cabinet top, planter trough, table top",
+      "role": "dominant",
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "hex": "#8F6B47",
+      "name": "Oak floor",
+      "material": "Quarter-sawn oak boards, 140 mm",
+      "finish": "Hardwax-oiled matt",
+      "where": "Floor throughout",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#B48A5A",
+      "name": "Oak joinery",
+      "material": "Solid oak",
+      "finish": "Oiled, plain-sawn",
+      "where": "Entry door, screen, window seat, settee and chair frames, cabinet, casement frames, window head band, gallery soffit boards",
+      "role": "accent",
+      "rule_ids": ["R14"]
+    },
+    {
+      "hex": "#6B3326",
+      "name": "Oxblood leather",
+      "material": "Vegetable-tanned leather over stuffing",
+      "finish": "Aniline, waxed",
+      "where": "Window-seat cushion, settee and armchair seat cushions",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#B87333",
+      "name": "Copper",
+      "material": "Copper sheet",
+      "finish": "Natural, waxed",
+      "where": "Pendant lantern frames and fire tools",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#CDBFA3",
+      "name": "Oatmeal textured wool",
+      "material": "Wool boucle and flatweave",
+      "finish": "Stippled texture",
+      "where": "Armchair back upholstery and rug field",
+      "role": "neutral",
+      "rule_ids": ["R15"]
+    },
+    {
+      "hex": "#EDE6D8",
+      "name": "Limewash",
+      "material": "Lime plaster",
+      "finish": "Limewashed matt",
+      "where": "Ceiling, gallery soffit fascia and the 0.15 m band between window head and ceiling on the north and east walls",
+      "role": "neutral",
+      "rule_ids": ["R08"]
+    }
+  ],
+  "elevation": {
+    "wall": "west",
+    "title": "West wall - fireplace wall (looking west; x from the south end)",
+    "elements": [
+      {
+        "id": "E01",
+        "item": "Brick wall field",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 4.50,
+        "height_m": 2.40,
+        "material": "Tawny brick",
+        "label": "West core wall, horizontal coursing only, flush perpends",
+        "hex": "#9C6B45",
+        "rule_ids": ["R08"]
+      },
+      {
+        "id": "E02",
+        "item": "Cap band under ceiling",
+        "x_m": 0.00,
+        "z_m": 2.25,
+        "width_m": 3.47,
+        "height_m": 0.15,
+        "material": "Cast stone",
+        "label": "Plain light cap band, continuous with the window-head line",
+        "hex": "#D9CFBE",
+        "rule_ids": ["R08"]
+      },
+      {
+        "id": "E03",
+        "item": "Gallery soffit bulkhead",
+        "x_m": 3.47,
+        "z_m": 2.10,
+        "width_m": 1.03,
+        "height_m": 0.30,
+        "material": "Limewashed plaster fascia, oak-boarded soffit",
+        "label": "Soffit dropped to 2.10 over the entry gallery",
+        "hex": "#EDE6D8",
+        "rule_ids": ["R01"]
+      },
+      {
+        "id": "E04",
+        "item": "Chimney breast",
+        "x_m": 1.35,
+        "z_m": 0.00,
+        "width_m": 1.80,
+        "height_m": 2.40,
+        "material": "Tawny brick",
+        "label": "Breast projecting 0.45 m, centred on the room axis",
+        "hex": "#9C6B45",
+        "rule_ids": ["R03", "R08"]
+      },
+      {
+        "id": "E05",
+        "item": "Hearth plinth lower slab",
+        "x_m": 1.15,
+        "z_m": 0.00,
+        "width_m": 2.20,
+        "height_m": 0.20,
+        "material": "Cast stone",
+        "label": "Lower slab stepping out 0.20 m beyond the breast each side",
+        "hex": "#D9CFBE",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E06",
+        "item": "Hearth plinth upper slab",
+        "x_m": 1.35,
+        "z_m": 0.20,
+        "width_m": 1.80,
+        "height_m": 0.15,
+        "material": "Cast stone",
+        "label": "Upper slab, breast width",
+        "hex": "#D9CFBE",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E07",
+        "item": "Fireplace opening",
+        "x_m": 1.70,
+        "z_m": 0.35,
+        "width_m": 1.10,
+        "height_m": 0.55,
+        "material": "Plain brick opening, red clay firebrick lining",
+        "label": "Opening twice as wide as high, no surround or mantel",
+        "hex": "#8E3B2F",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E08",
+        "item": "Shelf slab",
+        "x_m": 1.35,
+        "z_m": 1.20,
+        "width_m": 1.80,
+        "height_m": 0.06,
+        "material": "Cast stone",
+        "label": "Thin shelf slab let into the brick, breast width",
+        "hex": "#D9CFBE",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E09",
+        "item": "Square recess, south",
+        "x_m": 1.50,
+        "z_m": 1.60,
+        "width_m": 0.20,
+        "height_m": 0.20,
+        "material": "Recess in brick, concealed lamp",
+        "label": "Small square slot recess in the chimney mass",
+        "hex": "#6B4A32",
+        "rule_ids": ["R13"]
+      },
+      {
+        "id": "E10",
+        "item": "Square recess, north",
+        "x_m": 2.80,
+        "z_m": 1.60,
+        "width_m": 0.20,
+        "height_m": 0.20,
+        "material": "Recess in brick, concealed lamp",
+        "label": "Small square slot recess in the chimney mass",
+        "hex": "#6B4A32",
+        "rule_ids": ["R13"]
+      },
+      {
+        "id": "E11",
+        "item": "Entry door",
+        "x_m": 3.50,
+        "z_m": 0.00,
+        "width_m": 0.85,
+        "height_m": 2.10,
+        "material": "Oak, oiled",
+        "label": "Flush door, no architrave, head at the soffit line",
+        "hex": "#B48A5A",
+        "rule_ids": ["R12", "R14"]
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.00, "label": "Finished floor"},
+      {"z_m": 0.35, "label": "Hearth plinth top"},
+      {"z_m": 0.45, "label": "Sill course (south and east walls)"},
+      {"z_m": 1.20, "label": "Shelf slab"},
+      {"z_m": 2.10, "label": "Door head and gallery soffit"},
+      {"z_m": 2.25, "label": "Window head and cap band"},
+      {"z_m": 2.40, "label": "Ceiling"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Two square oak-and-copper framed leaded-glass box lanterns",
+      "position": "Pendants over the hearth square at (2.30, 1.90) and (3.40, 1.90), underside 1.95 m above floor",
+      "type": "Pendant, 2700 K, dimmable",
+      "rule_ids": ["R09", "R14"]
+    },
+    {
+      "item": "Continuous concealed cove strip in the stepped window-head band",
+      "position": "South wall, in the coved soffit of the head band, z 2.25-2.40, full band width x 0.95-5.45; matching run over the east pair",
+      "type": "Linear LED uplight, 2700 K",
+      "rule_ids": ["R07", "R14"]
+    },
+    {
+      "item": "Three 100 mm square recessed downlights",
+      "position": "Gallery soffit at 2.10 m, on y 4.00 at x 0.60, 1.90 and 3.20",
+      "type": "Recessed downlight, 2700 K, narrow beam",
+      "rule_ids": []
+    },
+    {
+      "item": "Pair of concealed lamps in the square breast recesses",
+      "position": "West wall, elevation x 1.50 and 2.80, z 1.60",
+      "type": "Low-level accent, 2200 K",
+      "rule_ids": ["R13"]
+    },
+    {
+      "item": "Two oak-framed leaded-glass box wall lights",
+      "position": "North (gallery) face of the oak screen on the end posts, x 1.05 and 3.10, z 1.80",
+      "type": "Wall light, 2700 K",
+      "rule_ids": ["R09", "R14"]
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Layout: hearth on the short west wall, which is treated as the central masonry chimney-and-stair core on the room's long axis (y 2.25); seating gathered on a square in front of it; a 0.93 m entry gallery along the north wall; the glazed band on the south.",
+      "rationale": "The corpus keeps the hearth in a central core on the long axis and lets the rooms flow past the core, never on an outside wall; the gallery is that passage, and the long low horizontal organisation follows the bar-like plan.",
+      "major": true,
+      "rule_ids": ["R01", "R03"]
+    },
+    {
+      "decision": "Entry sequence: 0.85 m flush oak door in the west core wall north of the breast (offset 3.50), opening into a gallery under a 2.10 m soffit, screened from the seating by a 2.25 m oak post-and-slat screen; door centre 1.58 m from the nearest seat, with no furniture in the swing.",
+      "rationale": "The main floor is reached from the stair beside the chimney and the door is an unexpressed flush opening with no surround or step; the oak screen beside the fireplace is the corpus's own device for passing the core, built of plain posts with stepped caps.",
+      "major": true,
+      "rule_ids": ["R03", "R12", "R14"]
+    },
+    {
+      "decision": "Window pattern: one 4.50 m band (75 percent of the south wall) of four 0.84 m tall narrow outward-opening leaded casements between three 0.38 m brick piers on a 1.22 m module, sill course 0.45 m, continuous head band 2.25 m; a two-leaf pair on the same module on the east end wall.",
+      "rationale": "Casements gathered into a continuous ribbon between narrow brick piers with a continuous head and sill on the 2'-9\" leaf / 1'-3\" pier module; the south wall almost entirely glazed above a low wall; straight-line leaded lattice in every light.",
+      "major": true,
+      "rule_ids": ["R07", "R09", "R11"]
+    },
+    {
+      "decision": "Fireplace: plain brick opening 1.10 x 0.55 m raised 0.35 m on a two-slab cast-stone plinth stepping out 0.20 m each side, 60 mm shelf slab at 1.20 m, two 0.20 m square lamp recesses, plain light cap band at the ceiling; no mantel, overmantel or surround.",
+      "rationale": "Fireplaces are plain brick openings with raised hearth plinths stepping out at both sides and no mantel ornament; every edge is capped by a plain light band; small square slot recesses are the chimney mass's only openings.",
+      "major": true,
+      "rule_ids": ["R14", "R08", "R13"]
+    },
+    {
+      "decision": "Built-ins: oak window seat (2 seats) flush with the 0.45 m sill course, cast-stone planter trough continuing the sill-wall base, low oak cabinet with a stone slab top exactly under the east pair.",
+      "rationale": "The glazed wall reads as the window band above a low terrace wall; rectangular planter boxes sit on that base; stone slabs cap every built-in like the corpus's copings and shelf slabs.",
+      "major": true,
+      "rule_ids": ["R11", "R10", "R08", "R14"]
+    },
+    {
+      "decision": "Materials: tawny brick with only the horizontal coursing expressed, cast-stone bands and slabs, oiled oak for floor and all joinery, leather over stuffing on seats, leaded glass; no mirrored panels and no gloss lacquer.",
+      "rationale": "Brick drawn as horizontal courses only with plain light bands at every edge, oak woodwork, leather cushions and straight-line leaded glass are the corpus's stated and drawn materials; the brief's must-nots are untouched.",
+      "major": true,
+      "rule_ids": ["R08", "R09", "R14"]
+    },
+    {
+      "decision": "Palette: warm - tawny brick and pale cast stone dominant, oak floor, oak joinery, oxblood leather and copper as accents, oatmeal textured wool and limewash as neutrals.",
+      "rationale": "Dark brick bands between light horizontal strips are the dominant pair; the corpus's accents are oak, leather, copper and stippled textured infill, and its stated temperature is warm.",
+      "major": true,
+      "rule_ids": ["R08", "R15"]
+    },
+    {
+      "decision": "Proportions: every band and opening wider than high (fireplace 2:1, plinth 2.20 x 0.35, shelf slab 1.80 x 0.06, soffit band 4.20 x 0.30), glazed leaves tall and narrow (0.84 x 1.80), gallery ceiling held low at 2.10 m under the 2.40 m room.",
+      "rationale": "Horizontal bands many times wider than high, main-storey lights much taller than wide, low stacked storeys, and stepped rectangular layers for every profile.",
+      "major": true,
+      "rule_ids": ["R01", "R07", "R14"]
+    },
+    {
+      "decision": "Lighting: leaded-glass box lanterns and wall lights, a continuous cove in the stepped window-head band, lamps in the two breast recesses, small square downlights in the gallery soffit; all warm.",
+      "rationale": "Geometric straight-line leaded glass is the corpus's glazing; the window head has a stepped member with a coved soffit that takes a concealed strip; the chimney mass is pierced only by small slot recesses.",
+      "major": true,
+      "rule_ids": ["R09", "R14", "R07", "R13"]
+    },
+    {
+      "decision": "Elevation composition: the fireplace wall is asymmetrical as a whole (breast off-centre of the wall at x 1.35-3.15, door and dropped soffit at the north end, blank brick to the south), while the fireplace face itself is symmetrical about y 2.25.",
+      "rationale": "No whole elevation is bilaterally symmetrical; symmetry is kept only within a single element, the fireplace face.",
+      "major": true,
+      "rule_ids": ["R06"]
+    },
+    {
+      "decision": "Loose pieces: a 1.00 x 0.60 low table with a cast-stone slab on stacked oak bands and a 2.65 x 2.65 oatmeal flatweave rug under the hearth square.",
+      "rationale": "Profiles built from stacked rectangular layers with no edge moulding; the rug lets the circulation line cross it freely.",
+      "major": false,
+      "rule_ids": ["R14"]
+    },
+    {
+      "decision": "Floor: quarter-sawn oak boards 140 mm wide, hardwax-oiled matt.",
+      "rationale": "Satisfies the brief's named floor material and finish; oak is the corpus's woodwork, and a matt oil avoids any gloss surface.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": [
+    {
+      "rule_id": "R04",
+      "constraint": "Brief fixes a 6.00 x 4.50 m rectangular room, so neither end can be a pointed prow bay with angled glazed faces.",
+      "resolution": "Brief favoured on geometry: the east end wall stays flat and carries a two-leaf casement pair on the same 1.22 m module (O3) as a stand-in for the end bay; no prow geometry drawn."
+    },
+    {
+      "rule_id": "R11",
+      "constraint": "Brief requires a continuous WINDOW band on one long wall and gives a single room with no balcony; R11 wants floor-to-head glazed DOORS onto a full-length balcony.",
+      "resolution": "Brief favoured on the opening type: O2 is a band of windows with a 0.45 m sill course (reading as the window band above the low terrace wall described in R11); rule favoured on taste - outward-opening leaves, pier module and 75 percent of the wall glazed."
+    },
+    {
+      "rule_id": "R12",
+      "constraint": "Brief must 5 requires an entry door 0.80-1.00 m wide; R12 says no exterior door on the main floor and no expressed entrance.",
+      "resolution": "Door O1 provided as the brief requires, but as an interior door from the stair hall at the core, flush in the brick with no architrave, surround, step or canopy, so the entrance stays unexpressed."
+    },
+    {
+      "rule_id": "R03",
+      "constraint": "Brief must 2 puts the fireplace on one wall of the room; the do-not list forbids a hearth on an outside wall.",
+      "resolution": "Fireplace placed on the west wall, which is designated the central masonry chimney-and-stair core shared with the stair hall and centred on the long axis; it is not treated as an exterior wall."
+    }
+  ]
+}
