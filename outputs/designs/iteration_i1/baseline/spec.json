@@ -1,0 +1,566 @@
+{
+  "brief_id": "iteration_i1",
+  "arm": "baseline",
+  "title": "Hearth-End Living Room",
+  "room": {
+    "type": "Living room",
+    "length_m": 6.00,
+    "width_m": 4.50,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.25,
+    "floor_finish": "Engineered oak, wide plank (190 mm), matt hardwax oil"
+  },
+  "zones": [
+    {
+      "name": "Entry vestibule",
+      "polygon": [[4.65, 0.00], [6.00, 0.00], [6.00, 2.50], [4.65, 2.50]],
+      "description": "1.35 x 2.50 m pocket inside the entry door, bounded by the slatted oak screen to the west and the coat cupboard to the east, under a 2.20 m soffit."
+    },
+    {
+      "name": "Arrival landing",
+      "polygon": [[4.65, 2.50], [6.00, 2.50], [6.00, 4.50], [4.65, 4.50]],
+      "description": "Open floor where the vestibule releases into the full-height room; landing console on the east wall."
+    },
+    {
+      "name": "Gallery corridor",
+      "polygon": [[0.40, 3.40], [4.65, 3.40], [4.65, 4.50], [0.40, 4.50]],
+      "description": "Clear 1.10 m strip along the north wall from the landing to the fireplace; north wall kept bare as a picture wall."
+    },
+    {
+      "name": "Hearth and seating",
+      "polygon": [[0.40, 0.00], [4.50, 0.00], [4.50, 3.40], [0.40, 3.40]],
+      "description": "U-shaped seating group (3 + 2 + 1 seats) around the coffee table, open to the west wall fireplace and lit by the south window band."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "Vestibule soffit",
+      "height_m": 2.20,
+      "polygon": [[4.65, 0.00], [6.00, 0.00], [6.00, 2.50], [4.65, 2.50]],
+      "description": "Lowered plaster soffit with a perimeter LED slot over the vestibule; the main ceiling is 2.40 m everywhere else.",
+      "rule_ids": []
+    }
+  ],
+  "openings": [
+    {
+      "id": "O01",
+      "type": "door",
+      "wall": "east",
+      "offset_m": 3.30,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "right",
+      "role": "entry",
+      "label": "Entry door",
+      "description": "Solid-core oak door at the south end of the east wall (leaf spans y 0.30-1.20), hinged on the south jamb and opening into the vestibule; swing zone x 5.10-6.00, y 0.30-1.20 is kept clear. Door centre (6.00, 0.75) is 1.84 m from the nearest seating footprint (principal sofa corner at 4.20, 1.15).",
+      "rule_ids": []
+    },
+    {
+      "id": "O02",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 1.65,
+      "width_m": 3.90,
+      "height_m": 1.35,
+      "sill_m": 0.85,
+      "swing": "none",
+      "role": "window_band",
+      "label": "Window band",
+      "description": "Continuous band from x 0.45 to x 4.35 (3.90 m = 65% of the 6.00 m south wall), sill 0.85 m, head 2.20 m; six equal lights in slim oak frames, alternate lights tilt-opening.",
+      "pattern": "6 equal lights, 0.65 m each",
+      "rule_ids": []
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Chimney breast (fireplace)",
+      "x_m": 0.00,
+      "y_m": 1.30,
+      "length_m": 0.40,
+      "depth_m": 1.90,
+      "height_m": 2.40,
+      "material": "Honed limestone slabs on blockwork",
+      "finish": "Honed, matt",
+      "built_in": true,
+      "functions": ["fireplace"],
+      "position_note": "West wall, centred on y = 2.25, full height to the ceiling; sealed inset wood-burning firebox 0.90 x 0.55 m with its opening cill at 0.25 m above the hearth; flush with the alcove units either side."
+    },
+    {
+      "id": "F02",
+      "item": "Raised hearth slab",
+      "x_m": 0.40,
+      "y_m": 1.55,
+      "length_m": 0.45,
+      "depth_m": 1.40,
+      "height_m": 0.05,
+      "material": "Honed slate",
+      "finish": "Honed, matt",
+      "built_in": true,
+      "functions": ["hearth"],
+      "position_note": "Projects 0.45 m from the chimney breast face, centred on y = 2.25; abuts the breast at x = 0.40."
+    },
+    {
+      "id": "F03",
+      "item": "South alcove unit (base cupboard with open shelves above)",
+      "x_m": 0.00,
+      "y_m": 0.00,
+      "length_m": 0.40,
+      "depth_m": 1.30,
+      "height_m": 2.40,
+      "material": "Oak veneer on MDF carcass, solid oak edges and shelves",
+      "finish": "Matt hardwax oil",
+      "built_in": true,
+      "functions": ["storage", "shelving"],
+      "position_note": "West wall south of the chimney breast, flush with its face; 0.60 m high cupboard below, open shelves to the ceiling above."
+    },
+    {
+      "id": "F04",
+      "item": "North alcove unit (base cupboard with open shelves above)",
+      "x_m": 0.00,
+      "y_m": 3.20,
+      "length_m": 0.40,
+      "depth_m": 1.30,
+      "height_m": 2.40,
+      "material": "Oak veneer on MDF carcass, solid oak edges and shelves",
+      "finish": "Matt hardwax oil",
+      "built_in": true,
+      "functions": ["storage", "shelving"],
+      "position_note": "West wall north of the chimney breast, flush with its face; mirrors the south unit."
+    },
+    {
+      "id": "F05",
+      "item": "Three-seat sofa (principal seating)",
+      "x_m": 3.30,
+      "y_m": 1.15,
+      "length_m": 0.90,
+      "depth_m": 2.20,
+      "height_m": 0.80,
+      "material": "Wool boucle upholstery on hardwood frame",
+      "finish": "Matt, sage",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 3,
+      "position_note": "Faces west to the fireplace, centred on y = 2.25; its back sits 0.30 m from the entry screen, its north end 0.15 m south of the corridor's clear zone."
+    },
+    {
+      "id": "F06",
+      "item": "Two-seat sofa",
+      "x_m": 1.40,
+      "y_m": 0.20,
+      "length_m": 1.60,
+      "depth_m": 0.90,
+      "height_m": 0.80,
+      "material": "Wool boucle upholstery on hardwood frame",
+      "finish": "Matt, sage",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 2,
+      "position_note": "Under the window band, back 0.20 m off the south wall and below the 0.85 m sill; faces north across the coffee table."
+    },
+    {
+      "id": "F07",
+      "item": "Armchair",
+      "x_m": 1.90,
+      "y_m": 2.40,
+      "length_m": 0.85,
+      "depth_m": 0.85,
+      "height_m": 0.75,
+      "material": "Aniline leather on oak frame",
+      "finish": "Waxed matt, burnt terracotta",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "North side of the group, faces south across the coffee table with the fire to its west; its north edge at y 3.25 stays clear of the corridor."
+    },
+    {
+      "id": "F08",
+      "item": "Coffee table",
+      "x_m": 1.75,
+      "y_m": 1.50,
+      "length_m": 1.10,
+      "depth_m": 0.50,
+      "height_m": 0.38,
+      "material": "Solid oak top on blackened steel frame",
+      "finish": "Matt hardwax oil top, blackened steel legs",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "Centre of the group: 0.40 m from the two-seat sofa and armchair fronts, 0.45 m from the principal sofa front."
+    },
+    {
+      "id": "F09",
+      "item": "Rug",
+      "x_m": 1.20,
+      "y_m": 0.85,
+      "length_m": 2.40,
+      "depth_m": 2.50,
+      "height_m": 0.01,
+      "material": "Hand-loomed wool",
+      "finish": "Flatweave, undyed oatmeal",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Binds the group: runs under the front legs of both sofas and under the armchair and coffee table."
+    },
+    {
+      "id": "F10",
+      "item": "Entry screen (full-height slatted oak)",
+      "x_m": 4.50,
+      "y_m": 0.00,
+      "length_m": 0.15,
+      "depth_m": 2.50,
+      "height_m": 2.40,
+      "material": "Solid oak slats 40 x 40 mm at 80 mm centres on oak rails",
+      "finish": "Matt hardwax oil",
+      "built_in": true,
+      "functions": ["entry_element", "screen"],
+      "position_note": "Runs 2.50 m north from the south wall, forming the west side of the vestibule; stands between the entry door and all seating and gives the principal sofa its backdrop."
+    },
+    {
+      "id": "F11",
+      "item": "Coat cupboard (entry built-in)",
+      "x_m": 5.60,
+      "y_m": 1.50,
+      "length_m": 0.40,
+      "depth_m": 1.00,
+      "height_m": 2.20,
+      "material": "Oak veneer on MDF carcass, push-to-open doors",
+      "finish": "Matt hardwax oil",
+      "built_in": true,
+      "functions": ["storage", "entry_element"],
+      "position_note": "East wall of the vestibule, 0.30 m north of the door swing zone; full height to the 2.20 m soffit. Leaves 0.95 m clear between it and the screen."
+    },
+    {
+      "id": "F12",
+      "item": "Floor lamp",
+      "x_m": 2.85,
+      "y_m": 2.60,
+      "length_m": 0.30,
+      "depth_m": 0.30,
+      "height_m": 1.55,
+      "material": "Blackened steel stem, linen shade",
+      "finish": "Matt",
+      "built_in": false,
+      "functions": ["lighting"],
+      "position_note": "In the 0.55 m gap between the armchair and the principal sofa; reading light for both."
+    },
+    {
+      "id": "F13",
+      "item": "Side table",
+      "x_m": 3.40,
+      "y_m": 0.50,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.55,
+      "material": "Solid oak",
+      "finish": "Matt hardwax oil",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "Window-side pocket between the two-seat sofa and the screen, south of the principal sofa; carries a table lamp."
+    },
+    {
+      "id": "F14",
+      "item": "Landing console",
+      "x_m": 5.65,
+      "y_m": 2.90,
+      "length_m": 0.35,
+      "depth_m": 1.20,
+      "height_m": 0.80,
+      "material": "Oak veneer on MDF, solid oak top",
+      "finish": "Matt hardwax oil",
+      "built_in": false,
+      "functions": ["sideboard"],
+      "position_note": "East wall on the arrival landing, opposite the vestibule exit; drop-zone and lamp on arrival."
+    }
+  ],
+  "circulation": {
+    "path": [[5.55, 0.75], [5.15, 1.30], [5.15, 3.85], [1.35, 3.85], [1.35, 2.50]],
+    "min_clear_width_m": 0.90,
+    "description": "From the entry door north through the vestibule (0.95 m clear between screen and coat cupboard), out onto the arrival landing, west along the north gallery corridor (1.15 m clear between the principal sofa's north end at y 3.35 and the north wall), then south between the north alcove unit and the armchair to stand 0.50 m in front of the hearth slab. The corridor runs directly along the north end of the principal sofa, which is reached by stepping off it."
+  },
+  "palette": [
+    {
+      "hex": "#C9A97A",
+      "name": "Pale honey",
+      "material": "Engineered oak, wide plank (190 mm)",
+      "finish": "Matt hardwax oil",
+      "where": "Floor throughout, including the vestibule",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#EDE6DA",
+      "name": "Warm chalk",
+      "material": "Clay plaster",
+      "finish": "Matt, trowelled",
+      "where": "North, south and east walls",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#B08E63",
+      "name": "Natural oak",
+      "material": "Solid oak and oak veneer",
+      "finish": "Matt hardwax oil",
+      "where": "Alcove units, entry screen, coat cupboard, landing console, mantel shelf, coffee and side tables, window frames, door",
+      "role": "dominant",
+      "rule_ids": []
+    },
+    {
+      "hex": "#F4F1EA",
+      "name": "Soft white",
+      "material": "Plaster",
+      "finish": "Matt emulsion",
+      "where": "Ceiling and vestibule soffit",
+      "role": "neutral",
+      "rule_ids": []
+    },
+    {
+      "hex": "#D8CFC0",
+      "name": "Soft limestone",
+      "material": "Limestone slabs",
+      "finish": "Honed, matt",
+      "where": "Chimney breast, full height",
+      "role": "neutral",
+      "rule_ids": []
+    },
+    {
+      "hex": "#3A3C3F",
+      "name": "Charcoal slate",
+      "material": "Slate",
+      "finish": "Honed, matt",
+      "where": "Raised hearth slab; echoed in the blackened steel firebox frame, lamp stems and table legs",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#7E8C80",
+      "name": "Sage",
+      "material": "Wool boucle",
+      "finish": "Matt",
+      "where": "Both sofas",
+      "role": "accent",
+      "rule_ids": []
+    },
+    {
+      "hex": "#9C5B3E",
+      "name": "Burnt terracotta",
+      "material": "Aniline leather",
+      "finish": "Waxed matt",
+      "where": "Armchair",
+      "role": "accent",
+      "rule_ids": []
+    }
+  ],
+  "elevation": {
+    "wall": "west",
+    "title": "West wall - fireplace elevation (seen from inside; x from the south end)",
+    "elements": [
+      {
+        "id": "E01",
+        "item": "South alcove base cupboard",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 1.30,
+        "height_m": 0.60,
+        "material": "Oak veneer, matt hardwax oil",
+        "label": "Oak base cupboard, two push-to-open doors",
+        "hex": "#B08E63",
+        "rule_ids": []
+      },
+      {
+        "id": "E02",
+        "item": "South alcove open shelving",
+        "x_m": 0.00,
+        "z_m": 0.60,
+        "width_m": 1.30,
+        "height_m": 1.80,
+        "material": "Solid oak shelves, matt hardwax oil",
+        "label": "Four open oak shelves to ceiling, LED strip under each",
+        "hex": "#B08E63",
+        "rule_ids": []
+      },
+      {
+        "id": "E03",
+        "item": "Chimney breast",
+        "x_m": 1.30,
+        "z_m": 0.00,
+        "width_m": 1.90,
+        "height_m": 2.40,
+        "material": "Honed limestone slabs",
+        "label": "Honed limestone chimney breast, full height, flush with alcove units",
+        "hex": "#D8CFC0",
+        "rule_ids": []
+      },
+      {
+        "id": "E04",
+        "item": "Firebox opening",
+        "x_m": 1.80,
+        "z_m": 0.25,
+        "width_m": 0.90,
+        "height_m": 0.55,
+        "material": "Blackened steel frame, sealed inset wood-burning firebox",
+        "label": "Firebox 0.90 x 0.55 m, cill 0.25 m above hearth, centred on the wall",
+        "hex": "#2B2B2B",
+        "rule_ids": []
+      },
+      {
+        "id": "E05",
+        "item": "Hearth slab",
+        "x_m": 1.55,
+        "z_m": 0.00,
+        "width_m": 1.40,
+        "height_m": 0.05,
+        "material": "Honed slate",
+        "label": "Raised slate hearth, 0.45 m projection",
+        "hex": "#3A3C3F",
+        "rule_ids": []
+      },
+      {
+        "id": "E06",
+        "item": "Mantel shelf",
+        "x_m": 1.60,
+        "z_m": 1.15,
+        "width_m": 1.30,
+        "height_m": 0.06,
+        "material": "Solid oak, matt hardwax oil",
+        "label": "Solid oak mantel shelf, 0.20 m deep",
+        "hex": "#B08E63",
+        "rule_ids": []
+      },
+      {
+        "id": "E07",
+        "item": "North alcove base cupboard",
+        "x_m": 3.20,
+        "z_m": 0.00,
+        "width_m": 1.30,
+        "height_m": 0.60,
+        "material": "Oak veneer, matt hardwax oil",
+        "label": "Oak base cupboard, two push-to-open doors",
+        "hex": "#B08E63",
+        "rule_ids": []
+      },
+      {
+        "id": "E08",
+        "item": "North alcove open shelving",
+        "x_m": 3.20,
+        "z_m": 0.60,
+        "width_m": 1.30,
+        "height_m": 1.80,
+        "material": "Solid oak shelves, matt hardwax oil",
+        "label": "Four open oak shelves to ceiling, LED strip under each",
+        "hex": "#B08E63",
+        "rule_ids": []
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.00, "label": "Finished floor level"},
+      {"z_m": 0.60, "label": "Cupboard top / shelf datum"},
+      {"z_m": 1.15, "label": "Mantel shelf"},
+      {"z_m": 2.40, "label": "Ceiling"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Recessed adjustable LED downlights x3, 2700 K, dimmable",
+      "position": "Ceiling at x 0.60, y 1.00 / 2.25 / 3.50, aimed at the fireplace wall",
+      "type": "Accent wall-wash on the limestone breast and alcoves",
+      "rule_ids": []
+    },
+    {
+      "item": "Surface-mounted LED track with four wall-washers, 2700 K",
+      "position": "Ceiling along the north wall at y 4.10, from x 1.20 to x 4.60",
+      "type": "Gallery wall-wash for the bare north wall",
+      "rule_ids": []
+    },
+    {
+      "item": "Floor lamp (F12)",
+      "position": "Between armchair and principal sofa at (2.85, 2.60)",
+      "type": "Reading / ambient, dimmable",
+      "rule_ids": []
+    },
+    {
+      "item": "Table lamps x2",
+      "position": "On side table F13 at (3.40, 0.50) and on landing console F14 at (5.65, 2.90)",
+      "type": "Low-level ambient",
+      "rule_ids": []
+    },
+    {
+      "item": "Concealed LED strip in the vestibule soffit perimeter slot",
+      "position": "Edge of the 2.20 m soffit over x 4.65-6.00, y 0.00-2.50",
+      "type": "Indirect ambient, marks the entry sequence",
+      "rule_ids": []
+    },
+    {
+      "item": "LED strips under alcove shelves",
+      "position": "Underside of each open shelf in units F03 and F04",
+      "type": "Display lighting",
+      "rule_ids": []
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Fireplace on the west short wall, centred at y 2.25, as a full-height honed limestone chimney breast between two flush oak alcove units.",
+      "rationale": "Makes the hearth the terminus of the room's long axis so the whole entry sequence from the east reads toward the fire; flush alcoves turn the short wall into one composed plane.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Continuous window band on the south long wall, x 0.45-4.35 (3.90 m, 65%), sill 0.85 m, head 2.20 m.",
+      "rationale": "Exceeds the 60% minimum, floods the seating group with side light from the fire's flank rather than behind viewers' eyes, and the 0.85 m sill lets the two-seat sofa (0.80 m back) sit beneath it.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Entry door at the south end of the east wall (y 0.30-1.20), hinged south, opening into a 1.35 x 2.50 m vestibule.",
+      "rationale": "Places the door as far as possible from the fire and the seating; its centre is 1.84 m from the nearest seat footprint, exceeding the 1.50 m minimum.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Entry sequence built from three named elements: full-height slatted oak screen (F10), coat cupboard (F11) and a 2.20 m soffit over the vestibule.",
+      "rationale": "Compress-then-release: you arrive under a low ceiling beside a screen, turn north, and the room opens at full height with the fire ahead; the screen also backs the principal sofa so no seat faces the door directly.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Seating as a U of three pieces: 3-seat sofa facing the fire, 2-seat sofa under the window, leather armchair on the north side, 6 seats in total.",
+      "rationale": "Every seat sees the fire; three separate pieces let the group breathe in a 4.50 m wide room where two facing 3-seaters would leave no 0.90 m route.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "North long wall kept free of furniture as a 1.10 m gallery corridor from the landing to the fireplace, lit by track wall-washers.",
+      "rationale": "In a 4.50 m wide room this is the only way to guarantee a 0.90 m clear route to the fireplace without cutting through the seating group; the bare wall becomes the picture wall.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Floor finish: engineered oak wide plank with matt hardwax oil.",
+      "rationale": "Warm, repairable and non-glossy; continuous across the vestibule so the threshold is marked by ceiling height, not by a floor change.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Wall finish: matt clay plaster on all plastered walls; no mirror panels and no gloss anywhere on a wall surface.",
+      "rationale": "Meets the brief's material prohibitions and gives soft, low-glare light next to a 3.90 m window band.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Underfloor heating assumed; no radiators under the window band.",
+      "rationale": "Allows the two-seat sofa to sit 0.20 m from the south wall, keeping the group compact and the north corridor wide.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Rug 2.40 x 2.50 m set under the front legs of the sofas and armchair.",
+      "rationale": "Binds the three separate seating pieces into one group and absorbs sound in a hard-floored room.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": []
+}
