@@ -1,0 +1,51 @@
+{
+ "violations": {
+  "per_design": {
+   "test_a/baseline": 0,
+   "test_a/learned": 0,
+   "test_b/baseline": 0,
+   "test_b/learned": 0,
+   "test_c/baseline": 0,
+   "test_c/learned": 0
+  },
+  "mean_baseline": 0,
+  "mean_learned": 0,
+  "learned_minus_baseline": 0,
+  "pass": false
+ },
+ "traceability": {
+  "major_decisions": 46,
+  "major_citing_rule": 46,
+  "share_major_cited": 1.0,
+  "citations": 272,
+  "citations_to_real_rules": 272,
+  "share_real": 1.0,
+  "pass": true
+ },
+ "blind": {
+  "claude": {
+   "judges": [
+    "CJ1",
+    "CJ2",
+    "CJ3"
+   ],
+   "accuracy_per_judge": {
+    "CJ1": 1.0,
+    "CJ2": 1.0,
+    "CJ3": 1.0
+   },
+   "mean_correct_of_3": 3.0,
+   "learned_picked_share_per_brief": {
+    "test_c": 1,
+    "test_b": 1,
+    "test_a": 1
+   },
+   "confidence_weighted": 1.0,
+   "reasons_mapping_to_real_rule": "9/9",
+   "pass_identification": true,
+   "pass_confidence_weighted": true,
+   "pass_reason_quality": true
+  }
+ },
+ "verdict": "PARTIAL PASS AT BEST \u2014 constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result)"
+}

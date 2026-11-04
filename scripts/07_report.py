@@ -82,9 +82,12 @@ def main():
     hb = blind.get("human")
     bpass = hb["pass_identification"] if hb else None
     if cpass is None or bpass is None:
-        verdict = "INCOMPLETE — " + ("constraint metric missing; " if cpass is None else "") + ("human blind test not yet recorded; " if bpass is None else "")
+        if cpass is False and bpass is None:
+            verdict = "PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded"
+        else:
+            verdict = "INCOMPLETE — " + ("constraint metric missing; " if cpass is None else "") + ("human blind test not yet recorded; " if bpass is None else "")
         if bpass is None and blind.get("claude"):
-            verdict += f"supplementary Claude-judge identification {'passes' if blind['claude']['pass_identification'] else 'fails'} (cannot substitute for the human result)"
+            verdict += f"; supplementary Claude-judge identification {'passes' if blind['claude']['pass_identification'] else 'fails'} (cannot substitute for the human result)"
     elif cpass and bpass: verdict = "PASS"
     elif cpass or bpass: verdict = "PARTIAL PASS — " + ("blind criterion failed" if cpass else "constraint criterion failed")
     else: verdict = "FAIL"
