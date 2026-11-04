@@ -1,0 +1,57 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00003",
+  "drawing_type": "plan",
+  "room_or_space": "SECOND (MAIN) FLOOR PLAN - whole principal floor: LIVING ROOM, DINING ROOM, GUEST ROOM, KITCHEN, pantry, SERVANTS rooms, stairs, and the balconies/terraces that surround them",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "The only written module is a 4'-0\" pier-to-pier spacing, repeated identically on the kitchen north wall, the guest room west wall and the living room south wall, and visibly continued along every other window band. The living room and dining room are long, narrow spaces of identical width placed end to end on one axis, each terminating in a pointed (prow) bay; their combined length is many times their width. The service wing to the north is a second, shorter bar of similar width set parallel and offset to the east."
+  },
+  "layout": {
+    "organisation": "Linear, two-bar plan with north at the top of the sheet. The principal bar runs east-west and holds the LIVING ROOM (west) and DINING ROOM (east) as one continuous space of equal width, interrupted only by a central hatched masonry core containing the fireplace and the main stair, with passage past the core on both its north and south sides. A second bar, set back to the north and overlapping the first at the stair core, holds the GUEST ROOM at its west end, then a rear stair, the KITCHEN, a pantry/serving room, an unlabelled stair, and a row of three small SERVANTS rooms off a north corridor at its east end. Both ends of the principal bar finish in pointed bays. Low walls with square urn piers define a west terrace, a long south balcony, and a large walled court to the east of the service wing.",
+    "axes": "One dominant longitudinal east-west axis through the living room, the central core and the dining room; a pair of long dashed (overhead) lines runs the full length of both rooms parallel to the long walls, marking a central strip along this axis. The two prow bays are symmetrical about it. A secondary, parallel east-west axis runs through the service bar. Cross axes are minor: the main stair runs north-south behind the fireplace, and the rear stair runs north-south between guest room and kitchen.",
+    "entry_sequence": "No exterior entrance door is drawn at this level; arrival is by stair from below. The main stair rises into the central core between the living and dining rooms (marked DOWN, descending southward behind the fireplace mass); a wooden pier and screen, drawn beside the fireplace on the living-room side, stand between the stair landing and the living room. The rear stair beside the kitchen (marked UP and DOWN) serves the service bar and has a door at its head into the guest room. From the living room's west end, doors either side of the prow bay open onto the west terrace, which steps DOWN on its north and south sides.",
+    "circulation": "Movement is along the long axis: living room and dining room flow past the central core on either side of the chimney mass. The service bar is reached from the dining room/stair side through the pantry-serving room beside the kitchen; the kitchen connects west to the rear stair hall and east to the pantry; the servants rooms open off a corridor along their north side, which also leads to the unlabelled stair between the pantry and the servants rooms. The south wall of both main rooms is a continuous band of glazed doors onto the south balcony; doors at the west prow lead to the west terrace; a door at the south-east corner of the dining room opens beside the end pier."
+  },
+  "openings": [
+    {"type": "door", "position": "south wall of the living room and dining room, full length, between hatched piers", "dimensions": "piers spaced 4'-0\" (three bays dimensioned at the west end)", "pattern": "continuous glazed band: pairs of outward-swinging glazed doors drawn with V-shaped double swing marks in every bay between short hatched piers, running uninterrupted across both rooms and past the central core"},
+    {"type": "window", "position": "north exterior wall of the kitchen, continuing east along the north wall of the service bar", "dimensions": "piers spaced 4'-0\" (three bays dimensioned)", "pattern": "run of single casements between short hatched piers, each drawn with one swing arc; the band continues eastward past the kitchen to the servants rooms"},
+    {"type": "window", "position": "west exterior wall of the guest room", "dimensions": "three bays at 4'-0\" each (dimensioned)", "pattern": "three single casements between hatched piers, swing arcs opening outward"},
+    {"type": "window", "position": "north wall of the living room, west of the guest room", "dimensions": null, "pattern": "run of casements between hatched piers, each with a single swing arc, same module as the dimensioned bands"},
+    {"type": "window", "position": "pointed (prow) bays at the west end of the living room and the east end of the dining room", "dimensions": null, "pattern": "two angled glazed faces meeting at a pier at the apex, with casement windows (swing arcs) on each angled face and flanking piers at the junction with the long walls"},
+    {"type": "window", "position": "south wall of the three servants rooms and both long walls of the unlabelled stair between pantry and servants rooms", "dimensions": null, "pattern": "casements between hatched piers with swing arcs; a low wall/ledge is drawn outside the servants rooms' south windows"},
+    {"type": "door", "position": "west end of the living room, either side of the prow bay", "dimensions": null, "pattern": "single swing doors opening out to the west terrace, each aligned with a flight of steps marked DOWN"},
+    {"type": "door", "position": "interior: guest room to rear stair hall (at the stair head), kitchen to rear stair hall, kitchen to pantry, pantry to stair hall, corridor to each servants room, dining room south-east corner", "dimensions": null, "pattern": "single swing doors drawn with quarter-circle arcs; a dashed segment on the pantry's west wall and dashed segments in the kitchen south wall mark openings described in the note as altered"}
+  ],
+  "built_in_furniture": [
+    {"item": "fireplace and chimney mass with hearth opening facing the living room, two flue voids shown; main stair set behind it", "material": "masonry (diagonal hatching)", "dimensions": null, "position": "central core between living room and dining room, on the longitudinal axis"},
+    {"item": "built-in buffet (long, double-outlined rectangle; the sheet's note states it has since been removed and two doors cut through the wall behind it)", "material": "not stated", "dimensions": null, "position": "against the north wall of the dining room, below the kitchen south wall"},
+    {"item": "wooden pier and screen (square pier plus a row of small squares along the dashed line; the note states they have been removed)", "material": "wood (per the note)", "dimensions": null, "position": "living room, next to the fireplace, between the living room and the main stair landing"},
+    {"item": "thin rectangular element (screen or rail) on the dining-room side of the main stair", "material": "not stated", "dimensions": null, "position": "east side of the main stair, facing the dining room"},
+    {"item": "square piers with circular urns", "material": "not stated", "dimensions": null, "position": "north-west balcony corner beside the guest room, and at the south-west and south-east ends of the long south terrace wall"},
+    {"item": "rectangular planter boxes on balcony and terrace walls", "material": "not stated", "dimensions": null, "position": "at the west end of the living room south wall, the east end of the dining room south wall, along the west edge of the west terrace, and flanking the west terrace steps"},
+    {"item": "two chimney/flue masses with square flue voids", "material": "masonry (hatched)", "dimensions": null, "position": "north wall of the kitchen, at its north-west corner"}
+  ],
+  "materials": [
+    {"material": "masonry (diagonal hatching)", "where": "all exterior walls, the short piers between windows and doors, the central fireplace/chimney core and the kitchen chimney masses", "finish": null},
+    {"material": "thin unhatched partitions", "where": "interior walls of the servants rooms, pantry, stair halls and closets", "finish": null},
+    {"material": "wood (stated in the sheet's note only)", "where": "pier and screen beside the living-room fireplace", "finish": null},
+    {"material": "glazing (window and door symbols only; not labelled)", "where": "casement windows and glazed doors in every pier band and the two prow bays", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink line on white paper"], "accent": ["diagonal hatching of masonry"], "warm_or_cool": "neutral"},
+  "details": [
+    "Repeated 4'-0\" pier module: short hatched piers alternating with single casements or paired glazed doors on every exterior wall, written on three walls and visibly continued on the rest",
+    "Pointed (prow-plan) bays with angled glazed faces terminating both ends of the long living-dining bar",
+    "Pair of long dashed overhead lines running the full length of living room and dining room, parallel to the long walls, defining a central strip on the main axis",
+    "Low terrace and balcony walls finished with square piers carrying circular urns, and rectangular planter boxes on the parapets",
+    "Central masonry core combining fireplace (open to the living room) and main stair, with the two main rooms passing it on both sides so they read as one space"
+  ],
+  "what_is_absent": [
+    "No overall room or building dimensions are written; only the 4'-0\" pier module and a bar scale are given",
+    "No exterior entrance door at this level; access is only by stairs from below",
+    "No plumbing or kitchen fixtures (sink, range, counters, bath, water-closet) are drawn in the kitchen, pantry or servants area",
+    "No loose furniture, ceiling heights, section marks or door/window schedule",
+    "No material labels or wall-thickness dimensions; materials are indicated only by hatching and by the one word 'wooden' in the note"
+  ],
+  "confidence": "high"
+}

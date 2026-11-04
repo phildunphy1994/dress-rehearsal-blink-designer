@@ -1,0 +1,26 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00003",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/03_second_main_floor_plan.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r0c0.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r0c1.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r0c2.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r0c3.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r1c0.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r1c1.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r1c2.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r1c3.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r2c0.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r2c1.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r2c2.png",
+    "corpus_a/tiles/03_second_main_floor_plan/r2c3.png"
+  ],
+  "extra_crops_made": false,
+  "started_at": "2026-11-04T17:35:31Z",
+  "finished_at": "2026-11-04T17:40:37Z",
+  "flagged_for_manual_review": false,
+  "notes": "All lettering and all three 4'-0\" dimension chains were clearly legible on the overview and the 4x3 tiles, so no finer crops from the master TIFF were needed. The sheet carries no overall room or building dimensions, so overall_dimensions and the length-to-width ratio are null rather than estimated from the bar scale."
+}

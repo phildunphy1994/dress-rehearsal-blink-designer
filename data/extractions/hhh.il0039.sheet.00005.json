@@ -1,0 +1,54 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00005",
+  "drawing_type": "section",
+  "room_or_space": "Whole building, not a single room: the sheet carries a longitudinal section through the principal block (upper drawing, titled LONGITUDINAL SECTION) paired with the south elevation of the same building (lower drawing, titled SOUTH ELEVATION). No room names are lettered on either drawing.",
+  "overall_dimensions": {"length": null, "width": null, "ceiling_height": null},
+  "proportions": {
+    "length_to_width_ratio": null,
+    "notable_proportion": "No dimensions are written; drawn at 1/8 in = 1 ft-0 in. Visually the building is extremely long and low: in the south elevation the overall length is many times the height, the main storey reads as a continuous band of tall narrow windows, and the hipped roofs are very shallow with eaves that cantilever far beyond the end walls (the overhang at the left end is roughly a storey deep). In section the two principal storeys are of similar height and the central belvedere storey is lower than both."
+  },
+  "layout": {
+    "organisation": "Section: a long two-storey block with a partial third storey (belvedere) set over a central masonry chimney core. The lower storey is a run of rooms the full length of the block under the main floor; the main storey is a long room divided by the chimney core into a left room and a right room, each with its south wall almost entirely glazed; the belvedere above has its own hipped roof and window band. A lower wing continues to the right beyond the cut, seen in elevation with a band of windows above and two wide openings between brick piers below. At the left end the main roof cantilevers over an open terrace with a brick parapet, and a low cut element with two square boxes sits below it. Elevation: the same massing read from the south, with a long low brick garden wall with urns on piers across the ground storey, a continuous window band on the main storey, the chimney and belvedere rising near the centre, and the lower right wing ending in a pair of glazed doors and a free-standing brick pier.",
+    "axes": "Dominant longitudinal (horizontal) axis, emphasised by continuous window bands, brick coursing, copings and the long roof lines. The chimney and belvedere give a single vertical accent just left of the centre of the main block; the composition is asymmetrical overall because the lower wing extends the mass to the right.",
+    "entry_sequence": "Not labelled. The south elevation shows a pair of patterned-glass doors in the ground-storey wall near the right end, with no steps, porch or canopy drawn; the rest of the south face at ground level is a continuous brick wall. In the section a stair with railing elements is drawn beside the chimney core, linking the lower storey to the main floor and belvedere.",
+    "circulation": "Lower storey: a row of rooms in line along the length of the block, connected by doors drawn in section. Main storey: open flow along the length, interrupted only by the chimney core; vertical circulation at that core. No corridors or circulation arrows are lettered."
+  },
+  "openings": [
+    {"type": "window", "position": "South elevation, main storey, running almost the full length of the block and continuing across the lower right wing", "dimensions": null, "pattern": "Continuous band of tall narrow casement lights (on the order of 25) set between brick mullion-piers, each light filled with a geometric leaded-glass pattern of vertical bars and chevron/diamond lattice; the band sits on a plain sill course and is capped by the roof fascia"},
+    {"type": "window", "position": "South elevation, belvedere (third storey) under its own hipped roof, either side of the chimney", "dimensions": null, "pattern": "Row of about nine or ten casement lights with the same geometric leaded pattern, one narrow light left of the chimney and the rest to its right, interrupted by one stippled solid panel"},
+    {"type": "window", "position": "South elevation, ground storey, in the wall above the low garden parapet under the main-storey band", "dimensions": null, "pattern": "Row of about fourteen near-square lights with a diagonal lattice leaded pattern, separated by short brick piers"},
+    {"type": "door", "position": "South elevation, ground storey, near the right end of the lower wing", "dimensions": null, "pattern": "Pair of full-height glazed doors, each leaf filled with a geometric leaded-glass panel with pendant chevron motifs at the head; brick pier each side"},
+    {"type": "opening", "position": "Section drawing, lower storey of the right wing seen in elevation beyond the cut", "dimensions": null, "pattern": "Two wide full-height rectangular openings between hatched brick piers; infill (door or open) not drawn"},
+    {"type": "window", "position": "Section drawing, far (north) wall of the main-storey rooms seen beyond the cut", "dimensions": null, "pattern": "Groups of tall rectangular lights with plain muntin grids, hatched spandrel panels beneath the left group"},
+    {"type": "window", "position": "Section drawing, far wall of the lower storey", "dimensions": null, "pattern": "Row of small wide rectangular lights set high in the wall at regular spacing"},
+    {"type": "door", "position": "Section drawing, lower storey, beside the chimney core", "dimensions": null, "pattern": "Tall narrow single door, plain; a vertically hatched panel (grille or radiator) adjacent"}
+  ],
+  "built_in_furniture": [
+    {"item": "Long low table or counter on two end supports with a lower shelf", "material": "not indicated", "dimensions": null, "position": "Section drawing, main-storey room to the right of the chimney core, drawn along the room"},
+    {"item": "Horizontal vertically-hatched bands at mid-height (bookcase, screen or balustrade; not labelled)", "material": "not indicated", "dimensions": null, "position": "Section drawing, main storey, immediately left and right of the chimney core"},
+    {"item": "Urn or bowl planters on pedestal blocks", "material": "not indicated (drawn plain)", "dimensions": null, "position": "South elevation, on the caps of the garden-wall piers, one at the left terrace and one right of centre"}
+  ],
+  "materials": [
+    {"material": "Brick, drawn with continuous horizontal coursing hatch", "where": "All walls, piers, chimney, garden wall, belvedere spandrels and the cut walls in section", "finish": null},
+    {"material": "Plain unhatched cap or coping bands (stone-like; material not lettered)", "where": "Tops of garden walls and piers, window sill courses, chimney cap, roof fascias", "finish": null},
+    {"material": "Leaded glass with geometric lattice pattern", "where": "All south-facing windows on three storeys and the pair of glazed doors", "finish": null},
+    {"material": "Stippled panel (material not indicated)", "where": "One solid panel in the belvedere window band", "finish": null},
+    {"material": "Roof surface left plain (material not indicated)", "where": "Main hipped roof, belvedere roof and right-wing roof", "finish": null}
+  ],
+  "palette": {"dominant": ["black ink line on white paper (monochrome measured drawing)"], "accent": [], "warm_or_cool": "neutral"},
+  "details": [
+    "Geometric leaded-glass pattern (vertical bars with chevron and diamond lattice) repeated in every window light and in the glazed doors",
+    "Very shallow hipped roofs with thin plain fascias and deep cantilevered eaves at three levels: main roof, belvedere roof and right-wing roof",
+    "Brick coursing hatch on every wall, with plain cap bands on garden walls, piers and sills giving continuous horizontal lines",
+    "Row of small semicircular elements (light fittings or brackets) at regular spacing along the main-storey ceiling line, and regularly spaced small notches at the main-floor line, in the section",
+    "Chimney mass rising as a tall rectangular brick slab with a plain cap, and curved profiled elements drawn at the chimney core in section"
+  ],
+  "what_is_absent": [
+    "No dimension strings, levels, datum lines or section cut-line reference on either drawing",
+    "No room names, material notes or keyed annotations inside the section",
+    "No ground line, grade, landscape or site context beyond the base line; no scale figures",
+    "No kitchen, bath or plumbing fixtures and no fireplace opening lettered or detailed at the chimney",
+    "No steps, porch or canopy at the glazed doors in the south elevation"
+  ],
+  "confidence": "medium"
+}

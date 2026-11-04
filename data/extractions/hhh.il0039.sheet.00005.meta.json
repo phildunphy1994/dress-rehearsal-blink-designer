@@ -1,0 +1,28 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00005",
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts_transcription": 1,
+  "attempts_extraction": 1,
+  "images_viewed": [
+    "corpus_a/resized/05_south_elevation_and_longitudinal_section.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r0c0.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r0c1.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r0c2.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r0c3.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r1c0.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r1c1.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r1c2.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r1c3.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r2c0.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r2c1.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r2c2.png",
+    "corpus_a/tiles/05_south_elevation_and_longitudinal_section/r2c3.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet05/crop_stair_mark.png",
+    "/tmp/claude-0/-home-user-dress-rehearsal-blink-designer/4b3fb035-0a87-5685-a8ab-8bbac69b8545/scratchpad/sheet05/crop_scale.png"
+  ],
+  "extra_crops_made": true,
+  "started_at": "2026-11-04T17:35:32Z",
+  "finished_at": "2026-11-04T17:40:42Z",
+  "flagged_for_manual_review": false,
+  "notes": "Lettering and linework are sharply legible at tile resolution, but the sheet carries no dimension strings at all, so every dimension field is null and the two crops from the master TIFF only confirmed that one mark near the sectioned stair is an ink blot and that the scale reads 1/8 in = 1 ft-0 in. Several unlabelled section elements (hatched bands beside the chimney, semicircular ceiling elements, the long table-like unit) are described with hedged interpretations."
+}

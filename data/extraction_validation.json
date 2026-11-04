@@ -1,11 +1,51 @@
 {
- "validated_at": "2026-11-04T17:39:48+00:00",
+ "validated_at": "2026-11-04T17:41:03+00:00",
  "phase": "iteration",
  "sheets": {
   "hhh.il0039.sheet.00002": {
    "transcription": "valid",
    "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00011": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00016": {
+   "transcription": "missing",
+   "extraction": "missing",
    "errors": []
+  },
+  "hhh.il0039.sheet.00022": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00024": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
+  },
+  "hhh.il0039.sheet.00025": {
+   "transcription": "valid",
+   "extraction": "valid",
+   "errors": [],
+   "attempts": null,
+   "model": "claude-fable-5-1, session subagent, no API call",
+   "flagged_for_manual_review": false
   }
  }
 }
