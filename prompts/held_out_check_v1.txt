@@ -1,0 +1,22 @@
+You are checking ONE held-out measured drawing against a frozen rule library (PRD §6.4). This is a measurement, not an iteration step: nothing you write may be used to change a rule.
+
+For EACH rule in the library below, decide from THIS drawing only:
+- "supported": the drawing shows the rule being followed (name what you see);
+- "contradicted": the drawing shows the designer doing otherwise in a context where the rule says they do X (name what you see);
+- "not_assessable": the drawing does not show the relevant context (e.g. a furniture detail cannot assess a plan rule).
+Describe only what is drawn. Do not use outside knowledge of the building, architect or period.
+
+Return exactly this JSON object and nothing else:
+
+```json
+{
+  "sheet_id": "{sheet_id}",
+  "drawing_type_seen": "plan|section|elevation|detail|environmental|photograph",
+  "rules": [{"id": "R01", "verdict": "supported|contradicted|not_assessable", "what_is_seen": "one sentence, or null"}],
+  "do_not_list": [{"index": 0, "verdict": "supported|contradicted|not_assessable", "what_is_seen": "one sentence, or null"}],
+  "notes": "string or null"
+}
+```
+
+RULE LIBRARY (frozen v2):
+{rule_library}

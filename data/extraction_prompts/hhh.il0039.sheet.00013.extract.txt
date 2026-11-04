@@ -22,4 +22,587 @@ Return exactly this JSON object:
 
 sheet_id: hhh.il0039.sheet.00013
 transcribed_dimensions (verbatim from the sheet, by a prior transcription pass):
-(transcription not yet available — run the transcription pass first)
+{
+ "sheet_id": "hhh.il0039.sheet.00013",
+ "sheet_title_as_drawn": "STRAIGHT BACK CHAIR FREDERICK C. ROBIE HOUSE; title block: NAME AND LOCATION OF STRUCTURE FREDERICK C. ROBIE HOUSE 5757 SOUTH WOODLAWN AVENUE, CHICAGO, COOK COUNTY, ILLINOIS; DRAWN BY: ROBERT I. SELBY; HABS CHICAGO PROJECT 1967 UNDER DIRECTION OF THE NATIONAL PARK SERVICE, UNITED STATES DEPARTMENT OF THE INTERIOR; SURVEY NO. ILL 1005; HISTORIC AMERICAN BUILDINGS SURVEY SHEET 13 OF 14 SHEETS",
+ "scale_as_drawn": "SCALE: 3\"=1'-0\" (Sections 1 and 2, Elev. of Front, Plan of Seat, Elev. of Back, Detail of Seat Cush., Detail of Back Cush.); FULL SIZE (Detail Section; Sections thru Ornamental Details); NO SCALE (Hook Detail)",
+ "dimensions": [
+  {
+   "value": "50 3/4\"",
+   "measures": "overall height of chair, floor to top of back-post cap (outermost vertical string)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, far left"
+  },
+  {
+   "value": "1 13/16\"",
+   "measures": "height of crest cap assembly at top of back post (cap top to underside of lower cap trim)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top left, detail 8 call-out"
+  },
+  {
+   "value": "4 3/4\"",
+   "measures": "height of exposed back post between underside of cap trim and top of back slat panel",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top left"
+  },
+  {
+   "value": "23 7/16\"",
+   "measures": "length of back slat panel along back post, top of panel to top of rear seat rail (numerator reads 7, possibly 11)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, left vertical chain"
+  },
+  {
+   "value": "4 5/8\"",
+   "measures": "height of rear seat rail (apron) in section",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, left, at seat level"
+  },
+  {
+   "value": "2\"",
+   "measures": "height of lower rear rail block beneath seat rail",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, left, below seat rail"
+  },
+  {
+   "value": "14 1/8\"",
+   "measures": "height from floor to underside of lower rail (exposed rear leg)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, left, lower"
+  },
+  {
+   "value": "2 1/2\"",
+   "measures": "front-to-back width of crest cap at top of back post",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top, above cap"
+  },
+  {
+   "value": "3/16\"",
+   "measures": "projection of cap beyond face of back post",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top, left of cap"
+  },
+  {
+   "value": "7/8\"",
+   "measures": "thickness of top cap plate",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, cap detail 8, right side stack"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "thickness of middle cap member (reads 3/8, possibly 5/8)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, cap detail 8, right side stack"
+  },
+  {
+   "value": "9/16\"",
+   "measures": "thickness of lower cap trim (bracketed)",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, cap detail 8, right side stack"
+  },
+  {
+   "value": "2 1/4\"",
+   "measures": "front-to-back width of back post just below cap",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top"
+  },
+  {
+   "value": "7/8\"",
+   "measures": "thickness of back post member at top of slat panel",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, top, right of post"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "thickness of back slat panel",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, mid-height of back"
+  },
+  {
+   "value": "7/8\"",
+   "measures": "thickness of rear seat rail member at top",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, rear seat rail"
+  },
+  {
+   "value": "1/16\"",
+   "measures": "reveal/offset at rear seat rail face",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, rear seat rail"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "front-to-back width of rear leg below seat rail",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, below seat rail"
+  },
+  {
+   "value": "18\"",
+   "measures": "depth of seat frame from rear post face to front edge",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, horizontal string above seat"
+  },
+  {
+   "value": "19 1/16\"",
+   "measures": "overall depth at seat level, rear post to front seat edge",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, horizontal string above seat"
+  },
+  {
+   "value": "3/16\"",
+   "measures": "overhang/lip at top of front seat edge",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front seat corner"
+  },
+  {
+   "value": "11/16\"",
+   "measures": "overhang of seat front beyond front leg face",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front seat corner"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "height of upper front seat-rail block",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front seat rail, vertical"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "height of lower front seat-rail block",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front seat rail, vertical"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "width of front rail block",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg top, horizontal"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "offset of front rail block from front leg face",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg top, horizontal"
+  },
+  {
+   "value": "1 1/2\"",
+   "measures": "height of small block on inside face of front leg",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg, vertical"
+  },
+  {
+   "value": "1/8\"",
+   "measures": "offset of small block from leg face",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg, horizontal"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "width of small block on front leg",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg, horizontal"
+  },
+  {
+   "value": "11 1/8\"",
+   "measures": "height from floor to underside of small block on front leg",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, front leg, vertical"
+  },
+  {
+   "value": "16 1/8\"",
+   "measures": "height from floor to top of seat frame at front",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, right vertical string"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "front-to-back width of front leg at floor",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, bottom right"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "front-to-back width of rear leg at stretcher level",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, bottom left"
+  },
+  {
+   "value": "5 1/8\"",
+   "measures": "distance from rear leg to first cross stretcher",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, stretcher level"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "width of first cross stretcher",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, stretcher level"
+  },
+  {
+   "value": "4 5/8\"",
+   "measures": "clear distance between the two cross stretchers",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, stretcher level"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "width of second cross stretcher",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, stretcher level"
+  },
+  {
+   "value": "1 3/8\"",
+   "measures": "height (vertical) of stretcher in section",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, stretcher level, between stretchers"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "step of rear foot moulding profile",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, foot detail 7"
+  },
+  {
+   "value": "1/4\"",
+   "measures": "step of rear foot moulding profile",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, foot detail 7"
+  },
+  {
+   "value": "1\"",
+   "measures": "height of upper foot cap",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, foot detail 7"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "thickness of foot base plate",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, foot detail 7"
+  },
+  {
+   "value": "3\"",
+   "measures": "front-to-back width of rear foot",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, foot"
+  },
+  {
+   "value": "7/16\"",
+   "measures": "projection of rear foot beyond rear leg line",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, bottom left"
+  },
+  {
+   "value": "19 5/8\"",
+   "measures": "overall depth of chair at floor, rear foot to front foot",
+   "location_on_sheet": "Section 1 (side section, scale 3\"=1'-0\"), left of sheet, bottom horizontal string"
+  },
+  {
+   "value": "16 3/8\"",
+   "measures": "overall width at crest, outside of caps",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top horizontal string"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "end segment at left of top width string (cap to post)",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top"
+  },
+  {
+   "value": "13 7/8\"",
+   "measures": "width between back posts",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "width of left back post",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top"
+  },
+  {
+   "value": "10 5/8\"",
+   "measures": "width of crest rail panel between posts",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "width of right back post",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top"
+  },
+  {
+   "value": "2\"",
+   "measures": "width of crest cap",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, top left, detail 8 call-out"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "width of back post below cap",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, left, below cap"
+  },
+  {
+   "value": "5 3/4\"",
+   "measures": "height of crest rail assembly, top of panel to underside of lower rail",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right of crest rail"
+  },
+  {
+   "value": "4 3/4\"",
+   "measures": "height of crest rail panel",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right of crest rail"
+  },
+  {
+   "value": "1\"",
+   "measures": "thickness of lower crest rail member",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right of crest rail"
+  },
+  {
+   "value": "9\"",
+   "measures": "width of back cushion outline between back slats",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, middle, at cushion outline"
+  },
+  {
+   "value": "1\"",
+   "measures": "height of seat rail cap",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, at seat rail"
+  },
+  {
+   "value": "4 5/8\"",
+   "measures": "total height of seat rail",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, at seat rail"
+  },
+  {
+   "value": "3 5/8\"",
+   "measures": "height of seat rail below cap",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, at seat rail"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "width of inner seat rail block",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, seat rail, right"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "width of seat rail notch/block",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, seat rail, right"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "offset at leg face",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, seat rail, right"
+  },
+  {
+   "value": "2\"",
+   "measures": "height of lower rail beneath seat rail",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, below seat rail"
+  },
+  {
+   "value": "14 1/8\"",
+   "measures": "height from floor to underside of lower rail",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right vertical string"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "width of rear leg below seat",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right leg"
+  },
+  {
+   "value": "13/16\"",
+   "measures": "segment of leg width at stretcher joint",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right leg at stretcher"
+  },
+  {
+   "value": "1/8\"",
+   "measures": "offset at stretcher joint",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right leg at stretcher"
+  },
+  {
+   "value": "1 1/2\"",
+   "measures": "height of rear cross stretcher",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right leg"
+  },
+  {
+   "value": "9 1/4\"",
+   "measures": "height from floor to underside of stretcher",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, right leg"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "step of foot moulding profile",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, foot detail 7"
+  },
+  {
+   "value": "1/4\"",
+   "measures": "step of foot moulding profile",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, foot detail 7"
+  },
+  {
+   "value": "1\"",
+   "measures": "height of upper foot cap",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, foot detail 7"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "thickness of foot base plate",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, foot detail 7"
+  },
+  {
+   "value": "2 1/2\"",
+   "measures": "side-to-side width of foot",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, foot"
+  },
+  {
+   "value": "16 3/8\"",
+   "measures": "overall width between outside of feet",
+   "location_on_sheet": "Section 2 (front section, scale 3\"=1'-0\"), centre of sheet, bottom horizontal string"
+  },
+  {
+   "value": "8 1/4\"",
+   "measures": "width of lower back panel between inner stiles",
+   "location_on_sheet": "Elev. of Back (scale 3\"=1'-0\"), upper right"
+  },
+  {
+   "value": "16 3/8\"",
+   "measures": "width of seat frame at rear, outside of posts",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, top"
+  },
+  {
+   "value": "1 3/4\"",
+   "measures": "depth of rear rail/posts",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, left"
+  },
+  {
+   "value": "19 3/4\"",
+   "measures": "overall depth of seat in plan",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, left outer string"
+  },
+  {
+   "value": "18\"",
+   "measures": "depth of seat frame from rear rail to front edge",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, left inner string"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "width of small corner block at front left corner",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, front left corner"
+  },
+  {
+   "value": "[?]\"",
+   "measures": "tiny label on corner block (illegible)",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, front left corner"
+  },
+  {
+   "value": "16 7/8\"",
+   "measures": "overall width of seat at front",
+   "location_on_sheet": "Plan of Seat (scale 3\"=1'-0\"), right of centre, bottom"
+  },
+  {
+   "value": "2\"",
+   "measures": "height of front seat rail (apron)",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, left"
+  },
+  {
+   "value": "16 1/8\"",
+   "measures": "height from floor to top of seat frame",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, left outer string"
+  },
+  {
+   "value": "14 1/8\"",
+   "measures": "height from floor to underside of seat rail",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, left inner string"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "width of left front leg",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, bottom"
+  },
+  {
+   "value": "13 1/8\"",
+   "measures": "clear width between front legs",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, bottom"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "width of right front leg",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, bottom"
+  },
+  {
+   "value": "15 5/8\"",
+   "measures": "overall width across outer faces of front legs",
+   "location_on_sheet": "Elev. of Front (scale 3\"=1'-0\"), lower right of centre, bottom outer string"
+  },
+  {
+   "value": "9\"",
+   "measures": "length of slat/panel member from fifth block to cut line",
+   "location_on_sheet": "Detail Section (full size), upper right, top"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "height of first (largest) member",
+   "location_on_sheet": "Detail Section (full size), upper right, left vertical"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "height of recess between second and third members",
+   "location_on_sheet": "Detail Section (full size), upper right, centre vertical"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "step at top of fourth member",
+   "location_on_sheet": "Detail Section (full size), upper right, vertical at fourth member"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "thickness of panel/slat above",
+   "location_on_sheet": "Detail Section (full size), upper right, right vertical, upper"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "height of block beneath panel",
+   "location_on_sheet": "Detail Section (full size), upper right, right vertical, lower"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "step at bottom of fourth member",
+   "location_on_sheet": "Detail Section (full size), upper right, vertical at fourth member, lower"
+  },
+  {
+   "value": "1 1/4\"",
+   "measures": "width of first member",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "width of second member",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "13/16\"",
+   "measures": "width of gap between second and third members",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "width of third member",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "width of fourth member",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "5/8\"",
+   "measures": "width of fifth member",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "3 1/4\"",
+   "measures": "length of panel portion to cut line",
+   "location_on_sheet": "Detail Section (full size), upper right, bottom horizontal string"
+  },
+  {
+   "value": "2 1/4\"",
+   "measures": "width of left edge block of seat cushion",
+   "location_on_sheet": "Detail of Seat Cush. (scale 3\"=1'-0\"), lower right"
+  },
+  {
+   "value": "2 1/4\"",
+   "measures": "width of right edge block of seat cushion",
+   "location_on_sheet": "Detail of Seat Cush. (scale 3\"=1'-0\"), lower right"
+  },
+  {
+   "value": "3/8\"",
+   "measures": "thickness of stuffing/leather layer",
+   "location_on_sheet": "Detail of Seat Cush. (scale 3\"=1'-0\"), lower right, right side"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "thickness of cushion base frame",
+   "location_on_sheet": "Detail of Seat Cush. (scale 3\"=1'-0\"), lower right, right side"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "thickness of back cushion",
+   "location_on_sheet": "Detail of Back Cush. (scale 3\"=1'-0\"), lower right"
+  },
+  {
+   "value": "1/2\"",
+   "measures": "width of hook top",
+   "location_on_sheet": "Hook Detail (no scale), lower right"
+  },
+  {
+   "value": "1/4\"",
+   "measures": "width of hook lip",
+   "location_on_sheet": "Hook Detail (no scale), lower right"
+  },
+  {
+   "value": "1/4\"",
+   "measures": "height of hook top",
+   "location_on_sheet": "Hook Detail (no scale), lower right"
+  },
+  {
+   "value": "3/4\"",
+   "measures": "height of hook plate",
+   "location_on_sheet": "Hook Detail (no scale), lower right"
+  },
+  {
+   "value": "1/16\" THICK",
+   "measures": "thickness of hook plate",
+   "location_on_sheet": "Hook Detail (no scale), lower right"
+  }
+ ],
+ "legibility": "medium",
+ "notes": "All dimensions are small hand-lettered inch fractions; 1:1 and 3-4x enlarged crops from the master TIFF were needed beyond the 1568 px overview and the 4x3 tiles. Residual uncertainty after enlargement: back-slat length numerator (7/16, possibly 11/16), middle crest-cap member (3/8, possibly 5/8), stretcher height 1 3/8\", seat cushion layers 3/8\" and 3/4\", hook plate 3/4\" (possibly 5/8\"); one tiny label on the corner block in the Plan of Seat is illegible. Sections 7 and 8 (Sections thru Ornamental Details) carry no dimensions."
+}

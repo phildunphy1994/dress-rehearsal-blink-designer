@@ -1,0 +1,96 @@
+{
+ "sheet_id": "hhh.il0039.sheet.00013",
+ "drawing_type": "section",
+ "room_or_space": "Straight back chair (free-standing furniture item drawn in isolation; no room or space shown). Sheet carries two sections, front and back elevations, plan of seat, full-size detail section, full-size sections thru ornamental details, seat and back cushion details and a hook detail.",
+ "overall_dimensions": {
+  "length": "19 5/8\" (overall depth of chair at floor, rear foot to front foot; 19 3/4\" overall depth of seat in plan; 19 1/16\" at seat level)",
+  "width": "16 3/8\" (overall width at crest caps and between outside of feet; seat 16 7/8\" wide at front, 15 5/8\" across front legs)",
+  "ceiling_height": null
+ },
+ "proportions": {
+  "length_to_width_ratio": "approx. 1.2 : 1 (19 5/8\" depth to 16 3/8\" width)",
+  "notable_proportion": "Overall height 50 3/4\" is roughly 3.1 times the seat-frame height of 16 1/8\" and roughly 3.1 times the 16 3/8\" width, giving a tall, narrow back; the back posts rise about 34 5/8\" above the seat frame. Seat plan is slightly trapezoidal (16 3/8\" at rear, 16 7/8\" at front, 18\" deep inside the rear rail). Back slat panel 23 7/16\" long between crest and seat rail with a 9\" wide cushion between 13 7/8\" post spacing."
+ },
+ "layout": {
+  "organisation": "Eleven drawings of one chair: Section 1 (side) at left and Section 2 (front) at centre, both at 3\"=1'-0\"; Elev. of Back, Plan of Seat and Elev. of Front stacked right of centre; full-size Detail Section and Sections thru Ornamental Details (7, 8) at upper right; Detail of Seat Cush., Detail of Back Cush. and Hook Detail at lower right with a note on joinery; drawing title centred below, title block along the bottom.",
+  "axes": "Chair is bilaterally symmetrical about a vertical centre axis in the front section, plan and elevations. In the side section the rear leg/back post stands plumb (line labelled 'THIS LINE PLUMB') while the back slat panel leans slightly rearward from the seat rail to the crest.",
+  "entry_sequence": "Not applicable: a furniture item with no room, door or approach shown.",
+  "circulation": "Not applicable: no room or circulation shown."
+ },
+ "openings": [],
+ "built_in_furniture": [
+  {
+   "item": "Straight back chair (free-standing side chair without arms, not built-in)",
+   "material": "solid wood throughout, shown by grain and end-grain hatching; species and finish not stated",
+   "dimensions": "50 3/4\" high x 16 3/8\" wide x 19 5/8\" deep at floor; seat frame top 16 1/8\" above floor; legs 1 1/4\" square below seat, back posts 2 1/4\" x 1 3/4\" at the top; seat rail 4 5/8\" deep with 2\" lower rail; cross stretchers 5/8\" wide, 1 3/8\" deep",
+   "position": "drawn in isolation; no room shown"
+  },
+  {
+   "item": "Seat cushion (loose, outline only in plan and sections)",
+   "material": "leather cover over 'stuffing' on a wood frame with 2 1/4\" edge blocks",
+   "dimensions": "3/8\" stuffing layer over 3/4\" frame; edge blocks 2 1/4\" wide; sits within the 18\" x 16 3/8\" seat frame",
+   "position": "on seat frame, 'not shown for clarity' in the main views"
+  },
+  {
+   "item": "Back cushion (loose, outline only)",
+   "material": "stuffed pad, cover not named",
+   "dimensions": "1/2\" thick, 9\" wide between the back slats",
+   "position": "hung on the back slat panel by hooks (detail 11)"
+  },
+  {
+   "item": "Cushion hook (detail 11, no scale)",
+   "material": "1/16\" thick plate, screw-fixed; metal not named",
+   "dimensions": "1/2\" x 1/4\" top lip, 1/4\" high, 3/4\" plate",
+   "position": "on inside face of back slat panel, two per side as drawn in Section 2"
+  }
+ ],
+ "materials": [
+  {
+   "material": "wood (grain and end-grain hatching)",
+   "where": "back posts, legs, crest cap, crest rail panel, seat rails, stretchers, back slat panel, feet, cushion frames",
+   "finish": null
+  },
+  {
+   "material": "leather",
+   "where": "seat cushion cover (labelled 'LEATHER COVER')",
+   "finish": null
+  },
+  {
+   "material": "stuffing",
+   "where": "seat and back cushion filling (labelled 'STUFFING')",
+   "finish": null
+  },
+  {
+   "material": "thin plate, 1/16\" thick, screw-fixed",
+   "where": "cushion hook (detail 11)",
+   "finish": null
+  },
+  {
+   "material": "dowels and face-nailed trim",
+   "where": "joinery generally, per note: 'prevalent detail seemed to be dowel construction w/ trim face nailed'",
+   "finish": null
+  }
+ ],
+ "palette": {
+  "dominant": [
+   "black ink line drawing on white sheet; no colour shown"
+  ],
+  "accent": [],
+  "warm_or_cool": "neutral"
+ },
+ "details": [
+  "Built-up crest cap on each back post: 2 1/2\" x 2\" cap of three layers (7/8\", 3/8\", 9/16\") projecting 3/16\" beyond the 2 1/4\" post (detail 8, drawn full size).",
+  "Moulded foot on every leg: stepped profile (5/8\" and 1/4\" steps) with 1\" cap over a 3/8\" base plate, 3\" x 2 1/2\" on plan (detail 7, drawn full size).",
+  "Thin 1/2\" back slat panel between plumb square posts, inclined rearward; 1/2\" back cushion hung from small screwed plate hooks (hook detail 11).",
+  "Deep 4 5/8\" seat rail with a 2\" lower rail and 5/8\" cross stretchers 9 1/4\" above the floor; square 1 1/4\" legs; loose leather-over-stuffing seat cushion with 2 1/4\" edge blocks.",
+  "Full-size Detail Section shows the layered build-up of the crest rail (members 1 1/4\", 3/8\", 13/16\", 3/8\", 3/4\", 5/8\" wide, 3/4\" and 1 1/4\" high) over a 1/2\" panel; note states joinery details omitted except where determined accurately."
+ ],
+ "what_is_absent": [
+  "No room, wall, floor or ceiling context: the chair is drawn in isolation.",
+  "No arms: a straight-back side chair only.",
+  "No carving, turning or applied ornament beyond the layered cap and moulded foot.",
+  "No wood species, finish, stain or colour stated.",
+  "No joinery (mortise, tenon or dowel positions) drawn, per the note on the sheet."
+ ],
+ "confidence": "medium"
+}
