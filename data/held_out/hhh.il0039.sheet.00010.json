@@ -1,0 +1,30 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00010",
+  "drawing_type_seen": "environmental",
+  "rules": [
+    {"id": "R01", "verdict": "supported", "what_is_seen": "The plan is one long narrow bar roughly four times longer than it is wide, and the section is wide and low with the ceiling band, dropped soffit, sill line and brick coursing all running as continuous horizontals and no vertical element emphasised."},
+    {"id": "R02", "verdict": "not_assessable", "what_is_seen": "Only the living-room bar is drawn in plan and section; no service wing or second bar appears on this sheet."},
+    {"id": "R03", "verdict": "supported", "what_is_seen": "The plan shows the fireplace recess, flue ducts and the main stair combined in one hatched masonry core at the centre of the long bar with clear passage between the core and both long walls, and the section shows the chimney mass rising at the centre of the room with the hearth opening at its base."},
+    {"id": "R04", "verdict": "supported", "what_is_seen": "Both ends of the plan terminate in a pointed prow bay with angled glazed faces between small hatched corner piers (the terraces beyond are not drawn)."},
+    {"id": "R05", "verdict": "supported", "what_is_seen": "The section shows a very low-pitched roof drawn as a thin slab with a thin fascia cantilevering far beyond both walls, a flat ceiling, and a stepped dropped soffit band with lighting grilles oversailing the window and door heads (hip versus gable is not readable in a cross-section)."},
+    {"id": "R06", "verdict": "not_assessable", "what_is_seen": "The sheet shows a single-room cross-section and a room plan only; no whole-building elevation or upper-storey massing is drawn."},
+    {"id": "R07", "verdict": "supported", "what_is_seen": "In plan the north wall is a row of casements alternating with short hatched piers on a regular module and the south wall a continuous band of glazed leaves between short piers, and in section the window head sits directly under the ceiling band beside a horizontally coursed brick pier with a radiator below the sill."},
+    {"id": "R08", "verdict": "supported", "what_is_seen": "The chimney mass and wall piers in section are rendered with closely spaced horizontal coursing and no vertical joints, while the fireplace lintel, the shelf slab above it, the hearth plinths and the window sill are drawn as plain unhatched slabs."},
+    {"id": "R09", "verdict": "not_assessable", "what_is_seen": "Glazing appears only in section profile and in plan; no light is drawn face-on, so neither a leaded pattern nor plain glazing can be read."},
+    {"id": "R10", "verdict": "not_assessable", "what_is_seen": "No garden or terrace walls, copings, urns or planters are drawn; the plan and section stop at the room walls."},
+    {"id": "R11", "verdict": "supported", "what_is_seen": "The south long wall in plan is a continuous band of glazed door leaves between short hatched piers running past the central core from corner pier to corner pier with sunk radiators (6) inside them, and the section shows this wall as a glazed door (3) with the floor continuing outside it."},
+    {"id": "R12", "verdict": "supported", "what_is_seen": "The main-floor plan shows no entrance door, the room being reached by the stair within the central core, and the only door leaves drawn are the flush glazed leaves of the long-wall band."},
+    {"id": "R13", "verdict": "supported", "what_is_seen": "In section the chimney breast is a tall plain rectangular brick slab with horizontal coursing, a plain wide fireplace opening with no mantel and a plain slot-like opening above it, and in plan the core carries small square flue and duct recesses."},
+    {"id": "R14", "verdict": "supported", "what_is_seen": "The fireplace is a plain brick opening with raised plain hearth plinths at both sides and no mantel, and the ceiling edge, lighting grilles, window head and sill are all built up from stepped rectangular layers with no curved profile."},
+    {"id": "R15", "verdict": "not_assessable", "what_is_seen": "No top-storey window band is drawn on this sheet."}
+  ],
+  "do_not_list": [
+    {"index": 0, "verdict": "supported", "what_is_seen": "No entrance door, steps, porch or canopy is drawn; the plan reaches the main floor by the stair in the central core and no door faces the hearth."},
+    {"index": 1, "verdict": "not_assessable", "what_is_seen": "No whole-building elevation is drawn; the sheet shows only a room section and plan."},
+    {"index": 2, "verdict": "supported", "what_is_seen": "The fireplace in section is a plain brick opening with a plain slab lintel and block plinths and no overmantel, and every profile on the sheet is drawn as plain rectangular layers."},
+    {"index": 3, "verdict": "supported", "what_is_seen": "All brick in the section (chimney mass and wall piers) is rendered with continuous horizontal coursing only."},
+    {"index": 4, "verdict": "supported", "what_is_seen": "The section shows a very low-pitched roof with a deep overhang and a thin fascia (hip versus gable cannot be read in a cross-section)."},
+    {"index": 5, "verdict": "supported", "what_is_seen": "The fireplace sits in the hatched central core on the long axis together with the stair, between the two ends of the bar, and the section shows the chimney mass at the centre of the room with exterior window and door walls on both sides."}
+  ],
+  "notes": "Sheet 10 of 14, Environmental Provisions: a cross-section at 3/8 in. to the foot and a plan at 1/8 in. to the foot of the living-room bar, annotated for sun control, ventilation, heating, lighting and fly-screens. Rules about the service wing, upper-storey massing, terrace walls, top-storey panels and leaded glass have no context on this sheet."
+}
