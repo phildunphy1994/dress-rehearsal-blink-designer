@@ -1,0 +1,30 @@
+{
+  "sheet_id": "hhh.il0039.sheet.00015",
+  "drawing_type_seen": "detail",
+  "rules": [
+    {"id": "R01", "verdict": "not_assessable", "what_is_seen": "The sheet is a furniture-scale reconstruction (isometric, side view and end view) of a dining-table corner post with its lamp and shows no building mass or room, so massing cannot be judged; the post itself is a slender vertical element 54 1/2 in. high on a 6 x 4 in. section."},
+    {"id": "R02", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R03", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R04", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R05", "verdict": "not_assessable", "what_is_seen": "No building roof or room ceiling is drawn; the only roof-like form is the lamp hood over the post, a very low-pitched pyramidal slab with a thin two-line edge that oversails the glazed lamp box on all four sides."},
+    {"id": "R06", "verdict": "not_assessable", "what_is_seen": "Only a single element is drawn; the post, cap, bowl, lamp box and hood are bilaterally symmetrical about the post axis in both side and end views, which the rule allows within one element, but no whole composition is shown."},
+    {"id": "R07", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R08", "verdict": "not_assessable", "what_is_seen": "No brick or masonry is drawn; the only cap shown is the plain stepped metal cap on the wood post."},
+    {"id": "R09", "verdict": "supported", "what_is_seen": "The lamp-box lights are detailed as translucent glass with 3/16 in. lead lines in 3/8 in. metal frames forming a straight-line lattice of 30-degree and 45-degree diagonals converging on a small central square, set between vertical bars with ladder-like stacks of small rectangular lights at each side, the diagonal corner panels being left opaque."},
+    {"id": "R10", "verdict": "not_assessable", "what_is_seen": "No garden or terrace wall or planting is drawn; the square-section post does carry a wide shallow porcelain lighting bowl on a stepped square pedestal under the lamp hood."},
+    {"id": "R11", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R12", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R13", "verdict": "not_assessable", "what_is_seen": null},
+    {"id": "R14", "verdict": "contradicted", "what_is_seen": "The square wood post, its stepped metal cap (a thin wider slab over a thicker block), the square stepped pedestal under the bowl, the two thin collar bands at the foot, the rectangular plinth and the table end (a thin top slab oversailing a 3 in. apron) are all stacked rectangular layers in plain outline with no carving, turning or applied ornament, but between the collar bands and the 8 x 6 in. plinth the post foot spreads in a concave curved flare (noted as base mouldings like the existing table legs), so one moulding does have a curved profile."},
+    {"id": "R15", "verdict": "not_assessable", "what_is_seen": "No window band is drawn; the lamp box's band of leaded lights is interrupted at the diagonal corners by 2 in. framed panels noted as opaque, drawn plain rather than stippled."}
+  ],
+  "do_not_list": [
+    {"index": 0, "verdict": "not_assessable", "what_is_seen": null},
+    {"index": 1, "verdict": "not_assessable", "what_is_seen": "No building elevation is drawn; the single element shown (post, cap, bowl, lamp box, hood) is symmetrical about its own axis in the side and end views, which the entry permits within one element."},
+    {"index": 2, "verdict": "supported", "what_is_seen": "The post, metal cap, collar bands, plinth, iron lamp frames and table end are drawn in plain outline with no carving, turning, applied ornament or mantel; the only decoration is the straight-line lead pattern integral to the lamp glass, and the base is a plain flared moulding on a square-plan post."},
+    {"index": 3, "verdict": "not_assessable", "what_is_seen": null},
+    {"index": 4, "verdict": "not_assessable", "what_is_seen": "No building roof is drawn; the lamp hood is a very low-pitched pyramidal slab, not gabled or steep."},
+    {"index": 5, "verdict": "not_assessable", "what_is_seen": null}
+  ],
+  "notes": "Sheet is a 1972 photogrammetric reconstruction (from original photographs, stated correct to within 1/8 in.) of the dining-room table corner post and table ends at 3 in. = 1 ft: a square wood post 54 1/2 in. high with a stepped metal cap, 1/8 x 3/4 in. iron verticals carrying a porcelain lighting bowl and a leaded-glass lamp box under a low pyramidal hood, the table top and apron housed into the post, and a note that 6 3/4 in. was cut from each end of a table originally 96 in. long. All building-scale and room-plan rules are not assessable. Furniture-scale echoes of building rules (hipped overhanging lamp hood, framed opaque panels interrupting the glazed band, bowl on a square pier, plain cap on the post) are recorded in what_is_seen but not counted as support because the rules' stated contexts (roofs, ceilings, window bands, garden walls) are absent. The R14 contradiction is partial: the stacked-rectangular-layer principle and the no-carving/no-turning clause are followed throughout; only the 'no moulding has a curved profile' clause fails, at the concave flared foot of the post."
+}
