@@ -1,0 +1,22 @@
+{
+ "built_at": "2026-11-04T18:42:11+00:00",
+ "seed": 20261106,
+ "style_line": "A body of work whose signature moves are: A continuous ribbon of tall narrow casements between narrow brick piers set directly under a deeply cantilevered, very low-pitched hipped roof with a thin fascia, running the full length of the main storey (00005, 00006, 00019, 00020, 00021); A long thin living-dining bar with a central brick chimney-and-stair core on its long axis, the rooms flowing past the core on both sides, a continuous glazed-door wall onto a full-length balcony, and pointed glazed prow bays at both ends (00003, 00017, 00005); Brick drawn as horizontal courses only, every wall top, sill, pier and chimney capped by a plain light band, with low stepped garden walls carrying planter urns on piers extending the base outward (00005, 00006, 00019, 00020, 00021).",
+ "briefs": {
+  "test_a": {
+   "coin": 0.648706,
+   "A": "baseline",
+   "B": "learned"
+  },
+  "test_b": {
+   "coin": 0.088341,
+   "A": "learned",
+   "B": "baseline"
+  },
+  "test_c": {
+   "coin": 0.23508,
+   "A": "learned",
+   "B": "baseline"
+  }
+ }
+}

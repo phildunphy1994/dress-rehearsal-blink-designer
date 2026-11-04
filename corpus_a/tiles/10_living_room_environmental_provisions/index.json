@@ -1,0 +1,131 @@
+{
+ "source": "/home/user/dress-rehearsal-blink-designer/corpus_a/10_living_room_environmental_provisions.tif",
+ "size": [
+  9632,
+  7616
+ ],
+ "cols": 4,
+ "rows": 3,
+ "tiles": [
+  {
+   "file": "r0c0.png",
+   "box_px": [
+    0,
+    0,
+    2600,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r0c1.png",
+   "box_px": [
+    2215,
+    0,
+    5008,
+    2741
+   ],
+   "scale": 0.561
+  },
+  {
+   "file": "r0c2.png",
+   "box_px": [
+    4623,
+    0,
+    7416,
+    2741
+   ],
+   "scale": 0.561
+  },
+  {
+   "file": "r0c3.png",
+   "box_px": [
+    7031,
+    0,
+    9632,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r1c0.png",
+   "box_px": [
+    0,
+    2335,
+    2600,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c1.png",
+   "box_px": [
+    2215,
+    2335,
+    5008,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c2.png",
+   "box_px": [
+    4623,
+    2335,
+    7416,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c3.png",
+   "box_px": [
+    7031,
+    2335,
+    9632,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r2c0.png",
+   "box_px": [
+    0,
+    4874,
+    2600,
+    7616
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r2c1.png",
+   "box_px": [
+    2215,
+    4874,
+    5008,
+    7616
+   ],
+   "scale": 0.561
+  },
+  {
+   "file": "r2c2.png",
+   "box_px": [
+    4623,
+    4874,
+    7416,
+    7616
+   ],
+   "scale": 0.561
+  },
+  {
+   "file": "r2c3.png",
+   "box_px": [
+    7031,
+    4874,
+    9632,
+    7616
+   ],
+   "scale": 0.572
+  }
+ ]
+}

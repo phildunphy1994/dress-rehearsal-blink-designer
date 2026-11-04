@@ -1,0 +1,7 @@
+brief,arm,status,major_decisions,major_citing_rule,share_major_cited,rule_citations,citations_to_real_rules,share_citations_real,spec_md,conflicts
+test_a,baseline,valid,6,0,0.0,0,0,,True,0
+test_a,learned,valid,17,17,1.0,91,91,1.0,True,3
+test_b,baseline,valid,6,0,0.0,0,0,,True,0
+test_b,learned,valid,14,14,1.0,65,65,1.0,True,4
+test_c,baseline,valid,6,0,0.0,0,0,,True,1
+test_c,learned,valid,15,15,1.0,116,116,1.0,True,4

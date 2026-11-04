@@ -1,0 +1,131 @@
+{
+ "source": "/home/user/dress-rehearsal-blink-designer/corpus_a/15_corner_post_and_ends_of_dining_room_table.tif",
+ "size": [
+  9676,
+  7616
+ ],
+ "cols": 4,
+ "rows": 3,
+ "tiles": [
+  {
+   "file": "r0c0.png",
+   "box_px": [
+    0,
+    0,
+    2612,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r0c1.png",
+   "box_px": [
+    2225,
+    0,
+    5031,
+    2741
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r0c2.png",
+   "box_px": [
+    4644,
+    0,
+    7450,
+    2741
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r0c3.png",
+   "box_px": [
+    7063,
+    0,
+    9676,
+    2741
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r1c0.png",
+   "box_px": [
+    0,
+    2335,
+    2612,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c1.png",
+   "box_px": [
+    2225,
+    2335,
+    5031,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c2.png",
+   "box_px": [
+    4644,
+    2335,
+    7450,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r1c3.png",
+   "box_px": [
+    7063,
+    2335,
+    9676,
+    5280
+   ],
+   "scale": 0.532
+  },
+  {
+   "file": "r2c0.png",
+   "box_px": [
+    0,
+    4874,
+    2612,
+    7616
+   ],
+   "scale": 0.572
+  },
+  {
+   "file": "r2c1.png",
+   "box_px": [
+    2225,
+    4874,
+    5031,
+    7616
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r2c2.png",
+   "box_px": [
+    4644,
+    4874,
+    7450,
+    7616
+   ],
+   "scale": 0.559
+  },
+  {
+   "file": "r2c3.png",
+   "box_px": [
+    7063,
+    4874,
+    9676,
+    7616
+   ],
+   "scale": 0.572
+  }
+ ]
+}

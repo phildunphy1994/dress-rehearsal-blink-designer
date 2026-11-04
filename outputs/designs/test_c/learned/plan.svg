@@ -1,0 +1,142 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='1282' viewBox='0 0 1100 1282' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<defs><pattern id='hatch' width='8' height='8' patternUnits='userSpaceOnUse' patternTransform='rotate(45)'><line x1='0' y1='0' x2='0' y2='8' stroke='#777' stroke-width='1'/></pattern><marker id='arrow' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0,0 L6,3 L0,6 z' fill='#1f5fbf'/></marker></defs>
+<path fill-rule='evenodd' fill='#555' d='M160.0,160.00000000000003 h780.0 v509.99999999999994 h-780.0 z M190.0,190.0 h720.0 v450.0 h-720.0 z'/>
+<polygon points='190.0,640.0 565.0,640.0 565.0,190.0 190.0,190.0' fill='#f3f6fb' stroke='#8aa' stroke-dasharray='6 4'/><text x='377.5' y='411.0' fill='#577' font-size='11' text-anchor='middle' font-style='italic'>zone: living</text>
+<polygon points='565.0,640.0 910.0,640.0 910.0,190.0 565.0,190.0' fill='#f3f6fb' stroke='#8aa' stroke-dasharray='6 4'/><text x='737.5' y='411.0' fill='#577' font-size='11' text-anchor='middle' font-style='italic'>zone: dining</text>
+<polygon points='190.0,605.0 910.0,605.0 910.0,190.0 400.0,190.0 400.0,310.0 190.0,310.0' fill='none' stroke='#b58' stroke-dasharray='2 4' stroke-width='1.5'/><text x='500.0' y='396.3333333333333' fill='#b58' font-size='11' text-anchor='middle'>ceiling 2.40 m — main flat ceiling</text>
+<polygon points='190.0,310.0 400.0,310.0 400.0,190.0 190.0,190.0' fill='none' stroke='#b58' stroke-dasharray='2 4' stroke-width='1.5'/><text x='295.0' y='278.0' fill='#b58' font-size='11' text-anchor='middle'>ceiling 2.10 m — entry gallery soffit</text>
+<polygon points='190.0,640.0 910.0,640.0 910.0,605.0 190.0,605.0' fill='none' stroke='#b58' stroke-dasharray='2 4' stroke-width='1.5'/><text x='550.0' y='650.5' fill='#b58' font-size='11' text-anchor='middle'>ceiling 2.10 m — south eave soffit</text>
+<rect x='205.0' y='160.0' width='90.0' height='30.0' fill='white'/>
+<line x1='205.0' y1='190.0' x2='205.0' y2='280.0' stroke='#c33' stroke-width='3'/>
+<path d='M205.0,280.0 A90.0,90.0 0 0 1 295.0,190.0' fill='none' stroke='#c33' stroke-dasharray='3 3'/>
+<path d='M205.0,280.0 A90.0,90.0 0 0 0 295.0,190.0' fill='none' stroke='#c33' stroke-dasharray='3 3' opacity='0.35'/>
+<text x='250.0' y='154.0' text-anchor='middle' font-size='11' fill='#c33'>D01 · 0.90 m</text>
+<rect x='805.0' y='160.0' width='90.00000000000003' height='30.0' fill='white'/>
+<line x1='895.0000000000001' y1='190.0' x2='895.0000000000001' y2='99.99999999999997' stroke='#c33' stroke-width='3'/>
+<path d='M895.0000000000001,99.99999999999997 A90.0,90.0 0 0 1 805.0,190.0' fill='none' stroke='#c33' stroke-dasharray='3 3'/>
+<path d='M895.0000000000001,99.99999999999997 A90.0,90.0 0 0 0 805.0,190.0' fill='none' stroke='#c33' stroke-dasharray='3 3' opacity='0.35'/>
+<text x='850.0' y='154.0' text-anchor='middle' font-size='11' fill='#c33'>D02 · 0.90 m</text>
+<rect x='733.0000000000001' y='640.0' width='83.99999999999999' height='30.0' fill='white'/>
+<line x1='733.0000000000001' y1='655.0' x2='817.0' y2='655.0' stroke='#1a7' stroke-width='3'/>
+<text x='775.0' y='684.0' text-anchor='middle' font-size='11' fill='#1a7'>S01 · 0.84 m</text>
+<rect x='611.0000000000001' y='640.0' width='83.99999999999999' height='30.0' fill='white'/>
+<line x1='611.0000000000001' y1='655.0' x2='695.0' y2='655.0' stroke='#1a7' stroke-width='3'/>
+<text x='653.0' y='684.0' text-anchor='middle' font-size='11' fill='#1a7'>S02 · 0.84 m</text>
+<rect x='489.0' y='640.0' width='83.99999999999999' height='30.0' fill='white'/>
+<line x1='573.0' y1='640.0' x2='573.0' y2='724.0' stroke='#c33' stroke-width='3'/>
+<path d='M573.0,724.0 A84.0,84.0 0 0 1 489.0,640.0' fill='none' stroke='#c33' stroke-dasharray='3 3'/>
+<path d='M573.0,724.0 A84.0,84.0 0 0 0 489.0,640.0' fill='none' stroke='#c33' stroke-dasharray='3 3' opacity='0.35'/>
+<text x='531.0' y='684.0' text-anchor='middle' font-size='11' fill='#c33'>S03 · 0.84 m</text>
+<rect x='367.00000000000006' y='640.0' width='83.99999999999999' height='30.0' fill='white'/>
+<line x1='367.00000000000006' y1='655.0' x2='451.00000000000006' y2='655.0' stroke='#1a7' stroke-width='3'/>
+<text x='409.0' y='684.0' text-anchor='middle' font-size='11' fill='#1a7'>S04 · 0.84 m</text>
+<rect x='245.00000000000006' y='640.0' width='84.0' height='30.0' fill='white'/>
+<line x1='245.00000000000006' y1='640.0' x2='245.00000000000006' y2='724.0' stroke='#c33' stroke-width='3'/>
+<path d='M245.00000000000006,724.0 A84.0,84.0 0 0 1 329.00000000000006,640.0' fill='none' stroke='#c33' stroke-dasharray='3 3'/>
+<path d='M245.00000000000006,724.0 A84.0,84.0 0 0 0 329.00000000000006,640.0' fill='none' stroke='#c33' stroke-dasharray='3 3' opacity='0.35'/>
+<text x='287.00000000000006' y='684.0' text-anchor='middle' font-size='11' fill='#c33'>S05 · 0.84 m</text>
+<rect x='160.0' y='510.0' width='30.0' height='84.00000000000001' fill='white'/>
+<line x1='175.0' y1='594.0' x2='175.0' y2='510.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(154.0,552.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>W01 · 0.84 m</text>
+<rect x='160.0' y='388.0' width='30.0' height='84.00000000000001' fill='white'/>
+<line x1='175.0' y1='472.0' x2='175.0' y2='388.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(154.0,430.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>W02 · 0.84 m</text>
+<rect x='160.0' y='266.0' width='30.0' height='83.99999999999999' fill='white'/>
+<line x1='175.0' y1='350.0' x2='175.0' y2='266.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(154.0,308.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>W03 · 0.84 m</text>
+<rect x='910.0' y='266.0' width='30.0' height='83.99999999999999' fill='white'/>
+<line x1='925.0' y1='350.0' x2='925.0' y2='266.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(946.0,308.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>E01 · 0.84 m</text>
+<rect x='910.0' y='388.0' width='30.0' height='83.99999999999999' fill='white'/>
+<line x1='925.0' y1='472.0' x2='925.0' y2='388.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(946.0,430.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>E02 · 0.84 m</text>
+<rect x='910.0' y='510.0' width='30.0' height='84.0' fill='white'/>
+<line x1='925.0' y1='594.0' x2='925.0' y2='510.0' stroke='#1a7' stroke-width='3'/>
+<text transform='translate(946.0,552.0) rotate(-90)' text-anchor='middle' font-size='11' fill='#1a7'>E03 · 0.84 m</text>
+<rect x='400.0' y='190.0' width='150.0' height='89.99999999999999' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='400.0' y='190.0' width='150.0' height='89.99999999999999' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='475.0' y='239.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F01</text>
+<rect x='370.0' y='190.0' width='30.000000000000004' height='89.99999999999999' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='370.0' y='190.0' width='30.000000000000004' height='89.99999999999999' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='385.0' y='239.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F02</text>
+<rect x='550.0' y='190.0' width='29.999999999999982' height='89.99999999999999' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='550.0' y='190.0' width='29.999999999999982' height='89.99999999999999' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='565.0' y='239.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F03</text>
+<rect x='295.0' y='190.0' width='75.0' height='60.00000000000001' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='295.0' y='190.0' width='75.0' height='60.00000000000001' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='332.5' y='223.99999999999997' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F04</text>
+<rect x='580.0' y='190.0' width='210.0' height='45.000000000000014' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='580.0' y='190.0' width='210.0' height='45.000000000000014' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='685.0' y='216.49999999999997' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F05</text>
+<rect x='190.0' y='370.0' width='45.0' height='180.00000000000003' fill='url(#hatch)' stroke='#333' stroke-width='1.5'/>
+<rect x='190.0' y='370.0' width='45.0' height='180.00000000000003' fill='white' fill-opacity='0.55' stroke='none'/>
+<text x='212.5' y='464.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F06</text>
+<rect x='580.0' y='420.0' width='260.0' height='100.00000000000003' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='710.0' y='468.0' text-anchor='middle' font-size='10' fill='#222'>F07 Dining table</text><text x='710.0' y='481.0' text-anchor='middle' font-size='9.5' fill='#444'>2.60 × 1.00 m</text>
+<rect x='591.0' y='520.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='612.0' y='549.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F08</text>
+<rect x='656.0' y='520.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='677.0' y='549.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F09</text>
+<rect x='721.0' y='520.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='742.0' y='549.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F10</text>
+<rect x='786.0' y='520.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='807.0' y='549.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F11</text>
+<rect x='591.0' y='370.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='612.0' y='399.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F12</text>
+<rect x='656.0' y='370.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='677.0' y='399.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F13</text>
+<rect x='721.0' y='370.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='742.0' y='399.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F14</text>
+<rect x='786.0' y='370.0' width='41.99999999999999' height='50.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='807.0' y='399.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F15</text>
+<rect x='290.0' y='465.0' width='200.0' height='85.0' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='390.0' y='505.5' text-anchor='middle' font-size='10' fill='#222'>F16 Sofa, three-seat · 3 seats</text><text x='390.0' y='518.5' text-anchor='middle' font-size='9.5' fill='#444'>2.00 × 0.85 m</text>
+<rect x='240.0' y='370.0' width='80.0' height='78.00000000000003' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='280.0' y='413.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#222'>F17</text>
+<rect x='340.0' y='380.0' width='120.00000000000001' height='45.000000000000014' fill='#fff8e6' stroke='#333' stroke-width='1.5'/>
+<text x='400.0' y='400.5' text-anchor='middle' font-size='10' fill='#222'>F18 Low table</text><text x='400.0' y='413.5' text-anchor='middle' font-size='9.5' fill='#444'>1.20 × 0.45 m</text>
+<rect x='250.0' y='370.0' width='280.0' height='195.00000000000003' fill='none' stroke='#999' stroke-width='1.5' stroke-dasharray='4 3'/>
+<text x='253.0' y='380.0' font-size='9' fill='#777'>F19</text>
+<rect x='620.0' y='462.0' width='179.99999999999997' height='15.999999999999993' fill='none' stroke='#999' stroke-width='1.5' stroke-dasharray='4 3'/>
+<text x='623.0' y='472.0' font-size='9' fill='#777'>F20</text>
+<polyline points='190.0,325.0 910.0,325.0' fill='none' stroke='#1f5fbf' stroke-width='2' stroke-dasharray='10 6' marker-end='url(#arrow)'/>
+<text x='916.0' y='319.0' font-size='11' fill='#1f5fbf'>circulation — min clear 0.90 m</text>
+<line x1='190.0' y1='120.00000000000003' x2='910.0' y2='120.00000000000003' stroke='#000'/><line x1='190.0' y1='114.00000000000003' x2='190.0' y2='126.00000000000003' stroke='#000'/><line x1='910.0' y1='114.00000000000003' x2='910.0' y2='126.00000000000003' stroke='#000'/><text x='550.0' y='112.00000000000003' text-anchor='middle' font-size='13' font-weight='bold'>7.20 m</text>
+<line x1='120.0' y1='640.0' x2='120.0' y2='190.0' stroke='#000'/><line x1='114.0' y1='640.0' x2='126.0' y2='640.0' stroke='#000'/><line x1='114.0' y1='190.0' x2='126.0' y2='190.0' stroke='#000'/><text transform='translate(110.0,415.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>4.50 m</text>
+<rect x='10' y='860.0' width='1080.0' height='412' fill='none' stroke='#000'/><text x='20' y='882.0' font-size='15' font-weight='bold'>PLAN — Brick Core and Glazed Band: Dining-Living Room</text><text x='20' y='902.0' font-size='12'>Room 7.20 m × 4.50 m (interior clear) · ceiling 2.40 m · wall thickness 0.30 m</text><text x='20' y='920.0' font-size='12'>Scale: 1 m = 100 px (1:50 when printed at 50 px per 25 mm). Dimensions in metres. Hatched = built-in. Dashed blue = circulation path.</text><line x1='20' y1='945.0' x2='120.0' y2='945.0' stroke='#000' stroke-width='4'/><text x='128.0' y='949.0' font-size='12'>1 m scale bar</text><g transform='translate(1040.0,915.0)'><line x1='0' y1='30' x2='0' y2='-30' stroke='#000' marker-end='url(#arrow)'/><text x='-4' y='-36' font-size='12' font-weight='bold'>N</text></g>
+<text x='20' y='978.0' font-size='11' font-weight='bold'>KEY — openings and furniture (length × depth × height, metres)</text>
+<text x='20.0' y='996.0' font-size='10.5'>D01 0.90 × 2.10 m, swing in — Entry door (door, north wall)</text>
+<text x='20.0' y='1012.0' font-size='10.5'>D02 0.90 × 2.10 m, swing out — Kitchen door (door, north wall)</text>
+<text x='20.0' y='1028.0' font-size='10.5'>S01 0.84 × 2.10 m, sill 0.00 — South band bay 1 (fixed light) (window, south wall)</text>
+<text x='20.0' y='1044.0' font-size='10.5'>S02 0.84 × 2.10 m, sill 0.00 — South band bay 2 (fixed light) (window, south wall)</text>
+<text x='20.0' y='1060.0' font-size='10.5'>S03 0.84 × 2.10 m, swing out — South band bay 3 (terrace leaf) (door, south wall)</text>
+<text x='20.0' y='1076.0' font-size='10.5'>S04 0.84 × 2.10 m, sill 0.00 — South band bay 4 (fixed light) (window, south wall)</text>
+<text x='20.0' y='1092.0' font-size='10.5'>S05 0.84 × 2.10 m, swing out — South band bay 5 (terrace leaf) (door, south wall)</text>
+<text x='20.0' y='1108.0' font-size='10.5'>W01 0.84 × 1.20 m, sill 0.90 — West window group light 1 (window, west wall)</text>
+<text x='20.0' y='1124.0' font-size='10.5'>W02 0.84 × 1.20 m, sill 0.90 — West window group light 2 (window, west wall)</text>
+<text x='20.0' y='1140.0' font-size='10.5'>W03 0.84 × 1.20 m, sill 0.90 — West window group light 3 (window, west wall)</text>
+<text x='20.0' y='1156.0' font-size='10.5'>E01 0.84 × 1.20 m, sill 0.90 — East window group light 1 (window, east wall)</text>
+<text x='20.0' y='1172.0' font-size='10.5'>E02 0.84 × 1.20 m, sill 0.90 — East window group light 2 (window, east wall)</text>
+<text x='20.0' y='1188.0' font-size='10.5'>E03 0.84 × 1.20 m, sill 0.90 — East window group light 3 (window, east wall)</text>
+<text x='20.0' y='1204.0' font-size='10.5'>F01 1.50 × 0.90 × 2.40 m — built-in Chimney breast / hearth core; Tawny clay brick, hori</text>
+<text x='20.0' y='1220.0' font-size='10.5'>F02 0.30 × 0.90 × 0.40 m — built-in Hearth plinth block, west; Cast stone, solid block</text>
+<text x='20.0' y='1236.0' font-size='10.5'>F03 0.30 × 0.90 × 0.40 m — built-in Hearth plinth block, east; Cast stone, solid block</text>
+<text x='20.0' y='1252.0' font-size='10.5'>F04 0.75 × 0.60 × 2.10 m — built-in Coats cupboard; Solid European oak carcass and</text>
+<text x='550.0' y='996.0' font-size='10.5'>F05 2.10 × 0.45 × 0.90 m — built-in Sideboard with cast-stone cap; Solid European oak ca</text>
+<text x='550.0' y='1012.0' font-size='10.5'>F06 0.45 × 1.80 × 0.45 m — built-in Window seat, 2 seats; Cast-stone slab on a brick pli</text>
+<text x='550.0' y='1028.0' font-size='10.5'>F07 2.60 × 1.00 × 0.74 m — Dining table; Solid European oak: oversailin</text>
+<text x='550.0' y='1044.0' font-size='10.5'>F08 0.42 × 0.50 × 1.15 m — Dining chair 1 (south), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1060.0' font-size='10.5'>F09 0.42 × 0.50 × 1.15 m — Dining chair 2 (south), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1076.0' font-size='10.5'>F10 0.42 × 0.50 × 1.15 m — Dining chair 3 (south), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1092.0' font-size='10.5'>F11 0.42 × 0.50 × 1.15 m — Dining chair 4 (south), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1108.0' font-size='10.5'>F12 0.42 × 0.50 × 1.15 m — Dining chair 5 (north), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1124.0' font-size='10.5'>F13 0.42 × 0.50 × 1.15 m — Dining chair 6 (north), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1140.0' font-size='10.5'>F14 0.42 × 0.50 × 1.15 m — Dining chair 7 (north), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1156.0' font-size='10.5'>F15 0.42 × 0.50 × 1.15 m — Dining chair 8 (north), 1 seats; Solid oak, dowel constructio</text>
+<text x='550.0' y='1172.0' font-size='10.5'>F16 2.00 × 0.85 × 0.78 m — Sofa, three-seat, 3 seats; Oak frame with square block fe</text>
+<text x='550.0' y='1188.0' font-size='10.5'>F17 0.80 × 0.78 × 0.75 m — Armchair, 1 seats; Oak frame, square posts; textu</text>
+<text x='550.0' y='1204.0' font-size='10.5'>F18 1.20 × 0.45 × 0.40 m — Low table; Solid oak: oversailing top sla</text>
+<text x='550.0' y='1220.0' font-size='10.5'>F19 2.80 × 1.95 × 0.01 m — Living rug; Wool flatweave</text>
+<text x='550.0' y='1236.0' font-size='10.5'>F20 1.80 × 0.16 × 0.12 m — Linear pendant over dining table; Oak slab housing, patinated</text>
+</svg>

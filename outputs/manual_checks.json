@@ -1,0 +1,21 @@
+{
+ "test_a/learned": {
+  "do_not_list_violations": [],
+  "reviewer": "session orchestrator (Fable 5.1)",
+  "method": "regex scan of spec.json+spec.md for each do-not theme, every hit read in context",
+  "notes": "All hits are compliance statements: flush leaf with no architrave (do-not 0); asymmetric corner piers (1); 'no mantel', plain brick slab (2); 'no vertical joints drawn' (3); flat ceiling (4); hearth on the north wall treated as the internal service wall with passage along its front (5)."
+ },
+ "test_b/learned": {
+  "do_not_list_violations": [],
+  "reviewer": "session orchestrator (Fable 5.1)",
+  "method": "regex scan of spec.json+spec.md for each do-not theme, every hit read in context",
+  "notes": "No hearth in this brief. Flush door with concealed frame (0); south wall deliberately not bilaterally symmetrical (1); no applied ornament, no curved mouldings (2); 'flush-struck vertical joints' so only the coursing reads (3)."
+ },
+ "test_c/learned": {
+  "do_not_list_violations": [],
+  "reviewer": "session orchestrator (Fable 5.1)",
+  "method": "regex scan of spec.json+spec.md for each do-not theme, every hit read in context",
+  "notes": "Flush doors, no architraves (0); window groups on different centrelines, fireplace face symmetrical only about its own centre (1); 'no mantel', plain cast stone with no mouldings (2); flush-tooled vertical joints (3); flat ceiling, no vault (4); hearth core on the internal north wall at the zone junction, not an exterior wall (5)."
+ },
+ "note": "Baseline designs are not subject to the do-not list (PRD \u00a75.4 check 7 applies it to the learned arm only)."
+}

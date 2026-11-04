@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='740' viewBox='0 0 900 740' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='290.0' y='140.0' width='420.0' height='240.0' fill='#fbfaf7' stroke='#000' stroke-width='2'/>
+<line x1='270.0' y1='380.0' x2='730.0' y2='380.0' stroke='#000' stroke-width='3'/>
+<text x='736.0' y='384.0' font-size='12'>FFL 0.00 m</text>
+<text x='736.0' y='144.0' font-size='12'>ceiling 2.40 m</text>
+<rect x='350.0' y='159.99999999999997' width='300.0' height='130.0' fill='#e8f6f0' fill-opacity='0.6' stroke='#1a7' stroke-width='2'/><text x='500.0' y='155.99999999999997' text-anchor='middle' font-size='11' fill='#1a7'>op_01 · 3.00 × 1.30 m</text>
+<rect x='350.0' y='159.99999999999997' width='300.0' height='130.0' fill='#A9C4D8' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='170.99999999999997' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_06</text>
+<rect x='290.0' y='140.0' width='60.0' height='150.0' fill='#B8925F' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='320.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_02</text>
+<rect x='650.0' y='140.0' width='60.0' height='150.0' fill='#B8925F' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='680.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_09</text>
+<rect x='350.0' y='139.99999999999994' width='300.0' height='20.0' fill='#3F5A4C' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='150.99999999999994' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_07</text>
+<rect x='290.0' y='290.0' width='60.0' height='90.0' fill='#3F5A4C' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='320.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_01</text>
+<rect x='650.0' y='290.0' width='60.0' height='90.0' fill='#3F5A4C' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='680.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_08</text>
+<rect x='350.0' y='290.0' width='300.0' height='16.0' fill='#D8D1C5' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>el_05</text>
+<rect x='350.0' y='310.0' width='300.0' height='12.0' fill='#3F5A4C' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='308.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>el_03</text>
+<rect x='350.0' y='306.0' width='300.0' height='4.0' fill='#B8925F' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='500.0' y='304.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>el_04</text>
+<line x1='290.0' y1='306.0' x2='710.0' y2='306.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='306.0' x2='246.0' y2='306.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='310.0' text-anchor='end' font-size='10' fill='#b58'>Desk worktop 0.74 m</text>
+<line x1='290.0' y1='290.0' x2='710.0' y2='290.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='290.0' x2='246.0' y2='290.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='294.0' text-anchor='end' font-size='10' fill='#b58'>Window sill 0.90 m</text>
+<line x1='290.0' y1='159.99999999999997' x2='710.0' y2='159.99999999999997' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='159.99999999999997' x2='246.0' y2='159.99999999999997' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='163.99999999999997' text-anchor='end' font-size='10' fill='#b58'>Window head 2.20 m</text>
+<line x1='290.0' y1='140.0' x2='710.0' y2='140.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='140.0' x2='246.0' y2='140.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='144.0' text-anchor='end' font-size='10' fill='#b58'>Ceiling 2.40 m</text>
+<line x1='170.0' y1='380.0' x2='170.0' y2='140.0' stroke='#000'/><line x1='164.0' y1='380.0' x2='176.0' y2='380.0' stroke='#000'/><line x1='164.0' y1='140.0' x2='176.0' y2='140.0' stroke='#000'/><text transform='translate(160.0,260.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>2.40 m</text>
+<line x1='290.0' y1='416.0' x2='710.0' y2='416.0' stroke='#000'/><line x1='290.0' y1='410.0' x2='290.0' y2='422.0' stroke='#000'/><line x1='710.0' y1='410.0' x2='710.0' y2='422.0' stroke='#000'/><text x='500.0' y='434.0' text-anchor='middle' font-size='13' font-weight='bold'>4.20 m</text>
+<rect x='10' y='539.9999999999999' width='880' height='190' fill='none' stroke='#000'/><text x='20' y='561.9999999999999' font-size='15' font-weight='bold'>ELEVATION — North wall - built-in desk and shelving (principal elevation) (north wall)</text><text x='20' y='581.9999999999999' font-size='12'>Wall length 4.20 m · ceiling 2.40 m · heights in metres above FFL · materials labelled on the drawing</text><line x1='20' y1='601.9999999999999' x2='120.0' y2='601.9999999999999' stroke='#000' stroke-width='4'/><text x='128.0' y='605.9999999999999' font-size='12'>1 m scale bar · 1 m = 100 px</text>
+<text x='20' y='627.9999999999999' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>
+<text x='20.0' y='645.9999999999999' font-size='10.5'>el_01 0.60 w × 0.90 h, 0.00–0.90 m — Tower W: closed cupboard, one door</text>
+<text x='20.0' y='661.9999999999999' font-size='10.5'>el_02 0.60 w × 1.50 h, 0.90–2.40 m — Tower W: four adjustable open shel</text>
+<text x='20.0' y='677.9999999999999' font-size='10.5'>el_03 3.00 w × 0.12 h, 0.58–0.70 m — Drawer band, three drawers, push-t</text>
+<text x='20.0' y='693.9999999999999' font-size='10.5'>el_04 3.00 w × 0.04 h, 0.70–0.74 m — Worktop, top at 0.74 m; Solid oak,</text>
+<text x='20.0' y='709.9999999999999' font-size='10.5'>el_05 3.00 w × 0.16 h, 0.74–0.90 m — Pinboard between worktop and sill;</text>
+<text x='450.0' y='645.9999999999999' font-size='10.5'>el_06 3.00 w × 1.30 h, 0.90–2.20 m — Window band, sill 0.90 m, head 2.2</text>
+<text x='450.0' y='661.9999999999999' font-size='10.5'>el_07 3.00 w × 0.20 h, 2.20–2.40 m — Pelmet housing roller blind and li</text>
+<text x='450.0' y='677.9999999999999' font-size='10.5'>el_08 0.60 w × 0.90 h, 0.00–0.90 m — Tower E: closed cupboard, one door</text>
+<text x='450.0' y='693.9999999999999' font-size='10.5'>el_09 0.60 w × 1.50 h, 0.90–2.40 m — Tower E: four adjustable open shel</text>
+<text x='450.0' y='709.9999999999999' font-size='10.5'>op_01 — Window band (window): 3.00 × 1.30 m, sill 0.90</text>
+</svg>
