@@ -9,9 +9,13 @@ Run date: 2026-11-04 (UTC). Executor: Claude Fable 5.1 running in a Claude Code 
 
 ## 1. Verdict
 
-<!-- RESULTS: filled by the final section once the test phase is complete -->
-See §8 (filled at the end of the run). The pre-registered criteria are in PRD §2.4 and the computed numbers in
-`outputs/metrics.md`.
+**PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result).**
+
+- Constraint criterion: **not met** (floor effect — baseline and learned both 0 violations on every test design).
+- Blind criterion: **human result pending**; supplementary Claude judges 9/9 correct at confidence 5.
+- Traceability: **met** (100% of major decisions cite a rule; 100% of citations are real rules).
+- Held-out drawings: 14/15 rules supported by ≥2 unseen drawings; 1 partial contradiction (R14).
+Full numbers: `outputs/metrics.md`; reading: §8.
 
 ## 2. Corpus A — collection and rights
 
@@ -86,13 +90,75 @@ the rule library is untested against a generic control.** `generic_rules_removed
 
 ## 8. Results (test phase)
 
-<!-- RESULTS: filled once outputs/metrics.md exists -->
+### 8.1 Pre-registered criteria (PRD §2.4)
+
+| Criterion | Pass bar | Measured | Result |
+|---|---|---|---|
+| Constraint violations (§5.4, 8 checks per design) | learned ≥ 2 fewer per design than baseline | baseline 0.00, learned 0.00 (every one of the 6 designs: 0) | **not met — floor effect** |
+| Style consistency, blind (§6) | learned picked in ≥ 2 of 3 briefs by human judges | **human judges: not yet recorded** · supplementary Claude judges: 3 of 3 for each of 3 judges | **pending (human)** |
+| Rule traceability | ≥ 80 % of major decisions cite a rule; 100 % of cited rules exist | 46/46 major decisions = 100%; 272/272 citations real = 100% | **met** |
+| Reproducibility | fresh executor can re-run from PRD + repo | scripts, prompts, splits, seeds, versions and logs all in the repo (README) | **met** |
+
+**Verdict: PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result).** Under the pre-registered rules this cannot become a full PASS even with a perfect human
+result, because the constraint criterion is unreachable when the baseline already scores 0: the metric did not
+discriminate, which is itself a finding (see 8.5). If the human blind test passes, the result is a **partial pass**
+(blind criterion met, constraint criterion not met); if it fails, the result is a **fail** under §2.4.
+
+### 8.2 Constraint violations (test briefs)
+
+All six test designs pass all eight checks. `outputs/violations.csv` holds the 48 rows. Check-7 do-not-list review of
+the learned arm is recorded in `outputs/manual_checks.json` (no violations; every hit is a compliance statement).
+
+### 8.3 Blind test
+
+Pack: `outputs/blind/judge_pack.md` (brief text + stripped plan, elevation and palette PNGs per set; no specs).
+A/B key (`outputs/blind/KEY.json`, seed 20261106, recorded coin per brief): test_a → A baseline / B learned;
+test_b → A learned / B baseline; test_c → A learned / B baseline.
+
+*Human judges (primary):* not yet run. Procedure for before Friday: two people, at least one who has not seen the
+rule library or any spec, each spend ~15 minutes on `outputs/blind/judge_pack.md` and record one row per pair in
+`outputs/blind_test_scores.csv` (`judge_type = human`; leave `correct` empty, it is computed from the key; map the
+reason to a rule id or `null` after scoring), then run `python3 scripts/07_report.py`. The first score stands (§6.5).
+
+*Supplementary Claude judges (cannot substitute for or overturn the human result):* three fresh, isolated Fable
+agents that saw only the judge pack. Each identified the rule-following set in 3/3 pairs at confidence 5
+(confidence-weighted score 1.00); 9/9 reasons name a real library rule (R03 hearth core, R07
+casement ribbon between piers, R08 horizontal brick coursing with light cap bands). Rows in `outputs/blind_test_scores.csv`.
+
+### 8.4 Held-out drawing check (PRD §6.4)
+
+Seven test-set drawings (opened for the first time after v2 was frozen and all six test designs existed), one fresh
+agent per sheet, each rule marked supported / contradicted / not assessable from that sheet alone
+(`data/held_out/*.json`, summary `outputs/held_out_check.json`):
+
+- 93% of rules (14/15) are supported by at least one held-out drawing, and the same 14 by at least two.
+- Contradicted: 7% (1/15): R14 (stacked rectangular layers, no curved profile) is supported by three
+  held-out sheets but partially contradicted by sheet 15, where the dining-table post foot flares in a concave curve.
+- Not assessable anywhere: R15 (framed infill panels, a "sometimes" rule); no held-out sheet shows a top-storey band.
+- Rules supported per sheet: sheet 4: 8, sheet 9: 1, sheet 10: 10, sheet 14: 1, sheet 15: 1, sheet 18: 8, sheet 23: 11 (the detail sheets 9, 14, 15 can each assess only one rule).
+- Do-not list: every entry is supported by 2–4 held-out sheets and contradicted by none.
+
+### 8.5 Reading the result
+
+1. **The rules change what the model designs, and judges can see it.** The learned designs are recognisably built
+   from the library (brick hearth mass on an internal wall, casement ribbons between piers on a module, light cap
+   bands on every masonry edge, stacked-slab joinery, flush entry into a compressed vestibule) while the baselines
+   are competent contemporary rooms; three independent Claude judges separated them 9/9 at full confidence. This is
+   the supplementary evidence; the human blind test is the primary one and is still owed.
+2. **The constraint metric cannot discriminate on these briefs.** A frontier model given a precise, checkable brief
+   satisfies every §5.4 check without any rules, in both arms, on all five briefs it was given (2 iteration + 3
+   test). "Fewer violations" is the wrong lever for measuring taste; the metric still earns its place as a buildability
+   gate. A future version should pre-register a style-specific checklist (derived from the do-not list) alongside it.
+3. **The rulebook generalises within the corpus.** 14/15 rules are visible in drawings the extraction never saw;
+   the one partial contradiction (a curved post foot) is exactly the kind of exception a designer would annotate.
+4. **No control corpus.** Because Corpus B was gated, nothing here shows that the rules are specific to this
+   architect rather than to good practice of the period; the contrast pass remains to be done.
 
 ## 9. Leakage, assumptions and deviations
 
 - Leakage: none. Test sheets were first opened at the held-out check, after v2 was frozen and all six test designs
   were generated (`scripts/08_held_out_check.py` enforces this order).
-- Assumptions (PRD §11): (1) split as above; (2) Corpus B skipped; (3) judges — see §8; (4) SVG path: Python
+- Assumptions (PRD §11): (1) split as above; (2) Corpus B skipped; (3) judges — no human judge was available during the run; the pack is ready and the procedure is in §8.3; (4) SVG path: Python
   standard library renderer `scripts/05_svg.py`, rasterised for judges with the pre-installed Chromium via
   Playwright (`scripts/svg2png.js`); (5) v2 is the evaluated library.
 - Deviations: model tiers and temperatures (§5); Batch API and prompt caching not applicable in-session; images

@@ -26,6 +26,36 @@ Mean baseline: 0.00 · mean learned: 0.00 · learned − baseline: +0.00 · pass
 - Judges: CJ1, CJ2, CJ3
 - Accuracy per judge: {'CJ1': 1.0, 'CJ2': 1.0, 'CJ3': 1.0}
 - Mean correct picks of 3: 3.0 (pass ≥ 2)
-- Learned picked, share per brief: {'test_c': 1, 'test_b': 1, 'test_a': 1}
+- Learned picked, share per brief: {'test_c': 1, 'test_a': 1, 'test_b': 1}
 - Confidence-weighted score: 1.0 (pass ≥ 0.60)
 - Reasons mapping to a real rule: 9/9 (pass ≥ 2 of 3)
+
+## Held-out drawing check (PRD §6.4)
+
+```json
+{
+ "share_rules_supported_by_ge1_held_out_drawing": 0.933,
+ "share_rules_supported_by_ge2": 0.933,
+ "share_rules_contradicted_by_ge1": 0.067,
+ "share_rules_net_supported": 0.933,
+ "supported_ge1": [
+  "R01",
+  "R02",
+  "R03",
+  "R04",
+  "R05",
+  "R06",
+  "R07",
+  "R08",
+  "R09",
+  "R10",
+  "R11",
+  "R12",
+  "R13",
+  "R14"
+ ],
+ "contradicted": [
+  "R14"
+ ]
+}
+```

@@ -1,0 +1,238 @@
+{
+ "sheets_checked": 7,
+ "rules": 15,
+ "summary": {
+  "share_rules_supported_by_ge1_held_out_drawing": 0.933,
+  "share_rules_supported_by_ge2": 0.933,
+  "share_rules_contradicted_by_ge1": 0.067,
+  "share_rules_net_supported": 0.933,
+  "supported_ge1": [
+   "R01",
+   "R02",
+   "R03",
+   "R04",
+   "R05",
+   "R06",
+   "R07",
+   "R08",
+   "R09",
+   "R10",
+   "R11",
+   "R12",
+   "R13",
+   "R14"
+  ],
+  "contradicted": [
+   "R14"
+  ]
+ },
+ "per_rule": {
+  "R01": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "R02": {
+   "supported": 3,
+   "not_assessable": 4
+  },
+  "R03": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "R04": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "R05": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "R06": {
+   "supported": 3,
+   "not_assessable": 4
+  },
+  "R07": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "R08": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "R09": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "R10": {
+   "supported": 2,
+   "not_assessable": 5
+  },
+  "R11": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "R12": {
+   "supported": 3,
+   "not_assessable": 4
+  },
+  "R13": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "R14": {
+   "not_assessable": 3,
+   "supported": 3,
+   "contradicted": 1
+  },
+  "R15": {
+   "not_assessable": 7
+  }
+ },
+ "do_not_list": {
+  "0": {
+   "supported": 3,
+   "not_assessable": 4
+  },
+  "1": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "2": {
+   "not_assessable": 3,
+   "supported": 4
+  },
+  "3": {
+   "not_assessable": 5,
+   "supported": 2
+  },
+  "4": {
+   "supported": 4,
+   "not_assessable": 3
+  },
+  "5": {
+   "not_assessable": 5,
+   "supported": 2
+  }
+ },
+ "per_sheet": {
+  "hhh.il0039.sheet.00004": {
+   "R01": "supported",
+   "R02": "supported",
+   "R03": "supported",
+   "R04": "not_assessable",
+   "R05": "supported",
+   "R06": "supported",
+   "R07": "supported",
+   "R08": "not_assessable",
+   "R09": "not_assessable",
+   "R10": "supported",
+   "R11": "not_assessable",
+   "R12": "supported",
+   "R13": "not_assessable",
+   "R14": "not_assessable",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00009": {
+   "R01": "not_assessable",
+   "R02": "not_assessable",
+   "R03": "not_assessable",
+   "R04": "not_assessable",
+   "R05": "not_assessable",
+   "R06": "not_assessable",
+   "R07": "not_assessable",
+   "R08": "not_assessable",
+   "R09": "supported",
+   "R10": "not_assessable",
+   "R11": "not_assessable",
+   "R12": "not_assessable",
+   "R13": "not_assessable",
+   "R14": "not_assessable",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00010": {
+   "R01": "supported",
+   "R02": "not_assessable",
+   "R03": "supported",
+   "R04": "supported",
+   "R05": "supported",
+   "R06": "not_assessable",
+   "R07": "supported",
+   "R08": "supported",
+   "R09": "not_assessable",
+   "R10": "not_assessable",
+   "R11": "supported",
+   "R12": "supported",
+   "R13": "supported",
+   "R14": "supported",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00014": {
+   "R01": "not_assessable",
+   "R02": "not_assessable",
+   "R03": "not_assessable",
+   "R04": "not_assessable",
+   "R05": "not_assessable",
+   "R06": "not_assessable",
+   "R07": "not_assessable",
+   "R08": "not_assessable",
+   "R09": "not_assessable",
+   "R10": "not_assessable",
+   "R11": "not_assessable",
+   "R12": "not_assessable",
+   "R13": "not_assessable",
+   "R14": "supported",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00015": {
+   "R01": "not_assessable",
+   "R02": "not_assessable",
+   "R03": "not_assessable",
+   "R04": "not_assessable",
+   "R05": "not_assessable",
+   "R06": "not_assessable",
+   "R07": "not_assessable",
+   "R08": "not_assessable",
+   "R09": "supported",
+   "R10": "not_assessable",
+   "R11": "not_assessable",
+   "R12": "not_assessable",
+   "R13": "not_assessable",
+   "R14": "contradicted",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00018": {
+   "R01": "supported",
+   "R02": "supported",
+   "R03": "supported",
+   "R04": "supported",
+   "R05": "supported",
+   "R06": "supported",
+   "R07": "supported",
+   "R08": "not_assessable",
+   "R09": "not_assessable",
+   "R10": "not_assessable",
+   "R11": "supported",
+   "R12": "not_assessable",
+   "R13": "not_assessable",
+   "R14": "not_assessable",
+   "R15": "not_assessable"
+  },
+  "hhh.il0039.sheet.00023": {
+   "R01": "supported",
+   "R02": "supported",
+   "R03": "supported",
+   "R04": "not_assessable",
+   "R05": "supported",
+   "R06": "supported",
+   "R07": "supported",
+   "R08": "supported",
+   "R09": "not_assessable",
+   "R10": "supported",
+   "R11": "not_assessable",
+   "R12": "supported",
+   "R13": "supported",
+   "R14": "supported",
+   "R15": "not_assessable"
+  }
+ }
+}

@@ -18,3 +18,24 @@ timestamp,stage,model,input_tokens,output_tokens,notes
 2026-11-04T17:39:45Z,02_extract,"claude-fable-5-1, session subagent, no API call",n/a (in-session),n/a (in-session),hhh.il0039.sheet.00022: attempts_transcription=1 attempts_extraction=1 images_viewed=16 extra_crops=True flagged=False
 2026-11-04T17:38:15Z,02_extract,"claude-fable-5-1, session subagent, no API call",n/a (in-session),n/a (in-session),hhh.il0039.sheet.00024: attempts_transcription=1 attempts_extraction=1 images_viewed=13 extra_crops=False flagged=False
 2026-11-04T17:37:41Z,02_extract,"claude-fable-5-1, session subagent, no API call",n/a (in-session),n/a (in-session),hhh.il0039.sheet.00025: attempts_transcription=1 attempts_extraction=1 images_viewed=13 extra_crops=False flagged=False
+2026-11-04T18:51:44+00:00,03_aggregate,claude-fable-5-1 (session subagent),n/a,n/a,"rule_library_v1: 15 rules, attempts=1; v2 derived by orchestrator (statement clauses only)"
+2026-11-04T18:11:57Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,iteration_i1/baseline: attempts=1; prompt v1
+2026-11-04T18:14:05Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,iteration_i1/learned: attempts=1; prompt v1
+2026-11-04T18:08:48Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,iteration_i2/baseline: attempts=1; prompt v1
+2026-11-04T18:14:32Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,iteration_i2/learned: attempts=1; prompt v1
+2026-11-04T18:30:24Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_a/baseline: attempts=1; prompt v2
+2026-11-04T18:40:02Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_a/learned: attempts=1; prompt v2
+2026-11-04T18:28:59Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_b/baseline: attempts=1; prompt v2
+2026-11-04T18:34:14Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_b/learned: attempts=1; prompt v2
+2026-11-04T18:34:09Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_c/baseline: attempts=1; prompt v2
+2026-11-04T18:41:07Z,04_generate,claude-fable-5-1 (session subagent),n/a,n/a,test_c/learned: attempts=1; prompt v2
+2026-11-04T18:51:44+00:00,06_blind (supplementary judge),claude-fable-5-1 (session subagent),n/a,n/a,CJ1: 3/3 correct
+2026-11-04T18:51:44+00:00,06_blind (supplementary judge),claude-fable-5-1 (session subagent),n/a,n/a,CJ2: 3/3 correct
+2026-11-04T18:51:44+00:00,06_blind (supplementary judge),claude-fable-5-1 (session subagent),n/a,n/a,CJ3: 3/3 correct
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00004: 8 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00009: 1 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00010: 10 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00014: 1 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00015: 1 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00018: 8 rules supported
+2026-11-04T18:51:44+00:00,08_held_out_check,claude-fable-5-1 (session subagent),n/a,n/a,hhh.il0039.sheet.00023: 11 rules supported

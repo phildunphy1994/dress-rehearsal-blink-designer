@@ -37,8 +37,8 @@
    "mean_correct_of_3": 3.0,
    "learned_picked_share_per_brief": {
     "test_c": 1,
-    "test_b": 1,
-    "test_a": 1
+    "test_a": 1,
+    "test_b": 1
    },
    "confidence_weighted": 1.0,
    "reasons_mapping_to_real_rule": "9/9",
@@ -46,6 +46,31 @@
    "pass_confidence_weighted": true,
    "pass_reason_quality": true
   }
+ },
+ "held_out": {
+  "share_rules_supported_by_ge1_held_out_drawing": 0.933,
+  "share_rules_supported_by_ge2": 0.933,
+  "share_rules_contradicted_by_ge1": 0.067,
+  "share_rules_net_supported": 0.933,
+  "supported_ge1": [
+   "R01",
+   "R02",
+   "R03",
+   "R04",
+   "R05",
+   "R06",
+   "R07",
+   "R08",
+   "R09",
+   "R10",
+   "R11",
+   "R12",
+   "R13",
+   "R14"
+  ],
+  "contradicted": [
+   "R14"
+  ]
  },
  "verdict": "PARTIAL PASS AT BEST \u2014 constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result)"
 }

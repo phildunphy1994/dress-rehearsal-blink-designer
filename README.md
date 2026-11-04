@@ -4,7 +4,9 @@ A pre-registered before/after experiment: extract explicit, example-tied rules f
 drawings (Corpus A: HABS survey of one house by one architect), generate new room designs for frozen briefs **with**
 and **without** those rules, and compare the two arms blind on held-out briefs.
 
-Outcome and verdict: see `outputs/run_report.md` (full record) and `outputs/discussion_pack.md` (Friday pack).
+Outcome and verdict: see `outputs/run_report.md` (full record), `outputs/metrics.md` (computed numbers) and
+`outputs/discussion_pack.md` (Friday pack). **Human blind judging is still owed:** open `outputs/blind/judge_pack.md`,
+add rows to `outputs/blind_test_scores.csv` with `judge_type = human`, then run `python3 scripts/07_report.py`.
 
 > **Limitation stated up front (PRD §0.2, §9.3):** this proves the *learning loop* on archival residential
 > architecture. It does **not** prove that a living designer's hotel interiors can be reproduced. No BLINK data was

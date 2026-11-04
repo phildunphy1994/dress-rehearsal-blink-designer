@@ -6,7 +6,35 @@
 
 ## 1. Before / after summary (one page)
 
-<!-- RESULTS: filled from outputs/metrics.md at the end of the run -->
+**Hypothesis.** Designs generated *with* explicit, example-tied rules extracted from a coherent corpus will, on held-out
+briefs, (a) violate fewer stated constraints and (b) be judged more consistent with the source style than designs
+generated *without* those rules, by the same model on the same briefs.
+
+**Split.** 25 drawings → 12 learn / 6 iterate / 7 test, seeded and frozen before any drawing was opened. 5 briefs frozen
+at the same time (2 practice, 3 test). Test drawings and test briefs were untouched until the final evaluation.
+
+**What was built.** 15 rules + 6 do-nots, each citing 3–8 drawings with a quoted phrase per citation (all 81 quotes
+machine-verified). Six test designs (3 briefs × 2 arms), each a dimensioned plan, principal-wall elevation, palette
+board, furniture schedule and written spec.
+
+| Measure | Baseline (brief only) | Learned (brief + rules) | Bar |
+|---|---|---|---|
+| Constraint violations per design (8-point checklist) | 0.0 | 0.0 | learned ≥ 2 fewer → **not met (floor effect)** |
+| Blind identification, 3 supplementary Claude judges | — | 3/3 per judge, confidence 100% | ≥ 2/3 → met, **supplementary only** |
+| Blind identification, human judges | — | **pending** | ≥ 2/3 → primary criterion |
+| Major decisions citing a rule | — | 46/46 (100%) | ≥ 80 % → **met** |
+| Rules visible in the 7 locked drawings | — | 14/15 (1 partial contradiction) | measurement |
+
+**Side by side (Test brief A, living room 5.5 × 4.2 m, ceiling 2.3 m):**
+
+| Baseline | Learned |
+|---|---|
+| ![baseline plan](blind/test_a/set_A/plan.png) | ![learned plan](blind/test_a/set_B/plan.png) |
+| vestibule behind an oak screen, sofa facing a basalt-and-plaster chimney on the end wall, one 3.75 m ribbon window | brick hearth mass on the internal wall with a raised plinth and plain caps, four 0.90 m casement leaves between brick piers on the long wall plus three on the end wall, built-in window bench, sill planter, perimeter soffit band, flush entry into a vestibule |
+
+**Honest verdict (PRD §2.4): PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result).**
+Learned won on traceability and on the supplementary blind identification; it could not win on constraint violations
+because the baseline already made none. The human blind test decides between *partial pass* and *fail*.
 
 ## 2. The reusable pipeline (one page)
 
@@ -40,7 +68,7 @@ keep everything else. Every model step was run by the session model in isolated 
 
 ## 4. Talk track
 
-- "We tested whether learned rules help. Same briefs, same model, with and without the rules. <!-- RESULTS -->"
+- "We tested whether learned rules help. Same briefs, same model, with and without the rules. Learned won on traceability (every major decision cites an evidenced rule) and on blind identification by three independent model judges (9 of 9); it lost on the constraint count, because the baseline already made zero mistakes — that metric measures buildability, not taste. Human blind scores are the step still owed."
 - "Capture first, train last. Designer data, designer judging, NDA first."
 - "Pilot: one room type, one interview, sample data only, BLINK owns everything."
 - "Proof before scale: blind test — clone vs generic vs past work — before scaling."
