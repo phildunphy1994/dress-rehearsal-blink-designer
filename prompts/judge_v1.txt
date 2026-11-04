@@ -1,0 +1,10 @@
+"You will see 3 pairs of room designs. Each pair was designed for the same brief. One set in each pair was designed following a specific set of design rules extracted from a coherent body of work; the other was designed without those rules, for the same brief. For each pair: (1) pick which set you think follows the rules, (2) rate your confidence 1–5, (3) in one sentence, say what made you pick it. Do not discuss pairs with other judges until all scores are recorded."
+
+Source style, in one line (derived only from the rule library's signature moves; no designer or project names):
+{style_line}
+
+For each pair you will be given: the brief text, Set A (plan, elevation, palette board) and Set B (plan, elevation, palette board).
+
+Record your answer for each pair as one CSV row, exactly:
+brief,picked,confidence,reason
+where picked is A or B, confidence is an integer 1–5, and reason is one sentence in double quotes.

@@ -1,0 +1,22 @@
+You are synthesising a design rule library from per-drawing extractions of ONE designer's rooms. The extractions are JSON objects, one per drawing.
+
+Produce a rule library as JSON with this exact shape:
+
+```json
+{
+  "corpus": "Frank Lloyd Wright — Robie House, HABS ILL,16-CHIG,33-",
+  "drawing_count": 0,
+  "rules": [{"id": "R01", "title": "string", "statement": "One sentence, testable: the designer DOES X in context Y.", "evidence_sheet_ids": ["at least 3"], "frequency": "always|usually|sometimes", "counter_example_sheet_ids": []}],
+  "do_not_list": ["string — things the designer consistently avoids, each with evidence"],
+  "palette_summary": {"dominant": [], "accent": [], "warm_or_cool": ""},
+  "material_summary": ["string"],
+  "proportion_summary": ["string"],
+  "signature_moves": ["string, max 3 — the most distinctive, repeatable moves"],
+  "generic_rules_removed": ["string — rules found equally in the control set, removed here"]
+}
+```
+
+Rules: 10–15 maximum. Every rule needs ≥3 evidence sheets. No rule may rely on a single drawing. No invented detail. If the evidence is mixed, say so in the statement. Write statements that can be argued with — specific, not vague. "Warm minimalism" is not a rule; "Low ceiling over the entry, opening to a higher living space, with a continuous band of art-glass windows at eye level" is.
+
+extractions_json:
+{extractions_json}

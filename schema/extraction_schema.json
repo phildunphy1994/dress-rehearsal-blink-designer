@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Per-drawing extraction (PRD §3.1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sheet_id", "drawing_type", "room_or_space", "overall_dimensions", "proportions", "layout", "openings", "built_in_furniture", "materials", "palette", "details", "what_is_absent", "confidence"],
+  "properties": {
+    "sheet_id": {"type": "string"},
+    "drawing_type": {"enum": ["plan", "section", "elevation", "detail", "environmental", "photograph"]},
+    "room_or_space": {"type": "string"},
+    "overall_dimensions": {"type": "object", "additionalProperties": false, "required": ["length", "width", "ceiling_height"],
+      "properties": {"length": {"type": ["string", "null"]}, "width": {"type": ["string", "null"]}, "ceiling_height": {"type": ["string", "null"]}}},
+    "proportions": {"type": "object", "additionalProperties": false, "required": ["length_to_width_ratio", "notable_proportion"],
+      "properties": {"length_to_width_ratio": {"type": ["string", "null"]}, "notable_proportion": {"type": ["string", "null"]}}},
+    "layout": {"type": "object", "additionalProperties": false, "required": ["organisation", "axes", "entry_sequence", "circulation"],
+      "properties": {"organisation": {"type": "string"}, "axes": {"type": "string"}, "entry_sequence": {"type": "string"}, "circulation": {"type": "string"}}},
+    "openings": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["type", "position", "dimensions", "pattern"],
+      "properties": {"type": {"enum": ["window", "door", "opening"]}, "position": {"type": "string"}, "dimensions": {"type": ["string", "null"]}, "pattern": {"type": "string"}}}},
+    "built_in_furniture": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["item", "material", "dimensions", "position"],
+      "properties": {"item": {"type": "string"}, "material": {"type": "string"}, "dimensions": {"type": ["string", "null"]}, "position": {"type": "string"}}}},
+    "materials": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["material", "where", "finish"],
+      "properties": {"material": {"type": "string"}, "where": {"type": "string"}, "finish": {"type": ["string", "null"]}}}},
+    "palette": {"type": "object", "additionalProperties": false, "required": ["dominant", "accent", "warm_or_cool"],
+      "properties": {"dominant": {"type": "array", "items": {"type": "string"}}, "accent": {"type": "array", "items": {"type": "string"}}, "warm_or_cool": {"enum": ["warm", "cool", "neutral"]}}},
+    "details": {"type": "array", "maxItems": 5, "items": {"type": "string"}},
+    "what_is_absent": {"type": "array", "maxItems": 5, "items": {"type": "string"}},
+    "confidence": {"enum": ["high", "medium", "low"]}
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "source": "https://www.loc.gov/item/il0039/?fo=json&at=resources (fetched 2026-11-04 via Firecrawl; the session's own network policy denied www.loc.gov and tile.loc.gov)",
+  "item": {
+    "title": "Frederick C. Robie House, 5757 Woodlawn Avenue, Chicago, Cook County, IL",
+    "call_number": "HABS ILL,16-CHIG,33-",
+    "survey": "HABS IL-1005",
+    "id": "http://www.loc.gov/item/il0039/",
+    "medium": ["Photo(s): 9 ", "Measured Drawing(s): 25 ", "Data Page(s): 20 "],
+    "created_published": "Documentation compiled after 1933",
+    "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+    "rights_advisory_verbatim": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+    "rights_statement_verbatim": "The Library of Congress does not own rights to material  in its collections. Therefore, it does not license or charge permission fees  for use of such material and cannot grant or deny permission to publish or  otherwise distribute the material. \nUltimately, it is the researcher's obligation to assess copyright or other use restrictions and  obtain permission from third parties when necessary before publishing or  otherwise distributing materials found in the Library's collections. \nFor information about reproducing,  publishing, and citing material from this collection, as well as access to the  original items, see: Historic American Buildings Survey/Historic American Engineering Record/Historic American Landscape Survey (HABS/HAER/HALS) Collection - Rights and Restrictions Information"
+  },
+  "sheet_resource_base": "https://www.loc.gov/resource/hhh.il0039.sheet/?sp=",
+  "sheet_file_patterns": {
+    "master_tif": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0000/il0039/sheet/{n:05d}a.tif",
+    "jpeg_1024": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0000/il0039/sheet/{n:05d}v.jpg",
+    "jpeg_640": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0000/il0039/sheet/{n:05d}r.jpg",
+    "iiif_info": "https://tile.loc.gov/image-services/iiif/service:pnp:habshaer:il:il0000:il0039:sheet:{n:05d}v/info.json"
+  },
+  "sheets": [
+    {"sp": 1,  "title": "1-1. Title sheet with location plan", "type_from_title": "title/location plan"},
+    {"sp": 2,  "title": "1-2. First (ground) floor plan", "type_from_title": "plan"},
+    {"sp": 3,  "title": "1-3. Second (main) floor plan", "type_from_title": "plan"},
+    {"sp": 4,  "title": "1-4. Third floor plan", "type_from_title": "plan"},
+    {"sp": 5,  "title": "1-5. South elevation and longitudinal section", "type_from_title": "elevation/section"},
+    {"sp": 6,  "title": "1-6. North, west, and east elevations", "type_from_title": "elevation"},
+    {"sp": 7,  "title": "1-7. Fireplace elevations", "type_from_title": "detail"},
+    {"sp": 8,  "title": "1-8. First floor window pattern and second floor window details", "type_from_title": "detail"},
+    {"sp": 9,  "title": "1-9. Second (main) floor windows", "type_from_title": "detail"},
+    {"sp": 10, "title": "1-10. Living room: Environmental provisions", "type_from_title": "environmental"},
+    {"sp": 11, "title": "1-11. Furniture: Dresser, headboard, and footboard", "type_from_title": "furniture detail"},
+    {"sp": 12, "title": "1-12. Furniture: Living room chair, foot stool, dining room chair, and billiard room andirons", "type_from_title": "furniture detail"},
+    {"sp": 13, "title": "1-13. Furniture: Straight back chair", "type_from_title": "furniture detail"},
+    {"sp": 14, "title": "1-14. Furniture: Side chair", "type_from_title": "furniture detail"},
+    {"sp": 15, "title": "2-1. Corner post and ends of dining room table", "type_from_title": "furniture detail"},
+    {"sp": 16, "title": "3-1. First floor plan", "type_from_title": "plan"},
+    {"sp": 17, "title": "3-2. Second floor plan", "type_from_title": "plan"},
+    {"sp": 18, "title": "3-3. Third floor plan", "type_from_title": "plan"},
+    {"sp": 19, "title": "3-4. South elevation", "type_from_title": "elevation"},
+    {"sp": 20, "title": "3-5. North elevation", "type_from_title": "elevation"},
+    {"sp": 21, "title": "3-6. East and west elevations", "type_from_title": "elevation"},
+    {"sp": 22, "title": "3-7. Section", "type_from_title": "section"},
+    {"sp": 23, "title": "3-8. Section", "type_from_title": "section"},
+    {"sp": 24, "title": "3-9. Front detail", "type_from_title": "detail"},
+    {"sp": 25, "title": "3-10. Window detail", "type_from_title": "detail"}
+  ],
+  "photo_resource_base": "https://www.loc.gov/resource/hhh.il0039.photos/?sp=",
+  "photo_file_patterns": {
+    "master_tif": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0000/il0039/photos/{id}u.tif",
+    "jpeg_1024": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0000/il0039/photos/{id}v.jpg"
+  },
+  "photos": [
+    {"sp": 1, "id": "061027p", "title": "1.  Historic American Buildings Survey Photocopy of Plate #12 Frank Lloyd Wright, Ausgefuherte Baute, Berlin: Ernst Wasmuth A-G, 1911.", "origin": "photocopy of a 1911 published plate (not a U.S. Government image)"},
+    {"sp": 2, "id": "061028p", "title": "2.  Historic American Buildings Survey Ph: Cervin Robinson August 18, 1963 SOUTH FACADE FROM SOUTHWEST", "origin": "HABS photograph, Cervin Robinson, 1963"},
+    {"sp": 3, "id": "061029p", "title": "3.  Historic American Buildings Survey Cervin Robinson, Photographer, 18 August 1963 EXTERIOR FROM SOUTHWEST", "origin": "HABS photograph, Cervin Robinson, 1963"},
+    {"sp": 4, "id": "061030p", "title": "4.  Historic American Buildings Survey Cervin Robinson, Photographer, 18 August 1963 EXTERIOR FROM SOUTH", "origin": "HABS photograph, Cervin Robinson, 1963"},
+    {"sp": 5, "id": "061031p", "title": "5.  Historic American Buildings Survey Cervin Robinson, Photographer, 20 August 1963 EXTERIOR FROM WEST", "origin": "HABS photograph, Cervin Robinson, 1963"},
+    {"sp": 6, "id": "061032p", "title": "6.  Historic American Buildings Survey Photocopy of Plate #114, Frank Lloyd Wright, Ausgefuhrte Baute, Berlin: Ernst Wasmuth A.-G., 1911.", "origin": "photocopy of a 1911 published plate (not a U.S. Government image)"},
+    {"sp": 7, "id": "061033p", "title": "7.  Historic American Buildings Survey Photocopy of Plate #115, Frank Lloyd Wright, Ausgefuherte Baute, Berlin: Ernst Wasmuth A-G, 1911", "origin": "photocopy of a 1911 published plate (not a U.S. Government image)"},
+    {"sp": 8, "id": "061034p", "title": "8.  Historic American Buildings Survey Cervin Robinson, Photographer, 20 August 1963 INTERIOR WINDOW DETAIL", "origin": "HABS photograph, Cervin Robinson, 1963"},
+    {"sp": 9, "id": "061035p", "title": "9.  Historic American Buildings Survey Cervin Robinson, Photographer, 20 August 1963 INTERIOR DETAIL, LIGHT FIXTURE", "origin": "HABS photograph, Cervin Robinson, 1963"}
+  ],
+  "data_pages_pdf": "https://tile.loc.gov/storage-services/master/pnp/habshaer/il/il0000/il0039/data/il0039data.pdf"
+}

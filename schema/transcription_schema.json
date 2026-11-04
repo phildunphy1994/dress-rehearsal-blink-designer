@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Per-sheet dimension transcription (pre-step to PRD §3.1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sheet_id", "sheet_title_as_drawn", "scale_as_drawn", "dimensions", "legibility", "notes"],
+  "properties": {
+    "sheet_id": {"type": "string"},
+    "sheet_title_as_drawn": {"type": ["string", "null"]},
+    "scale_as_drawn": {"type": ["string", "null"]},
+    "dimensions": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["value", "measures", "location_on_sheet"],
+      "properties": {"value": {"type": "string"}, "measures": {"type": "string"}, "location_on_sheet": {"type": "string"}}}},
+    "legibility": {"enum": ["high", "medium", "low"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}

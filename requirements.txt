@@ -1,0 +1,5 @@
+anthropic==0.69.0
+pillow==12.3.0
+python-dotenv==1.1.1
+jsonschema==4.25.1
+playwright==1.55.0

@@ -1,0 +1,79 @@
+{
+  "frozen_at": "2026-11-04T17:20:00Z",
+  "frozen_before_any_drawing_was_opened": true,
+  "note": "Room text copied from PRD §4.2–4.3. Materials clause (identical for all briefs) added by the executor at T0 to satisfy PRD §4.1. Checkable thresholds operationalise the PRD wording; see briefs/README.md.",
+  "geometry_convention": "Rectangle length_m (x, east) × width_m (y, north); origin at interior SW corner; south wall y=0, north wall y=width, west wall x=0, east wall x=length; long walls = north/south, short walls = west/east; metres, 2 dp; heights from FFL.",
+  "window_band_rule": "A required window band on a wall is satisfied when the summed width of window openings on that wall is at least min_fraction_of_wall × that wall's length.",
+  "briefs": {
+    "iteration_i1": {
+      "phase": "iteration",
+      "title": "Living room",
+      "room_type": "living room",
+      "length_m": 6.0, "width_m": 4.5, "ceiling_height_m": 2.4,
+      "required_openings": [
+        {"id": "window_band", "type": "window", "wall_class": "long", "min_fraction_of_wall": 0.6, "label": "continuous window band on one long wall"},
+        {"id": "entry", "type": "door", "role": "entry", "min_width_m": 0.8, "max_width_m": 1.0, "label": "entry door"}
+      ],
+      "functions": {"seats_min": 6, "fireplace": true, "entry_element_required": true, "entry_to_seating_min_m": 1.5},
+      "circulation": {"min_clear_width_m": 0.9, "targets": ["entry", "seating", "fireplace"]},
+      "materials": {"must_floor_finish": true, "must_not_terms": ["mirror", "high-gloss", "high gloss", "gloss lacquer", "glossy lacquer"]},
+      "elevation_wall_role": "fireplace"
+    },
+    "iteration_i2": {
+      "phase": "iteration",
+      "title": "Dining room",
+      "room_type": "dining room",
+      "length_m": 4.8, "width_m": 3.6, "ceiling_height_m": 2.4,
+      "required_openings": [
+        {"id": "kitchen_door", "type": "door", "role": "kitchen", "wall_class": "short", "min_width_m": 0.8, "max_width_m": 1.0, "label": "kitchen doorway on one short wall"},
+        {"id": "second_opening", "type": "any", "label": "at least one further window or opening"}
+      ],
+      "functions": {"dining_seats_min": 8, "built_in_seating_or_sideboard": true},
+      "circulation": {"min_clear_width_m": 0.9, "targets": ["kitchen", "dining_table", "second_opening"]},
+      "materials": {"must_floor_finish": true, "must_not_terms": ["mirror", "high-gloss", "high gloss", "gloss lacquer", "glossy lacquer"]},
+      "elevation_wall_role": "built_in"
+    },
+    "test_a": {
+      "phase": "test",
+      "title": "Living room, low and long",
+      "room_type": "living room",
+      "length_m": 5.5, "width_m": 4.2, "ceiling_height_m": 2.3,
+      "required_openings": [
+        {"id": "window_band", "type": "window", "wall_class": "long", "min_fraction_of_wall": 0.6, "label": "ribbon windows on one long wall"},
+        {"id": "entry", "type": "door", "role": "entry", "min_width_m": 0.8, "max_width_m": 1.0, "label": "entry door"}
+      ],
+      "functions": {"seats_min": 5, "fireplace": true, "entry_element_required": true, "entry_to_seating_min_m": 1.5},
+      "circulation": {"min_clear_width_m": 0.9, "targets": ["entry", "seating", "fireplace"]},
+      "materials": {"must_floor_finish": true, "must_not_terms": ["mirror", "high-gloss", "high gloss", "gloss lacquer", "glossy lacquer"]},
+      "elevation_wall_role": "fireplace"
+    },
+    "test_b": {
+      "phase": "test",
+      "title": "Study / bedroom",
+      "room_type": "study / bedroom",
+      "length_m": 4.2, "width_m": 3.6, "ceiling_height_m": 2.4,
+      "required_openings": [
+        {"id": "window_band", "type": "window", "wall_class": "any", "min_fraction_of_wall": 0.5, "label": "window band on one wall"},
+        {"id": "entry", "type": "door", "role": "entry", "min_width_m": 0.8, "max_width_m": 1.0, "label": "entry door"}
+      ],
+      "functions": {"built_in_desk_and_shelving_same_wall": true, "bed": true, "storage_without_freestanding_wardrobe": true},
+      "circulation": {"min_clear_width_m": 0.9, "targets": ["entry", "desk", "bed"]},
+      "materials": {"must_floor_finish": true, "must_not_terms": ["mirror", "high-gloss", "high gloss", "gloss lacquer", "glossy lacquer"]},
+      "elevation_wall_role": "built_in"
+    },
+    "test_c": {
+      "phase": "test",
+      "title": "Dining / living combined",
+      "room_type": "dining / living combined",
+      "length_m": 7.2, "width_m": 4.5, "ceiling_height_m": 2.4,
+      "required_openings": [
+        {"id": "entry", "type": "door", "role": "entry", "min_width_m": 0.8, "max_width_m": 1.0, "label": "entry door"},
+        {"id": "any_window", "type": "window", "wall_class": "any", "min_fraction_of_wall": 0.0, "label": "at least one window"}
+      ],
+      "functions": {"zones_min": 2, "no_full_partition": true, "level_or_ceiling_change": true, "dining_seats_min": 8, "fireplace": true},
+      "circulation": {"min_clear_width_m": 0.9, "targets": ["west_end", "east_end"]},
+      "materials": {"must_floor_finish": true, "must_not_terms": ["mirror", "high-gloss", "high gloss", "gloss lacquer", "glossy lacquer"]},
+      "elevation_wall_role": "fireplace"
+    }
+  }
+}

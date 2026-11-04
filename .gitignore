@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+corpus_a/_tmp/
