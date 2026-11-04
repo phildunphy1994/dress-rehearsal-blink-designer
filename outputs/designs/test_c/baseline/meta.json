@@ -1,0 +1,7 @@
+{
+  "model": "claude-fable-5-1, session subagent, no API call",
+  "attempts": 1,
+  "started_at": "2026-11-04T18:33:50Z",
+  "finished_at": "2026-11-04T18:34:09Z",
+  "notes": "All brief constraints were met on plan; the only point of note is that the dining head chair, when drawn out 0.40 m, narrows the south gallery to 0.91 m, which still clears the 0.90 m minimum."
+}

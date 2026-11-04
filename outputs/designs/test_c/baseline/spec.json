@@ -1,0 +1,685 @@
+{
+  "brief_id": "test_c",
+  "arm": "baseline",
+  "title": "Dining-living room with end-wall hearth and dropped dining canopy",
+  "room": {
+    "type": "Dining / living combined",
+    "length_m": 7.20,
+    "width_m": 4.50,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.25,
+    "floor_finish": "Engineered oak plank, 190 mm boards laid along x, matt hardwax-oil finish"
+  },
+  "zones": [
+    {
+      "name": "Dining",
+      "polygon": [[0.00, 0.00], [3.75, 0.00], [3.75, 4.50], [0.00, 4.50]],
+      "description": "West end, x 0.00-3.75. Table turned across the room (long axis along y) with a built-in banquette on the north wall as the head seat; marked overhead by the dropped canopy at 2.25 m. The south gallery (y 0.00-1.15) runs through it at full height."
+    },
+    {
+      "name": "Living",
+      "polygon": [[3.75, 0.00], [7.20, 0.00], [7.20, 4.50], [3.75, 4.50]],
+      "description": "East end, x 3.75-7.20. Sofa facing the hearth on the east wall; the sofa back at x 3.75 forms the edge of the dining zone. Full 2.40 m ceiling. No partition element of any kind: the zone edge is the sofa back plus the ceiling change."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "Main ceiling",
+      "height_m": 2.40,
+      "polygon": [[0.00, 0.00], [7.20, 0.00], [7.20, 4.50], [0.00, 4.50]],
+      "description": "Structural soffit, skimmed and painted chalk; full height over the living zone, the south gallery and the dining pull-out margins."
+    },
+    {
+      "name": "Dining canopy (dropped)",
+      "height_m": 2.25,
+      "polygon": [[0.60, 1.30], [3.10, 1.30], [3.10, 4.50], [0.60, 4.50]],
+      "description": "Plasterboard bulkhead dropped 0.15 m to 2.25 m over the dining table, 2.50 m (x) by 3.20 m (y), returning to the north wall; soffit and fascia in moss slate; concealed LED cove in the 0.15 m step on the west, south and east edges. Locates the ceiling change on plan; the gallery south of y 1.30 stays at 2.40 m."
+    }
+  ],
+  "level_changes": [],
+  "openings": [
+    {
+      "id": "O1",
+      "type": "door",
+      "wall": "west",
+      "offset_m": 0.20,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "left",
+      "role": "entry",
+      "label": "Entry door",
+      "description": "Single leaf 0.90 x 2.10 m on the west wall at y 0.20-1.10, hinged on the south jamb (left as seen from inside), swinging in; swing quadrant x 0.00-0.90 / y 0.20-1.10 kept clear of furniture. Opens straight onto the south gallery."
+    },
+    {
+      "id": "O2",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 4.45,
+      "width_m": 1.80,
+      "height_m": 1.45,
+      "sill_m": 0.75,
+      "swing": "none",
+      "role": "window_band",
+      "label": "Dining window",
+      "description": "South wall, x 0.95-2.75 (offset 4.45 from the east end), centred on the dining table axis x 1.85; sill 0.75 m, head 2.20 m."
+    },
+    {
+      "id": "O3",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 1.05,
+      "width_m": 1.80,
+      "height_m": 1.45,
+      "sill_m": 0.75,
+      "swing": "none",
+      "role": "window_band",
+      "label": "Living window",
+      "description": "South wall, x 4.35-6.15 (offset 1.05 from the east end), centred on the living zone; sill 0.75 m, head 2.20 m."
+    },
+    {
+      "id": "O4",
+      "type": "window",
+      "wall": "east",
+      "offset_m": 3.30,
+      "width_m": 0.80,
+      "height_m": 1.45,
+      "sill_m": 0.75,
+      "swing": "none",
+      "role": "secondary",
+      "label": "Hearth-wall slot window",
+      "description": "East wall, y 0.40-1.20 (offset 3.30 from the north end), on the south flank of the chimney breast; the gallery ends on this window; sill 0.75 m, head 2.20 m."
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Dining table",
+      "x_m": 1.35,
+      "y_m": 1.83,
+      "length_m": 1.00,
+      "depth_m": 2.20,
+      "height_m": 0.75,
+      "material": "Solid smoked oak top, 40 mm, on blackened steel trestles",
+      "finish": "Matt hardwax oil / waxed steel",
+      "built_in": false,
+      "functions": ["dining_table"],
+      "position_note": "Turned across the room, long axis along y, centred on x 1.85 / y 2.93; three places each long side, one at each end; 0.83 m pull-out to the west wall, 0.88 m to the sofa back."
+    },
+    {
+      "id": "F02",
+      "item": "Built-in banquette (head seat, north wall)",
+      "x_m": 0.85,
+      "y_m": 4.05,
+      "length_m": 2.00,
+      "depth_m": 0.45,
+      "height_m": 0.85,
+      "material": "Oak-veneered carcass with lift-up seat storage; wool felt seat and back cushions",
+      "finish": "Matt oil / olive wool felt",
+      "built_in": true,
+      "functions": ["dining_seating", "storage"],
+      "seats": 1,
+      "position_note": "Against the north wall, spanning the table and both chair rows (x 0.85-2.85); 0.02 m off the table's north end. Only the centre place faces the table head, so one dining seat is counted."
+    },
+    {
+      "id": "F03",
+      "item": "Dining chair W1",
+      "x_m": 0.83,
+      "y_m": 1.95,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "West side of the table, southernmost place; back faces the west wall with 0.83 m pull-out."
+    },
+    {
+      "id": "F04",
+      "item": "Dining chair W2",
+      "x_m": 0.83,
+      "y_m": 2.68,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "West side of the table, middle place."
+    },
+    {
+      "id": "F05",
+      "item": "Dining chair W3",
+      "x_m": 0.83,
+      "y_m": 3.41,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "West side of the table, northernmost place; 0.14 m short of the banquette."
+    },
+    {
+      "id": "F06",
+      "item": "Dining chair E1",
+      "x_m": 2.37,
+      "y_m": 1.95,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "East side of the table, southernmost place; back faces the sofa with 0.88 m pull-out."
+    },
+    {
+      "id": "F07",
+      "item": "Dining chair E2",
+      "x_m": 2.37,
+      "y_m": 2.68,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "East side of the table, middle place."
+    },
+    {
+      "id": "F08",
+      "item": "Dining chair E3",
+      "x_m": 2.37,
+      "y_m": 3.41,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "East side of the table, northernmost place."
+    },
+    {
+      "id": "F09",
+      "item": "Dining chair S (south head seat)",
+      "x_m": 1.60,
+      "y_m": 1.31,
+      "length_m": 0.50,
+      "depth_m": 0.50,
+      "height_m": 0.80,
+      "material": "Solid oak frame, woven paper-cord seat",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["dining_seating"],
+      "seats": 1,
+      "position_note": "South end of the table, backing onto the gallery; 1.31 m clear from the south wall, so a chair drawn out 0.40 m still leaves 0.91 m."
+    },
+    {
+      "id": "F10",
+      "item": "Three-seat sofa",
+      "x_m": 3.75,
+      "y_m": 1.15,
+      "length_m": 0.95,
+      "depth_m": 2.20,
+      "height_m": 0.80,
+      "material": "Beech frame, feather-wrapped foam, wool boucle cover",
+      "finish": "Terracotta wool boucle",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 3,
+      "position_note": "Turned to face east towards the hearth, centred on y 2.25; its back at x 3.75 is the dining/living zone edge; south arm at y 1.15 bounds the gallery."
+    },
+    {
+      "id": "F11",
+      "item": "Coffee table",
+      "x_m": 5.15,
+      "y_m": 1.65,
+      "length_m": 0.60,
+      "depth_m": 1.20,
+      "height_m": 0.40,
+      "material": "Honed limestone top on blackened steel frame",
+      "finish": "Honed stone / waxed steel",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "0.45 m in front of the sofa, 0.58 m short of the hearth slab, centred on y 2.25."
+    },
+    {
+      "id": "F12",
+      "item": "Living rug",
+      "x_m": 4.45,
+      "y_m": 1.15,
+      "length_m": 1.80,
+      "depth_m": 2.20,
+      "height_m": 0.01,
+      "material": "Wool flatweave",
+      "finish": "Olive, undyed binding",
+      "built_in": false,
+      "functions": ["rug"],
+      "allow_overlap": true,
+      "position_note": "Under the sofa front legs and the coffee table; stops 0.08 m short of the hearth slab; aligned with the sofa on y."
+    },
+    {
+      "id": "F13",
+      "item": "Hearth slab",
+      "x_m": 6.33,
+      "y_m": 1.35,
+      "length_m": 0.45,
+      "depth_m": 1.80,
+      "height_m": 0.05,
+      "material": "Honed limestone, 50 mm",
+      "finish": "Honed",
+      "built_in": true,
+      "functions": ["hearth"],
+      "position_note": "Projects 0.45 m in front of the chimney breast, 0.15 m wider than the breast each side, centred on y 2.25; 20 mm movement joint to the breast face."
+    },
+    {
+      "id": "F14",
+      "item": "Chimney breast with closed-combustion fire",
+      "x_m": 6.80,
+      "y_m": 1.50,
+      "length_m": 0.40,
+      "depth_m": 1.50,
+      "height_m": 2.40,
+      "material": "Blockwork breast, lime plaster; honed limestone surround; blackened steel insert and mantel",
+      "finish": "Matt mineral paint / honed stone / waxed steel",
+      "built_in": true,
+      "functions": ["fireplace"],
+      "position_note": "Centred on the east wall at y 2.25, full height; the room's terminal focus on the axis from the entry door; fire opening 0.80 x 0.60 m at 0.30 m AFF."
+    },
+    {
+      "id": "F15",
+      "item": "Flank joinery: log store and open shelving",
+      "x_m": 6.80,
+      "y_m": 3.02,
+      "length_m": 0.40,
+      "depth_m": 1.48,
+      "height_m": 2.40,
+      "material": "Smoked oak veneer on MDF carcass; log niche lined in blackened steel",
+      "finish": "Matt oil / waxed steel",
+      "built_in": true,
+      "functions": ["storage", "shelving"],
+      "position_note": "North flank of the chimney breast, full height, flush with the breast face; 20 mm shadow gap to the breast. South flank left open so the gallery reaches the east wall."
+    },
+    {
+      "id": "F16",
+      "item": "Armchair",
+      "x_m": 5.20,
+      "y_m": 3.55,
+      "length_m": 0.80,
+      "depth_m": 0.85,
+      "height_m": 0.75,
+      "material": "Oak frame, wool boucle cover",
+      "finish": "Terracotta wool boucle",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "North side of the living zone, turned towards the hearth and sofa; 0.10 m off the north wall."
+    },
+    {
+      "id": "F17",
+      "item": "Side table",
+      "x_m": 6.15,
+      "y_m": 3.65,
+      "length_m": 0.45,
+      "depth_m": 0.45,
+      "height_m": 0.55,
+      "material": "Solid smoked oak",
+      "finish": "Matt oil",
+      "built_in": false,
+      "functions": ["table"],
+      "position_note": "Beside the armchair, carries the table lamp; clear of the hearth slab (y 3.65 above 3.15) and of the flank joinery."
+    },
+    {
+      "id": "F18",
+      "item": "Floor lamp",
+      "x_m": 3.90,
+      "y_m": 3.45,
+      "length_m": 0.35,
+      "depth_m": 0.35,
+      "height_m": 1.60,
+      "material": "Blackened steel stem, linen shade",
+      "finish": "Waxed steel / natural linen",
+      "built_in": false,
+      "functions": ["lighting"],
+      "position_note": "At the north arm of the sofa, 0.10 m beyond the sofa footprint."
+    },
+    {
+      "id": "F19",
+      "item": "Linear LED pendant over dining table",
+      "x_m": 1.75,
+      "y_m": 2.23,
+      "length_m": 0.20,
+      "depth_m": 1.40,
+      "height_m": 0.08,
+      "material": "Blackened steel profile, opal diffuser",
+      "finish": "Waxed steel",
+      "built_in": false,
+      "functions": ["lighting"],
+      "allow_overlap": true,
+      "position_note": "Suspended from the dining canopy, centred on x 1.85 / y 2.93 over the table; underside 1.65 m AFF, 0.90 m above the table top."
+    }
+  ],
+  "circulation": {
+    "path": [[0.00, 0.65], [7.20, 0.65]],
+    "min_clear_width_m": 0.90,
+    "description": "Straight gallery along the south wall from the entry door (west wall, y 0.20-1.10) to the slot window on the east wall, centreline y 0.65. No footprint lies south of y 1.15, so the clear width wall-to-furniture is 1.15 m past the sofa and rug, 1.31 m past the dining head chair, and 4.50 m where nothing stands; all of it exceeds the 0.90 m minimum."
+  },
+  "palette": [
+    {
+      "hex": "#D2B48C",
+      "name": "Pale oak",
+      "material": "Engineered oak plank, 190 mm",
+      "finish": "Matt hardwax oil",
+      "where": "Floor throughout, boards laid along x",
+      "role": "dominant"
+    },
+    {
+      "hex": "#EDE6D6",
+      "name": "Chalk",
+      "material": "Mineral (silicate) paint on plaster",
+      "finish": "Matt",
+      "where": "All walls, main ceiling, chimney breast, skirtings and window frames",
+      "role": "dominant"
+    },
+    {
+      "hex": "#3F4A44",
+      "name": "Moss slate",
+      "material": "Emulsion on plasterboard",
+      "finish": "Matt",
+      "where": "Dining canopy soffit and fascia",
+      "role": "accent"
+    },
+    {
+      "hex": "#B9AE9A",
+      "name": "Limestone",
+      "material": "Honed limestone",
+      "finish": "Honed",
+      "where": "Hearth slab, fire surround, coffee table top",
+      "role": "neutral"
+    },
+    {
+      "hex": "#2A2A28",
+      "name": "Charcoal",
+      "material": "Blackened mild steel",
+      "finish": "Waxed",
+      "where": "Fire insert, mantel shelf, log niche lining, table trestles, pendant and floor lamp",
+      "role": "neutral"
+    },
+    {
+      "hex": "#8B6F4E",
+      "name": "Smoked oak",
+      "material": "Smoked oak, solid and veneer",
+      "finish": "Matt oil",
+      "where": "Dining table, chairs, banquette carcass, flank joinery, side table",
+      "role": "neutral"
+    },
+    {
+      "hex": "#A9583A",
+      "name": "Terracotta",
+      "material": "Wool boucle",
+      "finish": "Upholstery",
+      "where": "Sofa and armchair",
+      "role": "accent"
+    },
+    {
+      "hex": "#6E7257",
+      "name": "Olive",
+      "material": "Wool felt and wool flatweave",
+      "finish": "Upholstery / flatweave",
+      "where": "Banquette cushions, living rug",
+      "role": "accent"
+    }
+  ],
+  "elevation": {
+    "wall": "east",
+    "title": "East wall: hearth wall elevation, viewed from inside, x measured from the north end",
+    "elements": [
+      {
+        "id": "EL01",
+        "item": "Flank joinery, north",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 1.48,
+        "height_m": 2.40,
+        "material": "Smoked oak veneer, matt oil",
+        "label": "Built-in log store and shelving (projects 0.40 m)",
+        "hex": "#8B6F4E"
+      },
+      {
+        "id": "EL02",
+        "item": "Log niche",
+        "x_m": 0.15,
+        "z_m": 0.15,
+        "width_m": 1.18,
+        "height_m": 0.55,
+        "material": "Blackened steel lining, waxed",
+        "label": "Log niche",
+        "hex": "#2A2A28"
+      },
+      {
+        "id": "EL03",
+        "item": "Open shelving",
+        "x_m": 0.15,
+        "z_m": 1.05,
+        "width_m": 1.18,
+        "height_m": 1.20,
+        "material": "Smoked oak shelves, 3 no., matt oil",
+        "label": "Open shelves",
+        "hex": "#8B6F4E"
+      },
+      {
+        "id": "EL04",
+        "item": "Chimney breast",
+        "x_m": 1.50,
+        "z_m": 0.00,
+        "width_m": 1.50,
+        "height_m": 2.40,
+        "material": "Lime plaster, chalk mineral paint, matt",
+        "label": "Chimney breast (projects 0.40 m)",
+        "hex": "#EDE6D6"
+      },
+      {
+        "id": "EL05",
+        "item": "Fire surround",
+        "x_m": 1.70,
+        "z_m": 0.05,
+        "width_m": 1.10,
+        "height_m": 1.15,
+        "material": "Honed limestone",
+        "label": "Limestone surround",
+        "hex": "#B9AE9A"
+      },
+      {
+        "id": "EL06",
+        "item": "Fire opening",
+        "x_m": 1.85,
+        "z_m": 0.30,
+        "width_m": 0.80,
+        "height_m": 0.60,
+        "material": "Blackened steel closed-combustion insert",
+        "label": "Fire opening",
+        "hex": "#2A2A28"
+      },
+      {
+        "id": "EL07",
+        "item": "Mantel shelf",
+        "x_m": 1.65,
+        "z_m": 1.20,
+        "width_m": 1.20,
+        "height_m": 0.05,
+        "material": "Blackened steel plate, waxed",
+        "label": "Mantel shelf",
+        "hex": "#2A2A28"
+      },
+      {
+        "id": "EL08",
+        "item": "Hearth slab",
+        "x_m": 1.35,
+        "z_m": 0.00,
+        "width_m": 1.80,
+        "height_m": 0.05,
+        "material": "Honed limestone, 50 mm",
+        "label": "Hearth slab (projects 0.45 m)",
+        "hex": "#B9AE9A"
+      },
+      {
+        "id": "EL09",
+        "item": "Wall, south flank",
+        "x_m": 3.00,
+        "z_m": 0.00,
+        "width_m": 1.50,
+        "height_m": 2.40,
+        "material": "Plaster, chalk mineral paint, matt",
+        "label": "Wall, south flank (on the wall line)",
+        "hex": "#EDE6D6"
+      },
+      {
+        "id": "EL10",
+        "item": "Slot window O4",
+        "x_m": 3.30,
+        "z_m": 0.75,
+        "width_m": 0.80,
+        "height_m": 1.45,
+        "material": "Painted timber frame, clear double glazing",
+        "label": "Window O4, sill 0.75 head 2.20",
+        "hex": "#B9AE9A"
+      },
+      {
+        "id": "EL11",
+        "item": "Skirting, south flank",
+        "x_m": 3.00,
+        "z_m": 0.00,
+        "width_m": 1.50,
+        "height_m": 0.10,
+        "material": "Painted softwood, matt",
+        "label": "Skirting 100 mm",
+        "hex": "#EDE6D6"
+      }
+    ],
+    "datum_lines": [
+      { "z_m": 0.00, "label": "Finished floor level" },
+      { "z_m": 0.75, "label": "Window sill" },
+      { "z_m": 1.20, "label": "Mantel shelf" },
+      { "z_m": 2.20, "label": "Window head" },
+      { "z_m": 2.40, "label": "Ceiling" }
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Linear LED pendant (F19)",
+      "position": "Over the dining table, centred x 1.85 / y 2.93, underside 1.65 m AFF, hung from the canopy",
+      "type": "Pendant, dimmable 2700 K"
+    },
+    {
+      "item": "Concealed LED cove",
+      "position": "In the 0.15 m step of the dining canopy on its west (x 0.60), south (y 1.30) and east (x 3.10) edges",
+      "type": "Indirect cove, dimmable 2700 K"
+    },
+    {
+      "item": "Two recessed adjustable spots",
+      "position": "In the dining canopy at y 4.20, x 1.35 and x 2.35, washing the banquette wall",
+      "type": "Recessed adjustable downlight"
+    },
+    {
+      "item": "Three low-profile surface cylinders",
+      "position": "Gallery, main ceiling, at y 0.65, x 1.20 / 3.60 / 6.00",
+      "type": "Surface-mounted downlight"
+    },
+    {
+      "item": "Two adjustable surface spots",
+      "position": "Main ceiling at x 6.20, y 1.95 and y 2.55, aimed at the chimney breast",
+      "type": "Surface-mounted accent spot"
+    },
+    {
+      "item": "Floor lamp (F18)",
+      "position": "North arm of the sofa, x 3.90-4.25 / y 3.45-3.80",
+      "type": "Floor lamp, shaded"
+    },
+    {
+      "item": "Table lamp",
+      "position": "On the side table F17 beside the armchair",
+      "type": "Table lamp, shaded"
+    },
+    {
+      "item": "Pair of wall lights",
+      "position": "North wall of the living zone at x 4.40 and x 6.40, z 1.70",
+      "type": "Wall-mounted up/down light"
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Turn the dining table across the room (long axis along y) and use a built-in banquette on the north wall as the north head seat.",
+      "rationale": "A 2.20 m table along x plus two chair pull-outs needs about 5.00 m and would leave no living zone; across the room it needs 3.75 m, the banquette removes one pull-out, and eight seats fit (3+3 sides, 1 chair, 1 banquette place).",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Mark the dining zone with a ceiling change (canopy dropped 0.15 m to 2.25 m over x 0.60-3.10 / y 1.30-4.50) rather than a level change.",
+      "rationale": "At 2.40 m there is no headroom to give up under a step and a platform would cut the end-to-end gallery; a shallow bulkhead marks the zone, carries the pendant and cove, and leaves the gallery and living zone at full height.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Place the hearth on the east end wall, centred on y 2.25, with the sofa facing it and its back forming the dining/living edge.",
+      "rationale": "Gives the room one axis from the entry door to the fire, lets the two zones share the length without any partition, and keeps the long south wall free for windows.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Run the circulation as a straight gallery along the south wall (centreline y 0.65) with no footprint south of y 1.15.",
+      "rationale": "Delivers a 1.15-1.31 m clear route from the west wall to the east wall, well over the 0.90 m minimum, and puts the walk past the windows rather than through the seating.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Put the entry door at the south end of the west wall (y 0.20-1.10), hinged on the south jamb.",
+      "rationale": "You enter at the head of the gallery looking down the room to the fire; the swing quadrant sits in the gallery where nothing stands and the leaf folds back towards the south wall.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Make the hearth wall asymmetric: full-height oak joinery on the north flank, a 0.80 m slot window on the south flank.",
+      "rationale": "Joinery on both flanks would block the east end of the gallery; a window there lets the route end on daylight and lights the hearth from the side.",
+      "major": true,
+      "rule_ids": []
+    },
+    {
+      "decision": "Keep every wall and ceiling finish matt (mineral paint, lime plaster, emulsion); no mirrored panels and no gloss lacquer anywhere.",
+      "rationale": "Meets the materials exclusions and suits the low ceiling, where glossy or mirrored surfaces would read as glare.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Size the rug to 1.80 x 2.20 m so it stops 0.08 m short of the hearth slab and ends flush with the sofa's south arm.",
+      "rationale": "Keeps textile away from the fire while letting the sofa front legs and coffee table sit on it; the rug does not enter the gallery.",
+      "major": false,
+      "rule_ids": []
+    },
+    {
+      "decision": "Leave 20 mm gaps between abutting footprints (chairs to table, banquette to table, hearth to breast, joinery to breast).",
+      "rationale": "Keeps every footprint distinct for the overlap check while matching how the pieces are actually built (shadow gaps and movement joints).",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": [
+    {
+      "rule_id": "BRIEF-M5",
+      "constraint": "Clear circulation path of at least 0.90 m from one end wall to the other.",
+      "resolution": "The south head chair (F09) backs onto the gallery. Its footprint leaves 1.31 m clear; drawn out 0.40 m for sitting it still leaves 0.91 m, so the minimum holds in use as well as on plan."
+    }
+  ]
+}

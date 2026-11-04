@@ -1,0 +1,641 @@
+{
+  "brief_id": "test_b",
+  "arm": "learned",
+  "title": "Study-bedroom under a continuous head band",
+  "room": {
+    "type": "Study / bedroom",
+    "length_m": 4.20,
+    "width_m": 3.60,
+    "ceiling_height_m": 2.40,
+    "wall_thickness_m": 0.30,
+    "floor_finish": "Fumed European oak boards 180 mm wide, hardwax-oil matt, laid east-west along the long axis; entry gallery strip (x 0.00-1.00) in unglazed red quarry tile 150 x 300 mm, matt penetrating sealer, laid in horizontal running courses"
+  },
+  "zones": [
+    {
+      "name": "Entry gallery",
+      "polygon": [[0.00, 0.00], [1.00, 0.00], [1.00, 3.60], [0.00, 3.60]],
+      "description": "Lower, narrower service strip at the west end: flush entry door at its south end, built-in closet press along the west wall; ceiling dropped to 2.10 m."
+    },
+    {
+      "name": "Study field",
+      "polygon": [[1.00, 0.00], [3.30, 0.00], [3.30, 3.60], [1.00, 3.60]],
+      "description": "Principal space under the 2.40 m ceiling field between the south window band and the north desk/shelving run."
+    },
+    {
+      "name": "Sleeping bay",
+      "polygon": [[3.30, 0.00], [4.20, 0.00], [4.20, 3.25], [3.30, 3.25]],
+      "description": "Built-in platform bed and bedside ledge against the east brick wall, head to the north."
+    }
+  ],
+  "ceiling_zones": [
+    {
+      "name": "Entry gallery soffit",
+      "height_m": 2.10,
+      "polygon": [[0.00, 0.00], [1.00, 0.00], [1.00, 3.60], [0.00, 3.60]],
+      "description": "Compressed, low-ceilinged gallery at the entry; oak-faced dropped soffit.",
+      "rule_ids": ["R12", "R02", "R05"]
+    },
+    {
+      "name": "Head band soffit, south (over window heads)",
+      "height_m": 2.10,
+      "polygon": [[1.00, 0.00], [4.20, 0.00], [4.20, 0.30], [1.00, 0.30]],
+      "description": "0.30 m deep dropped band oversailing the window heads like an eave.",
+      "rule_ids": ["R05", "R01"]
+    },
+    {
+      "name": "Head band soffit, east",
+      "height_m": 2.10,
+      "polygon": [[3.90, 0.30], [4.20, 0.30], [4.20, 3.30], [3.90, 3.30]],
+      "description": "Continuation of the perimeter head band over the bed.",
+      "rule_ids": ["R05", "R01"]
+    },
+    {
+      "name": "Head band soffit, north (over desk and shelving)",
+      "height_m": 2.10,
+      "polygon": [[1.00, 3.30], [4.20, 3.30], [4.20, 3.60], [1.00, 3.60]],
+      "description": "Perimeter head band closing the top of the joinery run.",
+      "rule_ids": ["R05", "R01"]
+    },
+    {
+      "name": "Main ceiling field",
+      "height_m": 2.40,
+      "polygon": [[1.00, 0.30], [3.90, 0.30], [3.90, 3.30], [1.00, 3.30]],
+      "description": "Flat stippled lime-plaster field at the brief ceiling height, lit by the concealed cove in the band edge.",
+      "rule_ids": ["R05"]
+    }
+  ],
+  "openings": [
+    {
+      "id": "O01",
+      "type": "door",
+      "wall": "west",
+      "offset_m": 0.20,
+      "width_m": 0.90,
+      "height_m": 2.10,
+      "sill_m": 0.00,
+      "swing": "in",
+      "hinge": "left",
+      "role": "entry",
+      "label": "Entry door: flush oak leaf, concealed frame, no architrave",
+      "description": "At the south end of the west short wall (y 0.20-1.10). Hinged on the south jamb (left as seen from inside), opening into the entry gallery; swing zone x 0.00-0.90, y 0.20-1.10 kept clear. Door head at 2.10 m aligns with the head band.",
+      "rule_ids": ["R12", "R02"]
+    },
+    {
+      "id": "O02",
+      "type": "window",
+      "wall": "south",
+      "offset_m": 0.60,
+      "width_m": 3.30,
+      "height_m": 1.36,
+      "sill_m": 0.74,
+      "swing": "out",
+      "role": "window_band",
+      "label": "South window band: three bays of paired tall casements between framed solid panels",
+      "description": "Runs x 0.30-3.60 (78.6% of the 4.20 m wall), one structural opening under the 2.10 m head band. End piers unequal: 0.30 m brick at the west, 0.60 m brick at the east. Continuous pale cast-stone sill course top at 0.74 m carrying a copper-lined planter trough.",
+      "pattern": "From the west: 0.84 glazed bay | 0.39 framed stippled infill panel | 0.84 glazed bay | 0.39 framed stippled infill panel | 0.84 glazed bay = 3.30 m; pier-to-pier module 1.23 m. Each glazed bay is a pair of 0.42 x 1.36 m outward-opening oak casements with straight-line leaded ladder bars and a chevron head; infill panels are stippled plaster in oak frames matching the lights.",
+      "rule_ids": ["R07", "R11", "R09", "R15", "R05", "R01"]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "F01",
+      "item": "Built-in closet press",
+      "x_m": 0.00,
+      "y_m": 1.20,
+      "length_m": 0.60,
+      "depth_m": 2.40,
+      "height_m": 2.10,
+      "material": "Quarter-sawn oak carcass and flush doors; pale cast-stone cap slab",
+      "finish": "Hardwax oil, matt; stone honed",
+      "built_in": true,
+      "functions": ["storage", "wardrobe"],
+      "position_note": "Along the west wall from y 1.20 to 3.60, immediately north of the entry door swing; forms the solid mass beside the entry gallery and returns into the desk run at the NW corner. Doors split at the 0.74 m datum into a lower drawer bank and upper hanging/shelf doors; square oak pulls on a grid; 0.06 m pale stone cap at 2.04-2.10 under the head band.",
+      "rule_ids": ["R02", "R12", "R14", "R08"]
+    },
+    {
+      "id": "F02",
+      "item": "Built-in desk",
+      "x_m": 0.60,
+      "y_m": 3.00,
+      "length_m": 1.60,
+      "depth_m": 0.60,
+      "height_m": 0.74,
+      "material": "Quarter-sawn oak slab top and three-drawer pedestal; exposed tawny brick back wall",
+      "finish": "Hardwax oil, matt; brick raked horizontal joints",
+      "built_in": true,
+      "functions": ["desk", "storage"],
+      "position_note": "North wall, x 0.60-2.20, between the closet return and the shelving. Top slab 0.70-0.74 continues east as the shelving datum slab; knee space x 0.60-1.80 with a thinner secondary rail at 0.62-0.66; pedestal x 1.80-2.20 on the continuous plinth. Shelf slabs at 1.46 and 1.82 run over the desk.",
+      "rule_ids": ["R01", "R14"]
+    },
+    {
+      "id": "F03",
+      "item": "Built-in shelving with cupboard base",
+      "x_m": 2.20,
+      "y_m": 3.25,
+      "length_m": 2.00,
+      "depth_m": 0.35,
+      "height_m": 2.10,
+      "material": "Quarter-sawn oak slabs, set-back oak uprights, oak cupboard doors; pale cast-stone plinth and cap",
+      "finish": "Hardwax oil, matt; stone honed",
+      "built_in": true,
+      "functions": ["shelving", "storage"],
+      "position_note": "North wall, x 2.20-4.20, east of the desk. Cupboard bank 0.10-0.70 with four doors and square pulls; datum slab 0.70-0.74; shelf slabs at 1.10, 1.46 and 1.82; pale stone cap 2.04-2.10; brick back wall exposed between shelves.",
+      "rule_ids": ["R01", "R14", "R08"]
+    },
+    {
+      "id": "F04",
+      "item": "Built-in platform bed",
+      "x_m": 3.30,
+      "y_m": 0.60,
+      "length_m": 0.90,
+      "depth_m": 2.00,
+      "height_m": 0.45,
+      "material": "Oak platform of stacked slabs on a square-block plinth, two drawers below; mattress 0.90 x 2.00",
+      "finish": "Hardwax oil, matt; oxblood leather bolster",
+      "built_in": true,
+      "functions": ["bed", "storage"],
+      "position_note": "Against the east wall, x 3.30-4.20, y 0.60-2.60, head to the north; no headboard, the brick wall with its stone band is the backdrop. 0.60 m clear to the south wall at the foot.",
+      "rule_ids": ["R14", "R01"]
+    },
+    {
+      "id": "F05",
+      "item": "Built-in bedside ledge",
+      "x_m": 3.30,
+      "y_m": 2.60,
+      "length_m": 0.90,
+      "depth_m": 0.45,
+      "height_m": 0.60,
+      "material": "Oak slab on square oak posts, open shelf below",
+      "finish": "Hardwax oil, matt",
+      "built_in": true,
+      "functions": ["table", "storage"],
+      "position_note": "East wall between the bed head (y 2.60) and the shelving (y 3.25); 0.20 m gap to the shelving.",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F06",
+      "item": "Desk chair",
+      "x_m": 1.00,
+      "y_m": 2.35,
+      "length_m": 0.45,
+      "depth_m": 0.50,
+      "height_m": 1.02,
+      "material": "Solid oak, square posts with stepped cap finials and three-layer crest cap; leather seat",
+      "finish": "Hardwax oil, matt; oxblood aniline leather, waxed",
+      "built_in": false,
+      "functions": ["seating"],
+      "seats": 1,
+      "position_note": "Freestanding, in front of the desk knee space at x 1.00-1.45, y 2.35-2.85, pulled 0.15 m off the desk front; tall narrow back (1.02 high x 0.45 wide).",
+      "rule_ids": ["R14"]
+    },
+    {
+      "id": "F07",
+      "item": "Sill planter trough",
+      "x_m": 0.30,
+      "y_m": 0.00,
+      "length_m": 3.30,
+      "depth_m": 0.15,
+      "height_m": 0.95,
+      "material": "Copper-lined oak trough on the cast-stone sill course",
+      "finish": "Copper mill finish, waxed; oak oiled matt",
+      "built_in": true,
+      "functions": ["planter"],
+      "position_note": "Sits on the window sill course (top 0.74) for the full band x 0.30-3.60, projecting 0.15 m into the room; trough top at 0.95 m. No floor footprint below the sill.",
+      "rule_ids": ["R10"]
+    }
+  ],
+  "circulation": {
+    "path": [[0.10, 0.65], [1.95, 0.65], [1.95, 2.55], [2.85, 2.55]],
+    "min_clear_width_m": 0.90,
+    "description": "From the entry door east along the window wall (clear band y 0.20-1.10 between the sill trough and the closet), north to the desk front (arriving 0.45 m south of the desk edge at y 3.00, clear band x 1.50-2.40 east of the chair), then east to the bed side (ending 0.45 m west of the bed at x 3.30, clear band y 2.10-3.00). 0.45 m either side of the centreline is clear throughout."
+  },
+  "palette": [
+    {
+      "hex": "#A1673F",
+      "name": "Tawny brick",
+      "material": "Clay brick, horizontal coursing only",
+      "finish": "Raked horizontal joints, flush-struck vertical joints, clear matt sealer",
+      "where": "East wall full height, south window-wall piers, back wall behind desk and shelving",
+      "role": "dominant",
+      "rule_ids": ["R08"]
+    },
+    {
+      "hex": "#DACFB9",
+      "name": "Pale sand stone",
+      "material": "Cast stone",
+      "finish": "Honed, matt",
+      "where": "Window sill course, continuous plinth under the joinery, cap slabs on closet and shelving, bed-wall string band at 2.10",
+      "role": "neutral",
+      "rule_ids": ["R08", "R01"]
+    },
+    {
+      "hex": "#8C5A2E",
+      "name": "Oiled oak",
+      "material": "Quarter-sawn European oak",
+      "finish": "Hardwax oil, matt",
+      "where": "Desk, shelving, closet press, bed platform, ledge, chair, entry door, casement frames, head band fascia",
+      "role": "dominant",
+      "rule_ids": ["R14"]
+    },
+    {
+      "hex": "#6B4A2E",
+      "name": "Fumed oak floor",
+      "material": "Fumed European oak boards 180 mm",
+      "finish": "Hardwax oil, matt",
+      "where": "Floor of study field and sleeping bay, laid east-west",
+      "role": "dominant",
+      "rule_ids": ["R01"]
+    },
+    {
+      "hex": "#8A3F2B",
+      "name": "Red quarry tile",
+      "material": "Unglazed clay quarry tile 150 x 300 mm",
+      "finish": "Matt penetrating sealer",
+      "where": "Entry gallery floor strip x 0.00-1.00",
+      "role": "accent",
+      "rule_ids": ["R02"]
+    },
+    {
+      "hex": "#E6DAC6",
+      "name": "Warm stippled plaster",
+      "material": "Lime plaster",
+      "finish": "Stippled texture, matt limewash",
+      "where": "Ceiling field and soffits; framed infill panels in the window band",
+      "role": "neutral",
+      "rule_ids": ["R15"]
+    },
+    {
+      "hex": "#B87333",
+      "name": "Copper",
+      "material": "Copper sheet",
+      "finish": "Mill finish, waxed",
+      "where": "Planter trough liner, task-light channel under the shelf slab, cove-light channel in the head band",
+      "role": "accent"
+    },
+    {
+      "hex": "#5E3224",
+      "name": "Oxblood leather",
+      "material": "Aniline leather over stuffing",
+      "finish": "Waxed",
+      "where": "Chair seat and back pad, bed bolster",
+      "role": "accent",
+      "rule_ids": ["R14"]
+    }
+  ],
+  "elevation": {
+    "wall": "north",
+    "title": "North wall: built-in desk and shelving run (looking north, west at left)",
+    "elements": [
+      {
+        "id": "E01",
+        "item": "Head band fascia (perimeter dropped soffit)",
+        "x_m": 0.00,
+        "z_m": 2.10,
+        "width_m": 4.20,
+        "height_m": 0.30,
+        "material": "Oak-faced soffit fascia",
+        "label": "Head band 2.10-2.40, continuous round the room",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R05"]
+      },
+      {
+        "id": "E02",
+        "item": "Brick back wall behind shelving and above desk",
+        "x_m": 0.60,
+        "z_m": 0.74,
+        "width_m": 3.60,
+        "height_m": 1.30,
+        "material": "Tawny brick, horizontal coursing",
+        "label": "Exposed brick back wall, 0.74-2.04",
+        "hex": "#A1673F",
+        "rule_ids": ["R08"]
+      },
+      {
+        "id": "E03",
+        "item": "Closet press end return",
+        "x_m": 0.00,
+        "z_m": 0.00,
+        "width_m": 0.60,
+        "height_m": 2.04,
+        "material": "Oak, flush panel",
+        "label": "West closet return seen in elevation",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R02", "R14"]
+      },
+      {
+        "id": "E04",
+        "item": "Continuous plinth",
+        "x_m": 0.60,
+        "z_m": 0.00,
+        "width_m": 3.60,
+        "height_m": 0.10,
+        "material": "Pale cast stone",
+        "label": "Plinth slab 0.00-0.10, uninterrupted",
+        "hex": "#DACFB9",
+        "rule_ids": ["R01", "R08"]
+      },
+      {
+        "id": "E05",
+        "item": "Desk pedestal, three drawers",
+        "x_m": 1.80,
+        "z_m": 0.10,
+        "width_m": 0.40,
+        "height_m": 0.60,
+        "material": "Oak, square pulls on a grid",
+        "label": "Pedestal 0.10-0.70",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E06",
+        "item": "Cupboard bank under shelving",
+        "x_m": 2.20,
+        "z_m": 0.10,
+        "width_m": 2.00,
+        "height_m": 0.60,
+        "material": "Oak flush doors, square pulls on a grid",
+        "label": "Four cupboard doors 0.10-0.70",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E07",
+        "item": "Secondary rail under desk slab",
+        "x_m": 0.60,
+        "z_m": 0.62,
+        "width_m": 1.20,
+        "height_m": 0.04,
+        "material": "Oak",
+        "label": "Thinner rail beneath the top slab, knee space",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E08",
+        "item": "Datum slab: desk top continuing as shelf",
+        "x_m": 0.60,
+        "z_m": 0.70,
+        "width_m": 3.60,
+        "height_m": 0.04,
+        "material": "Oak slab",
+        "label": "Desk/shelf datum 0.70-0.74 = window sill course",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E09",
+        "item": "Shelf slab (shelving bay only)",
+        "x_m": 2.20,
+        "z_m": 1.10,
+        "width_m": 2.00,
+        "height_m": 0.04,
+        "material": "Oak slab",
+        "label": "Shelf 1.10-1.14",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E10",
+        "item": "Shelf slab (full run)",
+        "x_m": 0.60,
+        "z_m": 1.46,
+        "width_m": 3.60,
+        "height_m": 0.04,
+        "material": "Oak slab",
+        "label": "Shelf 1.46-1.50 over desk and shelving",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E11",
+        "item": "Shelf slab (full run)",
+        "x_m": 0.60,
+        "z_m": 1.82,
+        "width_m": 3.60,
+        "height_m": 0.04,
+        "material": "Oak slab",
+        "label": "Shelf 1.82-1.86 over desk and shelving",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E12",
+        "item": "Oversailing cap slab",
+        "x_m": 0.00,
+        "z_m": 2.04,
+        "width_m": 4.20,
+        "height_m": 0.06,
+        "material": "Pale cast stone",
+        "label": "Light-toned cap 2.04-2.10 under the head band, over closet and shelving",
+        "hex": "#DACFB9",
+        "rule_ids": ["R08", "R14", "R01"]
+      },
+      {
+        "id": "E13",
+        "item": "Set-back upright at desk/shelving junction",
+        "x_m": 2.20,
+        "z_m": 0.74,
+        "width_m": 0.06,
+        "height_m": 1.30,
+        "material": "Oak square post, set back 0.05 from shelf edge",
+        "label": "Unemphasised upright",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E14",
+        "item": "Set-back shelf divider",
+        "x_m": 3.17,
+        "z_m": 0.74,
+        "width_m": 0.06,
+        "height_m": 1.30,
+        "material": "Oak square post, set back 0.05 from shelf edge",
+        "label": "Unemphasised divider",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R01", "R14"]
+      },
+      {
+        "id": "E15",
+        "item": "East end cheek",
+        "x_m": 4.14,
+        "z_m": 0.10,
+        "width_m": 0.06,
+        "height_m": 1.94,
+        "material": "Oak",
+        "label": "End cheek 0.10-2.04",
+        "hex": "#8C5A2E",
+        "rule_ids": ["R14"]
+      },
+      {
+        "id": "E16",
+        "item": "Linear task light",
+        "x_m": 0.60,
+        "z_m": 1.43,
+        "width_m": 1.60,
+        "height_m": 0.03,
+        "material": "Copper channel, LED 2700K",
+        "label": "Task light under shelf slab over desk",
+        "hex": "#B87333",
+        "rule_ids": ["R01"]
+      }
+    ],
+    "datum_lines": [
+      {"z_m": 0.10, "label": "Plinth"},
+      {"z_m": 0.74, "label": "Sill course / desk datum"},
+      {"z_m": 1.50, "label": "Shelf"},
+      {"z_m": 2.10, "label": "Head band / door head"},
+      {"z_m": 2.40, "label": "Ceiling field"}
+    ]
+  },
+  "lighting": [
+    {
+      "item": "Concealed continuous LED cove",
+      "position": "Inner edge of the perimeter head band soffit at 2.10 m, all four sides, washing the 2.40 m ceiling field",
+      "type": "Linear LED 2700K, indirect, dimmable",
+      "rule_ids": ["R01", "R05"]
+    },
+    {
+      "item": "Linear task light",
+      "position": "Copper channel under the 1.46 m shelf slab over the desk, north wall x 0.60-2.20",
+      "type": "Linear LED 2700K, direct, dimmable",
+      "rule_ids": ["R01", "R14"]
+    },
+    {
+      "item": "Recessed slot light",
+      "position": "Entry gallery soffit at 2.10 m, along x 0.50 from y 0.20 to 3.40",
+      "type": "Recessed linear LED slot 2700K, low output",
+      "rule_ids": ["R12", "R02"]
+    },
+    {
+      "item": "Bedside reading light",
+      "position": "Small square recessed fitting in the east head band soffit over the bed head, y 2.40",
+      "type": "Recessed square LED downlight 2700K, switched at the ledge"
+    }
+  ],
+  "decision_log": [
+    {
+      "decision": "Organise the room as three parallel strips along the long east-west axis: a 1.00 m entry/service gallery at the west end under a 2.10 m soffit (door and closet press), a central study field at 2.40 m, and a sleeping bay against the east wall.",
+      "rationale": "Keeps the room reading as one long low bar with the service functions gathered in a lower, narrower strip offset to one end instead of scattered round the room.",
+      "major": true,
+      "rule_ids": ["R01", "R02"]
+    },
+    {
+      "decision": "Entry door 0.90 m wide at the south end of the west short wall (offset 0.20), a flush oak leaf in a concealed frame with no architrave, hinged on the south jamb and opening inward into the gallery.",
+      "rationale": "A plain flush door at a wall end arriving in a compressed vestibule beside the solid closet mass, from which the room opens eastward; door, window band and desk share no centreline.",
+      "major": true,
+      "rule_ids": ["R12", "R02", "R06"]
+    },
+    {
+      "decision": "One 3.30 m window band on the south long wall (x 0.30-3.60, 78.6% of the wall): three 0.84 m glazed bays, each a pair of 0.42 m outward-opening casements, alternating with two 0.39 m framed stippled infill panels on a 1.23 m module; sill course top at 0.74, head at 2.10 under the soffit.",
+      "rationale": "A continuous ribbon of tall narrow lights on the ~1.22 m module with a continuous sill course and head at the ceiling band, never a single picture window; the framed solid panels take the place of piers so the band is one buildable opening and its span is unambiguous against the brief.",
+      "major": true,
+      "rule_ids": ["R07", "R11", "R15", "R05"]
+    },
+    {
+      "decision": "Casements glazed with straight-line leaded ladder bars and a chevron head; the infill panels are stippled plaster in oak frames matching the lights.",
+      "rationale": "Where glass is detailed it is a straight-line leaded lattice; solid panels interrupting a band are framed like the lights they replace.",
+      "major": true,
+      "rule_ids": ["R09", "R15"]
+    },
+    {
+      "decision": "Band end piers unequal, 0.30 m brick at the west and 0.60 m at the east, so the band stops short of both corners without making the south wall bilaterally symmetrical; the wider east pier backs the bed.",
+      "rationale": "The composition must be asymmetric overall while each light stays symmetric within itself.",
+      "major": true,
+      "rule_ids": ["R06", "R11"]
+    },
+    {
+      "decision": "Built-in desk (1.60 x 0.60) and built-in shelving (2.00 x 0.35) on the north wall as one run from x 0.60 to 4.20: a continuous oak datum slab at 0.70-0.74 is both desk top and sill-height shelf; shelf slabs at 1.46 and 1.82 run uninterrupted over desk and shelving; a pale cast-stone cap at 2.04-2.10 sits under the head band; uprights are set back and unemphasised.",
+      "rationale": "Shelf and plinth slabs run uninterrupted round the room and no vertical element is emphasised; joinery is stacked slabs and square posts with an oversailing top and a thinner rail beneath, and the top of the built-in gets a plain light-toned cap.",
+      "major": true,
+      "rule_ids": ["R01", "R14", "R08"]
+    },
+    {
+      "decision": "Storage without freestanding wardrobes: a built-in closet press 0.60 x 2.40 x 2.10 on the west wall, a cupboard bank under the shelving, a three-drawer desk pedestal, two drawers under the bed platform and an open bedside ledge.",
+      "rationale": "Storage and coats belong in the service strip beside the entry; all pulls are square on a grid with no applied ornament.",
+      "major": true,
+      "rule_ids": ["R02", "R14"]
+    },
+    {
+      "decision": "Built-in oak platform bed 0.90 x 2.00 against the east wall (x 3.30-4.20, y 0.60-2.60), head to the north, mattress top at 0.45, no headboard, drawers below; a built-in bedside ledge 0.90 x 0.45 x 0.60 fills the gap to the shelving.",
+      "rationale": "A low stacked-slab platform keeps the long low reading and uses the plain brick wall and its stone band as the backdrop instead of a headboard.",
+      "major": true,
+      "rule_ids": ["R14", "R01"]
+    },
+    {
+      "decision": "Flat ceiling field at 2.40 m with a 0.30 m deep perimeter dropped soffit at 2.10 m that oversails the window heads and reads as a continuous head band at door-head height; the soffit widens to 1.00 m over the entry gallery.",
+      "rationale": "The ceiling edge is a deep horizontal band oversailing the glazing like an eave; ceilings are flat; the entry arrives under a compressed ceiling.",
+      "major": true,
+      "rule_ids": ["R05", "R01", "R12"]
+    },
+    {
+      "decision": "Materials: exposed tawny brick with raked horizontal joints and flush vertical joints on the east wall, the window-wall piers and the back wall of the desk/shelving run; every masonry or joinery edge capped with a plain pale cast-stone band (sill course, plinth, cap slabs); oak joinery of stacked rectangular slabs and square posts; no curved mouldings, no mirror panels, no gloss lacquer.",
+      "rationale": "Brick is exposed only as horizontal coursing and every edge gets a light-toned cap; profiles are stepped rectangular layers with no carving or turning.",
+      "major": true,
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "decision": "Warm palette: tawny brick and oiled oak dominant with pale stone bands, fumed oak floor and warm stippled plaster; copper and oxblood leather as accents.",
+      "rationale": "Dark brick bands between light horizontal strips, oak woodwork and copper and leather accents, kept warm throughout.",
+      "major": true,
+      "rule_ids": ["R08", "R14"]
+    },
+    {
+      "decision": "Floor: fumed oak boards laid east-west in the main room, red quarry tile in the 1.00 m entry gallery strip.",
+      "rationale": "Boards along the long axis reinforce the horizontal reading; the hard tile marks the service strip at the entry.",
+      "major": true,
+      "rule_ids": ["R01", "R02"]
+    },
+    {
+      "decision": "Proportions set by four horizontal datums that run round the room: plinth 0.10, sill/desk 0.74, shelf 1.50, head band 2.10; bays and slabs are much wider than tall, lights much taller than wide (0.42 x 1.36).",
+      "rationale": "Continuous sill course and head band at door-head height keep the room long and low; main-storey lights are tall and narrow on a regular module.",
+      "major": true,
+      "rule_ids": ["R01", "R07"]
+    },
+    {
+      "decision": "Lighting: a concealed continuous LED cove on the inner edge of the perimeter soffit washing the ceiling field, a linear task light in a copper channel under the 1.46 shelf slab, a recessed slot in the gallery soffit and one small square bedside fitting; no pendants or vertical fittings.",
+      "rationale": "Light is laid in as horizontal lines within the band and slabs so nothing vertical is emphasised and the eave-like band reads as the source.",
+      "major": true,
+      "rule_ids": ["R01", "R05"]
+    },
+    {
+      "decision": "A copper-lined planter trough is built onto the window sill course for the full 3.30 m band.",
+      "rationale": "Planting is built in as a low trough on the sill rather than freestanding pots.",
+      "major": false,
+      "rule_ids": ["R10"]
+    },
+    {
+      "decision": "Freestanding oak desk chair with square posts, stepped cap finials, three-layer crest cap, stepped block feet and an oxblood leather seat; tall narrow back 1.02 x 0.45.",
+      "rationale": "Chair built from square posts and stacked layers with no carving or turning.",
+      "major": false,
+      "rule_ids": ["R14"]
+    },
+    {
+      "decision": "No fireplace or chimney breast: the brief asks for none and the room has no internal core wall, so the hearth and chimney rules are not applied.",
+      "rationale": "A rule is cited only where it genuinely supports a decision.",
+      "major": false,
+      "rule_ids": []
+    }
+  ],
+  "conflicts": [
+    {
+      "rule_id": "R04",
+      "constraint": "Brief: one window band, a bed, built-in storage and a desk/shelving wall in a 4.20 x 3.60 m room",
+      "resolution": "No end wall is free for a full-width window group between piers: the east wall takes the bed and the west wall the door and closet press. The single window band goes on the long south wall per R07/R11. Brief favoured on buildability."
+    },
+    {
+      "rule_id": "R07",
+      "constraint": "Brief: window band must span at least 50% of one wall's length (measured from spec.json openings)",
+      "resolution": "The band is one 3.30 m structural opening (78.6%) rather than three casement openings between brick piers; the 1.23 m pier rhythm is kept with 0.39 m framed solid infill panels (R15) in place of brick piers. Brief favoured on the measured span; rule kept on rhythm and proportion."
+    },
+    {
+      "rule_id": "R12",
+      "constraint": "Brief: ceiling 2.40 m",
+      "resolution": "The structural ceiling stays at 2.40 m throughout; the compressed vestibule is an applied 0.30 m dropped soffit (2.10 m) confined to the entry gallery and the perimeter band, and the main field keeps the brief height."
+    },
+    {
+      "rule_id": "R11",
+      "constraint": "Brief: study/bedroom with a bed and 0.90 m circulation; no terrace or balcony stated",
+      "resolution": "Floor-to-head glazed leaves opening onto a terrace do not apply; the band is taken as tall outward-opening casements over a 0.74 m sill course (R07) that also carries the built-in planter trough (R10)."
+    }
+  ]
+}

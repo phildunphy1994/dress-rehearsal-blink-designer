@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='756' viewBox='0 0 900 756' font-family='Helvetica, Arial, sans-serif' font-size='12'>
+<rect width='100%' height='100%' fill='white'/>
+<rect x='290.0' y='140.0' width='450.0' height='240.0' fill='#fbfaf7' stroke='#000' stroke-width='2'/>
+<line x1='270.0' y1='380.0' x2='760.0' y2='380.0' stroke='#000' stroke-width='3'/>
+<text x='766.0' y='384.0' font-size='12'>FFL 0.00 m</text>
+<text x='766.0' y='144.0' font-size='12'>ceiling 2.40 m</text>
+<rect x='620.0' y='159.99999999999997' width='80.0' height='145.0' fill='#e8f6f0' fill-opacity='0.6' stroke='#1a7' stroke-width='2'/><text x='660.0' y='155.99999999999997' text-anchor='middle' font-size='11' fill='#1a7'>O4 · 0.80 × 1.45 m</text>
+<rect x='440.0' y='140.0' width='150.0' height='240.0' fill='#EDE6D6' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL04</text>
+<rect x='590.0' y='140.0' width='150.0' height='240.0' fill='#EDE6D6' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='665.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL09</text>
+<rect x='290.0' y='140.0' width='148.0' height='240.0' fill='#8B6F4E' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='364.0' y='151.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL01</text>
+<rect x='305.0' y='155.0' width='118.0' height='120.0' fill='#8B6F4E' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='364.0' y='166.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL03</text>
+<rect x='460.0' y='260.0' width='110.00000000000001' height='114.99999999999999' fill='#B9AE9A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='271.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL05</text>
+<rect x='620.0' y='159.99999999999997' width='80.0' height='145.0' fill='#B9AE9A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='660.0' y='170.99999999999997' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL10</text>
+<rect x='305.0' y='310.0' width='118.0' height='55.00000000000001' fill='#2A2A28' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='364.0' y='321.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL02</text>
+<rect x='475.0' y='290.0' width='80.0' height='60.0' fill='#2A2A28' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='301.0' text-anchor='middle' font-size='9.5' font-weight='bold' fill='#111'>EL06</text>
+<rect x='590.0' y='370.0' width='150.0' height='10.0' fill='#EDE6D6' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='665.0' y='368.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>EL11</text>
+<rect x='425.0' y='375.0' width='180.0' height='5.0' fill='#B9AE9A' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='373.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>EL08</text>
+<rect x='455.0' y='255.0' width='120.0' height='5.0' fill='#2A2A28' fill-opacity='0.75' stroke='#222' stroke-width='1.5'/>
+<text x='515.0' y='253.0' text-anchor='middle' font-size='9' font-weight='bold' fill='#111'>EL07</text>
+<line x1='290.0' y1='380.0' x2='740.0' y2='380.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='380.0' x2='246.0' y2='380.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='384.0' text-anchor='end' font-size='10' fill='#b58'>Finished floor level 0.00 m</text>
+<line x1='290.0' y1='305.0' x2='740.0' y2='305.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='305.0' x2='246.0' y2='305.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='309.0' text-anchor='end' font-size='10' fill='#b58'>Window sill 0.75 m</text>
+<line x1='290.0' y1='260.0' x2='740.0' y2='260.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='260.0' x2='246.0' y2='260.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='264.0' text-anchor='end' font-size='10' fill='#b58'>Mantel shelf 1.20 m</text>
+<line x1='290.0' y1='159.99999999999997' x2='740.0' y2='159.99999999999997' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='159.99999999999997' x2='246.0' y2='159.99999999999997' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='163.99999999999997' text-anchor='end' font-size='10' fill='#b58'>Window head 2.20 m</text>
+<line x1='290.0' y1='140.0' x2='740.0' y2='140.0' stroke='#b58' stroke-dasharray='4 4'/><line x1='286.0' y1='140.0' x2='246.0' y2='140.0' stroke='#b58' stroke-width='0.7'/><text x='242.0' y='144.0' text-anchor='end' font-size='10' fill='#b58'>Ceiling 2.40 m</text>
+<line x1='170.0' y1='380.0' x2='170.0' y2='140.0' stroke='#000'/><line x1='164.0' y1='380.0' x2='176.0' y2='380.0' stroke='#000'/><line x1='164.0' y1='140.0' x2='176.0' y2='140.0' stroke='#000'/><text transform='translate(160.0,260.0) rotate(-90)' text-anchor='middle' font-size='13' font-weight='bold'>2.40 m</text>
+<line x1='290.0' y1='416.0' x2='740.0' y2='416.0' stroke='#000'/><line x1='290.0' y1='410.0' x2='290.0' y2='422.0' stroke='#000'/><line x1='740.0' y1='410.0' x2='740.0' y2='422.0' stroke='#000'/><text x='515.0' y='434.0' text-anchor='middle' font-size='13' font-weight='bold'>4.50 m</text>
+<rect x='10' y='539.9999999999999' width='880' height='206' fill='none' stroke='#000'/><text x='20' y='561.9999999999999' font-size='15' font-weight='bold'>ELEVATION — East wall: hearth wall elevation, viewed from inside, x measured from the north end (east wall)</text><text x='20' y='581.9999999999999' font-size='12'>Wall length 4.50 m · ceiling 2.40 m · heights in metres above FFL · materials labelled on the drawing</text><line x1='20' y1='601.9999999999999' x2='120.0' y2='601.9999999999999' stroke='#000' stroke-width='4'/><text x='128.0' y='605.9999999999999' font-size='12'>1 m scale bar · 1 m = 100 px</text>
+<text x='20' y='627.9999999999999' font-size='11' font-weight='bold'>KEY — elements on this wall (width × height, heights above FFL)</text>
+<text x='20.0' y='645.9999999999999' font-size='10.5'>EL01 1.48 w × 2.40 h, 0.00–2.40 m — Built-in log store and shelving (pr</text>
+<text x='20.0' y='661.9999999999999' font-size='10.5'>EL02 1.18 w × 0.55 h, 0.15–0.70 m — Log niche; Blackened steel lining, </text>
+<text x='20.0' y='677.9999999999999' font-size='10.5'>EL03 1.18 w × 1.20 h, 1.05–2.25 m — Open shelves; Smoked oak shelves, 3</text>
+<text x='20.0' y='693.9999999999999' font-size='10.5'>EL04 1.50 w × 2.40 h, 0.00–2.40 m — Chimney breast (projects 0.40 m); L</text>
+<text x='20.0' y='709.9999999999999' font-size='10.5'>EL05 1.10 w × 1.15 h, 0.05–1.20 m — Limestone surround; Honed limestone</text>
+<text x='20.0' y='725.9999999999999' font-size='10.5'>EL06 0.80 w × 0.60 h, 0.30–0.90 m — Fire opening; Blackened steel close</text>
+<text x='450.0' y='645.9999999999999' font-size='10.5'>EL07 1.20 w × 0.05 h, 1.20–1.25 m — Mantel shelf; Blackened steel plate</text>
+<text x='450.0' y='661.9999999999999' font-size='10.5'>EL08 1.80 w × 0.05 h, 0.00–0.05 m — Hearth slab (projects 0.45 m); Hone</text>
+<text x='450.0' y='677.9999999999999' font-size='10.5'>EL09 1.50 w × 2.40 h, 0.00–2.40 m — Wall, south flank (on the wall line</text>
+<text x='450.0' y='693.9999999999999' font-size='10.5'>EL10 0.80 w × 1.45 h, 0.75–2.20 m — Window O4, sill 0.75 head 2.20; Pai</text>
+<text x='450.0' y='709.9999999999999' font-size='10.5'>EL11 1.50 w × 0.10 h, 0.00–0.10 m — Skirting 100 mm; Painted softwood, </text>
+<text x='450.0' y='725.9999999999999' font-size='10.5'>O4 — Hearth-wall slot window (window): 0.80 × 1.45 m, sill 0.75</text>
+</svg>
