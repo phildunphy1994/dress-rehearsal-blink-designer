@@ -89,8 +89,10 @@ def main():
         if bpass is None and blind.get("claude"):
             verdict += f"; supplementary Claude-judge identification {'passes' if blind['claude']['pass_identification'] else 'fails'} (cannot substitute for the human result)"
     elif cpass and bpass: verdict = "PASS"
-    elif cpass or bpass: verdict = "PARTIAL PASS — " + ("blind criterion failed" if cpass else "constraint criterion failed")
+    elif cpass or bpass: verdict = "PARTIAL PASS — " + ("blind criterion failed" if cpass else "constraint criterion failed (floor effect: both arms 0 violations)")
     else: verdict = "FAIL"
+    if hb and len(hb["judges"]) < 2:
+        verdict += f" — PROVISIONAL: {len(hb['judges'])} human judge recorded, PRD §6.1 minimum is 2"
     m["verdict"] = verdict
     (OUT / "metrics.json").write_text(json.dumps(m, indent=1))
     # markdown

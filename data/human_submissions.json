@@ -1,0 +1,8 @@
+[
+ {"name": "Madhu", "seen_rules": "no", "judge_type": "human", "submitted_at": "2026-11-05T00:00:00Z", "received_via": "copy-as-text pasted by the organiser (no store write)",
+  "answers": {
+   "test_a": {"picked": "B", "confidence": 2, "reason": "flowy maybe? i have no clue on design"},
+   "test_b": {"picked": "A", "confidence": 3, "reason": "better circulation?"},
+   "test_c": {"picked": "A", "confidence": 4, "reason": "brik style architecture etc?"}
+  }}
+]

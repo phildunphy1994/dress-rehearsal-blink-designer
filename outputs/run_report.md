@@ -12,7 +12,7 @@ Run date: 2026-11-04 (UTC). Executor: Claude Fable 5.1 running in a Claude Code 
 **PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result).**
 
 - Constraint criterion: **not met** (floor effect — baseline and learned both 0 violations on every test design).
-- Blind criterion: **human result pending**; supplementary Claude judges 9/9 correct at confidence 5.
+- Blind criterion: **met, provisionally** — 1 human judge so far (PRD minimum 2): 3/3 correct at confidence 2, 3, 4 (confidence-weighted 1.00); only 1 of 3 reasons names a library rule. Supplementary Claude judges 9/9 at confidence 5.
 - Traceability: **met** (100% of major decisions cite a rule; 100% of citations are real rules).
 - Held-out drawings: 14/15 rules supported by ≥2 unseen drawings; 1 partial contradiction (R14).
 Full numbers: `outputs/metrics.md`; reading: §8.
@@ -95,7 +95,7 @@ the rule library is untested against a generic control.** `generic_rules_removed
 | Criterion | Pass bar | Measured | Result |
 |---|---|---|---|
 | Constraint violations (§5.4, 8 checks per design) | learned ≥ 2 fewer per design than baseline | baseline 0.00, learned 0.00 (every one of the 6 designs: 0) | **not met — floor effect** |
-| Style consistency, blind (§6) | learned picked in ≥ 2 of 3 briefs by human judges | **human judges: not yet recorded** · supplementary Claude judges: 3 of 3 for each of 3 judges | **pending (human)** |
+| Style consistency, blind (§6) | learned picked in ≥ 2 of 3 briefs by human judges | human judge H1: 3 of 3 (confidence 2, 3, 4; weighted 1.00; 1/3 reasons map to a rule) · supplementary Claude judges: 3 of 3 for each of 3 judges | **met, provisional (1 of the 2 required human judges)** |
 | Rule traceability | ≥ 80 % of major decisions cite a rule; 100 % of cited rules exist | 46/46 major decisions = 100%; 272/272 citations real = 100% | **met** |
 | Reproducibility | fresh executor can re-run from PRD + repo | scripts, prompts, splits, seeds, versions and logs all in the repo (README) | **met** |
 
@@ -115,7 +115,12 @@ Pack: `outputs/blind/judge_pack.md` (brief text + stripped plan, elevation and p
 A/B key (`outputs/blind/KEY.json`, seed 20261106, recorded coin per brief): test_a → A baseline / B learned;
 test_b → A learned / B baseline; test_c → A learned / B baseline.
 
-*Human judges (primary):* not yet run. Procedure for before Friday: two people, at least one who has not seen the
+*Human judges (primary):* one recorded so far (H1, declared not to have seen the rule library or specs; answers sent as
+copied text because the page's store was not reachable for them). Picks: test_a B, test_b A, test_c A — 3/3 correct;
+confidence 2, 3, 4; confidence-weighted 1.00 (pass ≥ 0.60). Reasons: "flowy maybe", "better circulation", "brick style
+architecture" — only the last names a library rule (R08), so the reason-quality sub-metric (≥ 2 of 3) is **not met**
+for this judge: the pick was right, the articulated reason mostly was not. A second human judge is still required for
+the result to count as more than provisional. Procedure for the second judge: two people, at least one who has not seen the
 rule library or any spec, each spend ~15 minutes on `outputs/blind/judge_pack.md` and record one row per pair in
 `outputs/blind_test_scores.csv` (`judge_type = human`; leave `correct` empty, it is computed from the key; map the
 reason to a rule id or `null` after scoring), then run `python3 scripts/07_report.py`. The first score stands (§6.5).

@@ -1,6 +1,6 @@
 # Metrics (computed by scripts/07_report.py)
 
-**Verdict (PRD §2.4):** PARTIAL PASS AT BEST — constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result)
+**Verdict (PRD §2.4):** PARTIAL PASS — constraint criterion failed (floor effect: both arms 0 violations) — PROVISIONAL: 1 human judge recorded, PRD §6.1 minimum is 2
 
 ## Constraint violations (test briefs, PRD §5.4; max 8 per design)
 
@@ -21,12 +21,21 @@ Mean baseline: 0.00 · mean learned: 0.00 · learned − baseline: +0.00 · pass
 - Citations to real library rules: 272/272 = 1.0 (pass = 1.00)
 - Pass: **True**
 
+## Blind test — human judges (PRIMARY)
+
+- Judges: H1
+- Accuracy per judge: {'H1': 1.0}
+- Mean correct picks of 3: 3.0 (pass ≥ 2)
+- Learned picked, share per brief: {'test_a': 1, 'test_b': 1, 'test_c': 1}
+- Confidence-weighted score: 1.0 (pass ≥ 0.60)
+- Reasons mapping to a real rule: 1/3 (pass ≥ 2 of 3)
+
 ## Blind test — claude judges (SUPPLEMENTARY, cannot overturn the human result)
 
 - Judges: CJ1, CJ2, CJ3
 - Accuracy per judge: {'CJ1': 1.0, 'CJ2': 1.0, 'CJ3': 1.0}
 - Mean correct picks of 3: 3.0 (pass ≥ 2)
-- Learned picked, share per brief: {'test_c': 1, 'test_a': 1, 'test_b': 1}
+- Learned picked, share per brief: {'test_a': 1, 'test_b': 1, 'test_c': 1}
 - Confidence-weighted score: 1.0 (pass ≥ 0.60)
 - Reasons mapping to a real rule: 9/9 (pass ≥ 2 of 3)
 

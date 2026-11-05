@@ -23,6 +23,25 @@
   "pass": true
  },
  "blind": {
+  "human": {
+   "judges": [
+    "H1"
+   ],
+   "accuracy_per_judge": {
+    "H1": 1.0
+   },
+   "mean_correct_of_3": 3.0,
+   "learned_picked_share_per_brief": {
+    "test_a": 1,
+    "test_b": 1,
+    "test_c": 1
+   },
+   "confidence_weighted": 1.0,
+   "reasons_mapping_to_real_rule": "1/3",
+   "pass_identification": true,
+   "pass_confidence_weighted": true,
+   "pass_reason_quality": false
+  },
   "claude": {
    "judges": [
     "CJ1",
@@ -36,9 +55,9 @@
    },
    "mean_correct_of_3": 3.0,
    "learned_picked_share_per_brief": {
-    "test_c": 1,
     "test_a": 1,
-    "test_b": 1
+    "test_b": 1,
+    "test_c": 1
    },
    "confidence_weighted": 1.0,
    "reasons_mapping_to_real_rule": "9/9",
@@ -72,5 +91,5 @@
    "R14"
   ]
  },
- "verdict": "PARTIAL PASS AT BEST \u2014 constraint criterion failed (floor effect: both arms 0 violations); human blind test not yet recorded; supplementary Claude-judge identification passes (cannot substitute for the human result)"
+ "verdict": "PARTIAL PASS \u2014 constraint criterion failed (floor effect: both arms 0 violations) \u2014 PROVISIONAL: 1 human judge recorded, PRD \u00a76.1 minimum is 2"
 }
